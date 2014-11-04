@@ -1,11 +1,8 @@
 ---
 layout: page
-title: Portfolio
+title: My Portfolio
 permalink: /portfolio/
 ---
-
-
-### My Portfolio
 
 [AAA Auction](http://www.auctionmn.com)
 
