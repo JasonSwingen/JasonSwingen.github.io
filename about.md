@@ -4,12 +4,14 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+### Thank you for getting to know me!
 
-### More Information
+I am a Web Developer and Marketer specializing in Search Engine Optimization, Adwords, and Analytics.
 
-A place to include any other types of information that you'd like to include about yourself. 
+### tl;dr
+
+I make websites and make them findable.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[jason.swingen@gmail.com](mailto:jason.swingen@gmail.com)
