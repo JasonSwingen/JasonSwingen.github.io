@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-### Thank you for getting to know me!
+### About Me
 
 I am a Web Developer and Marketer specializing in Search Engine Optimization, Adwords, and Analytics.
 
