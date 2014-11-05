@@ -14,5 +14,10 @@ layout: default
       
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
+    <footer>
+    	<div class="comments">
+    		{% include disqus.html disqus_identifier=page.disqus_identifier %}
+  		</div>
+    </footer>
   {% endfor %}
 </div>
