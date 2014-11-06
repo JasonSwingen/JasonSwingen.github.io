@@ -3,20 +3,21 @@
 
 html, body { height: 100%; }
 
-h1, h2, h3, h4, h5, h6, {
+h1, h2, h3, h4, h5, h6, p, ul {
   padding: .5rem;
 }
 h1 {
   font-size: 4rem;
+  font-weight: bold;
 }
 h2 {
-  font-size: 3rem;
+  font-size: 2.7rem;
 }
 h3 {
-  font-size: 2.8rem;
+  font-size: 2.4rem;
 }
 h4 {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
 }
 h5 {
   font-size: 2rem;
@@ -36,11 +37,12 @@ body {
 }
 
 nav {
+  position: fixed;
   display: block;
   width: 100%;
   height: 200px;
   background-color: #2196f3;
-  z-index: 50;
+  box-shadow: inset 0rem -2rem 4rem -52px rgba(0, 0, 0, 0.5);
 }
 
 nav > ul > li {
@@ -52,20 +54,22 @@ nav > ul > li {
 
 main {
   background-color: #fff;
-  box-shadow: 14px 2rem 5rem 1px rgba(0, 0, 0, .5);
-  z-index: 100;
 }
 
 .paper {
   width: 80%;
   min-height: 800px;
   position: relative;
-  top: -6rem;
+  top: 6rem;
   margin: 0 auto;
   background-color: #fff;
   border-radius: .2rem;
   box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.25);
   z-index: 200;
+}
+
+.paper > div {
+  margin: 0rem 2rem;
 }
 
 .slideout {
