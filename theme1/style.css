@@ -1,0 +1,134 @@
+/***************/
+/* MEYER RESET */
+/***************/
+@import url(http://fonts.googleapis.com/css?family=Raleway:200,600);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin-left: .4rem;
+  padding-top: 1.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  font: 14px/1.6em 'Raleway', sans-serif;
+}
+
+nav {
+  display: block;
+  width: 100%;
+  height: 200px;
+  background-color: #2196f3;
+  z-index: 50;
+}
+
+nav > ul > li {
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 2rem;
+  margin-top: 2rem;
+}
+
+main {
+  background-color: #fff;
+  box-shadow: 14px 2rem 5rem 1px rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+.paper {
+  width: 80%;
+  min-height: 800px;
+  position: relative;
+  top: -6rem;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 2rem2;
+  box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.25);
+  z-index: 200;
+}
+
+.slideout {
+  height: 100%;
+  width: 400px;
+  background-color: #bbdefb;
+  z-index: 9999;
+}
