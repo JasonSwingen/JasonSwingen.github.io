@@ -3,32 +3,36 @@
 
 html, body { height: 100%; }
 
+h1, h2, h3, h4, h5, h6, {
+  padding: .5rem;
+}
 h1 {
-  font-size: 3.5rem;
-  margin-left: .4rem;
-  padding-top: 1.5rem;
+  font-size: 4rem;
 }
 h2 {
   font-size: 3rem;
 }
 h3 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
 }
 h4 {
-  font-size: 2rem;
+  font-size: 2.4rem;
 }
 h5 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 h6 {
-  font-size: 1rem;
+  font-size: 1.8rem;
 }
 
+p {
+  padding-left: .4rem;
+}
 
 body {
   margin: 0;
-  overflow: hidden;
-  font: 14px/1.6em 'Raleway', sans-serif;
+  font: 16px/1.7rem 'Raleway', sans-serif;
+  line-height: 1.51;
 }
 
 nav {
@@ -59,7 +63,7 @@ main {
   top: -6rem;
   margin: 0 auto;
   background-color: #fff;
-  border-radius: 2rem2;
+  border-radius: .2rem;
   box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.25);
   z-index: 200;
 }
@@ -69,4 +73,22 @@ main {
   width: 400px;
   background-color: #bbdefb;
   z-index: 9999;
+}
+
+.btn {
+
+}
+.btn-circle {
+  border: none;
+  position: relative;
+  height: 6rem;
+  width: 6rem;
+  top: -9.9rem;
+  right: -67rem;
+  background-color: #fb8c00;
+  border-radius: 50px;
+  font: 18px/1.7rem 'Raleway', sans-serif;
+  font-weight: bold;
+  box-shadow: -1px 2px 6px 1px rgba(0, 0, 0, 0.5);
+  z-index: 300;
 }
