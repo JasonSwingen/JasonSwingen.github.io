@@ -69,29 +69,63 @@ h1 {
   font-size: 4rem;
   font-weight: bold;
 }
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 2.6rem;
+  }
+}
 
 h2 {
-  font-size: 2.7rem;
+  font-size: 3rem;
+}
+@media only screen and (max-width: 600px) {
+  h2 {
+    font-size: 2.3rem;
+  }
 }
 
 h3 {
-  font-size: 2.4rem;
+  font-size: 2.6rem;
+}
+@media only screen and (max-width: 600px) {
+  h3 {
+    font-size: 1.8rem;
+  }
 }
 
 h4 {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
+}
+@media only screen and (max-width: 600px) {
+  h4 {
+    font-size: 1.7rem;
+  }
 }
 
 h5 {
-  font-size: 2rem;
+  font-size: 2.2rem;
+}
+@media only screen and (max-width: 600px) {
+  h5 {
+    font-size: 1.6rem;
+  }
 }
 
 h6 {
-  font-size: 1.8rem;
+  font-size: 2rem;
+}
+@media only screen and (max-width: 600px) {
+  h6 {
+    font-size: 1.8rem;
+  }
 }
 
 p {
   padding-left: .4rem;
+}
+
+.cat {
+  text-transform: uppercase;
 }
 
 body {
@@ -131,6 +165,11 @@ main {
   box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.25);
   z-index: 200;
 }
+@media only screen and (max-width: 600px) {
+  .paper {
+    width: 100%;
+  }
+}
 
 .paper > div {
   margin: 0rem 2rem;
@@ -156,4 +195,28 @@ main {
   font-weight: bold;
   box-shadow: -1px 2px 6px 1px rgba(0, 0, 0, 0.5);
   z-index: 300;
+}
+
+.box {
+  box-shadow: 0px 10px 10px -12px rgba(0, 0, 0, 0.25);
+}
+
+.box3 {
+  display: inline-block;
+  width: 24.6%;
+}
+@media only screen and (max-width: 600px) {
+  .box3 {
+    width: 100%;
+  }
+}
+
+.box4 {
+  display: inline-block;
+  width: 32%;
+}
+@media only screen and (max-width: 600px) {
+  .box4 {
+    width: 100%;
+  }
 }

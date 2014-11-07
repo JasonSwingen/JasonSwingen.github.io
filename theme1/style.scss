@@ -1,6 +1,14 @@
 @import "reset";
 @import url( http://fonts.googleapis.com/css?family=Raleway:200,600 );
 
+@mixin phone {
+  @media only screen and (max-width: 600px) {
+    @content;
+  }
+}
+
+$main-color : blue;
+
 html, body { height: 100%; }
 
 h1, h2, h3, h4, h5, h6, p, ul {
@@ -9,25 +17,47 @@ h1, h2, h3, h4, h5, h6, p, ul {
 h1 {
   font-size: 4rem;
   font-weight: bold;
+  @include phone {
+    font-size: 2.6rem;
+  }
 }
 h2 {
-  font-size: 2.7rem;
+  font-size: 3rem;
+  @include phone {
+    font-size: 2.3rem;
+  }
 }
 h3 {
-  font-size: 2.4rem;
+  font-size: 2.6rem;
+    @include phone {
+    font-size: 1.8rem;
+  }
 }
 h4 {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
+  @include phone {
+    font-size: 1.7rem;
+  }
 }
 h5 {
-  font-size: 2rem;
+  font-size: 2.2rem;
+  @include phone {
+    font-size: 1.6rem;
+  }
 }
 h6 {
-  font-size: 1.8rem;
+  font-size: 2rem;
+  @include phone {
+    font-size: 1.8rem;
+  }
 }
 
 p {
   padding-left: .4rem;
+}
+
+.cat {
+  text-transform: uppercase;
 }
 
 body {
@@ -66,6 +96,9 @@ main {
   border-radius: .2rem;
   box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.25);
   z-index: 200;
+  @include phone {
+    width: 100%;
+  }
 }
 
 .paper > div {
@@ -95,4 +128,24 @@ main {
   font-weight: bold;
   box-shadow: -1px 2px 6px 1px rgba(0, 0, 0, 0.5);
   z-index: 300;
+}
+
+.box {
+  box-shadow: 0px 10px 10px -12px rgba(0, 0, 0, 0.25);
+}
+
+.box3 {
+  display: inline-block;
+  width: 24.6%;
+  @include phone {
+    width: 100%;
+  }
+}
+
+.box4 {
+  display: inline-block;
+  width: 32%;
+  @include phone {
+    width: 100%;
+  }
 }
