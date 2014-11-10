@@ -150,6 +150,43 @@ nav > ul > li {
   margin-top: 2rem;
 }
 
+.hamburger {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+.menu-icon {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  text-indent: -999px;
+}
+
+.border-icon {
+  height: 50px;
+  border-top: 10px solid #fff;
+  border-bottom: 10px solid #fff;
+}
+
+.border-icon:before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  border-top: 10px solid #fff;
+}
+
+.border-icon:after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  border-top: 10px solid #fff;
+}
+
 main {
   background-color: #fff;
 }
@@ -168,6 +205,7 @@ main {
 @media only screen and (max-width: 600px) {
   .paper {
     width: 100%;
+    top: 4.5rem;
   }
 }
 
@@ -197,10 +235,6 @@ main {
   z-index: 300;
 }
 
-.box {
-  box-shadow: 0px 10px 10px -12px rgba(0, 0, 0, 0.25);
-}
-
 .box3 {
   display: inline-block;
   width: 24.6%;
@@ -219,4 +253,96 @@ main {
   .box4 {
     width: 100%;
   }
+}
+
+.flexparent {
+  display: flex;
+  flex-direction: colomn;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+}
+
+.flexchild {
+  height: 90%;
+  flex-grow: 1;
+}
+
+.clearfix .cf:after,
+.clearfix .cf:before {
+  content: '';
+  display: table;
+}
+.clearfix .cf:after {
+  clear: both;
+}
+.clearfix .cf {
+  zoom: 1;
+}
+
+/*********************************************************************
+ 
+
+                            Extra Stuff
+
+
+**********************************************************************/
+.navbar {
+  border-width: 1px 0;
+  -webkit-border-radius: 0;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 0;
+  -moz-background-clip: padding;
+  border-radius: 0;
+  background-clip: padding-box;
+  width: 100%;
+}
+
+.navbar.stick {
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: .85;
+}
+
+.navbar-collapse {
+  -webkit-border-radius: 0;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 0;
+  -moz-background-clip: padding;
+  border-radius: 0;
+  background-clip: padding-box;
+  font-family: "Open sans", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.navbar-collapse .navbar-nav {
+  float: none;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.navbar-collapse .navbar-nav > li {
+  float: none;
+  display: inline-block;
+}
+
+.navbar-collapse .navbar-nav > li > a {
+  padding: 20px 30px;
+}
+
+/* fly in effect */
+.fly {
+  opacity: 0;
+  transition: all 500ms ease-in;
+  transform: translateY(100px) scale(1.05) translate3d(0, 0, 0);
+}
+
+.show-block {
+  opacity: 1;
+  transform: translateY(0) scale(1) translate3d(0, 0, 0);
+  color: red;
+  z-index: 9999;
 }
