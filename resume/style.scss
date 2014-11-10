@@ -158,20 +158,35 @@ main {
 .box {
   // box-shadow: 0px 10px 10px -12px rgba(0, 0, 0, 0.25);
 }
+.oneway {
+  display: block;
+  width: 100%;
+}
 
-.box3 {
+.twoway {
   display: inline-block;
-  width: 24.6%;
-  @include phone {
+  vertical-align: top;
+  width: 49%;
+  @include tablet {
+    display: block;
     width: 100%;
   }
 }
-
-.box4 {
+.threeway {
   display: inline-block;
-  width: 32%;
-  @include phone {
+  vertical-align: top;
+  width: 30%;
+  @include tablet {
+    display: block;
     width: 100%;
+  }
+}
+.fourway {
+  display: inline-block;
+  vertical-align: top;
+  width: 24%;
+  @include tablet {
+    width: 50%;
   }
 }
 

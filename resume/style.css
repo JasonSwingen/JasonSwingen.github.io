@@ -208,23 +208,43 @@ main {
   z-index: 300;
 }
 
-.box3 {
-  display: inline-block;
-  width: 24.6%;
+.oneway {
+  display: block;
+  width: 100%;
 }
-@media only screen and (max-width: 700px) {
-  .box3 {
+
+.twoway {
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
+}
+@media only screen and (max-width: 900px) {
+  .twoway {
+    display: block;
     width: 100%;
   }
 }
 
-.box4 {
+.threeway {
   display: inline-block;
-  width: 32%;
+  vertical-align: top;
+  width: 30%;
 }
-@media only screen and (max-width: 700px) {
-  .box4 {
+@media only screen and (max-width: 900px) {
+  .threeway {
+    display: block;
     width: 100%;
+  }
+}
+
+.fourway {
+  display: inline-block;
+  vertical-align: top;
+  width: 24%;
+}
+@media only screen and (max-width: 900px) {
+  .fourway {
+    width: 50%;
   }
 }
 
