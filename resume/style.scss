@@ -174,7 +174,7 @@ main {
   @include phone {
     width: 100%;
     top: 14rem;
-    margin: 0 auto 80px;
+    margin: 0 auto 280px;
     border-radius: 0px;
   }
 }
@@ -248,17 +248,47 @@ footer {
   box-shadow: inset 0rem -2rem 4rem -52px rgba(0, 0, 0, 0.5);
   @include phone {
     width: 100%;
-    height: 80px;
     margin: 0px;
     bottom: 0px;
     left: 0px;
-
   }
   ul {
     margin-top: 15px;
     li {
       display: inline-block;
+      text-decoration: none;
+      list-style: none;
+      margin: 2px 4px 0px 0px;
+      border: 1px solid white;
+      @include border-radius(2px);
+      padding: 1px 6px;
+      font-size: 1.2rem;
+        &:hover {
+          background-color: $white;
+        }
+      @include phone {
+        text-align: center;
+        width: 30%;
+        margin-top: 8px auto 0px;
+        font-size: 1rem;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        &:hover {
+          color: $main-color;
+        }
+      }
     }
+  }
+}
+
+.totop {
+  float: right;
+  margin-top: 6px;
+  @include phone {
+    float: none;
+    margin-top: none;
   }
 }
 
