@@ -19,8 +19,17 @@
       -ms-box-shadow: 0 2rem 5rem 0 $shadow-color;
           box-shadow: 0 2rem 5rem 0 $shadow-color;
 }
-$white : #fff;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+$white      : #ffffff;
 $main-color : #2196f3;
+$box-shadow : rgba(0, 0, 0, 0.5);
 
 html, body { height: 100%; }
 
@@ -32,7 +41,7 @@ h1 {
   // font-size: 7vw;
   font-weight: bold;
   @include phone {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
   }
 }
 h2 {
@@ -93,16 +102,60 @@ nav {
   position: fixed;
   display: block;
   width: 100%;
-  height: 250px;
+  height: 200px;
   background-color: $main-color;
   box-shadow: inset 0rem -2rem 4rem -52px rgba(0, 0, 0, 0.5);
+  @include phone {
+    height: 250px;
+  }
+  ul {
+    li {
+      display: inline-block;
+      text-decoration: none;
+      margin-right: 2rem;
+      margin-top: 2rem;
+    }
+  }
 }
 
-nav > ul > li {
-  display: inline-block;
-  text-decoration: none;
-  margin-right: 2rem;
-  margin-top: 2rem;
+.navigation {
+  margin: 15px auto;
+  width: 80%;
+  ul {
+    padding: 0px;
+    li {
+      display: inline-block;
+      text-decoration: none;
+      list-style: none;
+      margin: 2px 10px 0px 0px;
+      border: 1px solid white;
+      @include border-radius(2px);
+      padding: 1px 6px;
+        &:hover {
+          background-color: $white;
+        }
+      @include phone {
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin-top: 8px;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.6rem;
+        &:hover {
+          color: $main-color;
+        }
+        // @include tablet {
+        //   font-size: 1.6rem;
+        // }
+        // @include phone {
+        //   font-size: 1.8rem;
+        // }
+      }
+    }
+  }
 }
 
 main {
@@ -111,52 +164,23 @@ main {
 
 .paper {
   width: 80%;
-  min-height: 800px;
   position: relative;
-  top: 6rem;
-  margin: 0 auto;
+  top: 5rem;
+  margin: 0 auto 80px;
   background-color: #fff;
-  border-radius: .2rem;
+  @include border-radius(2px);
   box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.25);
   z-index: 200;
   @include phone {
     width: 100%;
     top: 14rem;
+    margin: 0 auto 80px;
     border-radius: 0px;
   }
 }
 
 .paper > div {
   margin: 0rem 2rem;
-}
-
-.slideout {
-  height: 100%;
-  width: 400px;
-  background-color: #bbdefb;
-  z-index: 9999;
-}
-
-.btn {
-
-}
-.btn-circle {
-  border: none;
-  position: relative;
-  height: 6rem;
-  width: 6rem;
-  top: -9.9rem;
-  right: -67rem;
-  background-color: #fb8c00;
-  border-radius: 50px;
-  font: 18px/1.7rem 'Raleway', sans-serif;
-  font-weight: bold;
-  box-shadow: -1px 2px 6px 1px rgba(0, 0, 0, 0.5);
-  z-index: 300;
-}
-
-.box {
-  // box-shadow: 0px 10px 10px -12px rgba(0, 0, 0, 0.25);
 }
 .oneway {
   display: block;
@@ -190,20 +214,6 @@ main {
   }
 }
 
-.flexparent {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: baseline;
-  width: 100%;
-}
-
-.flexchild {
-  height: 90%;
-  flex-grow: 1;
-}
-
 .clearfix {
   .cf:after,
   .cf:before {
@@ -218,149 +228,44 @@ main {
   }
 }
 
-/*********************************************************************
- 
+.invi {
+  display: absolute;
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+  span {
+    display: relative;
+    height: 50px;
+  }
+}
 
-                            Extra Stuff
-
-
-**********************************************************************/
-
-// Hamburger Menu Icon
-.hamburger {
+footer {
   position: fixed;
-  top: 10px;
-  left: 10px;
-}
-.menu-icon {
-    position:relative;
-    display:inline-block;
-    width:35px;
-    text-indent:-999px;
-}
-.border-icon {
-    height:25px;
-    border-top:5px solid #fff;
-    border-bottom:5px solid #fff;
-}
-.border-icon:before {
-    content:"";
-    position:absolute;
-    top:5px;
-    left:0;
-    width:100%;
-    border-top:5px solid #fff;
-}
-.border-icon:after {
-    content:"";
-    position:absolute;
-    top:15px;
-    left:0;
-    width:100%;
-    border-top:5px solid #fff;
-}
-
-// Slideout
-.slideout {
-  display: block;
-  position: fixed;
-  top: 0;
-  left: -300px;
-  width: 300px;
-  height: 100%;
-  background-color: white;
-  z-index: 9999;
-  @include box-shadow(rgba(0, 0, 0, 0.25));
-}
-
-// navigation
-.navigation {
-  margin: 15px auto;
   width: 80%;
+  bottom: 0;
+  margin: 0 10%;
+  background-color: $main-color;
+  box-shadow: inset 0rem -2rem 4rem -52px rgba(0, 0, 0, 0.5);
   ul {
     li {
       display: inline-block;
-      text-decoration: none;
-      list-style: none;
-      margin: 2px 10px 0px 0px;
-      border: 1px solid white;
-      padding: 1px 6px;
-        &:hover {
-          background-color: $white;
-        }
-      @include phone {
-        display: block;
-        text-align: center;
-        width: 100%;
-      }
-      a {
-        text-decoration: none;
-        color: white;
-        font-size: 1.6rem;
-        &:hover {
-          color: $main-color;
-        }
-        // @include tablet {
-        //   font-size: 1.6rem;
-        // }
-        // @include phone {
-        //   font-size: 1.8rem;
-        // }
-      }
     }
   }
 }
 
-
-.navbar {
-  border-width: 1px 0;
-  -webkit-border-radius: 0;
-  -webkit-background-clip: padding-box;
-  -moz-border-radius: 0;
-  -moz-background-clip: padding;
-  border-radius: 0;
-  background-clip: padding-box;
-  width: 100%;
-}
-.navbar.stick {
-  position: fixed;
-  top: 0;
-  left: 0;
-  opacity: .85;
-}
-.navbar-collapse {
-  -webkit-border-radius: 0;
-  -webkit-background-clip: padding-box;
-  -moz-border-radius: 0;
-  -moz-background-clip: padding;
-  border-radius: 0;
-  background-clip: padding-box;
-  font-family: "Open sans", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  text-transform: uppercase;
-}
-.navbar-collapse .navbar-nav {
-  float: none;
-  margin: 0 auto;
-  text-align: center;
-}
-.navbar-collapse .navbar-nav > li {
-  float: none;
-  display: inline-block;
-}
-.navbar-collapse .navbar-nav > li > a {
-  padding: 20px 30px;
-}
-
-/* fly in effect */
-.fly {
-  opacity: 0;
-  transition: all 500ms ease-in;
-  transform: translateY(100px) scale(1.05) translate3d(0, 0, 0);
-}
-.show-block {
-  opacity: 1;
-  transform: translateY(0) scale(1) translate3d(0, 0, 0);
-  color: red;
-  z-index: 9999;
+.share {
+  display: none;
+  @include phone {
+    z-index: 9999;
+    display: block;
+    position: fixed;
+    bottom: 25px;
+    right: 15px;
+    height: 75px;
+    width: 75px;
+    border: 2px solid $main-color;
+    background-color: $main-color;
+    @include border-radius(100px);
+    box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.5);
+  }
 }

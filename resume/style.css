@@ -71,7 +71,7 @@ h1 {
 }
 @media only screen and (max-width: 700px) {
   h1 {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
   }
 }
 
@@ -147,16 +147,59 @@ nav {
   position: fixed;
   display: block;
   width: 100%;
-  height: 250px;
+  height: 200px;
   background-color: #2196f3;
   box-shadow: inset 0rem -2rem 4rem -52px rgba(0, 0, 0, 0.5);
 }
-
-nav > ul > li {
+@media only screen and (max-width: 700px) {
+  nav {
+    height: 250px;
+  }
+}
+nav ul li {
   display: inline-block;
   text-decoration: none;
   margin-right: 2rem;
   margin-top: 2rem;
+}
+
+.navigation {
+  margin: 15px auto;
+  width: 80%;
+}
+.navigation ul {
+  padding: 0px;
+}
+.navigation ul li {
+  display: inline-block;
+  text-decoration: none;
+  list-style: none;
+  margin: 2px 10px 0px 0px;
+  border: 1px solid white;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  padding: 1px 6px;
+}
+.navigation ul li:hover {
+  background-color: white;
+}
+@media only screen and (max-width: 700px) {
+  .navigation ul li {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-top: 8px;
+  }
+}
+.navigation ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.6rem;
+}
+.navigation ul li a:hover {
+  color: #2196f3;
 }
 
 main {
@@ -165,12 +208,14 @@ main {
 
 .paper {
   width: 80%;
-  min-height: 800px;
   position: relative;
-  top: 6rem;
-  margin: 0 auto;
+  top: 5rem;
+  margin: 0 auto 80px;
   background-color: #fff;
-  border-radius: .2rem;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
   box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.25);
   z-index: 200;
 }
@@ -178,34 +223,13 @@ main {
   .paper {
     width: 100%;
     top: 14rem;
+    margin: 0 auto 80px;
     border-radius: 0px;
   }
 }
 
 .paper > div {
   margin: 0rem 2rem;
-}
-
-.slideout {
-  height: 100%;
-  width: 400px;
-  background-color: #bbdefb;
-  z-index: 9999;
-}
-
-.btn-circle {
-  border: none;
-  position: relative;
-  height: 6rem;
-  width: 6rem;
-  top: -9.9rem;
-  right: -67rem;
-  background-color: #fb8c00;
-  border-radius: 50px;
-  font: 18px/1.7rem 'Raleway', sans-serif;
-  font-weight: bold;
-  box-shadow: -1px 2px 6px 1px rgba(0, 0, 0, 0.5);
-  z-index: 300;
 }
 
 .oneway {
@@ -248,20 +272,6 @@ main {
   }
 }
 
-.flexparent {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: baseline;
-  width: 100%;
-}
-
-.flexchild {
-  height: 90%;
-  flex-grow: 1;
-}
-
 .clearfix .cf:after,
 .clearfix .cf:before {
   content: '';
@@ -274,151 +284,47 @@ main {
   zoom: 1;
 }
 
-/*********************************************************************
- 
-
-                            Extra Stuff
-
-
-**********************************************************************/
-.hamburger {
-  position: fixed;
-  top: 10px;
-  left: 10px;
-}
-
-.menu-icon {
-  position: relative;
-  display: inline-block;
-  width: 35px;
-  text-indent: -999px;
-}
-
-.border-icon {
-  height: 25px;
-  border-top: 5px solid #fff;
-  border-bottom: 5px solid #fff;
-}
-
-.border-icon:before {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 0;
+.invi {
+  display: absolute;
   width: 100%;
-  border-top: 5px solid #fff;
+  height: 50px;
+  background-color: transparent;
+}
+.invi span {
+  display: relative;
+  height: 50px;
 }
 
-.border-icon:after {
-  content: "";
-  position: absolute;
-  top: 15px;
-  left: 0;
-  width: 100%;
-  border-top: 5px solid #fff;
-}
-
-.slideout {
-  display: block;
+footer {
   position: fixed;
-  top: 0;
-  left: -300px;
-  width: 300px;
-  height: 100%;
-  background-color: white;
-  z-index: 9999;
-  -webkit-box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.25);
-  -ms-box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.25);
-  box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.25);
-}
-
-.navigation {
-  margin: 15px auto;
   width: 80%;
+  bottom: 0;
+  margin: 0 10%;
+  background-color: #2196f3;
+  box-shadow: inset 0rem -2rem 4rem -52px rgba(0, 0, 0, 0.5);
 }
-.navigation ul li {
+footer ul li {
   display: inline-block;
-  text-decoration: none;
-  list-style: none;
-  margin: 2px 10px 0px 0px;
-  border: 1px solid white;
-  padding: 1px 6px;
 }
-.navigation ul li:hover {
-  background-color: white;
+
+.share {
+  display: none;
 }
 @media only screen and (max-width: 700px) {
-  .navigation ul li {
+  .share {
+    z-index: 9999;
     display: block;
-    text-align: center;
-    width: 100%;
+    position: fixed;
+    bottom: 25px;
+    right: 15px;
+    height: 75px;
+    width: 75px;
+    border: 2px solid #2196f3;
+    background-color: #2196f3;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    border-radius: 100px;
+    box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.5);
   }
-}
-.navigation ul li a {
-  text-decoration: none;
-  color: white;
-  font-size: 1.6rem;
-}
-.navigation ul li a:hover {
-  color: #2196f3;
-}
-
-.navbar {
-  border-width: 1px 0;
-  -webkit-border-radius: 0;
-  -webkit-background-clip: padding-box;
-  -moz-border-radius: 0;
-  -moz-background-clip: padding;
-  border-radius: 0;
-  background-clip: padding-box;
-  width: 100%;
-}
-
-.navbar.stick {
-  position: fixed;
-  top: 0;
-  left: 0;
-  opacity: .85;
-}
-
-.navbar-collapse {
-  -webkit-border-radius: 0;
-  -webkit-background-clip: padding-box;
-  -moz-border-radius: 0;
-  -moz-background-clip: padding;
-  border-radius: 0;
-  background-clip: padding-box;
-  font-family: "Open sans", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  text-transform: uppercase;
-}
-
-.navbar-collapse .navbar-nav {
-  float: none;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.navbar-collapse .navbar-nav > li {
-  float: none;
-  display: inline-block;
-}
-
-.navbar-collapse .navbar-nav > li > a {
-  padding: 20px 30px;
-}
-
-/* fly in effect */
-.fly {
-  opacity: 0;
-  transition: all 500ms ease-in;
-  transform: translateY(100px) scale(1.05) translate3d(0, 0, 0);
-}
-
-.show-block {
-  opacity: 1;
-  transform: translateY(0) scale(1) translate3d(0, 0, 0);
-  color: red;
-  z-index: 9999;
 }
