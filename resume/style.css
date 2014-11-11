@@ -223,7 +223,7 @@ main {
   .paper {
     width: 100%;
     top: 14rem;
-    margin: 0 auto 140px;
+    margin: 0 auto 100px;
     border-radius: 0px;
   }
 }
