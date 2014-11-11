@@ -249,10 +249,13 @@ footer {
   @include phone {
     width: 100%;
     height: 80px;
-    margin: 0;
+    margin: 0px;
+    bottom: 0px;
+    left: 0px;
+
   }
   ul {
-    margin-top: 20px;
+    margin-top: 15px;
     li {
       display: inline-block;
     }
