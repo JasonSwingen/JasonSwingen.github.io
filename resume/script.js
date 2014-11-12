@@ -2,7 +2,7 @@ $(document).ready(function($) {
   // Animate the scroll to top
   $('.totop').click(function(event){
     event.preventDefault();
-    $('html, body').animate({scrollTop: 0}, 600)
+    $('html, body').animate({scrollTop: 0}, 900)
   });
 
   $(function() {
@@ -13,7 +13,7 @@ $(document).ready(function($) {
         if (target.length) {
           $('html,body').animate({
             scrollTop: target.offset().top
-          }, 600);
+          }, 900);
           return false;
         }
       }
