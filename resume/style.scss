@@ -145,9 +145,10 @@ nav {
       @include phone {
         display: block;
         text-align: center;
-        width: 48%;
+        width: 44%;
         float: left;
         margin-top: 8px;
+        font-size: 50%;
       }
       a {
         text-decoration: none;
@@ -183,7 +184,7 @@ main {
   z-index: 200;
   @include phone {
     width: 100%;
-    top: 9rem;
+    top: 7rem;
     margin: 0 auto 100px;
     border-radius: 0px;
   }
@@ -277,6 +278,7 @@ footer {
     margin-top: 30px;
     padding-bottom: 20px;
     li {
+      text-align: center;
       display: inline-block;
       text-decoration: none;
       list-style: none;
