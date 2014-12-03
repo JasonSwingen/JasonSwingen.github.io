@@ -1,15 +1,21 @@
 nav, .invi, footer, .totop, .share, meter {
 	display: none;
 }
-
 body {
 	width: 100%;
 	font-family: georgia, serif;
 	font-size: 12px;
 	margin: 0px;
 }
+.paper {
+	width: 100%;
+	margin: 0px;
+	top: 0px;
+	box-shadow: none;
+	padding-bottom: 0px;
+}
 h1 {
-	font-size: 28px;
+	font-size: 32px;
 }
 h2 {
 	font-size: 24px;
@@ -28,4 +34,14 @@ h6 {
 }
 p {
 	font-size: 12px;
+}
+.box p:first-of-type {
+	display: inline-block;
+	font-weight: bold;
+	font-size: 11px;
+	float: left;
+}
+.box p:nth-child(2) {
+	display: inline-block;
+	float: left;
 }
