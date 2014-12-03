@@ -5,6 +5,7 @@ $(document).ready(function($) {
     $('html, body').animate({scrollTop: 0}, 900)
   });
 
+  // Smooth scrolling to sections
   $(function() {
     $('a[href*=#]:not([href=#])').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
