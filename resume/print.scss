@@ -21,16 +21,16 @@ h2 {
 	font-size: 24px;
 }
 h3 {
-	font-size: 22px;
+	font-size: 23px;
 }
 h4 {
-	font-size: 20px;
+	font-size: 22px;
 }
 h5 {
-	font-size: 18px;
+	font-size: 21px;
 }
 h6 {
-	font-size: 16px;
+	font-size: 20px;
 }
 p {
 	font-size: 12px;
@@ -41,7 +41,26 @@ p {
 	font-size: 11px;
 	float: left;
 }
-.box p:nth-child(2) {
+.box p:nth-of-type(2) {
 	display: inline-block;
-	float: left;
+	color: #696969;
+	float: right;
 }
+.box p:nth-of-type(3) {
+	clear: both;
+}
+.cat {
+	width: 100%;
+	border-bottom: 1px solid black;
+}
+.contactinfo {
+	span {
+		font-family: helvetica, sans-serif;
+		font-size: 13px;
+	}
+}
+//Enable the following attribute to show lists in a single column
+// .twoway {
+// 	display: block;
+// 	width: 100%;
+// }
