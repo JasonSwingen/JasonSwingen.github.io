@@ -1,6 +1,9 @@
 ---
 layout: post
 title: My Online Resume
+published: True
+categories: [Resume]
+tags: [workflow]
 ---
 
 ## My Resume is now Live

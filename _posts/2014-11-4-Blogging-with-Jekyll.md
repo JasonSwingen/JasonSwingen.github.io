@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Using Jekyll as a Blog
+published: True
+categories: [Jekyll]
+tags: [workflow]
 ---
 
 ## We are Live!
