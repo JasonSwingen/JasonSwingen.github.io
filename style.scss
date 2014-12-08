@@ -212,62 +212,62 @@
 /* VARIABLES */
 /*************/
 
-// Colors
-$blue: #4183C4; 
+  // Colors
+  $blue: #4183C4; 
 
-// Grays
-$black: #000;
-$darkerGray: #222;
-$darkGray: #333;
-$gray: #666;
-$lightGray: #eee;
-$white: #fff;
+  // Grays
+  $black: #000;
+  $darkerGray: #222;
+  $darkGray: #333;
+  $gray: #666;
+  $lightGray: #eee;
+  $white: #fff;
 
-// Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
+  // Font stacks
+  $helvetica: Helvetica, Arial, sans-serif;
+  $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  $georgia: Georgia, serif;
 
-// Mobile breakpoints
-@mixin mobile {
-  @media screen and (max-width: 640px) {
-    @content;
+  // Mobile breakpoints
+  @mixin mobile {
+    @media screen and (max-width: 640px) {
+      @content;
+    }
   }
-}
 
 /**********/
 /* MIXINS */
 /**********/
 
-@mixin gradient {
-  
-  /* Fallback (could use .jpg/.png alternatively) */
-  background-color: $lightGray;
+  @mixin gradient {
+    
+    /* Fallback (could use .jpg/.png alternatively) */
+    background-color: $lightGray;
 
-  /* SVG fallback for IE 9 (could be data URI, or could use filter) */
-  background-image: url(fallback-gradient.svg); 
+    /* SVG fallback for IE 9 (could be data URI, or could use filter) */
+    background-image: url(fallback-gradient.svg); 
 
-  /* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
-  background-image:
-    -webkit-gradient(linear, left top, right top, from($lightGray), to($white));
-  
-  /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
-  background-image:
-    -webkit-linear-gradient(bottom, $lightGray, $white);
+    /* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
+    background-image:
+      -webkit-gradient(linear, left top, right top, from($lightGray), to($white));
+    
+    /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+    background-image:
+      -webkit-linear-gradient(bottom, $lightGray, $white);
 
-  /* Firefox 3.6 - 15 */
-  background-image:
-    -moz-linear-gradient(bottom, $lightGray, $white);
+    /* Firefox 3.6 - 15 */
+    background-image:
+      -moz-linear-gradient(bottom, $lightGray, $white);
 
-  /* Opera 11.1 - 12 */
-  background-image:
-    -o-linear-gradient(bottom, $lightGray, $white);
+    /* Opera 11.1 - 12 */
+    background-image:
+      -o-linear-gradient(bottom, $lightGray, $white);
 
-  /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
-  background-image:
-    linear-gradient(to top, $lightGray, $white);
+    /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+    background-image:
+      linear-gradient(to top, $lightGray, $white);
 
-}
+  }
 
 /*********************/
 /* LAYOUT / SECTIONS */
@@ -342,7 +342,7 @@ nav {
   text-align: right;
   
   @include mobile {
-    float: none;
+    text-align: center;
     margin-top: 9px;
     display: block;
     font-size: 16px;
