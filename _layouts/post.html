@@ -13,10 +13,10 @@ layout: default
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
 
-	<ul class="share">
-		<li><a href="https://twitter.com/share" class="twitter-share-button" data-via="jasonswingen">Tweet</a></li>
-		<li><g:plusone size="medium"></g:plusone></li>
-	</ul>
+	<div class="share">
+		<a href="https://twitter.com/share" class="twitter-share-button" data-via="jasonswingen">Tweet</a>
+		<g:plusone size="medium"></g:plusone>
+	</div>
 
   {% include disqus.html disqus_identifier=page.disqus_identifier %}
 </article>
