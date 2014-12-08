@@ -361,7 +361,7 @@ nav {
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
-    @include transition(all, 1s, ease-in-out);
+    @include transition(all, 0.2s, ease-in-out);
     &:hover {
       padding-bottom: 5px;
       border-bottom: 5px solid black;
@@ -417,7 +417,7 @@ nav {
 }
 
 .share {
-
+  margin-top: 20px;
 }
 
 .wrapper-footer {
