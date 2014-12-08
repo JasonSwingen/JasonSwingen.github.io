@@ -1,71 +1,212 @@
-// ---
-// ---
-
-//
-// IMPORTS
-//
-
-// @import "_variables";
-// @import "_highlights";
-// @import "_reset";
-
 //
 // RESET
 //
 
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed, 
+  figure, figcaption, footer, header, hgroup, 
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  // HTML5 display-role reset for older browsers
+  article, aside, details, figcaption, figure, 
+  footer, header, hgroup, menu, nav, section {
+    display: block;
+  }
+  body {
+    line-height: 1;
+  }
+  ol, ul {
+    list-style: none;
+  }
+  blockquote, q {
+    quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+    content: '';
+    content: none;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  // Apply a natural box layout model to all elements
+  // from: http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+  *, *:before, *:after {
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+  }
 
-/***************/
-/* MEYER RESET */
-/***************/
+  //
+  // VARIABLES
+  //
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-// HTML5 display-role reset for older browsers
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol, ul {
-  list-style: none;
-}
-blockquote, q {
-  quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-// Apply a natural box layout model to all elements
-// from: http://www.paulirish.com/2012/box-sizing-border-box-ftw/
-*, *:before, *:after {
-  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
-}
+  // Colors
+  $blue: #4183C4; 
+
+  // Grays
+  $black: #000;
+  $darkerGray: #222;
+  $darkGray: #333;
+  $gray: #666;
+  $lightGray: #eee;
+  $white: #fff;
+
+  // Font stacks
+  $helvetica: Helvetica, Arial, sans-serif;
+  $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  $georgia: Georgia, serif;
+
+  // Mobile breakpoints
+  @mixin mobile {
+    @media screen and (max-width: 640px) {
+      @content;
+    }
+  }
+
+  // Syntax highlighting @import is at the bottom of this file
+
+  /**************/
+  /* BASE RULES */
+  /**************/
+
+  html {
+    font-size: 100%;
+  }
+
+  body {
+  	background: $white;
+    font: 18px/1.4 $helvetica;
+    color: $darkGray;
+  }
+
+  .container {
+    margin: 0 auto;
+    max-width: 740px;
+    padding: 0 10px;
+    width: 100%;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $helveticaNeue;
+    color: $darkerGray;
+    font-weight: bold;
+    
+    line-height: 1.7;
+    margin: 1em 0 15px;
+    padding: 0;
+
+    @include mobile {
+      line-height: 1.4;
+    }
+  }
+    
+  h1 {  
+    font-size: 30px;
+    a {
+      color: inherit;
+    }
+  }
+
+  h2 {  
+    font-size: 24px;
+  }
+
+  h3 {  
+    font-size: 20px;
+  }
+
+  h4 {  
+    font-size: 18px;
+    color: $gray;
+  }
+
+  p {
+    margin: 15px 0;
+  }
+
+  a {
+    color: $blue;
+    text-decoration: none;
+  	cursor: pointer;
+    &:hover, &:active {
+      color: $blue;
+    }
+  }
+
+  ul, ol {
+    margin: 15px 0;
+    padding-left: 30px;
+  }
+
+  ul {
+    list-style-type: disc;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+
+  ol ul, ul ol, ul ul, ol ol {
+    margin: 0;
+  }
+
+  ul ul, ol ul {
+    list-style-type: circle;
+  }
+
+  em, i {
+    font-style: italic;
+  }
+
+  strong, b {
+    font-weight: bold;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .date {
+    font-style: italic;
+    color: $gray;
+  }
+
+  // Specify the color of the selection
+  ::-moz-selection {
+    color: $black;
+    background: $lightGray;
+  }
+  ::selection {
+    color: $black;
+    background: $lightGray;
+  }
+
+  // Nicolas Gallagher's micro clearfix hack
+  // http://nicolasgallagher.com/micro-clearfix-hack/
+  .clearfix:before,
+  .clearfix:after {
+      content: " ";
+      display: table;
+  }
+
+  .clearfix:after {
+      clear: both;
+  }
 
 //
 // VARIABLES
@@ -94,134 +235,37 @@ $georgia: Georgia, serif;
   }
 }
 
-// Syntax highlighting @import is at the bottom of this file
-
-/**************/
-/* BASE RULES */
-/**************/
-
-html {
-  font-size: 100%;
-}
-
-body {
-	background: $white;
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 740px;
-  padding: 0 10px;
-  width: 100%;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-  color: $darkerGray;
-  font-weight: bold;
+//
+// MIXINS
+//
+@mixin gradient {
   
-  line-height: 1.7;
-  margin: 1em 0 15px;
-  padding: 0;
+  /* Fallback (could use .jpg/.png alternatively) */
+  background-color: $lightGray;
 
-  @include mobile {
-    line-height: 1.4;
-  }
-}
+  /* SVG fallback for IE 9 (could be data URI, or could use filter) */
+  background-image: url(fallback-gradient.svg); 
+
+  /* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
+  background-image:
+    -webkit-gradient(linear, left top, right top, from($lightGray), to(#f06d06));
   
-h1 {  
-  font-size: 30px;
-  a {
-    color: inherit;
-  }
-}
+  /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+  background-image:
+    -webkit-linear-gradient(left, $lightGray, #f06d06);
 
-h2 {  
-  font-size: 24px;
-}
+  /* Firefox 3.6 - 15 */
+  background-image:
+    -moz-linear-gradient(left, $lightGray, #f06d06);
 
-h3 {  
-  font-size: 20px;
-}
+  /* Opera 11.1 - 12 */
+  background-image:
+    -o-linear-gradient(left, $lightGray, #f06d06);
 
-h4 {  
-  font-size: 18px;
-  color: $gray;
-}
+  /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+  background-image:
+    linear-gradient(to right, $lightGray, #f06d06);
 
-p {
-  margin: 15px 0;
-}
-
-a {
-  color: $blue;
-  text-decoration: none;
-	cursor: pointer;
-  &:hover, &:active {
-    color: $blue;
-  }
-}
-
-ul, ol {
-  margin: 15px 0;
-  padding-left: 30px;
-}
-
-ul {
-  list-style-type: disc;
-}
-
-ol {
-  list-style-type: decimal;
-}
-
-ol ul, ul ol, ul ul, ol ol {
-  margin: 0;
-}
-
-ul ul, ol ul {
-  list-style-type: circle;
-}
-
-em, i {
-  font-style: italic;
-}
-
-strong, b {
-  font-weight: bold;
-}
-
-img {
-  max-width: 100%;
-}
-
-.date {
-  font-style: italic;
-  color: $gray;
-}
-
-// Specify the color of the selection
-::-moz-selection {
-  color: $black;
-  background: $lightGray;
-}
-::selection {
-  color: $black;
-  background: $lightGray;
-}
-
-// Nicolas Gallagher's micro clearfix hack
-// http://nicolasgallagher.com/micro-clearfix-hack/
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
 }
 
 /*********************/
@@ -326,6 +370,8 @@ nav {
 .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
+  @include gradient;
+
 }
 
 .posts > .post:last-child {
