@@ -253,19 +253,19 @@ $georgia: Georgia, serif;
   
   /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
   background-image:
-    -webkit-linear-gradient(left, $lightGray, $white);
+    -webkit-linear-gradient(bottom, $lightGray, $white);
 
   /* Firefox 3.6 - 15 */
   background-image:
-    -moz-linear-gradient(left, $lightGray, $white);
+    -moz-linear-gradient(bottom, $lightGray, $white);
 
   /* Opera 11.1 - 12 */
   background-image:
-    -o-linear-gradient(left, $lightGray, $white);
+    -o-linear-gradient(bottom, $lightGray, $white);
 
   /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
   background-image:
-    linear-gradient(to right, $lightGray, $white);
+    linear-gradient(to top, $lightGray, $white);
 
 }
 
@@ -355,6 +355,7 @@ nav {
     font-weight: 300;
     letter-spacing: 1px;
     @include mobile {
+      text-align: center;
       margin: 0 10px;
       color: $blue;
     }
