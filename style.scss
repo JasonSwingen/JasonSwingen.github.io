@@ -278,13 +278,13 @@ $georgia: Georgia, serif;
 //
 
 .wrapper-masthead {
-  margin-bottom: 50px;
   background-color: $lightGray;
   position: fixed;
   top: 0px;
   height: 100%;
   width: 268px;
   @include mobile {
+    margin-bottom: 50px;
     position: absolute;
     height: 20px;
     width: 100%;
@@ -296,6 +296,7 @@ $georgia: Georgia, serif;
   border-bottom: 1px solid $lightGray;
   text-align: center;
   @include mobile {
+    
     text-align: center;
   }
 }
