@@ -266,7 +266,14 @@
     /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
     background-image:
       linear-gradient(to top, $lightGray, $white);
+  }
 
+  @mixin transition($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
   }
 
 /*********************/
@@ -354,6 +361,11 @@ nav {
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
+    @include transition(all, 0.2s, ease-in-out)
+    &:hover {
+      padding-bottom: 5px;
+      border-bottom: 5px solid black;
+    }
     @include mobile {
       text-align: center;
       margin: 0 10px;
