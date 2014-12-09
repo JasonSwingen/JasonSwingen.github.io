@@ -240,7 +240,6 @@
 /**********/
 
   @mixin gradient($colorFrom, $colorTo) {
-    
     background-color: $colorTo;
     background-image: -webkit-gradient(linear, left top, right top, from($colorFrom), to($colorTo));
     background-image: -webkit-linear-gradient(bottom, $colorFrom, $colorTo);
@@ -248,7 +247,6 @@
     background-image: -o-linear-gradient(bottom, $colorFrom, $colorTo);
     background-image: linear-gradient(to top, $colorFrom, $colorTo);
   }
-
   @mixin transition($transition-property, $transition-time, $method) {
     -webkit-transition: $transition-property $transition-time $method;
     -moz-transition: $transition-property $transition-time $method;
@@ -256,20 +254,19 @@
     -o-transition: $transition-property $transition-time $method;
     transition: $transition-property $transition-time $method;
   }
-
   @mixin box-shadow($shadow-color) {
     -webkit-box-shadow: 0 2rem 5rem 0 $shadow-color;
        -moz-box-shadow: 0 2rem 5rem 0 $shadow-color;
         -ms-box-shadow: 0 2rem 5rem 0 $shadow-color;
             box-shadow: 0 2rem 5rem 0 $shadow-color;
   }
-
   @mixin border-radius($radius) {
     -webkit-border-radius: $radius;
        -moz-border-radius: $radius;
         -ms-border-radius: $radius;
             border-radius: $radius;
   }
+
 
 /*********************/
 /* LAYOUT / SECTIONS */
@@ -281,14 +278,14 @@
 
 .wrapper-masthead {
   margin-bottom: 50px;
-  background-color: $lightGray;
+  background-color: $darkerGray;
+  color: $white;
 }
 
 .masthead {
   padding: 20px 0;
   border-bottom: 1px solid $lightGray;
   @include mobile {
-    
     text-align: center;
   }
 }
@@ -423,6 +420,7 @@ nav {
 footer {
   padding: 20px 0;
   text-align: center;
+  background-color: $black;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
