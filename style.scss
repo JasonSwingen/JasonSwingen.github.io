@@ -283,19 +283,21 @@ a {
 }
 
 .btn {
-  margin: 0 4px;
-  padding: 5px 10px;
-  border: 1px solid $white;
-  background-color: $darkGray;
-  color: $black;
-  @include border-radius(5px);
-    &:hover {
-      margin: inherit;
-      padding: inherit;
-      border: 1px solid $white;
-      background-color: $white;
-      color: $blue;
-    }
+  @include mobile {
+    margin: 0 4px;
+    padding: 5px 10px;
+    border: 1px solid $blue;
+    background-color: $white;
+    color: $blue;
+    @include border-radius(5px);
+      &:hover {
+        margin: 0 4px;
+        padding: 5px 10px;
+        border: 1px solid $blue;
+        background-color: $blue;
+        color: $white;
+      }
+  }
 }
 
 .wrapper-masthead {
