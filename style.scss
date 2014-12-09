@@ -284,7 +284,6 @@
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
   @include mobile {
     text-align: center;
   }
@@ -322,6 +321,13 @@
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
+  a {
+    @include transition(all, 0.2s, ease-in-out);
+    &:hover {
+      padding-bottom: 5px;
+      border-bottom: 5px solid $white;
+    }
+  }
 }
 
 .site-description {
@@ -354,19 +360,22 @@ nav {
     font-weight: 300;
     letter-spacing: 1px;
     @include transition(all, 0.2s, ease-in-out);
-    &:hover {
-      padding-bottom: 5px;
-      border-bottom: 5px solid $white;
-      }
-      @include mobile {
-        text-align: center;
-        margin: 0 10px;
-        color: $blue;
-        &:hover {
-          padding-bottom: 2px;
-          border-bottom: 3px solid $white;
+      &:hover {
+        padding-bottom: 5px;
+        border-bottom: 5px solid $white;
         }
+    @include mobile {
+      text-align: center;
+      margin: 0 10px;
+      padding: 1px 6px;
+      color: $blue;
+      background-color: $darkGray;
+      border: 1px solid $white;
+      @include border-radius(5px);
+      &:hover {
+        background-color: $white;
       }
+    }
   }
 }
 
