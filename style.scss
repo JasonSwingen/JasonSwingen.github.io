@@ -291,8 +291,6 @@ a {
     color: $blue;
     @include border-radius(5px);
       &:hover {
-        margin: 0 4px;
-        padding: 5px 10px;
         border: 1px solid $blue;
         background-color: $blue;
         color: $white;
