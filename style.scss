@@ -254,11 +254,11 @@
     -o-transition: $transition-property $transition-time $method;
     transition: $transition-property $transition-time $method;
   }
-  @mixin box-shadow($shadow-color) {
-    -webkit-box-shadow: 0 2rem 5rem 0 $shadow-color;
-       -moz-box-shadow: 0 2rem 5rem 0 $shadow-color;
-        -ms-box-shadow: 0 2rem 5rem 0 $shadow-color;
-            box-shadow: 0 2rem 5rem 0 $shadow-color;
+  @mixin box-shadow($left, $top, $blur, $size, $shadow-color) {
+    -webkit-box-shadow: $left $top $blur $size $shadow-color;
+       -moz-box-shadow: $left $top $blur $size $shadow-color;
+        -ms-box-shadow: $left $top $blur $size $shadow-color;
+            box-shadow: $left $top $blur $size $shadow-color;
   }
   @mixin border-radius($radius) {
     -webkit-border-radius: $radius;
@@ -389,7 +389,7 @@ nav {
   padding-left: 15px;
   @include border-radius(5px);
   @include gradient($lightGray, $white);
-  @include box-shadow(0px 28px 30px -20px $gray);
+  @include box-shadow(0px, 28px, 30px, -20px, $gray);
 }
 
 .posts > .post:last-child {
