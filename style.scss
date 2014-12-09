@@ -283,13 +283,18 @@ a {
 }
 
 .btn {
-  color: $blue;
-  background-color: $darkGray;
+  margin: 0 4px;
+  padding: 5px 10px;
   border: 1px solid $white;
+  background-color: $darkGray;
+  color: $black;
   @include border-radius(5px);
     &:hover {
+      margin: inherit;
+      padding: inherit;
+      border: 1px solid $white;
       background-color: $white;
-      padding: 5px 10px;
+      color: $blue;
     }
 }
 
@@ -379,12 +384,13 @@ nav {
       margin: 0 4px;
       padding: 5px 10px;
       color: $blue;
-      background-color: $darkGray;
+      background-color: $darkerGray;
       border: 1px solid $white;
       @include border-radius(5px);
       &:hover {
         background-color: $white;
         padding: 5px 10px;
+        border-bottom: none;
       }
     }
   }
