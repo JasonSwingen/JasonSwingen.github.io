@@ -282,22 +282,6 @@ a {
   }
 }
 
-.btn {
-  @include mobile {
-    margin: 0 4px;
-    padding: 5px 10px;
-    border: 1px solid $blue;
-    background-color: $white;
-    color: $blue;
-    @include border-radius(5px);
-      &:hover {
-        border: 1px solid $blue;
-        background-color: $blue;
-        color: $white;
-      }
-  }
-}
-
 .wrapper-masthead {
   margin-bottom: 50px;
   background-color: $darkerGray;
@@ -430,7 +414,19 @@ nav {
   .read-more {
     text-transform: uppercase;
     font-size: 15px;
-    @extend .btn;
+    @include mobile {
+      margin: 0 4px;
+      padding: 5px 10px;
+      border: 1px solid $blue;
+      background-color: $white;
+      color: $blue;
+      @include border-radius(5px);
+        &:hover {
+          border: 1px solid $blue;
+          background-color: $blue;
+          color: $white;
+        }
+    }
   }
 }
 
