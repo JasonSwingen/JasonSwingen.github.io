@@ -31,12 +31,12 @@ I honestly just installed jekyll and haven't used it very much. I haven't gotten
 
 ### Bracket Highlighter
 
-In Progress...
+Bracket Highlighter is nothing special, but it can be very helpful for finding missing end tags and seeing exactly where you are working.
 
 ### Front End Snippets
 
-In Progress...
+I am in the process of building my own snippets for everything I use. However, for now using the front end snippets have been very useful. These snippets include html css and jquery and can make redundant chunks of code super fast to spit out on your page.
 
 ### Cobalt2 Color Theme
 
-In Progress...
+I prefer light text on a dark background. The Cobalt2 color these by Wes Bos has been my favorite recently. It is build of the Cobalt theme with much more syntax highlighting.
