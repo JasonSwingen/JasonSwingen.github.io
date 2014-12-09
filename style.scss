@@ -275,6 +275,23 @@
 //
 // .masthead
 //
+a {
+  @include transition(all, 0.2s, ease-in-out);
+  &:hover {
+    color: $blue;
+  }
+}
+
+.btn {
+  color: $blue;
+  background-color: $darkGray;
+  border: 1px solid $white;
+  @include border-radius(5px);
+    &:hover {
+      background-color: $white;
+      padding: 5px 10px;
+    }
+}
 
 .wrapper-masthead {
   margin-bottom: 50px;
@@ -321,12 +338,6 @@
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
-  a {
-    @include transition(all, 0.2s, ease-in-out);
-    &:hover {
-      color: $blue;
-    }
-  }
 }
 
 .site-description {
@@ -388,6 +399,7 @@ nav {
   padding-left: 15px;
   @include border-radius(5px);
   @include gradient($lightGray, $white);
+  @include box-shadow(0px 28px 30px -20px $gray);
 }
 
 .posts > .post:last-child {
@@ -412,6 +424,7 @@ nav {
   .read-more {
     text-transform: uppercase;
     font-size: 15px;
+    @extend .btn;
   }
 }
 
@@ -435,10 +448,10 @@ footer {
 .totop {
   list-style-type: none;
   float: right;
-  margin-top: 6px;
+  margin: 10px;
   @include mobile {
-    float: none;
-    margin-top: none;
+    text-align: center;
+
   }
 }
 
