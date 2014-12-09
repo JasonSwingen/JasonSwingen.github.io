@@ -451,9 +451,10 @@ footer {
   list-style-type: none;
   float: right;
   margin: 10px;
+  color: $white;
   @include mobile {
     text-align: center;
-
+    color: $blue;
   }
 }
 
