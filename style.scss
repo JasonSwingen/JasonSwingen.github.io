@@ -347,7 +347,7 @@ nav {
   
   @include mobile {
     text-align: center;
-    margin-top: 9px;
+    margin-top: 14px;
     display: block;
     font-size: 16px;
   }
@@ -393,6 +393,9 @@ nav {
 
 .post {
   padding-left: 15px;
+  @include mobile {
+    padding-left: 0px;
+  }
 }
 
 .posts > .post:last-child {
