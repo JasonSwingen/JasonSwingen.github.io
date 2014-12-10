@@ -399,6 +399,7 @@ nav {
 
 .posts > .post {
   padding-bottom: 2em;
+  padding-right: 15px;
   @include border-radius(5px);
   @include gradient($lightGray, $white);
   @include box-shadow(0px, 28px, 30px, -20px, $gray);
