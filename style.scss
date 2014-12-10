@@ -311,7 +311,7 @@ a {
   }
 
   img {
-    border-radius: 5px;
+    border-radius: 50px;
   }
 }
 
@@ -460,6 +460,8 @@ footer {
   color: $white;
   &:hover {
     color: $blue;
+    float: none;
+    text-align: center;
   }
 }
 
