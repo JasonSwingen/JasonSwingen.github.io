@@ -13,7 +13,17 @@ layout: default
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
 
+  <div class="categories">
+  <p>Categories</p>
+    <ul>
+      {% for category in page.categories %}
+          <li> {{category}} </li>
+      {% endfor %}
+    </ul>
+  </div>
+
   <div class="tags">
+  <p>Tags</p>
     <ul>
       {% for tag in page.tags %}
           <li> {{tag}} </li>
