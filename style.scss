@@ -98,6 +98,9 @@
     margin: 0 auto;
     max-width: 740px;
     padding: 0 10px;
+    @include mobile {
+      padding: 0px 0px;
+    }
     width: 100%;
   }
 
@@ -393,9 +396,6 @@ nav {
 
 .post {
   padding-left: 15px;
-  @include mobile {
-    padding-left: 0px;
-  }
 }
 
 .posts > .post:last-child {
