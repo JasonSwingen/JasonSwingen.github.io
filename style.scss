@@ -231,6 +231,10 @@
   $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
   $georgia: Georgia, serif;
 
+/**********/
+/* MIXINS */
+/**********/
+
   // Mobile breakpoints
   @mixin mobile {
     @media screen and (max-width: 640px) {
@@ -238,9 +242,13 @@
     }
   }
 
-/**********/
-/* MIXINS */
-/**********/
+  @mixin tablet {
+    @media screen and (max-width: 900px) {
+      @content;
+    }
+  }
+
+
 
   @mixin gradient($colorFrom, $colorTo) {
     background-color: $colorTo;
@@ -367,17 +375,19 @@ nav {
         border-bottom: 5px solid $white;
         }
     @include mobile {
+      display: block;
       text-align: center;
-      margin: 0 4px;
+      margin: 6px auto;
       padding: 5px 10px;
       color: $blue;
       background-color: $darkerGray;
       border: 1px solid $white;
+      max-width: 200px;
       @include border-radius(5px);
       &:hover {
         background-color: $white;
         padding: 5px 10px;
-        border-bottom: none;
+        border: 1px solid $white;
       }
     }
   }

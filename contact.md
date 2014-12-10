@@ -36,15 +36,6 @@ title: Contact Me
   <input type="hidden" name="formID" value="43425159348156" />
   <div class="form-all">
     <ul class="form-section">
-      <li id="cid_1" class="form-input-wide" data-type="control_head">
-        <div class="form-header-group">
-          <div class="header-text httal htvam">
-            <h2 id="header_1" class="form-header">
-              Contact Me
-            </h2>
-          </div>
-        </div>
-      </li>
       <li class="form-line" data-type="control_fullname" id="id_3">
         <label class="form-label form-label-left form-label-auto" id="label_3" for="input_3"> Full Name </label>
         <div id="cid_3" class="form-input">
