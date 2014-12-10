@@ -460,6 +460,8 @@ footer {
   color: $white;
   &:hover {
     color: $blue;
+  }
+  @include mobile {
     float: none;
     text-align: center;
   }
