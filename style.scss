@@ -386,10 +386,13 @@ nav {
 
 .posts > .post {
   padding-bottom: 2em;
-  padding-left: 15px;
   @include border-radius(5px);
   @include gradient($lightGray, $white);
   @include box-shadow(0px, 28px, 30px, -20px, $gray);
+}
+
+.post {
+  padding-left: 15px;
 }
 
 .posts > .post:last-child {
@@ -429,11 +432,6 @@ nav {
     }
   }
 }
-article {
-  .post {
-    margin-left: 15px;
-  }
-}
 
 .share {
   margin-top: 20px;
@@ -457,8 +455,7 @@ footer {
   float: right;
   margin: 10px;
   color: $white;
-  @include mobile {
-    text-align: center;
+  &:hover {
     color: $blue;
   }
 }
