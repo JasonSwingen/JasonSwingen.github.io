@@ -446,6 +446,9 @@ nav {
     }
   }
 }
+.page {
+  padding: 0px 15px;
+}
 
 .tags, .categories {
   list-style-type: none;
@@ -532,7 +535,7 @@ footer {
       width: 100%;
     }
 }
-.form-sub-label-container, .form-input, .form-text-box {
+.form-sub-label-container, .form-input, .form-text-box, .form-textbox {
   @include mobile {
     width: 100%;
   }
