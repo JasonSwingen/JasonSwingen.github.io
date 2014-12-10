@@ -53,7 +53,7 @@ title: Contact Me
           </span>
         </div>
       </li>
-      <li class="form-line" data-type="control_textarea" id="id_7">
+      <li class="form-line text-box" data-type="control_textarea" id="id_7">
         <label class="form-label form-label-left form-label-auto" id="label_7" for="input_7"> Comments </label>
         <div id="cid_7" class="form-input">
           <textarea id="input_7" class="form-textarea" name="q7_comments" cols="40" rows="6"></textarea>
