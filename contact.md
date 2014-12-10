@@ -13,24 +13,6 @@ title: Contact Me
 <link href="http://max.jotfor.ms/static/formCss.css?3.2.4577" rel="stylesheet" type="text/css" />
 <link type="text/css" rel="stylesheet" href="http://max.jotfor.ms/css/styles/nova.css?3.2.4577" />
 <link type="text/css" media="print" rel="stylesheet" href="http://max.jotfor.ms/css/printForm.css?3.2.4577" />
-<style type="text/css">
-    .form-label-left{
-        width:150px !important;
-    }
-    .form-line{
-        padding-top:12px;
-        padding-bottom:12px;
-    }
-    .form-label-right{
-        width:150px !important;
-    }
-    .form-all{
-        width:650px;
-        color:#555 !important;
-        font-family:'Lucida Grande';
-        font-size:14px;
-    }
-</style>
 
 <form class="jotform-form" action="http://submit.jotform.us/submit/43425159348156/" method="post" name="form_43425159348156" id="43425159348156" accept-charset="utf-8">
   <input type="hidden" name="formID" value="43425159348156" />

@@ -382,7 +382,7 @@ nav {
       color: $blue;
       background-color: $darkerGray;
       border: 1px solid $white;
-      max-width: 200px;
+      max-width: 250px;
       @include border-radius(5px);
       &:hover {
         background-color: $white;
@@ -479,6 +479,42 @@ footer {
 
 .custom-icon {
   margin: 0px 10px;
+}
+
+/***************/
+/* Contact Form*/
+/***************/
+
+.form-label-left{
+    width:150px !important;
+    @include mobile {
+      margin: 4px auto;
+      text-align: center;
+      width: 100%;
+    }
+}
+.form-line{
+    padding-top:12px;
+    padding-bottom:12px;
+}
+.form-label-right{
+    width:150px !important;
+    @include mobile {
+      margin: 4px auto;
+      text-align: center;
+      width: 100%;
+    }
+}
+.form-all{
+    width:650px;
+    color:#555 !important;
+    font-family:'Lucida Grande';
+    font-size:14px;
+    @include mobile {
+      margin: 4px auto;
+      text-align: center;
+      width: 100%;
+    }
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
