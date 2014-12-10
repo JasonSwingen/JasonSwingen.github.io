@@ -401,7 +401,7 @@ a.menu-link {
 }
 nav[role=navigation] {
   clear: both;
-  @include transition(all, 0.2s, ease-in-out);
+  @include transition(all, 0.5s, ease-in-out);
 }
 .js nav[role=navigation] {
   overflow: hidden;
@@ -413,9 +413,6 @@ nav[role=navigation] {
 nav[role=navigation].active {
   max-height: 100%;
   padding-top: 14px;
-}
-nav.active::after {
-  content: "&#9660";
 }
 nav[role=navigation] ul {
   margin: 0;
