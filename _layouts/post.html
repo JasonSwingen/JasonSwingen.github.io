@@ -14,7 +14,7 @@ layout: default
   </div>
 
   <div class="categories">
-  <p>Categories</p>
+  <h3>Categories</h3>
     <ul>
       {% for category in page.categories %}
           <li> {{category}} </li>
@@ -23,12 +23,19 @@ layout: default
   </div>
 
   <div class="tags">
-  <p>Tags</p>
+  <h3>Tags</h3>
     <ul>
       {% for tag in page.tags %}
           <li> {{tag}} </li>
       {% endfor %}
     </ul>
+  </div>
+
+  <div class="related">
+    <h3>Related Posts</h3>
+      {% for related in site.related_posts %}
+        <li> {{related}} </li>
+      {% endfor %}
   </div>
 
   <div class="share">
