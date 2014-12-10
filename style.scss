@@ -393,9 +393,8 @@ a {
 // }
 
 a.menu-link {
-  float: right;
   display: block;
-  padding: 1em;
+  padding-top: 7px;
   // @include mobile {
   //   display: none;
   // }
@@ -412,7 +411,11 @@ nav[role=navigation] {
   // }
 }
 nav[role=navigation].active {
-  max-height: 15em;
+  max-height: 100%;
+  padding-top: 14px;
+}
+nav.active::after {
+  content: "&#9660";
 }
 nav[role=navigation] ul {
   margin: 0;
