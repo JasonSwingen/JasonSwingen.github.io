@@ -453,34 +453,29 @@ nav[role=navigation].active {
 nav[role=navigation] ul {
   margin: 0;
   padding: 0;
-  border-top: 1px solid $lightGray;
   list-style-type: none;
-  // @include mobile {
-  //   margin: 0 0 0 -0.25em;
-  //   border: 0;
-  // }
+  @include mobile {
+    border-top: 1px solid $lightGray;
+  }
 }
 nav[role=navigation] li {
+  display: inline-block;
   background-color: $darkerGray;
-  &:hover {
-    background-color: $black;
+  @include mobile {
+    display: block;
+    &:hover {
+      background-color: $black;
+      color: $blue;
+    }
   }
-  // @include mobile {
-  //   margin: 0 0 0 -0.25em;
-  //   border: 0;
-  // }
 }
 nav[role=navigation] li a {
   display: block;
   padding: 0.5em;
-  border-bottom: 1px solid $lightGray;
   color: white;
-  &:hover {
-    color: $blue;
+  @include mobile {
+    border-bottom: 1px solid $lightGray;
   }
-  // @include mobile {
-  //   border: 0;
-  // }
 }
 
 //
