@@ -402,6 +402,39 @@ a.menu-link {
       right: 10px;
   }
 }
+
+.menu-link span, .menu-link span:before, .menu-link span:after {
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: white;
+  position: absolute;
+  display: block;
+  content: '';
+}
+.menu-link span:before {
+  top: -10px; 
+}
+.menu-link span:after {
+  bottom: -10px;
+}
+
+.menu-link span, .menu-link span:before, .menu-link span:after {
+  transition: all 500ms ease-in-out;
+}
+.menu-link.active span {
+  background-color: transparent;
+}
+.menu-link.active span:before, .menu-link.active span:after {
+  top: 0;
+}
+.menu-link.active span:before {
+  transform: rotate(45deg);
+}
+.menu-link.active span:after {
+  transform: rotate(-45deg);
+}
+
 a.menu-link span {
   border-bottom: 1px solid $lightGray;
   width: 10px;
@@ -423,6 +456,7 @@ nav[role=navigation] ul {
   margin: 0;
   padding: 0;
   border-top: 1px solid $lightGray;
+  list-style-type: none;
   // @include mobile {
   //   margin: 0 0 0 -0.25em;
   //   border: 0;
@@ -445,7 +479,6 @@ nav[role=navigation] li a {
   color: white;
   &:hover {
     color: $blue;
-    border: 1px solid $lightGray;
   }
   // @include mobile {
   //   border: 0;
