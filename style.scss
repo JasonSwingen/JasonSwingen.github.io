@@ -399,7 +399,7 @@ a.menu-link {
       padding: 5px;
       position: absolute;
       top: 20px;
-      right: 20px;
+      right: 10px;
       width: 50px;
       height: 20px;
   }
@@ -422,7 +422,7 @@ a.menu-link {
 }
 
 .menu-link span, .menu-link span:before, .menu-link span:after {
-  transition: all 400ms ease-in-out;
+  @include transition(all, 0.4s, ease-in-out);
 }
 .menu-link.active span {
   background-color: transparent;
@@ -438,7 +438,6 @@ a.menu-link {
 }
 
 nav[role=navigation] {
-  clear: both;
 }
 .js nav[role=navigation] {
   @include mobile {
@@ -471,10 +470,16 @@ nav[role=navigation] li {
 }
 nav[role=navigation] li a {
   display: block;
+  padding: 6px 19px 0 0;
   padding: 0.5em;
   color: white;
+  @include transition(color, 0.2s, ease-in-out);
+  &:hover {
+    color: $blue;
+  }
   @include mobile {
     border-bottom: 1px solid $lightGray;
+    padding: 0.5em;
   }
 }
 
