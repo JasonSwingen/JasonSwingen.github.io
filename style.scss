@@ -471,7 +471,6 @@ nav[role=navigation] li {
 nav[role=navigation] li a {
   display: block;
   padding: 6px 19px 0 0;
-  padding: 0.5em;
   color: white;
   @include transition(color, 0.2s, ease-in-out);
   &:hover {
