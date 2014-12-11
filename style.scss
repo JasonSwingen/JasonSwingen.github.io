@@ -398,8 +398,10 @@ a.menu-link {
       display: block;
       padding: 5px;
       position: absolute;
-      top: 10px;
-      right: 10px;
+      top: 20px;
+      right: 20px;
+      width: 50px;
+      height: 20px;
   }
 }
 
@@ -420,7 +422,7 @@ a.menu-link {
 }
 
 .menu-link span, .menu-link span:before, .menu-link span:after {
-  transition: all 500ms ease-in-out;
+  transition: all 400ms ease-in-out;
 }
 .menu-link.active span {
   background-color: transparent;
@@ -435,10 +437,6 @@ a.menu-link {
   transform: rotate(-45deg);
 }
 
-a.menu-link span {
-  border-bottom: 1px solid $lightGray;
-  width: 10px;
-}
 nav[role=navigation] {
   clear: both;
 }
