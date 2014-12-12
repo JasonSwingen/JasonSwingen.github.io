@@ -283,15 +283,17 @@
 /* LAYOUT / SECTIONS */
 /*********************/
 
-//
-// .masthead
-//
 a {
   @include transition(all, 0.2s, ease-in-out);
   &:hover {
     color: $blue;
   }
 }
+
+//
+// .masthead
+//
+
 
 .wrapper-masthead {
   background-color: $darkerGray;
@@ -321,13 +323,6 @@ a {
   }
 }
 
-// .site-info {
-//   float: left;
-//   @include mobile {
-//     float: none;
-//   }
-// }
-
 .site-name {
   margin: 0;
   color: $white;
@@ -342,54 +337,23 @@ a {
   margin: 0;
   color: $gray;
   font-size: 16px;
-  
   @include mobile {
     margin: 3px 0;
   }
 }
 
-// nav {
-//   margin-top: 23px; // @TODO: Vertically middle align
-//   font-family: $helveticaNeue; 
-//   font-size: 18px;
-//   text-align: right;
-  
-//   @include mobile {
-//     text-align: center;
-//     margin-top: 14px;
-//     display: block;
-//     font-size: 16px;
-//   }
+.twitterfull {
+  @include mobile {
+    display: none;
+  }
+}
 
-//   a {
-//     margin-left: 20px;
-//     color: $lightGray;
-//     text-align: right;
-//     font-weight: 300;
-//     letter-spacing: 1px;
-//     @include transition(all, 0.2s, ease-in-out);
-//       &:hover {
-//         padding-bottom: 5px;
-//         border-bottom: 5px solid $white;
-//         }
-//     @include mobile {
-//       display: block;
-//       text-align: center;
-//       margin: 6px auto;
-//       padding: 5px 10px;
-//       color: $blue;
-//       background-color: $darkerGray;
-//       border: 1px solid $white;
-//       max-width: 250px;
-//       @include border-radius(5px);
-//       &:hover {
-//         background-color: $white;
-//         padding: 5px 10px;
-//         border: 1px solid $white;
-//       }
-//     }
-//   }
-// }
+.twittermobile {
+  display: none;
+  @include mobile {
+    display: relative;
+  }
+}
 
 a.menu-link {
   display: none;
@@ -486,8 +450,7 @@ nav[role=navigation] li a {
 //
 
 .posts > .post {
-  padding-bottom: 2em;
-  padding-right: 15px;
+  padding: 1px 15px 40px 15px;
   @include border-radius(5px);
   @include gradient($white, $lightGray);
   // @include box-shadow(0px, -28px, 30px, -20px, $gray);
