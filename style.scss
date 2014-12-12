@@ -342,16 +342,10 @@ a {
   }
 }
 
-.twitterfull {
-  @include mobile {
-    display: none;
-  }
-}
-
 .twittermobile {
-  display: none;
+  visibility: hidden;
   @include mobile {
-    display: relative;
+    visibility: visible;
   }
 }
 
