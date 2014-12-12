@@ -342,13 +342,6 @@ a {
   }
 }
 
-.twittermobile {
-  visibility: hidden;
-  @include mobile {
-    visibility: visible;
-  }
-}
-
 a.menu-link {
   display: none;
     @include mobile {
