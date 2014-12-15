@@ -503,10 +503,9 @@ main {
 
 .posts {
   h1 {
+    margin: 10px;
     a {
-      margin: 10px;
       &:hover {
-        color: white;
         border-bottom: 3px solid $blue;
         padding-bottom: 3px;
       }
