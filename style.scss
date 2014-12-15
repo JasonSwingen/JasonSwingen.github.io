@@ -287,8 +287,6 @@ a {
   @include transition(all, 0.2s, ease-in-out);
   &:hover {
     color: $blue;
-    border-bottom: 3px solid $blue;
-    padding-bottom: 3px;
   }
 }
 
@@ -435,7 +433,7 @@ nav[role=navigation] li a {
   display: block;
   padding: 6px 12px 0 0;
   color: white;
-  @include transition(color, 0.2s, ease-in-out);
+  @include transition(all, 0.2s, ease-in-out);
   &:hover {
     color: $blue;
   }
@@ -506,6 +504,11 @@ main {
 .posts {
   h1 {
   margin: 10px;
+  &:hover {
+    color: white;
+    border-bottom: 3px solid $blue;
+    padding-bottom: 3px;
+  }
     @include mobile {
       text-align: center;
     }
