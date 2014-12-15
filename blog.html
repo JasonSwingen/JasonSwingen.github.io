@@ -6,7 +6,7 @@ layout: default
   {% for post in site.posts %}
     <article class="post">    
       <div class="postdate">
-      	{{ page.date | date: "%B %e, %Y" }}
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | date: "%B %e, %Y" }}</a>
       </div>
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
@@ -14,7 +14,7 @@ layout: default
         {{ post.content | truncatewords:60}}
       </div>
       
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Continue reading...</a>
     </article>
 
   {% endfor %}
