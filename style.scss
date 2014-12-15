@@ -287,6 +287,8 @@ a {
   @include transition(all, 0.2s, ease-in-out);
   &:hover {
     color: $blue;
+    border-bottom: 3px solid $blue;
+    padding-bottom: 3px;
   }
 }
 
@@ -497,12 +499,13 @@ main {
   padding: 1px 15px 40px 15px;
   @include border-radius(5px);
   @include gradient($white, $lightGray);
+  border-top: 3px solid $blue;
   // @include box-shadow(0px, -28px, 30px, -20px, $gray);
 }
 
 .posts {
   h1 {
-  margin: 5px 0 15px;
+  margin: 10px;
     @include mobile {
       text-align: center;
     }
@@ -515,6 +518,7 @@ main {
     text-align: center;
     font-size: 12px;
     margin: 12px;
+    color: $gray
   }
   h1 {
     text-align: center;
