@@ -502,6 +502,7 @@ main {
 
 .posts {
   h1 {
+  margin: 5px 0 15px;
     @include mobile {
       text-align: center;
     }
@@ -512,7 +513,8 @@ main {
   padding: 0px 15px;
   .postdate {
     text-align: center;
-    font: 10px $lightGray;
+    font-size: 12px;
+    margin: 12px;
   }
   h1 {
     text-align: center;
@@ -539,9 +541,9 @@ main {
   }
 
   .read-more {
-    text-transform: uppercase;
     font-size: 15px;
     @include mobile {
+      text-transform: uppercase;
       margin: 0 4px;
       padding: 5px 10px;
       border: 1px solid $blue;
