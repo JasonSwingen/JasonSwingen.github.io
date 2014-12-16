@@ -348,20 +348,11 @@ a {
 }
 
 .twitter-follow-button {
-  padding-top: 10px;
+  padding-top: 5px;
+  height: 40px;
   @include mobile {
     margin: 0 auto;
     text-align: center;
-  }
-}
-.twitterfollow {
-  height: 20px;
-  @include mobile {
-    margin-top: 15px;
-    margin-left: 5px;
-    &:hover {
-      background-color: $black;
-    }
   }
 }
 
