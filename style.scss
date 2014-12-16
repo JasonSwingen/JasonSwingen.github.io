@@ -347,6 +347,13 @@ a {
   }
 }
 
+.twitter-follow-button {
+  padding-top: 10px;
+  @include mobile {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
 .twitterfollow {
   height: 20px;
   @include mobile {
@@ -407,6 +414,7 @@ nav[role=navigation] {
   max-width: 900px;
   margin: 0 auto;
   text-align: center;
+  border-top: 3px solid $lightGray;
   @include transition(all, 0.2s, ease-out);
   @include mobile {
     top: -300px;
@@ -424,14 +432,14 @@ nav[role=navigation].active {
   position: relative;
   z-index: 20;
   top: 0px;
-  @include transition(all, 0s, linear);
+  @include transition(all, 0.4s, ease-out);
 
 }
 nav[role=navigation] ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
   @include mobile {
-    margin: 0;
-    padding: 0;
     border-top: 1px solid $lightGray;
   }
 }
@@ -451,7 +459,7 @@ nav[role=navigation] li a {
   display: block;
   padding: 0px 20px 10px 0px;
   color: white;
-  @include transition(all, 0.2s, ease-out);
+  @include transition(all, 0, linear);
   &:hover {
     color: $blue;
   }
