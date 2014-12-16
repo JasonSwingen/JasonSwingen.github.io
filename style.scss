@@ -277,7 +277,7 @@
         -ms-border-radius: $radius;
             border-radius: $radius;
   }
-  @mixin transorm($translate, $value) {
+  @mixin transform($translate, $value) {
     -webkit-transform: $translate($value);
        -moz-transform: $translate($value);
         -ms-transform: $translate($value);
@@ -471,13 +471,6 @@ nav[role=navigation] li a {
   }
 }
 
-
-.nav-rotate-bottom a:before {
-  transform: rotateX(-91deg);
-}
-.nav-rotate-bottom a:hover:after {
-  transform: rotateX(91deg);
-}
 /**************/
 /* Main Pages */
 /**************/
