@@ -15,7 +15,6 @@ Lets just get things rolling. Here is a list of my currently used and favorite S
 * Jekyll
 * Bracket Highlighter
 * Front End Snippets
-* Cobalt2 Color Theme
 
 ### Package Control
 
@@ -37,6 +36,14 @@ Bracket Highlighter is nothing special, but it can be very helpful for finding m
 
 I am in the process of building my own snippets for everything I use. However, for now using the front end snippets have been very useful. These snippets include html css and jquery and can make redundant chunks of code super fast to spit out on your page.
 
+## My favorite Sublime Text Themes
+* Cobalt2
+* Brogrammer 
+
 ### Cobalt2 Color Theme
 
 I prefer light text on a dark background. The Cobalt2 color these by Wes Bos has been my favorite recently. It is build of the Cobalt theme with much more syntax highlighting.
+
+### Brogrammer
+
+I recently switched my theme from Cobalt2 to Brogrammer. This theme has a darker background with an extreme level of syntax highlighting contrast. Every tag, class, selector, property, value, and more has its own bright color. Making it very easy to understand where all of your elements are and will help with any syntax errors. 
