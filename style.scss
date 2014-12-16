@@ -461,8 +461,7 @@ nav[role=navigation] li a {
     color: $blue;
   }
   &:active {
-    top: 0.1em;
-    box-shadow: inset 0 .1em rgba(255,255,255,0.1), 0 0.1em rgba(255,255,255,0.1), 0 -0.1em 0 .2em rgba(0,0,0,0.1);
+    box-shadow: inset 0 .1em rgba(0,0,0,0.6), 0 0.1em rgba(155,155,155,0.2), 0 -0.1em 0 .2em rgba(0,0,0,0.1);
   }
   @include mobile {
     border-bottom: 1px solid $lightGray;
