@@ -407,7 +407,6 @@ nav[role=navigation] {
   max-width: 900px;
   margin: 0 auto;
   text-align: center;
-  border-top: 3px solid $lightGray;
   @include transition(all, 0s, linear);
   @include mobile {
     border-top: none;
@@ -432,7 +431,7 @@ nav[role=navigation].active {
 nav[role=navigation] ul {
   list-style-type: none;
   margin: 1px;
-  padding: 1px;
+  padding: 0px 0px 10px 0px;
   @include mobile {
     margin: 0px;
     padding: 0px;
