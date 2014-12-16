@@ -417,6 +417,7 @@ nav[role=navigation] {
   border-top: 3px solid $lightGray;
   @include transition(all, 0.2s, ease-out);
   @include mobile {
+    border-top: none;
     top: -300px;
   }
 }
