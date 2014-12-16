@@ -277,6 +277,12 @@
         -ms-border-radius: $radius;
             border-radius: $radius;
   }
+  @mixin transorm($translate, $value) {
+    -webkit-transform: $translate($value);
+       -moz-transform: $translate($value);
+        -ms-transform: $translate($value);
+            transform: $translate($value);
+  }
 
 
 /*********************/
@@ -349,7 +355,7 @@ a {
 
 .twitter-follow-button {
   padding-top: 5px;
-  height: 40px;
+  height: 30px !important;
   @include mobile {
     margin: 0 auto;
     text-align: center;
@@ -406,7 +412,7 @@ nav[role=navigation] {
   margin: 0 auto;
   text-align: center;
   border-top: 3px solid $lightGray;
-  @include transition(all, 0.2s, ease-out);
+  @include transition(all, 0s, linear);
   @include mobile {
     border-top: none;
     top: -300px;
@@ -453,9 +459,11 @@ nav[role=navigation] li a {
   display: block;
   padding: 0px 20px 10px 0px;
   color: white;
-  @include transition(all, 0, linear);
-  &:hover {
-    color: $blue;
+  &:before {
+    @include transform(rotateX, -91deg);
+  }
+  &:hover:after {
+    @include transform(rotateX, 91deg);
   }
   @include mobile {
     border-bottom: 1px solid $lightGray;
@@ -463,6 +471,13 @@ nav[role=navigation] li a {
   }
 }
 
+
+.nav-rotate-bottom a:before {
+  transform: rotateX(-91deg);
+}
+.nav-rotate-bottom a:hover:after {
+  transform: rotateX(91deg);
+}
 /**************/
 /* Main Pages */
 /**************/
