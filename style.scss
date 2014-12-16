@@ -317,7 +317,7 @@ a {
   width: 98px;
   margin-right: 15px;
   &:hover {
-  transform: rotateX(-10deg);
+  transform: rotateX(-20deg);
   }
   @include mobile {
     float: none;
@@ -456,7 +456,7 @@ nav[role=navigation] li a {
   padding: 10px 30px;
   color: white;
   &:hover {
-    color: blue;
+    color: $blue;
   }
   @include mobile {
     border-bottom: 1px solid $lightGray;
