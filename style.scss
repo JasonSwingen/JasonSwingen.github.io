@@ -457,12 +457,10 @@ nav[role=navigation] li {
 }
 nav[role=navigation] li a {
   display: block;
-  padding: 0px 20px 10px 0px;
+  padding: 10px 30px;
   color: white;
-  &:before {
-    @include transform(rotateX, -91deg);
-  }
-  &:hover:after {
+  @include transform(rotateX, -91deg);
+  &:hover {
     @include transform(rotateX, 91deg);
   }
   @include mobile {
