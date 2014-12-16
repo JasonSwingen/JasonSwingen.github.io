@@ -440,9 +440,18 @@ nav[role=navigation] ul {
 }
 nav[role=navigation] li {
   display: inline-block;
+  margin: 0 4px;
   background-color: $darkerGray;
   box-shadow: inset 0 .1em rgba(255,255,255,0.1), 0 .1em .1em black, 0 0.2em rgba(255,255,255,0.1), 0 0 0 .2em rgba(0,0,0,0.1);
+  &:hover {
+    color: $blue;
+  }
+  &:active {
+    top: 0.1em;
+    box-shadow: inset 0 .1em rgba(255,255,255,0.1), 0 0.1em rgba(255,255,255,0.1), 0 -0.1em 0 .2em rgba(0,0,0,0.1);
+  }
   @include mobile {
+    margin: 0px;
     display: block;
     text-align: center;
     &:hover {
@@ -455,14 +464,6 @@ nav[role=navigation] li a {
   display: block;
   padding: 10px 30px;
   color: white;
-  &:hover {
-    color: $blue;
-    text-shadow: 0 0 .3em $blue;
-  }
-  &:active {
-    top: 0.1em;
-    box-shadow: inset 0 .1em rgba(255,255,255,0.1), 0 0.1em rgba(255,255,255,0.1), 0 -0.1em 0 .2em rgba(0,0,0,0.1);
-  }
   @include mobile {
     border-bottom: 1px solid $lightGray;
     padding: 0.5em;
