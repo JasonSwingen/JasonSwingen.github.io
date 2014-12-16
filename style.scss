@@ -284,7 +284,7 @@
 /*********************/
 
 a {
-  @include transition(all, 0.2s, ease-in-out);
+  @include transition(all, 0.1s, ease-in-out);
   &:hover {
     color: $blue;
   }
@@ -506,7 +506,7 @@ main {
     margin: 10px;
     a {
       &:hover {
-        border-bottom: 3px solid $blue;
+        border-bottom: 3px solid $black;
         padding-bottom: 3px;
       }
     }
@@ -523,9 +523,6 @@ main {
     font-size: 12px;
     margin: 12px;
     color: $gray
-  }
-  h1 {
-    text-align: center;
   }
 }
 
