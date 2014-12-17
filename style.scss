@@ -242,14 +242,6 @@
     }
   }
 
-  @mixin tablet {
-    @media screen and (max-width: 900px) {
-      @content;
-    }
-  }
-
-
-
   @mixin gradient($colorFrom, $colorTo) {
     background-color: $colorTo;
     background-image: -webkit-gradient(linear, left top, right top, from($colorFrom), to($colorTo));

@@ -31,6 +31,7 @@ $(document).ready(function($) {
     return false;
   });
 
-  .addEventListener( "click", function() {
+  addEventListener( "click", function() {
     this.classList.toggle( "active" );
+  });
 });
