@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Contact Me
-permalink: /contact
 ---
 
 <script src="http://max.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
