@@ -56,37 +56,37 @@ Bachelor of Science, Marketing and Business Administration with an emphasis in M
 
 ###Web Expertise
 
-*Search Engine Optimization
-*Search Engine Marketing
-*Social Media Marketing
-*Content Marketing
-*Google Analytics
-*Graphic Design
+* Search Engine Optimization
+* Search Engine Marketing
+* Social Media Marketing
+* Content Marketing
+* Google Analytics
+* Graphic Design
 
 ###Skillset
 
-*HTML5
-*CSS3 via SASS
-*jQuery / Javascript
-*Markup
-*Wordpress
-*Bootstrap
-*Json
-*Python
-*PHP
+* HTML5
+* CSS3 via SASS
+* jQuery / Javascript
+* Markup
+* Wordpress
+* Bootstrap
+* Json
+* Python
+* PHP
 
 ###Tools
 
-*Sublime Text
-*FileZilla
-*Git and Github
-*Wamp / Xampp
-*Prepros
-*Gimp / Photoshop
-*Microsoft Suite
-*Screaming Frog SEO Spider
-*Windows and OSX
+* Sublime Text
+* FileZilla
+* Git and Github
+* Wamp / Xampp
+* Prepros
+* Gimp / Photoshop
+* Microsoft Suite
+* Screaming Frog SEO Spider
+* Windows and OSX
 
 ###Certifications
 
-*Google Adwords Certified
+* Google Adwords Certified
