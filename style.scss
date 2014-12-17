@@ -467,36 +467,6 @@ nav[role=navigation] li a {
   }
 }
 
-/**************/
-/* Main Pages */
-/**************/
-
-//
-// landing page
-//
-
-main {
-
-  .section {
-    h1 {
-      text-align: center;
-      text-transform: uppercase;
-    }
-  }
-}
-
-.section1 {
-  background-color: $blue;
-}
-
-.section2 {
-  background-color: $lightGray;
-}
-
-.section3 {
-  background-color: $darkerGray;
-}
-
 .flexmom {
   display: -webkit-box;
   display: -moz-box;
@@ -512,6 +482,9 @@ main {
   }
 }
 
+/**************/
+/* Main Pages */
+/**************/
 
 //
 // .main
