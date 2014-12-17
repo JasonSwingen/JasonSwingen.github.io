@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About Me
-permalink: /about/
+permalink: /about
 ---
 I am a Front-End Web Developer and Internet Marketer specializing in Search Engine Optimization, Adwords, and Analytics. I went to college at Minnesota State University Moorhead, in Moorhead MN to study Marketing and Management. I received my Bachelor of Science in Both Marketing and Business Administration with an emphasis in Management, and also received a minor in Music.
 
