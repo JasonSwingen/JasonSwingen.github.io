@@ -2,7 +2,7 @@
 layout: post
 title: My Favorite Sublime Text Tips and Plugins
 published: True
-categories: [sublime]
+categories: [sublime-text]
 tags: [tips, tricks, plugins]
 ---
 
