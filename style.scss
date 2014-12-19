@@ -1,3 +1,5 @@
+@import url( http://fonts.googleapis.com/css?family=Raleway:200,600 );
+
 //
 // RESET
 //
@@ -67,7 +69,7 @@
   $white: #fff;
 
   // Font stacks
-  $helvetica: Helvetica, Arial, sans-serif;
+  $font: 'Raleway', Helvetica, Arial, sans-serif;
   $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
   $georgia: Georgia, serif;
 
@@ -90,7 +92,7 @@
 
   body {
   	background: $white;
-    font: 18px/1.4 $helvetica;
+    font: 18px/1.4 $font;
     color: $darkGray;
   }
 
