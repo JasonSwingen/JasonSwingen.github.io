@@ -561,25 +561,25 @@ nav[role=navigation] li a {
   }
 }
 
-.post-content {
-    .floatright {
-      float: right;
-      max-width: 50%;
-      max-height: 250px;
-      margin-left: 20px;
-      margin-bottom: 20px;
-    }
-    .floatleft {
-      float: left;
-      max-width: 50%;
-      max-height: 250px;
-      margin-right: 20px;
-      margin-bottom: 20px;
-    }
-    .centered {
-      margin: 0 auto;
-    }
+
+.floatright {
+  float: right;
+  max-width: 50%;
+  max-height: 250px;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
+.floatleft {
+  float: left;
+  max-width: 50%;
+  max-height: 250px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.centered {
+  margin: 0 auto;
+}
+
 
 
 .page {
