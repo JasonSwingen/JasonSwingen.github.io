@@ -2,7 +2,7 @@
 layout: post
 title: My Online Resume
 published: True
-categories: [Resume]
+categories: [resume]
 tags: [workflow]
 ---
 

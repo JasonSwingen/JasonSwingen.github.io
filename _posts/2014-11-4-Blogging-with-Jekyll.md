@@ -2,7 +2,7 @@
 layout: post
 title: Using Jekyll as a Blog
 published: True
-categories: [Jekyll]
+categories: [jekyll]
 tags: [workflow]
 ---
 
