@@ -309,8 +309,8 @@ a {
 .site-avatar {
   float: left;
   width: 102px;
-  margin: 7px 15px 0px 0px;
-  &:hover {
+  margin: 7px 15px 0px 10px;
+  &:active {
   transform: rotateX(-15deg);
   }
   @include mobile {
