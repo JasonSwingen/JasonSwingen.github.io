@@ -11,7 +11,7 @@ This is the second year I have gotten a non-resident mule deer license for Monta
 
 ## The Trip through North Dakota
 
-<img class="floatleft" src="/images/bismarck-weather.jpg" alt="Bismarck Weather">
+<!-- <img class="floatleft" src="/images/bismarck-weather.jpg" alt="Bismarck Weather"> -->
 It is a two day drive out to Montana from Duluth, luckily I have family in North Dakota making the trip much easier. I drove to Bismarck on November 15th and stayed with my sister. They're son Henry had just turned 2 and was almost as happy to see me as i was to see him. I was glad to spend the day inside and not driving though a blizzard.
 
 <img class="floatright" src="/images/target.jpg" alt="Target">
