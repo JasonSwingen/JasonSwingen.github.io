@@ -562,15 +562,14 @@ nav[role=navigation] li a {
 }
 
 .post-content {
-  img {
-    &.floatright {
+    .floatright {
       float: right;
       max-width: 50%;
       max-height: 250px;
       margin-left: 20px;
       margin-bottom: 20px;
     }
-    &.floatleft {
+    .floatleft {
       float: left;
       max-width: 50%;
       max-height: 250px;
@@ -580,7 +579,6 @@ nav[role=navigation] li a {
     .centered {
       margin: 0 auto;
     }
-  }
 }
 
 
