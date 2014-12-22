@@ -494,6 +494,9 @@ nav[role=navigation] li a {
   margin: 0 auto;
   max-width: 900px;
   padding: 10px;
+  @include mobile {
+    text-align: center;
+  }
 }
 
 .posts > .post {
@@ -629,6 +632,8 @@ nav[role=navigation] li a {
     margin-top: 0px;
     float: left;
     padding: 0px 10px 10px;
+    width: 100%;
+    text-align: center;
   }
 }
 
