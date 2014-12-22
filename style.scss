@@ -494,6 +494,7 @@ nav[role=navigation] li a {
   margin: 0 auto;
   max-width: 900px;
   padding: 10px;
+  float: left;
   @include mobile {
     text-align: center;
   }
