@@ -490,6 +490,12 @@ nav[role=navigation] li a {
 // .main
 //
 
+.post-title {
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 10px;
+}
+
 .posts > .post {
   padding: 1px 15px 40px 15px;
   @include gradient($white, $lightGray);
@@ -611,6 +617,11 @@ nav[role=navigation] li a {
 
 .share {
   margin-top: 20px;
+}
+
+.share-title {
+  float: right;
+  clear: both;
 }
 
 .wrapper-footer {
