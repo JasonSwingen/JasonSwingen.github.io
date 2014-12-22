@@ -577,7 +577,16 @@ nav[role=navigation] li a {
   margin-bottom: 20px;
 }
 .centered {
-  margin: 0 auto;
+  margin: 40px auto;
+  position: relative;
+  left: -10%;
+  max-width: 120%;
+  @include box-shadow(0px, 10px, 40px, 0px, $lightGray);
+  @include mobile {
+    margin: 10px auto;
+    left: 0;
+    max-width: 100%;
+  }
 }
 
 
