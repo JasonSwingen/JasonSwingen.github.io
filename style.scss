@@ -530,12 +530,14 @@ nav[role=navigation] li a {
   @include box-shadow(0px, 10px, 40px, 0px, $gray);
   @include border-radius(5px);
   border-top: 3px solid $blue;
+  @include mobile {
+    @include box-shadow(0px,0px,0px,0px, $white);
+  }
   .postdate {
     text-align: center;
     font-size: 12px;
     margin: 12px;
     color: $gray;
-    @include box-shadow(0px,0px,0px,0px, $white);
   }
 }
 
