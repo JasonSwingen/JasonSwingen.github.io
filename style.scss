@@ -561,9 +561,9 @@ nav[role=navigation] li a {
   }
 
   .read-more {
+    text-transform: uppercase;
     font-size: 15px;
     @include mobile {
-      text-transform: uppercase;
       margin: 0 4px;
       padding: 5px 10px;
       border: 1px solid $blue;
@@ -629,7 +629,7 @@ nav[role=navigation] li a {
 
 .share-top {
   float: right;
-  margin-top: 30px;
+  margin-top: 27px;
   @include mobile {
     margin-top: 0px;
     float: left;
