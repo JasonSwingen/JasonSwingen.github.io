@@ -1,25 +1,1721 @@
-@import url(http://fonts.googleapis.com/css?family=Karla:700,400,400italic);html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}html{font-size:100%}body{background:#fff;font:18px/1.4 "Karla",Helvetica,Arial,sans-serif;color:#333}.container{margin:0 auto;max-width:900px;padding:0 10px;width:100%}@media screen and (max-width: 640px){.container{padding:0px 0px}}
-h1,h2,h3,h4,h5,h6{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:#222;font-weight:bold;line-height:1.7;margin:1em 0 15px;padding:0}@media screen and (max-width: 640px){h1,h2,h3,h4,h5,h6{line-height:1.4}}
-h1{font-size:30px}h1 a{color:inherit}h2{font-size:24px}h3{font-size:20px}h4{font-size:18px;color:#666}p{margin:15px 0}a{color:#4183c4;text-decoration:none;cursor:pointer}a:hover,a:active{color:#4183c4}ul,ol{margin:15px 0;padding-left:30px}ul{list-style-type:disc}ol{list-style-type:decimal}ol ul,ul ol,ul ul,ol ol{margin:0}ul ul,ol ul{list-style-type:circle}em,i{font-style:italic}strong,b{font-weight:bold}img{max-width:100%}.date{font-style:italic;color:#666}::-moz-selection{color:#000;background:#eee}::selection{color:#000;background:#eee}.clearfix:before,.clearfix:after{content:" ";display:table}.clearfix:after{clear:both}a{-webkit-transition:all 0.1s ease-in-out;-moz-transition:all 0.1s ease-in-out;-ms-transition:all 0.1s ease-in-out;-o-transition:all 0.1s ease-in-out;transition:all 0.1s ease-in-out}a:hover{color:#4183c4}.wrapper-masthead{background-color:#222;color:#fff}.wrapper-masthead .container{background-color:#222;position:relative;z-index:30}.masthead{padding-top:10px}@media screen and (max-width: 640px){.masthead{text-align:center;padding-bottom:10px}}
-.site-avatar{float:left;width:102px;margin:7px 15px 0px 10px}.site-avatar:active{transform:rotateX(-15deg)}@media screen and (max-width: 640px){.site-avatar{float:none;display:block;margin:0 auto}}.site-avatar img{border-radius:100px}.site-name{margin:0;color:#fff;cursor:pointer;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:300;font-size:28px;letter-spacing:1px}.site-description{margin:0;color:#666;font-size:16px}@media screen and (max-width: 640px){.site-description{margin:3px 0}}
-.twitter-follow-button{margin:10px 0px;padding-top:5px;height:30px !important}@media screen and (max-width: 640px){.twitter-follow-button{margin:0 auto;text-align:center}}
-a.menu-link{display:none}@media screen and (max-width: 640px){a.menu-link{display:block;padding:5px;position:absolute;top:20px;right:10px;width:50px;height:20px}}
-.menu-link span,.menu-link span:before,.menu-link span:after{border-radius:1px;height:5px;width:35px;background:white;position:absolute;display:block;content:''}.menu-link span:before{top:-10px}.menu-link span:after{bottom:-10px}.menu-link span,.menu-link span:before,.menu-link span:after{-webkit-transition:all 0.4s ease-in-out;-moz-transition:all 0.4s ease-in-out;-ms-transition:all 0.4s ease-in-out;-o-transition:all 0.4s ease-in-out;transition:all 0.4s ease-in-out}.menu-link.active span{background-color:transparent}.menu-link.active span:before,.menu-link.active span:after{top:0}.menu-link.active span:before{transform:rotate(45deg)}.menu-link.active span:after{transform:rotate(-45deg)}nav[role=navigation]{max-width:900px;margin:0 auto;text-align:center;-webkit-transition:all 0s linear;-moz-transition:all 0s linear;-ms-transition:all 0s linear;-o-transition:all 0s linear;transition:all 0s linear}@media screen and (max-width: 640px){nav[role=navigation]{border-top:none;top:-300px}}
-@media screen and (max-width: 640px){.js nav[role=navigation]{overflow:hidden;max-height:0}}
-nav[role=navigation].active{max-height:100%;padding-top:0px;position:relative;z-index:20;top:0px;-webkit-transition:all 0.4s ease-out;-moz-transition:all 0.4s ease-out;-ms-transition:all 0.4s ease-out;-o-transition:all 0.4s ease-out;transition:all 0.4s ease-out}nav[role=navigation] ul{list-style-type:none;margin:1px;padding:0px 0px 10px 0px}@media screen and (max-width: 640px){nav[role=navigation] ul{margin:0px;padding:0px}}
-nav[role=navigation] li{display:inline-block;margin:4px;background-color:#222;box-shadow:inset 0 0.1em rgba(255,255,255,0.1),0 0.1em 0.1em #000,0 0.2em rgba(0,0,0,0.4),0 0 0 0.1em rgba(0,0,0,0.1)}@media screen and (max-width: 640px){nav[role=navigation] li{margin:0px;display:block;text-align:center}nav[role=navigation] li:hover{color:#4183c4}}
-nav[role=navigation] li a{display:block;padding:10px 30px;color:white}nav[role=navigation] li a:hover{color:#4183c4}nav[role=navigation] li a:active{box-shadow:inset 0 0.1em rgba(0,0,0,0.6),0 0.2em rgba(155,155,155,0.2),0 -0.1em 0 0.1em rgba(0,0,0,0.1)}@media screen and (max-width: 640px){nav[role=navigation] li a{padding:0.5em}}
-.flexmom{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;flex-wrap:wrap;align-content:stretch;justify-content:flex-start;justify-content:space-around}@media screen and (max-width: 640px){.flexmom{height:100%;flex-direction:column}}.flexmom .flexkid{flex-grow:1}.post-title{margin:0 auto;max-width:900px;padding:10px;float:left}@media screen and (max-width: 640px){.post-title{text-align:center}}
-.posts>.post{padding:1px 15px 40px 15px;background-color:#eee;background-image:-webkit-gradient(linear, left top, right top, from(#fff), to(#eee));background-image:-webkit-linear-gradient(bottom, #fff, #eee);background-image:-moz-linear-gradient(bottom, #fff, #eee);background-image:-o-linear-gradient(bottom, #fff, #eee);background-image:linear-gradient(to top, #fff, #eee);-webkit-border-radius:5px;-moz-border-radius:5px;-ms-border-radius:5px;border-radius:5px;border-top:3px solid #4183c4;margin-bottom:40px}@media screen and (max-width: 640px){.posts>.post{margin-bottom:20px}}
-.posts h1{margin:10px 0px}.posts h1 a:hover{border-bottom:3px solid #4183c4;padding-bottom:1px}@media screen and (max-width: 640px){.posts h1{text-align:center}}
-.post{padding:0px 15px;-webkit-box-shadow:0px 5px 24px 0px #666;-moz-box-shadow:0px 5px 24px 0px #666;-ms-box-shadow:0px 5px 24px 0px #666;box-shadow:0px 5px 24px 0px #666;-webkit-border-radius:5px;-moz-border-radius:5px;-ms-border-radius:5px;border-radius:5px;border-top:3px solid #4183c4}@media screen and (max-width: 640px){.post{-webkit-box-shadow:0px 0px 0px 0px #fff;-moz-box-shadow:0px 0px 0px 0px #fff;-ms-box-shadow:0px 0px 0px 0px #fff;box-shadow:0px 0px 0px 0px #fff}}.post .postdate{text-align:center;font-size:12px;margin:12px;color:#666}.posts>.post:last-child{padding-bottom:1em;border-bottom:none}.post blockquote{margin:1.8em .8em;border-left:2px solid #666;padding:0.1em 1em;color:#666;font-size:22px;font-style:italic}.post .comments{margin-top:10px}.post .read-more{text-transform:uppercase;font-size:15px}@media screen and (max-width: 640px){.post .read-more{margin:0 4px;padding:5px 10px;border:1px solid #4183c4;background-color:#fff;color:#4183c4;-webkit-border-radius:5px;-moz-border-radius:5px;-ms-border-radius:5px;border-radius:5px}.post .read-more:hover{border:1px solid #4183c4;background-color:#4183c4;color:#fff}}
-.floatright{float:right;max-width:50%;max-height:250px;margin-left:20px;margin-bottom:20px}.floatleft{float:left;max-width:50%;max-height:250px;margin-right:20px;margin-bottom:20px}.centered{margin:30px auto;position:relative;left:-10%;max-width:120%;-webkit-box-shadow:0px 10px 40px 0px #666;-moz-box-shadow:0px 10px 40px 0px #666;-ms-box-shadow:0px 10px 40px 0px #666;box-shadow:0px 10px 40px 0px #666}@media screen and (max-width: 640px){.centered{margin:10px auto;left:0;max-width:100%}}
-.page{padding:0px 15px}.tags,.categories{list-style-type:none}.share{margin-top:20px}.share-top{float:right;margin-top:27px}@media screen and (max-width: 640px){.share-top{margin-top:0px;float:left;padding:0px 10px 10px;width:100%;text-align:center}}
-.wrapper-footer{margin-top:50px;border-top:1px solid #ddd;border-bottom:1px solid #ddd;background-color:#333}footer{padding:20px 0;text-align:center;background-color:#333}.footerinfo{color:#666;font-size:14px;padding:8px}.totop{list-style-type:none;float:right;margin:10px;color:#fff}.totop:hover{color:#4183c4}@media screen and (max-width: 640px){.totop{float:none;text-align:center}}
-.custom-icon{margin:0px 10px}.form-label-left{width:150px !important}@media screen and (max-width: 640px){.form-label-left{margin:4px auto;text-align:center;width:100%}}
-@media screen and (max-width: 640px){.form-line{padding:12px 15px 12px 15px;max-width:350px}}
-@media screen and (max-width: 640px){.text-box{max-width:100% !important}}
-.form-label-right{width:150px !important}@media screen and (max-width: 640px){.form-label-right{margin:4px auto;text-align:center;width:100%}}
-.form-all{width:650px;color:#555 !important;font-family:'Lucida Grande';font-size:14px}@media screen and (max-width: 640px){.form-all{width:100%}}
-@media screen and (max-width: 640px){.form-sub-label-container,.form-input,.form-text-box,.form-textbox,.form-textarea{width:100%}}
-.phone-separate{display:none}.highlight{background-color:#222;padding:5px 10px;margin:20px 0}.highlight pre{word-break:break-all;word-wrap:break-word}code{font-family:'Courier', monospace;font-size:14px;color:#999}.highlight .c,.highlight .c1{color:#586e75}.highlight .err{color:#93a1a1}.highlight .g{color:#93a1a1}.highlight .k{color:#859900}.highlight .l{color:#93a1a1}.highlight .n{color:#93a1a1}.highlight .o{color:#859900}.highlight .x{color:#cb4b16}.highlight .p{color:#93a1a1}.highlight .cm{color:#586e75}.highlight .cp{color:#859900}.highlight .c1{color:#586e75}.highlight .cs{color:#859900}.highlight .gd{color:#2aa198}.highlight .ge{color:#93A1A1;font-style:italic}.highlight .gr{color:#dc322f}.highlight .gh{color:#cb4b16}.highlight .gi{color:#859900}.highlight .go{color:#93a1a1}.highlight .gp{color:#93a1a1}.highlight .gs{color:#93A1A1;font-weight:bold}.highlight .gu{color:#cb4b16}.highlight .gt{color:#93a1a1}.highlight .kc{color:#cb4b16}.highlight .kd{color:#268bd2}.highlight .kn{color:#859900}.highlight .kp{color:#859900}.highlight .kr{color:#268bd2}.highlight .kt{color:#dc322f}.highlight .ld{color:#93a1a1}.highlight .m{color:#2aa198}.highlight .s{color:#2aa198}.highlight .na{color:#93a1a1}.highlight .nb{color:#b58900}.highlight .nc{color:#268bd2}.highlight .no{color:#cb4b16}.highlight .nd{color:#268bd2}.highlight .ni{color:#cb4b16}.highlight .ne{color:#cb4b16}.highlight .nf{color:#268bd2}.highlight .nl{color:#93a1a1}.highlight .nn{color:#93a1a1}.highlight .nx{color:#555}.highlight .py{color:#93a1a1}.highlight .nt{color:#268bd2}.highlight .nv{color:#268bd2}.highlight .ow{color:#859900}.highlight .w{color:#93a1a1}.highlight .mf{color:#2aa198}.highlight .mh{color:#2aa198}.highlight .mi{color:#2aa198}.highlight .mo{color:#2aa198}.highlight .sb{color:#586e75}.highlight .sc{color:#2aa198}.highlight .sd{color:#93a1a1}.highlight .s2{color:#2aa198}.highlight .se{color:#cb4b16}.highlight .sh{color:#93a1a1}.highlight .si{color:#2aa198}.highlight .sx{color:#2aa198}.highlight .sr{color:#dc322f}.highlight .s1{color:#2aa198}.highlight .ss{color:#2aa198}.highlight .bp{color:#268bd2}.highlight .vc{color:#268bd2}.highlight .vg{color:#268bd2}.highlight .vi{color:#268bd2}.highlight .il{color:#2aa198}
+/***************/
+/* MEYER RESET */
+/***************/
+@import url(http://fonts.googleapis.com/css?family=Karla:700,400,400italic);
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/reset\.scss}line{font-family:\000036}}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/reset\.scss}line{font-family:\0000327}}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/reset\.scss}line{font-family:\0000331}}
+body {
+  line-height: 1; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/reset\.scss}line{font-family:\0000334}}
+ol, ul {
+  list-style: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/reset\.scss}line{font-family:\0000337}}
+blockquote, q {
+  quotes: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/reset\.scss}line{font-family:\0000340}}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/reset\.scss}line{font-family:\0000345}}
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/reset\.scss}line{font-family:\0000351}}
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/neat-1\.6\.0\/app\/assets\/stylesheets\/grid\/_grid\.scss}line{font-family:\000032}}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/bitters-0\.10\.0\/app\/assets\/stylesheets\/extends\/_button\.scss}line{font-family:\000031}}
+button,
+input[type="submit"] {
+  -webkit-font-smoothing: antialiased;
+  background-color: #477dca;
+  border-radius: 0.1875em;
+  color: white;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1;
+  padding: .75em 1em;
+  text-decoration: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/bitters-0\.10\.0\/app\/assets\/stylesheets\/extends\/_button\.scss}line{font-family:\0000313}}
+  button:hover,
+  input[type="submit"]:hover {
+    background-color: #2c5999;
+    color: white; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/bitters-0\.10\.0\/app\/assets\/stylesheets\/_typography\.scss}line{font-family:\000031}}
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: white;
+  color: #333333;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.5; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/bitters-0\.10\.0\/app\/assets\/stylesheets\/_typography\.scss}line{font-family:\0000310}}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  line-height: 1.25em;
+  margin: 0;
+  text-rendering: optimizeLegibility; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/bitters-0\.10\.0\/app\/assets\/stylesheets\/_typography\.scss}line{font-family:\0000317}}
+h1 {
+  font-size: 2.25em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/bitters-0\.10\.0\/app\/assets\/stylesheets\/_typography\.scss}line{font-family:\0000321}}
+h2 {
+  font-size: 2em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/bitters-0\.10\.0\/app\/assets\/stylesheets\/_typography\.scss}line{font-family:\0000325}}
+h3 {
+  font-size: 1.75em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/bitters-0\.10\.0\/app\/assets\/stylesheets\/_typography\.scss}line{font-family:\0000329}}
+h4 {
+  font-size: 1.5em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/bitters-0\.10\.0\/app\/assets\/stylesheets\/_typography\.scss}line{font-family:\0000333}}
+h5 {
+  font-size: 1.25em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/bitters-0\.10\.0\/app\/assets\/stylesheets\/_typography\.scss}line{font-family:\0000337}}
+h6 {
+  font-size: 1em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/bitters-0\.10\.0\/app\/assets\/stylesheets\/_typography\.scss}line{font-family:\0000341}}
+p {
+  margin: 0 0 0.75em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/bitters-0\.10\.0\/app\/assets\/stylesheets\/_typography\.scss}line{font-family:\0000345}}
+a {
+  -webkit-transition: color 0.1s linear;
+  -moz-transition: color 0.1s linear;
+  transition: color 0.1s linear;
+  color: #477dca;
+  text-decoration: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/bitters-0\.10\.0\/app\/assets\/stylesheets\/_typography\.scss}line{font-family:\0000350}}
+  a:hover {
+    color: #2c5999; }
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/bitters-0\.10\.0\/app\/assets\/stylesheets\/_typography\.scss}line{font-family:\0000354}}
+  a:active, a:focus {
+    color: #2c5999;
+    outline: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/bitters-0\.10\.0\/app\/assets\/stylesheets\/_typography\.scss}line{font-family:\0000360}}
+hr {
+  border-bottom: 1px solid #dddddd;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: 1.5em 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/bitters-0\.10\.0\/app\/assets\/stylesheets\/_typography\.scss}line{font-family:\0000368}}
+img {
+  margin: 0;
+  max-width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/bitters-0\.10\.0\/app\/assets\/stylesheets\/_typography\.scss}line{font-family:\0000373}}
+blockquote {
+  border-left: 2px solid #dddddd;
+  color: #595959;
+  margin: 1.5em 0;
+  padding-left: 0.75em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/bitters-0\.10\.0\/app\/assets\/stylesheets\/_typography\.scss}line{font-family:\0000380}}
+cite {
+  color: #737373;
+  font-style: italic; }
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/bitters-0\.10\.0\/app\/assets\/stylesheets\/_typography\.scss}line{font-family:\0000384}}
+  cite:before {
+    content: '\2014 \00A0'; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/bitters-0\.10\.0\/app\/assets\/stylesheets\/_forms\.scss}line{font-family:\000031}}
+fieldset {
+  background: #f7f7f7;
+  border: 1px solid #dddddd;
+  margin: 0 0 0.75em 0;
+  padding: 1.5em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/bitters-0\.10\.0\/app\/assets\/stylesheets\/_forms\.scss}line{font-family:\000038}}
+input,
+label,
+select {
+  display: block;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/bitters-0\.10\.0\/app\/assets\/stylesheets\/_forms\.scss}line{font-family:\0000316}}
+label {
+  font-weight: bold;
+  margin-bottom: 0.375em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/bitters-0\.10\.0\/app\/assets\/stylesheets\/_forms\.scss}line{font-family:\0000320}}
+  label.required:after {
+    content: "*"; }
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/bitters-0\.10\.0\/app\/assets\/stylesheets\/_forms\.scss}line{font-family:\0000324}}
+  label abbr {
+    display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/bitters-0\.10\.0\/app\/assets\/stylesheets\/_forms\.scss}line{font-family:\0000329}}
+textarea,
+input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"],
+select[multiple=multiple] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: border-color;
+  -moz-transition: border-color;
+  transition: border-color;
+  background-color: white;
+  border-radius: 0.1875em;
+  border: 1px solid #dddddd;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1em;
+  margin-bottom: 0.75em;
+  padding: 0.5em 0.5em;
+  width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/bitters-0\.10\.0\/app\/assets\/stylesheets\/_forms\.scss}line{font-family:\0000344}}
+  textarea:hover,
+  input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover,
+  select[multiple=multiple]:hover {
+    border-color: #c4c4c4; }
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/bitters-0\.10\.0\/app\/assets\/stylesheets\/_forms\.scss}line{font-family:\0000348}}
+  textarea:focus,
+  input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
+  select[multiple=multiple]:focus {
+    border-color: #477dca;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(55, 112, 192, 0.7);
+    outline: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/bitters-0\.10\.0\/app\/assets\/stylesheets\/_forms\.scss}line{font-family:\0000355}}
+textarea {
+  resize: vertical; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/bitters-0\.10\.0\/app\/assets\/stylesheets\/_forms\.scss}line{font-family:\0000359}}
+input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/bitters-0\.10\.0\/app\/assets\/stylesheets\/_forms\.scss}line{font-family:\0000363}}
+input[type="checkbox"], input[type="radio"] {
+  display: inline;
+  margin-right: 0.375em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/bitters-0\.10\.0\/app\/assets\/stylesheets\/_forms\.scss}line{font-family:\0000368}}
+input[type="file"] {
+  margin-bottom: 0.75em;
+  padding-bottom: 0.5em;
+  width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/bitters-0\.10\.0\/app\/assets\/stylesheets\/_forms\.scss}line{font-family:\0000374}}
+select {
+  width: auto;
+  max-width: 100%;
+  margin-bottom: 1.5em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/bitters-0\.10\.0\/app\/assets\/stylesheets\/_tables\.scss}line{font-family:\000031}}
+table {
+  border-collapse: collapse;
+  margin: 0.75em 0;
+  table-layout: fixed;
+  width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/bitters-0\.10\.0\/app\/assets\/stylesheets\/_tables\.scss}line{font-family:\000038}}
+th {
+  border-bottom: 1px solid #b7b7b7;
+  font-weight: bold;
+  padding: 0.75em 0;
+  text-align: left; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/bitters-0\.10\.0\/app\/assets\/stylesheets\/_tables\.scss}line{font-family:\0000315}}
+td {
+  border-bottom: 1px solid #dddddd;
+  padding: 0.75em 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/bitters-0\.10\.0\/app\/assets\/stylesheets\/_tables\.scss}line{font-family:\0000320}}
+tr, td, th {
+  vertical-align: middle; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/bitters-0\.10\.0\/app\/assets\/stylesheets\/_lists\.scss}line{font-family:\000031}}
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/bitters-0\.10\.0\/app\/assets\/stylesheets\/_lists\.scss}line{font-family:\0000319}}
+dl {
+  margin-bottom: 0.75em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/bitters-0\.10\.0\/app\/assets\/stylesheets\/_lists\.scss}line{font-family:\0000322}}
+  dl dt {
+    font-weight: bold;
+    margin-top: 0.75em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/bitters-0\.10\.0\/app\/assets\/stylesheets\/_lists\.scss}line{font-family:\0000327}}
+  dl dd {
+    margin: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Program\%20Files\%20\(x86\)\/Prepros\/gems\/gems\/bitters-0\.10\.0\/app\/assets\/stylesheets\/_buttons\.scss}line{font-family:\000031}}
+button,
+input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\0000312}}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\0000333}}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\0000337}}
+body {
+  line-height: 1; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\0000340}}
+ol, ul {
+  list-style: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\0000343}}
+blockquote, q {
+  quotes: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\0000346}}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\0000351}}
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\0000357}}
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/**************/
+/* BASE RULES */
+/**************/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\0000394}}
+html {
+  font-size: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\0000398}}
+body {
+  background: white;
+  font: 18px/1.4 "Karla", Helvetica, Arial, sans-serif;
+  color: #333333; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003104}}
+.container {
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 0 10px;
+  width: 100%; }
+  @media screen and (max-width: 640px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003104}}
+    .container {
+      padding: 0px 0px; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003114}}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222222;
+  font-weight: bold;
+  line-height: 1.7;
+  margin: 1em 0 15px;
+  padding: 0; }
+  @media screen and (max-width: 640px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003114}}
+    h1, h2, h3, h4, h5, h6 {
+      line-height: 1.4; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003128}}
+h1 {
+  font-size: 30px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003130}}
+  h1 a {
+    color: inherit; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003135}}
+h2 {
+  font-size: 24px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003139}}
+h3 {
+  font-size: 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003143}}
+h4 {
+  font-size: 18px;
+  color: #666666; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003148}}
+p {
+  margin: 15px 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003152}}
+a {
+  color: #4183c4;
+  text-decoration: none;
+  cursor: pointer; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003156}}
+  a:hover, a:active {
+    color: #4183c4; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003161}}
+ul, ol {
+  margin: 15px 0;
+  padding-left: 30px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003166}}
+ul {
+  list-style-type: disc; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003170}}
+ol {
+  list-style-type: decimal; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003174}}
+ol ul, ul ol, ul ul, ol ol {
+  margin: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003178}}
+ul ul, ol ul {
+  list-style-type: circle; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003182}}
+em, i {
+  font-style: italic; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003186}}
+strong, b {
+  font-weight: bold; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003190}}
+img {
+  max-width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003194}}
+.date {
+  font-style: italic;
+  color: #666666; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003200}}
+::-moz-selection {
+  color: black;
+  background: #eeeeee; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003204}}
+::selection {
+  color: black;
+  background: #eeeeee; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003211}}
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003217}}
+.clearfix:after {
+  clear: both; }
+
+/*************/
+/* VARIABLES */
+/*************/
+/**********/
+/* MIXINS */
+/**********/
+/*********************/
+/* LAYOUT / SECTIONS */
+/*********************/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003285}}
+a {
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003287}}
+  a:hover {
+    color: #4183c4; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003297}}
+.wrapper-masthead {
+  background-color: #222222;
+  color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003300}}
+  .wrapper-masthead .container {
+    background-color: #222222;
+    position: relative;
+    z-index: 30; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003307}}
+.masthead {
+  padding-top: 10px; }
+  @media screen and (max-width: 640px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003307}}
+    .masthead {
+      text-align: center;
+      padding-bottom: 10px; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003315}}
+.site-avatar {
+  float: left;
+  width: 102px;
+  margin: 7px 15px 0px 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003319}}
+  .site-avatar:active {
+    transform: rotateX(-15deg); }
+  @media screen and (max-width: 640px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003315}}
+    .site-avatar {
+      float: none;
+      display: block;
+      margin: 0 auto; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003328}}
+  .site-avatar img {
+    border-radius: 100px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003333}}
+.site-name {
+  margin: 0;
+  color: white;
+  cursor: pointer;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 28px;
+  letter-spacing: 1px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003343}}
+.site-description {
+  margin: 0;
+  color: #666666;
+  font-size: 16px; }
+  @media screen and (max-width: 640px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003343}}
+    .site-description {
+      margin: 3px 0; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003352}}
+.twitter-follow-button {
+  margin: 10px 0px;
+  padding-top: 5px;
+  height: 30px !important; }
+  @media screen and (max-width: 640px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003352}}
+    .twitter-follow-button {
+      margin: 0 auto;
+      text-align: center; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003362}}
+a.menu-link {
+  display: none; }
+  @media screen and (max-width: 640px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003362}}
+    a.menu-link {
+      display: block;
+      padding: 5px;
+      position: absolute;
+      top: 20px;
+      right: 10px;
+      width: 50px;
+      height: 20px; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003375}}
+.menu-link span, .menu-link span:before, .menu-link span:after {
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: white;
+  position: absolute;
+  display: block;
+  content: ''; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003384}}
+.menu-link span:before {
+  top: -10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003387}}
+.menu-link span:after {
+  bottom: -10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003391}}
+.menu-link span, .menu-link span:before, .menu-link span:after {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003394}}
+.menu-link.active span {
+  background-color: transparent; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003397}}
+.menu-link.active span:before, .menu-link.active span:after {
+  top: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003400}}
+.menu-link.active span:before {
+  transform: rotate(45deg); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003403}}
+.menu-link.active span:after {
+  transform: rotate(-45deg); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003407}}
+nav[role=navigation] {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  -webkit-transition: all 0s linear;
+  -moz-transition: all 0s linear;
+  -ms-transition: all 0s linear;
+  -o-transition: all 0s linear;
+  transition: all 0s linear; }
+  @media screen and (max-width: 640px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003407}}
+    nav[role=navigation] {
+      border-top: none;
+      top: -300px; } }
+
+@media screen and (max-width: 640px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003418}}
+  .js nav[role=navigation] {
+    overflow: hidden;
+    max-height: 0; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003424}}
+nav[role=navigation].active {
+  max-height: 100%;
+  padding-top: 0px;
+  position: relative;
+  z-index: 20;
+  top: 0px;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003433}}
+nav[role=navigation] ul {
+  list-style-type: none;
+  margin: 1px;
+  padding: 0px 0px 10px 0px; }
+  @media screen and (max-width: 640px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003433}}
+    nav[role=navigation] ul {
+      margin: 0px;
+      padding: 0px; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003442}}
+nav[role=navigation] li {
+  display: inline-block;
+  margin: 4px;
+  background-color: #222222;
+  box-shadow: inset 0 0.1em rgba(255, 255, 255, 0.1), 0 0.1em 0.1em black, 0 0.2em rgba(0, 0, 0, 0.4), 0 0 0 0.1em rgba(0, 0, 0, 0.1); }
+  @media screen and (max-width: 640px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003442}}
+    nav[role=navigation] li {
+      margin: 0px;
+      display: block;
+      text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003451}}
+      nav[role=navigation] li:hover {
+        color: #4183c4; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003456}}
+nav[role=navigation] li a {
+  display: block;
+  padding: 10px 30px;
+  color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003460}}
+  nav[role=navigation] li a:hover {
+    color: #4183c4; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003463}}
+  nav[role=navigation] li a:active {
+    box-shadow: inset 0 0.1em rgba(0, 0, 0, 0.6), 0 0.2em rgba(155, 155, 155, 0.2), 0 -0.1em 0 0.1em rgba(0, 0, 0, 0.1); }
+  @media screen and (max-width: 640px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003456}}
+    nav[role=navigation] li a {
+      padding: 0.5em; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003471}}
+.flexmom {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: flex-start;
+  justify-content: space-around; }
+  @media screen and (max-width: 640px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003471}}
+    .flexmom {
+      height: 100%;
+      flex-direction: column; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003485}}
+  .flexmom .flexkid {
+    flex-grow: 1; }
+
+/**************/
+/* Main Pages */
+/**************/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003498}}
+.post-title {
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 10px;
+  float: left; }
+  @media screen and (max-width: 640px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003498}}
+    .post-title {
+      text-align: center; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003508}}
+.posts > .post {
+  padding: 1px 15px 40px 15px;
+  background-color: #eeeeee;
+  background-image: -webkit-gradient(linear, left top, right top, from(white), to(#eeeeee));
+  background-image: -webkit-linear-gradient(bottom, white, #eeeeee);
+  background-image: -moz-linear-gradient(bottom, white, #eeeeee);
+  background-image: -o-linear-gradient(bottom, white, #eeeeee);
+  background-image: linear-gradient(to top, white, #eeeeee);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  border-top: 3px solid #4183c4;
+  margin-bottom: 40px; }
+  @media screen and (max-width: 640px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003508}}
+    .posts > .post {
+      margin-bottom: 20px; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003520}}
+.posts h1 {
+  margin: 10px 0px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003523}}
+  .posts h1 a:hover {
+    border-bottom: 3px solid #4183c4;
+    padding-bottom: 1px; }
+  @media screen and (max-width: 640px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003520}}
+    .posts h1 {
+      text-align: center; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003534}}
+.post {
+  padding: 0px 15px;
+  -webkit-box-shadow: 0px 5px 24px 0px #666666;
+  -moz-box-shadow: 0px 5px 24px 0px #666666;
+  -ms-box-shadow: 0px 5px 24px 0px #666666;
+  box-shadow: 0px 5px 24px 0px #666666;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  border-top: 3px solid #4183c4; }
+  @media screen and (max-width: 640px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003534}}
+    .post {
+      -webkit-box-shadow: 0px 0px 0px 0px white;
+      -moz-box-shadow: 0px 0px 0px 0px white;
+      -ms-box-shadow: 0px 0px 0px 0px white;
+      box-shadow: 0px 0px 0px 0px white; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003542}}
+  .post .postdate {
+    text-align: center;
+    font-size: 12px;
+    margin: 12px;
+    color: #666666; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003550}}
+.posts > .post:last-child {
+  padding-bottom: 1em;
+  border-bottom: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003556}}
+.post blockquote {
+  margin: 1.8em .8em;
+  border-left: 2px solid #666666;
+  padding: 0.1em 1em;
+  color: #666666;
+  font-size: 22px;
+  font-style: italic; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003565}}
+.post .comments {
+  margin-top: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003569}}
+.post .read-more {
+  text-transform: uppercase;
+  font-size: 15px; }
+  @media screen and (max-width: 640px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003569}}
+    .post .read-more {
+      margin: 0 4px;
+      padding: 5px 10px;
+      border: 1px solid #4183c4;
+      background-color: white;
+      color: #4183c4;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      border-radius: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003579}}
+      .post .read-more:hover {
+        border: 1px solid #4183c4;
+        background-color: #4183c4;
+        color: white; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003589}}
+.floatright {
+  float: right;
+  max-width: 50%;
+  max-height: 250px;
+  margin-left: 20px;
+  margin-bottom: 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003596}}
+.floatleft {
+  float: left;
+  max-width: 50%;
+  max-height: 250px;
+  margin-right: 20px;
+  margin-bottom: 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003603}}
+.centered {
+  margin: 30px auto;
+  position: relative;
+  left: -10%;
+  max-width: 120%;
+  -webkit-box-shadow: 0px 10px 40px 0px #666666;
+  -moz-box-shadow: 0px 10px 40px 0px #666666;
+  -ms-box-shadow: 0px 10px 40px 0px #666666;
+  box-shadow: 0px 10px 40px 0px #666666; }
+  @media screen and (max-width: 640px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003603}}
+    .centered {
+      margin: 10px auto;
+      left: 0;
+      max-width: 100%; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003618}}
+.page {
+  padding: 0px 15px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003622}}
+.tags, .categories {
+  list-style-type: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003632}}
+.share {
+  margin-top: 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003636}}
+.share-top {
+  float: right;
+  margin-top: 27px; }
+  @media screen and (max-width: 640px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003636}}
+    .share-top {
+      margin-top: 0px;
+      float: left;
+      padding: 0px 10px 10px;
+      width: 100%;
+      text-align: center; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003648}}
+.wrapper-footer {
+  margin-top: 50px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background-color: #333333; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003655}}
+footer {
+  padding: 20px 0;
+  text-align: center;
+  background-color: #333333; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003661}}
+.footerinfo {
+  color: #666666;
+  font-size: 14px;
+  padding: 8px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003667}}
+.totop {
+  list-style-type: none;
+  float: right;
+  margin: 10px;
+  color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003672}}
+  .totop:hover {
+    color: #4183c4; }
+  @media screen and (max-width: 640px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003667}}
+    .totop {
+      float: none;
+      text-align: center; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003681}}
+.custom-icon {
+  margin: 0px 10px; }
+
+/***************/
+/* Contact Form*/
+/***************/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003689}}
+.form-label-left {
+  width: 150px !important; }
+  @media screen and (max-width: 640px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003689}}
+    .form-label-left {
+      margin: 4px auto;
+      text-align: center;
+      width: 100%; } }
+
+@media screen and (max-width: 640px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003697}}
+  .form-line {
+    padding: 12px 15px 12px 15px;
+    max-width: 350px; } }
+
+@media screen and (max-width: 640px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003703}}
+  .text-box {
+    max-width: 100% !important; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003708}}
+.form-label-right {
+  width: 150px !important; }
+  @media screen and (max-width: 640px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003708}}
+    .form-label-right {
+      margin: 4px auto;
+      text-align: center;
+      width: 100%; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003716}}
+.form-all {
+  width: 650px;
+  color: #555 !important;
+  font-family: 'Lucida Grande';
+  font-size: 14px; }
+  @media screen and (max-width: 640px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003716}}
+    .form-all {
+      width: 100%; } }
+
+@media screen and (max-width: 640px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003725}}
+  .form-sub-label-container, .form-input, .form-text-box, .form-textbox, .form-textarea {
+    width: 100%; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003730}}
+.phone-separate {
+  display: none; }
+
+/***********************/
+/* SYNTAX HIGHLIGHTING */
+/***********************/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003743}}
+.highlight {
+  background-color: #222222;
+  padding: 5px 10px;
+  margin: 20px 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003749}}
+.highlight pre {
+  /* overflow: scroll; Prefer no word wrap? Uncomment this line and comment out the 2 lines below. */
+  word-break: break-all;
+  word-wrap: break-word; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003755}}
+code {
+  font-family: 'Courier', monospace;
+  font-size: 14px;
+  color: #999999; }
+
+/* Comment */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003764}}
+.highlight .c, .highlight .c1 {
+  color: #586e75; }
+
+/* Error */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003766}}
+.highlight .err {
+  color: #93a1a1; }
+
+/* Generic */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003768}}
+.highlight .g {
+  color: #93a1a1; }
+
+/* Keyword */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003770}}
+.highlight .k {
+  color: #859900; }
+
+/* Literal */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003772}}
+.highlight .l {
+  color: #93a1a1; }
+
+/* Name */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003774}}
+.highlight .n {
+  color: #93a1a1; }
+
+/* Operator */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003776}}
+.highlight .o {
+  color: #859900; }
+
+/* Other */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003778}}
+.highlight .x {
+  color: #cb4b16; }
+
+/* Punctuation */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003780}}
+.highlight .p {
+  color: #93a1a1; }
+
+/* Comment.Multiline */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003782}}
+.highlight .cm {
+  color: #586e75; }
+
+/* Comment.Preproc */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003784}}
+.highlight .cp {
+  color: #859900; }
+
+/* Comment.Single */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003786}}
+.highlight .c1 {
+  color: #586e75; }
+
+/* Comment.Special */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003788}}
+.highlight .cs {
+  color: #859900; }
+
+/* Generic.Deleted */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003790}}
+.highlight .gd {
+  color: #2aa198; }
+
+/* Generic.Emph */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003792}}
+.highlight .ge {
+  color: #93A1A1;
+  font-style: italic; }
+
+/* Generic.Error */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003794}}
+.highlight .gr {
+  color: #dc322f; }
+
+/* Generic.Heading */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003796}}
+.highlight .gh {
+  color: #cb4b16; }
+
+/* Generic.Inserted */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003798}}
+.highlight .gi {
+  color: #859900; }
+
+/* Generic.Output */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003800}}
+.highlight .go {
+  color: #93a1a1; }
+
+/* Generic.Prompt */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003802}}
+.highlight .gp {
+  color: #93a1a1; }
+
+/* Generic.Strong */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003804}}
+.highlight .gs {
+  color: #93A1A1;
+  font-weight: bold; }
+
+/* Generic.Subheading */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003806}}
+.highlight .gu {
+  color: #cb4b16; }
+
+/* Generic.Traceback */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003808}}
+.highlight .gt {
+  color: #93a1a1; }
+
+/* Keyword.Constant */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003810}}
+.highlight .kc {
+  color: #cb4b16; }
+
+/* Keyword.Declaration */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003812}}
+.highlight .kd {
+  color: #268bd2; }
+
+/* Keyword.Namespace */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003814}}
+.highlight .kn {
+  color: #859900; }
+
+/* Keyword.Pseudo */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003816}}
+.highlight .kp {
+  color: #859900; }
+
+/* Keyword.Reserved */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003818}}
+.highlight .kr {
+  color: #268bd2; }
+
+/* Keyword.Type */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003820}}
+.highlight .kt {
+  color: #dc322f; }
+
+/* Literal.Date */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003822}}
+.highlight .ld {
+  color: #93a1a1; }
+
+/* Literal.Number */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003824}}
+.highlight .m {
+  color: #2aa198; }
+
+/* Literal.String */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003826}}
+.highlight .s {
+  color: #2aa198; }
+
+/* Name.Attribute */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003828}}
+.highlight .na {
+  color: #93a1a1; }
+
+/* Name.Builtin */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003830}}
+.highlight .nb {
+  color: #b58900; }
+
+/* Name.Class */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003832}}
+.highlight .nc {
+  color: #268bd2; }
+
+/* Name.Constant */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003834}}
+.highlight .no {
+  color: #cb4b16; }
+
+/* Name.Decorator */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003836}}
+.highlight .nd {
+  color: #268bd2; }
+
+/* Name.Entity */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003838}}
+.highlight .ni {
+  color: #cb4b16; }
+
+/* Name.Exception */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003840}}
+.highlight .ne {
+  color: #cb4b16; }
+
+/* Name.Function */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003842}}
+.highlight .nf {
+  color: #268bd2; }
+
+/* Name.Label */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003844}}
+.highlight .nl {
+  color: #93a1a1; }
+
+/* Name.Namespace */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003846}}
+.highlight .nn {
+  color: #93a1a1; }
+
+/* Name.Other */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003848}}
+.highlight .nx {
+  color: #555555; }
+
+/* Name.Property */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003850}}
+.highlight .py {
+  color: #93a1a1; }
+
+/* Name.Tag */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003852}}
+.highlight .nt {
+  color: #268bd2; }
+
+/* Name.Variable */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003854}}
+.highlight .nv {
+  color: #268bd2; }
+
+/* Operator.Word */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003856}}
+.highlight .ow {
+  color: #859900; }
+
+/* Text.Whitespace */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003858}}
+.highlight .w {
+  color: #93a1a1; }
+
+/* Literal.Number.Float */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003860}}
+.highlight .mf {
+  color: #2aa198; }
+
+/* Literal.Number.Hex */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003862}}
+.highlight .mh {
+  color: #2aa198; }
+
+/* Literal.Number.Integer */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003864}}
+.highlight .mi {
+  color: #2aa198; }
+
+/* Literal.Number.Oct */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003866}}
+.highlight .mo {
+  color: #2aa198; }
+
+/* Literal.String.Backtick */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003868}}
+.highlight .sb {
+  color: #586e75; }
+
+/* Literal.String.Char */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003870}}
+.highlight .sc {
+  color: #2aa198; }
+
+/* Literal.String.Doc */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003872}}
+.highlight .sd {
+  color: #93a1a1; }
+
+/* Literal.String.Double */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003874}}
+.highlight .s2 {
+  color: #2aa198; }
+
+/* Literal.String.Escape */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003876}}
+.highlight .se {
+  color: #cb4b16; }
+
+/* Literal.String.Heredoc */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003878}}
+.highlight .sh {
+  color: #93a1a1; }
+
+/* Literal.String.Interpol */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003880}}
+.highlight .si {
+  color: #2aa198; }
+
+/* Literal.String.Other */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003882}}
+.highlight .sx {
+  color: #2aa198; }
+
+/* Literal.String.Regex */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003884}}
+.highlight .sr {
+  color: #dc322f; }
+
+/* Literal.String.Single */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003886}}
+.highlight .s1 {
+  color: #2aa198; }
+
+/* Literal.String.Symbol */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003888}}
+.highlight .ss {
+  color: #2aa198; }
+
+/* Name.Builtin.Pseudo */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003890}}
+.highlight .bp {
+  color: #268bd2; }
+
+/* Name.Variable.Class */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003892}}
+.highlight .vc {
+  color: #268bd2; }
+
+/* Name.Variable.Global */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003894}}
+.highlight .vg {
+  color: #268bd2; }
+
+/* Name.Variable.Instance */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003896}}
+.highlight .vi {
+  color: #268bd2; }
+
+/* Literal.Number.Integer.Long */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/style\.scss}line{font-family:\00003898}}
+.highlight .il {
+  color: #2aa198; }
+
+/***********************/
+/* SYNTAX HIGHLIGHTING */
+/***********************/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\000036}}
+.highlight {
+  background-color: #222222;
+  padding: 5px 10px;
+  margin: 20px 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\0000312}}
+.highlight pre {
+  /* overflow: scroll; Prefer no word wrap? Uncomment this line and comment out the 2 lines below. */
+  word-break: break-all;
+  word-wrap: break-word; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\0000318}}
+code {
+  font-family: 'Courier', monospace;
+  font-size: 14px;
+  color: #999999; }
+
+/* Comment */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\0000327}}
+.highlight .c, .highlight .c1 {
+  color: #586e75; }
+
+/* Error */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\0000329}}
+.highlight .err {
+  color: #93a1a1; }
+
+/* Generic */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\0000331}}
+.highlight .g {
+  color: #93a1a1; }
+
+/* Keyword */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\0000333}}
+.highlight .k {
+  color: #859900; }
+
+/* Literal */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\0000335}}
+.highlight .l {
+  color: #93a1a1; }
+
+/* Name */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\0000337}}
+.highlight .n {
+  color: #93a1a1; }
+
+/* Operator */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\0000339}}
+.highlight .o {
+  color: #859900; }
+
+/* Other */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\0000341}}
+.highlight .x {
+  color: #cb4b16; }
+
+/* Punctuation */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\0000343}}
+.highlight .p {
+  color: #93a1a1; }
+
+/* Comment.Multiline */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\0000345}}
+.highlight .cm {
+  color: #586e75; }
+
+/* Comment.Preproc */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\0000347}}
+.highlight .cp {
+  color: #859900; }
+
+/* Comment.Single */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\0000349}}
+.highlight .c1 {
+  color: #586e75; }
+
+/* Comment.Special */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\0000351}}
+.highlight .cs {
+  color: #859900; }
+
+/* Generic.Deleted */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\0000353}}
+.highlight .gd {
+  color: #2aa198; }
+
+/* Generic.Emph */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\0000355}}
+.highlight .ge {
+  color: #93A1A1;
+  font-style: italic; }
+
+/* Generic.Error */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\0000357}}
+.highlight .gr {
+  color: #dc322f; }
+
+/* Generic.Heading */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\0000359}}
+.highlight .gh {
+  color: #cb4b16; }
+
+/* Generic.Inserted */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\0000361}}
+.highlight .gi {
+  color: #859900; }
+
+/* Generic.Output */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\0000363}}
+.highlight .go {
+  color: #93a1a1; }
+
+/* Generic.Prompt */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\0000365}}
+.highlight .gp {
+  color: #93a1a1; }
+
+/* Generic.Strong */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\0000367}}
+.highlight .gs {
+  color: #93A1A1;
+  font-weight: bold; }
+
+/* Generic.Subheading */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\0000369}}
+.highlight .gu {
+  color: #cb4b16; }
+
+/* Generic.Traceback */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\0000371}}
+.highlight .gt {
+  color: #93a1a1; }
+
+/* Keyword.Constant */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\0000373}}
+.highlight .kc {
+  color: #cb4b16; }
+
+/* Keyword.Declaration */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\0000375}}
+.highlight .kd {
+  color: #268bd2; }
+
+/* Keyword.Namespace */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\0000377}}
+.highlight .kn {
+  color: #859900; }
+
+/* Keyword.Pseudo */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\0000379}}
+.highlight .kp {
+  color: #859900; }
+
+/* Keyword.Reserved */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\0000381}}
+.highlight .kr {
+  color: #268bd2; }
+
+/* Keyword.Type */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\0000383}}
+.highlight .kt {
+  color: #dc322f; }
+
+/* Literal.Date */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\0000385}}
+.highlight .ld {
+  color: #93a1a1; }
+
+/* Literal.Number */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\0000387}}
+.highlight .m {
+  color: #2aa198; }
+
+/* Literal.String */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\0000389}}
+.highlight .s {
+  color: #2aa198; }
+
+/* Name.Attribute */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\0000391}}
+.highlight .na {
+  color: #93a1a1; }
+
+/* Name.Builtin */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\0000393}}
+.highlight .nb {
+  color: #b58900; }
+
+/* Name.Class */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\0000395}}
+.highlight .nc {
+  color: #268bd2; }
+
+/* Name.Constant */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\0000397}}
+.highlight .no {
+  color: #cb4b16; }
+
+/* Name.Decorator */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\0000399}}
+.highlight .nd {
+  color: #268bd2; }
+
+/* Name.Entity */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\00003101}}
+.highlight .ni {
+  color: #cb4b16; }
+
+/* Name.Exception */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\00003103}}
+.highlight .ne {
+  color: #cb4b16; }
+
+/* Name.Function */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\00003105}}
+.highlight .nf {
+  color: #268bd2; }
+
+/* Name.Label */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\00003107}}
+.highlight .nl {
+  color: #93a1a1; }
+
+/* Name.Namespace */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\00003109}}
+.highlight .nn {
+  color: #93a1a1; }
+
+/* Name.Other */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\00003111}}
+.highlight .nx {
+  color: #555555; }
+
+/* Name.Property */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\00003113}}
+.highlight .py {
+  color: #93a1a1; }
+
+/* Name.Tag */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\00003115}}
+.highlight .nt {
+  color: #268bd2; }
+
+/* Name.Variable */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\00003117}}
+.highlight .nv {
+  color: #268bd2; }
+
+/* Operator.Word */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\00003119}}
+.highlight .ow {
+  color: #859900; }
+
+/* Text.Whitespace */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\00003121}}
+.highlight .w {
+  color: #93a1a1; }
+
+/* Literal.Number.Float */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\00003123}}
+.highlight .mf {
+  color: #2aa198; }
+
+/* Literal.Number.Hex */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\00003125}}
+.highlight .mh {
+  color: #2aa198; }
+
+/* Literal.Number.Integer */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\00003127}}
+.highlight .mi {
+  color: #2aa198; }
+
+/* Literal.Number.Oct */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\00003129}}
+.highlight .mo {
+  color: #2aa198; }
+
+/* Literal.String.Backtick */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\00003131}}
+.highlight .sb {
+  color: #586e75; }
+
+/* Literal.String.Char */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\00003133}}
+.highlight .sc {
+  color: #2aa198; }
+
+/* Literal.String.Doc */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\00003135}}
+.highlight .sd {
+  color: #93a1a1; }
+
+/* Literal.String.Double */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\00003137}}
+.highlight .s2 {
+  color: #2aa198; }
+
+/* Literal.String.Escape */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\00003139}}
+.highlight .se {
+  color: #cb4b16; }
+
+/* Literal.String.Heredoc */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\00003141}}
+.highlight .sh {
+  color: #93a1a1; }
+
+/* Literal.String.Interpol */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\00003143}}
+.highlight .si {
+  color: #2aa198; }
+
+/* Literal.String.Other */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\00003145}}
+.highlight .sx {
+  color: #2aa198; }
+
+/* Literal.String.Regex */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\00003147}}
+.highlight .sr {
+  color: #dc322f; }
+
+/* Literal.String.Single */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\00003149}}
+.highlight .s1 {
+  color: #2aa198; }
+
+/* Literal.String.Symbol */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\00003151}}
+.highlight .ss {
+  color: #2aa198; }
+
+/* Name.Builtin.Pseudo */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\00003153}}
+.highlight .bp {
+  color: #268bd2; }
+
+/* Name.Variable.Class */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\00003155}}
+.highlight .vc {
+  color: #268bd2; }
+
+/* Name.Variable.Global */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\00003157}}
+.highlight .vg {
+  color: #268bd2; }
+
+/* Name.Variable.Instance */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\00003159}}
+.highlight .vi {
+  color: #268bd2; }
+
+/* Literal.Number.Integer.Long */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/highlights\.scss}line{font-family:\00003161}}
+.highlight .il {
+  color: #2aa198; }
