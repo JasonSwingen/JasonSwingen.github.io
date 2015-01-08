@@ -1,0 +1,195 @@
+@import 'variables';
+@import 'mixins';
+
+.wrapper-masthead {
+  background-color: $darkerGray;
+  color: $white;
+  .container  {
+    background-color: $darkerGray;
+    position: relative;
+    z-index: 30;
+  }
+}
+
+.masthead {
+  padding-top: 10px;
+  @include mobile {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+}
+
+.site-avatar {
+  float: left;
+  width: 102px;
+  margin: 7px 15px 0px 10px;
+  &:active {
+  transform: rotateX(-15deg);
+  }
+  @include mobile {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  img {
+    border-radius: 100px;
+  }
+}
+
+.site-name {
+  margin: 0;
+  color: $white;
+  cursor: pointer;
+  font-family: $helveticaNeue; 
+  font-weight: 300;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.site-description {
+  margin: 0;
+  color: $gray;
+  font-size: 16px;
+  @include mobile {
+    margin: 3px 0;
+  }
+}
+
+.twitter-follow-button {
+  margin: 10px 0px;
+  padding-top: 5px;
+  height: 30px !important;
+  @include mobile {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+a.menu-link {
+  display: none;
+    @include mobile {
+      display: block;
+      padding: 5px;
+      position: absolute;
+      top: 20px;
+      right: 10px;
+      width: 50px;
+      height: 20px;
+  }
+}
+
+.menu-link span, .menu-link span:before, .menu-link span:after {
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: white;
+  position: absolute;
+  display: block;
+  content: '';
+}
+.menu-link span:before {
+  top: -10px; 
+}
+.menu-link span:after {
+  bottom: -10px;
+}
+
+.menu-link span, .menu-link span:before, .menu-link span:after {
+  @include transition(all, 0.4s, ease-in-out);
+}
+.menu-link.active span {
+  background-color: transparent;
+}
+.menu-link.active span:before, .menu-link.active span:after {
+  top: 0;
+}
+.menu-link.active span:before {
+  transform: rotate(45deg);
+}
+.menu-link.active span:after {
+  transform: rotate(-45deg);
+}
+
+nav[role=navigation] {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  @include transition(all, 0s, linear);
+  @include mobile {
+    border-top: none;
+    // this can be increased as number of links increases
+    top: -300px;
+  }
+}
+.js nav[role=navigation] {
+  @include mobile {
+    overflow: hidden;
+    max-height: 0;
+   }
+}
+nav[role=navigation].active {
+  max-height: 100%;
+  padding-top: 0px;
+  position: relative;
+  z-index: 20;
+  top: 0px;
+  @include transition(all, 0.4s, ease-out);
+
+}
+nav[role=navigation] ul {
+  list-style-type: none;
+  margin: 1px;
+  padding: 0px 0px 10px 0px;
+  @include mobile {
+    margin: 0px;
+    padding: 0px;
+  }
+}
+nav[role=navigation] li {
+  display: inline-block;
+  margin: 4px;
+  background-color: $darkerGray;
+  box-shadow: inset 0 .1em rgba(255,255,255,0.1), 0 .1em .1em black, 0 0.2em rgba(0,0,0,0.4), 0 0 0 .1em rgba(0,0,0,0.1);
+  @include mobile {
+    margin: 0px;
+    display: block;
+    text-align: center;
+    &:hover {
+      color: $blue;
+    }
+  }
+}
+nav[role=navigation] li a {
+  display: block;
+  padding: 10px 30px;
+  color: white;
+  &:hover {
+    color: $blue;
+  }
+  &:active {
+    box-shadow: inset 0 .1em rgba(0,0,0,0.6), 0 0.2em rgba(155,155,155,0.2), 0 -0.1em 0 .1em rgba(0,0,0,0.1);
+  }
+  @include mobile {
+    padding: 0.5em;
+  }
+}
+
+.flexmom {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: flex-start;
+  justify-content: space-around;
+  @include mobile {
+    height: 100%;
+    flex-direction: column;
+  }
+  .flexkid {
+    flex-grow: 1;
+  }
+}

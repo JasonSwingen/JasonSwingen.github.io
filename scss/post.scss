@@ -1,0 +1,141 @@
+@import 'mixins';
+@import 'breakpoints';
+@import 'variables';
+
+.post-title {
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 10px;
+  float: left;
+  @include mobile {
+    text-align: center;
+  }
+}
+
+.posts > .post {
+  padding: 1px 15px 40px 15px;
+  @include gradient($white, $lightGray);
+  @include border-radius(5px);
+  border-top: 3px solid $blue;
+  margin-bottom: 40px;
+  @include mobile {
+    margin-bottom: 20px;
+  }
+}
+
+.posts {
+  h1 {
+    margin: 10px 0px;
+    a {
+      &:hover {
+        border-bottom: 3px solid $blue;
+        padding-bottom: 1px;
+      }
+    }
+    @include mobile {
+      text-align: center;
+    }
+  }
+}
+
+.post {
+  padding: 0px 15px;
+  @include box-shadow(0px, 5px, 24px, 0px, $gray);
+  @include border-radius(5px);
+  border-top: 3px solid $blue;
+  @include mobile {
+    @include box-shadow(0px,0px,0px,0px, $white);
+  }
+  .postdate {
+    text-align: center;
+    font-size: 12px;
+    margin: 12px;
+    color: $gray;
+  }
+}
+
+.posts > .post:last-child {
+  padding-bottom: 1em;
+  border-bottom: none;
+}
+
+.post {
+  blockquote {
+    margin: 1.8em .8em;
+    border-left: 2px solid $gray;
+    padding: 0.1em 1em;
+    color: $gray;
+    font-size: 22px;
+    font-style: italic;
+  }
+
+  .comments {
+    margin-top: 10px;
+  }
+
+  .read-more {
+    text-transform: uppercase;
+    font-size: 15px;
+    @include mobile {
+      margin: 0 4px;
+      padding: 5px 10px;
+      border: 1px solid $blue;
+      background-color: $white;
+      color: $blue;
+      @include border-radius(5px);
+        &:hover {
+          border: 1px solid $blue;
+          background-color: $blue;
+          color: $white;
+        }
+    }
+  }
+}
+
+
+.floatright {
+  float: right;
+  max-width: 50%;
+  max-height: 250px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.floatleft {
+  float: left;
+  max-width: 50%;
+  max-height: 250px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.centered {
+  margin: 30px auto;
+  position: relative;
+  left: -10%;
+  max-width: 120%;
+  @include box-shadow(0px, 10px, 40px, 0px, $gray);
+  @include mobile {
+    margin: 10px auto;
+    left: 0;
+    max-width: 100%;
+  }
+}
+
+
+
+.page {
+  padding: 0px 15px;
+}
+
+.tags, .categories {
+  list-style-type: none;
+}
+.tags {
+
+}
+.categories {
+
+}
+
+.share {
+  margin-top: 20px;
+}

@@ -1,0 +1,44 @@
+.form-label-left {
+    width:150px !important;
+    @include mobile {
+      margin: 4px auto;
+      text-align: center;
+      width: 100%;
+    }
+}
+.form-line {
+  @include mobile {
+    padding: 12px 15px 12px 15px;
+    max-width: 350px;
+  }
+}
+.text-box {
+  @include mobile {
+    max-width: 100% !important;
+  }
+}
+.form-label-right {
+    width:150px !important;
+    @include mobile {
+      margin: 4px auto;
+      text-align: center;
+      width: 100%;
+    }
+}
+.form-all {
+    width:650px;
+    color:#555 !important;
+    font-family:'Lucida Grande';
+    font-size:14px;
+    @include mobile {
+      width: 100%;
+    }
+}
+.form-sub-label-container, .form-input, .form-text-box, .form-textbox, .form-textarea {
+  @include mobile {
+    width: 100%;
+  }
+}
+.phone-separate {
+  display: none;
+}
