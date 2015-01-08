@@ -1,12 +1,9 @@
-@import 'breakpoints';
-@import 'variables';
-@import 'bourbon';
-@import 'mixins';
-
 .share-top {
   float: right;
   margin-top: 27px;
-  @include mobile {
+}
+@media screen and (max-width: 640px) {
+  .share-top {
     margin-top: 0px;
     float: left;
     padding: 0px 10px 10px;
@@ -19,17 +16,17 @@
   margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  background-color: $darkGray;
+  background-color: #333333;
 }
 
 footer {
   padding: 20px 0;
   text-align: center;
-  background-color: $darkGray;
+  background-color: #333333;
 }
 
 .footerinfo {
-  color: $gray;
+  color: #666666;
   font-size: 14px;
   padding: 8px;
 }
@@ -38,11 +35,13 @@ footer {
   list-style-type: none;
   float: right;
   margin: 10px;
-  color: $white;
-  &:hover {
-    color: $blue;
-  }
-  @include mobile {
+  color: white;
+}
+.totop:hover {
+  color: #4183c4;
+}
+@media screen and (max-width: 640px) {
+  .totop {
     float: none;
     text-align: center;
   }

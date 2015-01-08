@@ -1,0 +1,81 @@
+.bullets {
+  -webkit-font-smoothing: antialiased;
+  color: white;
+  padding: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 1.5em;
+  margin: 1em;
+  overflow: auto;
+}
+.bullets h2 {
+  margin: 0;
+  color: white;
+}
+.bullets li {
+  list-style: none;
+}
+.bullets p {
+  color: white;
+  line-height: 1.5em;
+}
+.bullets img {
+  max-width: 100%;
+}
+.bullets .bullet {
+  -webkit-flex-basis: 20em;
+  -moz-flex-basis: 20em;
+  flex-basis: 20em;
+  -ms-flex-preferred-size: 20em;
+  -webkit-flex-grow: 1;
+  -moz-flex-grow: 1;
+  flex-grow: 1;
+  -ms-flex-positive: 1;
+}
+.bullets .bullet-icon {
+  background: #477dca;
+  border-radius: 50%;
+  float: left;
+  height: 3.5em;
+  padding: 0.875em;
+  width: 3.5em;
+}
+.bullets .bullet-icon-1 {
+  background: #477dca;
+}
+.bullets .bullet-icon-2 {
+  background: #47caaa;
+}
+.bullets .bullet-icon-3 {
+  background: #a9ca47;
+}
+.bullets .bullet-content {
+  margin-left: 1em;
+  margin-bottom: 2em;
+}
+.bullets h2 {
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+  display: inline-block;
+  font-size: 1.4em;
+  margin-bottom: 0.58333em;
+  padding-top: 0em;
+}
+.bullets ul {
+  padding-left: 12px;
+}
+.bullets .socialText {
+  position: relative;
+  top: -1em;
+}

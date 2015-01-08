@@ -1,3 +1,5 @@
+@import 'breakpoints';
+
 .form-label-left {
     width:150px !important;
     @include mobile {
