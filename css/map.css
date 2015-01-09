@@ -1,15 +1,15 @@
-@import 'breakpoints';
-
 #map_canvas {
   height: 400px;
   width: 100%;
-  @include mobile {
+}
+@media screen and (max-width: 640px) {
+  #map_canvas {
     display: none;
   }
 }
 
-#map_canvas img { 
-  max-width: none; // to prevent UI control bug
+#map_canvas img {
+  max-width: none;
 }
 
 #map_canvas .content {
