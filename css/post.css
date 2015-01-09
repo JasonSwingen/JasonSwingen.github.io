@@ -6,6 +6,7 @@
 }
 @media screen and (max-width: 640px) {
   .post-title {
+    float: none;
     text-align: center;
   }
 }
@@ -60,11 +61,7 @@
 }
 @media screen and (max-width: 640px) {
   .post {
-    margin-bottom: 0px;
-    -webkit-box-shadow: 0px 0px 0px 0px white;
-    -moz-box-shadow: 0px 0px 0px 0px white;
-    -ms-box-shadow: 0px 0px 0px 0px white;
-    box-shadow: 0px 0px 0px 0px white;
+    margin: 0px 0.4em;
   }
 }
 .post .postdate {
@@ -130,8 +127,16 @@
   }
 }
 
+.page {
+  padding: 0px;
+}
 .page h1 {
   margin: 10px 0px;
+}
+@media screen and (max-width: 640px) {
+  .page h1 {
+    text-align: center;
+  }
 }
 
 .floatright {
@@ -170,10 +175,6 @@
     left: 0;
     max-width: 100%;
   }
-}
-
-.page {
-  padding: 0px 15px;
 }
 
 .tags, .categories {

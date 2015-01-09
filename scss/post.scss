@@ -8,9 +8,11 @@
   padding: 10px;
   float: left;
   @include mobile {
+    float: none;
     text-align: center;
   }
 }
+
 
 .posts > .post {
   padding: 1px 15px 40px 15px;
@@ -46,8 +48,7 @@
   border-top: 5px solid $blue;
   background-color: $postbackground;
   @include mobile {
-    margin-bottom: 0px;
-    @include box-shadow(0px,0px,0px,0px, $white);
+    margin: 0px 0.4em;
   }
   .postdate {
     text-align: center;
@@ -117,8 +118,12 @@
 }
 
 .page {
+  padding: 0px;
   h1 {
     margin: 10px 0px;
+    @include mobile {
+      text-align: center;
+    }
   }
 }
 
@@ -151,15 +156,10 @@
   }
 }
 
-
-
-.page {
-  padding: 0px 15px;
-}
-
 .tags, .categories {
   list-style-type: none;
 }
+
 .tags {
 
 }
