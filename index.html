@@ -2,13 +2,13 @@
 layout: default
 ---
 
-<div class="hero">
+<!-- <div class="hero">
 	<div class="hero-inner">
 		<div class="hero-copy">
 			<h1>Do you need a website?</h1>
 				<p>Well then you have come to the right place, because I make websites!</p>	
 		</div>
-    	<!-- <button><a href="{{ site.baseurl }}/contact/">Hire Me</a></button> -->
+    	<button><a href="{{ site.baseurl }}/contact/">Hire Me</a></button>
 	</div>
 </div>
 
@@ -16,107 +16,26 @@ layout: default
 	<div class="device-text">
 		<h4>Fully Responsive Websites</h4>
 			<p>Designed for Mobile devices and scaled larger for computers, no matter what device you are using, your site will look great.</p>
-				<!-- <button>Learn More</button> -->
+				<button>Learn More</button>
 	</div>
-	<div id="js-fadeInElement" class="device">
+	<div class="device">
 		<div class="screen"></div>
 	</div>
+</div> -->
+
+
+<div class="container">
+	<div class="flex-boxes">
+		{% for post in site.posts %}
+	      <article class="flex-box">
+	        <h1 class="flex-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+	        <div class="postdate">{{ post.date | date: "%B %e, %Y" }}</div>
+	        <p>{{ post.content | truncatewords:30}}</p>
+	        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Continue reading...</a>
+	      </article>
+	    {% endfor %}
+	</div>
 </div>
-
-
-<div class="cards clearfix">
-  <div class="card">
-    <div class="card-image">
-      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
-    </div>
-    <div class="card-header">
-      First Card
-    </div>
-    <div class="card-copy">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officiis sunt neque facilis culpa molestiae necessitatibus delectus veniam provident.</p>
-    </div>
-    <div class="card-stats">
-      <ul>
-        <li>98<span>Items</span></li>
-        <li>298<span>Things</span></li>
-        <li>923<span>Objects</span></li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="ribbon-wrapper"><div class="ribbon">RIBBON</div></div>
-    <div class="card-image">
-      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains-4.png" alt="">
-    </div>
-    <div class="card-header">
-      Another Card
-    </div>
-    <div class="card-copy">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officiis sunt neque facilis culpa molestiae necessitatibus delectus veniam provident.</p>
-    </div>
-    <div class="card-stats">
-      <ul>
-        <li>98<span>Items</span></li>
-        <li>298<span>Things</span></li>
-        <li>923<span>Objects</span></li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-image">
-      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains-3.png" alt="">
-    </div>
-    <div class="card-header">
-      The Last Card
-    </div>
-    <div class="card-copy">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-    </div>
-    <div class="card-stats">
-      <ul>
-        <li>98<span>Items</span></li>
-        <li>298<span>Things</span></li>
-        <li>923<span>Objects</span></li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-<div class="flex-boxes">
-  <a href="javascript:void(0)" class="flex-box flex-box-big">
-    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_2_dark.png" alt="">
-    <h1 class="flex-title">A Wide Flex Box Item</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad nostrum, libero! Laborum distinctio necessitatibus voluptates eaque officiis, unde illo, earum voluptatum rerum, reiciendis ipsa ex dolorem a dicta, maxime aliquam.</p>
-  </a>
-  <a href="javascript:void(0)" class="flex-box">
-    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1_dark.png" alt="">
-    <h1 class="flex-title">Flex Box Item</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum molestiae fugiat tenetur fugit atque dignissimos, fugiat natus vitae.</p>
-  </a>
-  <a href="javascript:void(0)" class="flex-box">
-    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3_dark.png" alt="">
-    <h1 class="flex-title">A Flex Box Item</h1>
-    <p>Lorem adipisicing elit. Voluptas consectetur tempora quis nam, officia tenetur blanditiis in illo dolor?</p>
-  </a>
-  <a href="javascript:void(0)" class="flex-box flex-box-big">
-    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_2_dark.png" alt="">
-    <h1 class="flex-title">Another Wide Item</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae quis ipsum, officia, aperiam tenetur dolor molestiae voluptate perferendis dolorem vel ex, unde fugit blanditiis sapiente.</p>
-  </a>
-  <a href="javascript:void(0)" class="flex-box">
-    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_2_dark.png" alt="">
-    <h1 class="flex-title">Flex Box Item</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo obcaecati in provident illo.</p>
-  </a>
-  <a href="javascript:void(0)" class="flex-box">
-    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3_dark.png" alt="">
-    <h1 class="flex-title">Last Flex Box Item</h1>
-    <p>Lorem ipsum dolor sit amet, elit. Rem, illum.</p>
-  </a>
-</div>
-
 
 
 <div id="map_canvas"></div>
