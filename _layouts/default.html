@@ -50,14 +50,11 @@
           </nav>
     </div>
 
-
-
-    <div id="main" role="main" class="container">
+    <div>
       {{ content }}
     </div>
 
-    <div class="wrapper-footer">
-      <a href="#"><li class="totop btn">To Top &#10548;</li></a>
+    <div class="wrapper-footer clearfix">
       <div class="container">
       <ul class="bullets">
         <li class="bullet two-col-bullet">
@@ -74,9 +71,9 @@
             </div>
         </li>  
       </ul>
-      </div>
-
+        <div><a href="#"><li class="totop btn">Back To Top &#10548;</li></a></div>
         <div class="footerinfo">© 2015 Jason Swingen</div>
+      </div>
     </div>
 
     {% include analytics.html %}
@@ -113,6 +110,7 @@
 
     <!-- Jquery -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="/min/script.min.js"></script>
 
     <!-- End of Javascript Snippets -->

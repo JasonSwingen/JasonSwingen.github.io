@@ -40,7 +40,7 @@
 
 .post {
   padding: 0px 15px;
-  @include box-shadow(0px, 5px, 24px, 0px, $gray);
+  @include box-shadow(0px, 14px, 24px, -10px, $gray);
   @include border-radius(5px);
   border-top: 3px solid $blue;
   @include mobile {

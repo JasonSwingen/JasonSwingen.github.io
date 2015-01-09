@@ -16,9 +16,8 @@
 }
 
 .wrapper-footer {
-  margin-top: 50px;
+  margin-top: 0px;
   border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
   background-color: $darkGray;
 }
 
@@ -37,14 +36,19 @@ footer {
 .totop {
   list-style-type: none;
   float: right;
-  margin: 10px;
-  color: $white;
-  &:hover {
-    color: $blue;
-  }
+  margin: 0px 20px;
+  color: $blue;
   @include mobile {
+    margin: 0px 40px;
     float: none;
     text-align: center;
+    border: 1px solid $blue;
+    @include border-radius(5px);
+    &:hover {
+      background-color: $blue;
+      color: $white;
+    }
+
   }
 }
 

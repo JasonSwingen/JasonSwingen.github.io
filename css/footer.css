@@ -13,9 +13,8 @@
 }
 
 .wrapper-footer {
-  margin-top: 50px;
+  margin-top: 0px;
   border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
   background-color: #333333;
 }
 
@@ -34,16 +33,23 @@ footer {
 .totop {
   list-style-type: none;
   float: right;
-  margin: 10px;
-  color: white;
-}
-.totop:hover {
+  margin: 0px 20px;
   color: #4183c4;
 }
 @media screen and (max-width: 640px) {
   .totop {
+    margin: 0px 40px;
     float: none;
     text-align: center;
+    border: 1px solid #4183c4;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+  }
+  .totop:hover {
+    background-color: #4183c4;
+    color: white;
   }
 }
 
