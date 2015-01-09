@@ -17,7 +17,7 @@
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-bottom: 1.5em;
-  margin: 1em;
+  margin: 2em 0.2em 0em;
   overflow: auto;
 }
 .bullets h2 {

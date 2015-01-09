@@ -39,7 +39,7 @@
   @include display(flex);
   @include flex-wrap(wrap);
   margin-bottom: $base-line-height;
-  margin: 1em;
+  margin: 2em 0.2em 0em;
   overflow: auto;
 
   .bullet {

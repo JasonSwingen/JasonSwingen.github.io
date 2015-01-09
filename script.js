@@ -21,6 +21,31 @@ $(document).ready(function($) {
     });
   });
 
+  // //Fade In
+  // $(document).ready(function() {
+  //   var element = document.getElementById("js-fadeInElement");
+  //   $(element).addClass('js-fade-element-hide');
+
+  //   $(window).scroll(function() {
+  //     if( $("#js-fadeInElement").length > 0 ) {
+  //       var elementTopToPageTop = $(element).offset().top;
+  //       var windowTopToPageTop = $(window).scrollTop();
+  //       var windowInnerHeight = window.innerHeight;
+  //       var elementTopToWindowTop = elementTopToPageTop - windowTopToPageTop;
+  //       var elementTopToWindowBottom = windowInnerHeight - elementTopToWindowTop;
+  //       var distanceFromBottomToAppear = 300;
+
+  //       if(elementTopToWindowBottom > distanceFromBottomToAppear) {
+  //         $(element).addClass('js-fade-element-show');
+  //       }
+  //       else if(elementTopToWindowBottom < 0) {
+  //         $(element).removeClass('js-fade-element-show');
+  //         $(element).addClass('js-fade-element-hide');
+  //       }
+  //     }
+  //   });
+  // });
+
   $('body').addClass('js');
   var $menu = $('#menu'),
     $menulink = $('.menu-link');
@@ -36,7 +61,7 @@ $(document).ready(function($) {
   });
 
   var bittersMap = (function () {
-    var myLatlng = new google.maps.LatLng(46.7687150,-92.1293040),
+    var myLatlng = new google.maps.LatLng(46.7687250,-92.1293140),
         mapCenter = new google.maps.LatLng(46.7687150,-92.1293040),
         mapCanvas = document.getElementById('map_canvas'),
         mapOptions = {
