@@ -24,7 +24,7 @@
   $flex-box-background: lighten($light-gray, 10);
   $flex-box-gutter: .4em;
   $flex-box-width: 18em;
-  $flex-box-color: transparentize($base-font-color, .3);
+  $flex-box-color: transparentize($base-font-color, .1);
   $flex-box-top-colors: 
     tomato, 
     #72BFBF, 
@@ -90,7 +90,7 @@
       color: $flex-box-color;
       margin-bottom: .5em;
     }
-    
+
   }
 
   .flex-box-big {

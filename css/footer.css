@@ -38,7 +38,7 @@ footer {
 }
 @media screen and (max-width: 640px) {
   .totop {
-    margin: 0px 40px;
+    margin: 0px 40px 20px;
     float: none;
     text-align: center;
     border: 1px solid #4183c4;
