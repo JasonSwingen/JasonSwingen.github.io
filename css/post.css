@@ -75,6 +75,9 @@
   border-bottom: none;
 }
 
+.post h1 {
+  margin-bottom: 0.3em;
+}
 .post h2 {
   font-size: 1.6em;
   margin-bottom: 0.3em;

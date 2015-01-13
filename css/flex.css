@@ -252,7 +252,7 @@ input[type="submit"] {
 
 .flex-boxes {
   -webkit-font-smoothing: antialiased;
-  margin: .5em 0em;
+  margin: 0em 0em 2em;
   display: -webkit-box;
   display: -moz-box;
   display: box;
