@@ -2,11 +2,10 @@
 @import 'breakpoints';
 @import 'variables';
 
-.post-title {
+.title {
   margin: 0 auto;
   max-width: 900px;
   padding: 10px;
-  float: left;
   @include mobile {
     float: none;
     text-align: center;
@@ -119,12 +118,6 @@
 
 .page {
   padding: 0px;
-  h1 {
-    margin: 10px 0px;
-    @include mobile {
-      text-align: center;
-    }
-  }
 }
 
 
@@ -151,8 +144,9 @@
   @include border-radius(5px);
   @include mobile {
     margin: 10px auto;
-    left: 0;
-    max-width: 100%;
+    left: -5%;
+    max-width: 110%;
+    @include border-radius(0px);
   }
 }
 

@@ -163,6 +163,7 @@ nav[role=navigation] li a {
   display: block;
   padding: 10px 30px;
   color: white;
+  letter-spacing: 1px;
   &:hover {
     color: $blue;
   }

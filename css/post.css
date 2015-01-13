@@ -1,11 +1,10 @@
-.post-title {
+.title {
   margin: 0 auto;
   max-width: 900px;
   padding: 10px;
-  float: left;
 }
 @media screen and (max-width: 640px) {
-  .post-title {
+  .title {
     float: none;
     text-align: center;
   }
@@ -130,14 +129,6 @@
 .page {
   padding: 0px;
 }
-.page h1 {
-  margin: 10px 0px;
-}
-@media screen and (max-width: 640px) {
-  .page h1 {
-    text-align: center;
-  }
-}
 
 .floatright {
   float: right;
@@ -172,8 +163,12 @@
 @media screen and (max-width: 640px) {
   .centered {
     margin: 10px auto;
-    left: 0;
-    max-width: 100%;
+    left: -5%;
+    max-width: 110%;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    border-radius: 0px;
   }
 }
 

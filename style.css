@@ -664,11 +664,12 @@ nav[role=navigation] li {
 nav[role=navigation] li a {
   display: block;
   padding: 10px 30px;
-  color: white; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/masthead\.scss}line{font-family:\00003166}}
+  color: white;
+  letter-spacing: 1px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/masthead\.scss}line{font-family:\00003167}}
   nav[role=navigation] li a:hover {
     color: #4183c4; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/masthead\.scss}line{font-family:\00003169}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/masthead\.scss}line{font-family:\00003170}}
   nav[role=navigation] li a:active {
     box-shadow: inset 0 0.1em rgba(0, 0, 0, 0.6), 0 0.2em rgba(155, 155, 155, 0.2), 0 -0.1em 0 0.1em rgba(0, 0, 0, 0.1); }
   @media screen and (max-width: 640px) {
@@ -676,7 +677,7 @@ nav[role=navigation] li a {
     nav[role=navigation] li a {
       padding: 0.5em; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/masthead\.scss}line{font-family:\00003177}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/masthead\.scss}line{font-family:\00003178}}
 .flexmom {
   display: -webkit-box;
   display: -moz-box;
@@ -688,11 +689,11 @@ nav[role=navigation] li a {
   justify-content: flex-start;
   justify-content: space-around; }
   @media screen and (max-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/masthead\.scss}line{font-family:\00003177}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/masthead\.scss}line{font-family:\00003178}}
     .flexmom {
       height: 100%;
       flex-direction: column; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/masthead\.scss}line{font-family:\00003191}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/masthead\.scss}line{font-family:\00003192}}
   .flexmom .flexkid {
     flex-grow: 1; }
 
@@ -1504,18 +1505,17 @@ input[type="submit"] {
 /* PAGES & POSTS */
 /*****************/
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\000035}}
-.post-title {
+.title {
   margin: 0 auto;
   max-width: 900px;
-  padding: 10px;
-  float: left; }
+  padding: 10px; }
   @media screen and (max-width: 640px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\000035}}
-    .post-title {
+    .title {
       float: none;
       text-align: center; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\0000317}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\0000316}}
 .posts > .post {
   padding: 1px 15px 40px 15px;
   background-color: #eeeeee;
@@ -1531,23 +1531,23 @@ input[type="submit"] {
   border-top: 5px solid #4183c4;
   margin-bottom: 40px; }
   @media screen and (max-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\0000317}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\0000316}}
     .posts > .post {
       margin-bottom: 20px; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\0000329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\0000328}}
 .posts h1 {
   margin: 10px 0px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\0000332}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\0000331}}
   .posts h1 a:hover {
     border-bottom: 3px solid #4183c4;
     padding-bottom: 1px; }
   @media screen and (max-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\0000329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\0000328}}
     .posts h1 {
       text-align: center; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\0000342}}
 .post {
   padding: 15px;
   margin-bottom: 30px;
@@ -1562,39 +1562,39 @@ input[type="submit"] {
   border-top: 5px solid #4183c4;
   background-color: #f7f7f7; }
   @media screen and (max-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\0000342}}
     .post {
       margin: 0px 0.4em; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\0000353}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\0000352}}
   .post .postdate {
     text-align: center;
     font-size: 12px;
     margin: 12px;
     color: #666666; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\0000361}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\0000360}}
 .posts > .post:last-child {
   padding-bottom: 1em;
   border-bottom: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\0000367}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\0000366}}
 .post h2 {
   font-size: 1.6em;
   margin-bottom: 0.3em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\0000372}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\0000371}}
 .post h3 {
   font-size: 1.3em;
   margin-bottom: 0.3em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\0000377}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\0000376}}
 .post p {
   color: #666666; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\0000381}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\0000380}}
 .post ul {
   list-style-type: disc;
   margin: 15px 0px;
   padding-left: 30px;
   color: #666666; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\0000388}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\0000387}}
 .post blockquote {
   margin: 1.8em .8em;
   border-left: 2px solid #666666;
@@ -1602,15 +1602,15 @@ input[type="submit"] {
   color: #666666;
   font-size: 22px;
   font-style: italic; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\0000397}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\0000396}}
 .post .comments {
   margin-top: 10px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\00003101}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\00003100}}
 .post .read-more {
   text-transform: uppercase;
   font-size: 15px; }
   @media screen and (max-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\00003101}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\00003100}}
     .post .read-more {
       margin: 0 4px;
       padding: 5px 10px;
@@ -1621,24 +1621,17 @@ input[type="submit"] {
       -moz-border-radius: 5px;
       -ms-border-radius: 5px;
       border-radius: 5px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\00003111}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\00003110}}
       .post .read-more:hover {
         border: 1px solid #4183c4;
         background-color: #4183c4;
         color: white; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\00003120}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\00003119}}
 .page {
   padding: 0px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\00003122}}
-  .page h1 {
-    margin: 10px 0px; }
-    @media screen and (max-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\00003122}}
-      .page h1 {
-        text-align: center; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\00003131}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\00003124}}
 .floatright {
   float: right;
   max-width: 50%;
@@ -1646,7 +1639,7 @@ input[type="submit"] {
   margin-left: 20px;
   margin-bottom: 20px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\00003138}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\00003131}}
 .floatleft {
   float: left;
   max-width: 50%;
@@ -1654,7 +1647,7 @@ input[type="submit"] {
   margin-right: 20px;
   margin-bottom: 20px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\00003145}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\00003138}}
 .centered {
   margin: 30px auto;
   position: relative;
@@ -1669,17 +1662,21 @@ input[type="submit"] {
   -ms-border-radius: 5px;
   border-radius: 5px; }
   @media screen and (max-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\00003145}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\00003138}}
     .centered {
       margin: 10px auto;
-      left: 0;
-      max-width: 100%; } }
+      left: -5%;
+      max-width: 110%;
+      -webkit-border-radius: 0px;
+      -moz-border-radius: 0px;
+      -ms-border-radius: 0px;
+      border-radius: 0px; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\00003159}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\00003153}}
 .tags, .categories {
   list-style-type: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\00003170}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/post\.scss}line{font-family:\00003164}}
 .share {
   margin-top: 20px; }
 
