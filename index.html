@@ -1,42 +1,36 @@
 ---
 layout: default
 ---
-
 <!-- <div class="hero">
-	<div class="hero-inner">
-		<div class="hero-copy">
-			<h1>Do you need a website?</h1>
-				<p>Well then you have come to the right place, because I make websites!</p>	
+		<div class="hero-inner">
+				<div class="hero-copy">
+						<h1>Do you need a website?</h1>
+								<p>Well then you have come to the right place, because I make websites!</p>
+				</div>
+			<button><a href="{{ site.baseurl }}/contact/">Hire Me</a></button>
 		</div>
-    	<button><a href="{{ site.baseurl }}/contact/">Hire Me</a></button>
-	</div>
 </div>
-
 <div class="device-background clearfix">
-	<div class="device-text">
-		<h4>Fully Responsive Websites</h4>
-			<p>Designed for Mobile devices and scaled larger for computers, no matter what device you are using, your site will look great.</p>
-				<button>Learn More</button>
-	</div>
-	<div class="device">
-		<div class="screen"></div>
-	</div>
+		<div class="device-text">
+				<h4>Fully Responsive Websites</h4>
+					<p>Designed for Mobile devices and scaled larger for computers, no matter what device you are using, your site will look great.</p>
+						<button>Learn More</button>
+		</div>
+		<div class="device">
+				<div class="screen"></div>
+		</div>
 </div> -->
-
-
 <div class="container">
 	<div class="title"><h1>Recent Posts</h1></div>
 	<div class="flex-boxes">
 		{% for post in site.posts %}
-	      <article class="flex-box">
-	        <h1 class="flex-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-	        <div class="postdate">{{ post.date | date: "%B %e, %Y" }}</div>
-	        <p>{{ post.content | truncatewords:30}}</p>
-	        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Continue reading...</a>
-	      </article>
-	    {% endfor %}
+			<article class="flex-box">
+				<h1 class="flex-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+				<div class="postdate">{{ post.date | date: "%B %e, %Y" }}</div>
+				<p>{{ post.content | truncatewords:30}}</p>
+				<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Continue reading...</a>
+			</article>
+		{% endfor %}
 	</div>
 </div>
-
-
 <div id="map_canvas"></div>
