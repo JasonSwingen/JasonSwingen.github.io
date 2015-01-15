@@ -1,27 +1,28 @@
 @mixin gradient($colorFrom, $colorTo) {
-    background-color: $colorTo;
-    background-image: -webkit-gradient(linear, left top, right top, from($colorFrom), to($colorTo));
-    background-image: -webkit-linear-gradient(bottom, $colorFrom, $colorTo);
-    background-image: -moz-linear-gradient(bottom, $colorFrom, $colorTo);
-    background-image: -o-linear-gradient(bottom, $colorFrom, $colorTo);
-    background-image: linear-gradient(to top, $colorFrom, $colorTo);
-  }
-  @mixin transition($transition-property, $transition-time, $method) {
-    -webkit-transition: $transition-property $transition-time $method;
-    -moz-transition: $transition-property $transition-time $method;
-    -ms-transition: $transition-property $transition-time $method;
-    -o-transition: $transition-property $transition-time $method;
-    transition: $transition-property $transition-time $method;
-  }
-  @mixin box-shadow($left, $top, $blur, $size, $shadow-color) {
-    -webkit-box-shadow: $left $top $blur $size $shadow-color;
-       -moz-box-shadow: $left $top $blur $size $shadow-color;
-        -ms-box-shadow: $left $top $blur $size $shadow-color;
-            box-shadow: $left $top $blur $size $shadow-color;
-  }
-  @mixin border-radius($radius) {
-    -webkit-border-radius: $radius;
-       -moz-border-radius: $radius;
-        -ms-border-radius: $radius;
-            border-radius: $radius;
-  }
+  background-color: $colorTo;
+  background-image: -webkit-gradient(linear, left top, right top, from($colorFrom), to($colorTo));
+  background-image: -webkit-linear-gradient(bottom, $colorFrom, $colorTo);
+  background-image: -moz-linear-gradient(bottom, $colorFrom, $colorTo);
+  background-image: -o-linear-gradient(bottom, $colorFrom, $colorTo);
+  background-image: linear-gradient(to top, $colorFrom, $colorTo);
+}
+@mixin transition($transition-property, $transition-time, $method) {
+  -webkit-transition: $transition-property $transition-time $method;
+  -moz-transition: $transition-property $transition-time $method;
+  -ms-transition: $transition-property $transition-time $method;
+  -o-transition: $transition-property $transition-time $method;
+  transition: $transition-property $transition-time $method;
+}
+@mixin box-shadow($left, $top, $blur, $size, $shadow-color) {
+  -webkit-box-shadow: $left $top $blur $size $shadow-color;
+     -moz-box-shadow: $left $top $blur $size $shadow-color;
+      -ms-box-shadow: $left $top $blur $size $shadow-color;
+          box-shadow: $left $top $blur $size $shadow-color;
+}
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+

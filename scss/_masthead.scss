@@ -24,7 +24,7 @@
   width: 102px;
   margin: 7px 15px 0px 10px;
   &:active {
-  transform: rotateX(-15deg);
+    transform: rotateX(-15deg);
   }
   @include mobile {
     float: none;
@@ -118,7 +118,7 @@ nav[role=navigation] {
   @include mobile {
     border-top: none;
     // this can be increased as number of links increases
-    top: -300px;
+    top: -150px;
   }
 }
 .js nav[role=navigation] {
@@ -133,7 +133,7 @@ nav[role=navigation].active {
   position: relative;
   z-index: 20;
   top: 0px;
-  @include transition(all, 0.4s, ease-out);
+  @include transition(all, 0.4s, $ease-out-back);
 
 }
 nav[role=navigation] ul {
