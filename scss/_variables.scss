@@ -4,8 +4,7 @@
 //
 
 // Colors
-$blue: #4183C4;
-$green: #34D149;
+$blue: #4183C4; 
 
 // Grays
 $black: #000;
@@ -16,13 +15,14 @@ $lightGray: #eee;
 $white: #fff;
 $postbackground: #f7f7f7;
 
-//
-// Specifics
-//
-
-$borderTopColor: $green;
-
 // Font stacks
 $font: 'Karla', Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
+
+// Mobile breakpoints
+@mixin mobile {
+  @media screen and (max-width: 640px) {
+    @content;
+  }
+}

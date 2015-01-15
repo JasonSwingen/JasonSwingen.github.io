@@ -1851,7 +1851,7 @@ footer {
 /*****************/
 /* BULLETS       */
 /*****************/
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_bullets\.scss}line{font-family:\000031}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_bullets\.scss}line{font-family:\000035}}
 .bullets {
   -webkit-font-smoothing: antialiased;
   color: white;
@@ -1873,21 +1873,21 @@ footer {
   margin-bottom: 1.5em;
   margin: 2em 0.2em 0em;
   overflow: auto; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_bullets\.scss}line{font-family:\0000313}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_bullets\.scss}line{font-family:\0000317}}
   .bullets h2 {
     margin: 0;
     color: white; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_bullets\.scss}line{font-family:\0000318}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_bullets\.scss}line{font-family:\0000322}}
   .bullets li {
     list-style: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_bullets\.scss}line{font-family:\0000323}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_bullets\.scss}line{font-family:\0000327}}
   .bullets p {
     color: white;
     line-height: 1.5em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_bullets\.scss}line{font-family:\0000328}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_bullets\.scss}line{font-family:\0000332}}
   .bullets img {
     max-width: 100%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_bullets\.scss}line{font-family:\0000341}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_bullets\.scss}line{font-family:\0000345}}
   .bullets .bullet {
     -webkit-flex-basis: 20em;
     -moz-flex-basis: 20em;
@@ -1897,7 +1897,7 @@ footer {
     -moz-flex-grow: 1;
     flex-grow: 1;
     -ms-flex-positive: 1; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_bullets\.scss}line{font-family:\0000346}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_bullets\.scss}line{font-family:\0000350}}
   .bullets .bullet-icon {
     background: #477dca;
     border-radius: 50%;
@@ -1905,30 +1905,30 @@ footer {
     height: 3.5em;
     padding: 0.875em;
     width: 3.5em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_bullets\.scss}line{font-family:\0000355}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_bullets\.scss}line{font-family:\0000359}}
   .bullets .bullet-icon-1 {
     background: #477dca; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_bullets\.scss}line{font-family:\0000359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_bullets\.scss}line{font-family:\0000363}}
   .bullets .bullet-icon-2 {
     background: #47caaa; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_bullets\.scss}line{font-family:\0000363}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_bullets\.scss}line{font-family:\0000367}}
   .bullets .bullet-icon-3 {
     background: #a9ca47; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_bullets\.scss}line{font-family:\0000367}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_bullets\.scss}line{font-family:\0000371}}
   .bullets .bullet-content {
     margin-left: 1em;
     margin-bottom: 2em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_bullets\.scss}line{font-family:\0000372}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_bullets\.scss}line{font-family:\0000376}}
   .bullets h2 {
     border-bottom: 1px solid rgba(51, 51, 51, 0.2);
     display: inline-block;
     font-size: 1.4em;
     margin-bottom: 0.58333em;
     padding-top: 0em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_bullets\.scss}line{font-family:\0000379}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_bullets\.scss}line{font-family:\0000383}}
   .bullets ul {
     padding-left: 12px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_bullets\.scss}line{font-family:\0000383}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_bullets\.scss}line{font-family:\0000387}}
   .bullets .socialText {
     position: relative;
     top: -1em; }

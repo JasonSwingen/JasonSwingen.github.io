@@ -1,3 +1,7 @@
+@import "bourbon";
+@import "neat";
+@import "breakpoints";
+
 .resume {
 	section {
 	  @include outer-container;
