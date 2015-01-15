@@ -1,5 +1,3 @@
-@import 'breakpoints';
-
 .form-label-left {
     width:150px !important;
     @include mobile {
@@ -43,4 +41,10 @@
 }
 .phone-separate {
   display: none;
+}
+
+.form-submit-button {
+  $:hover {
+    color: $blue;
+  }
 }
