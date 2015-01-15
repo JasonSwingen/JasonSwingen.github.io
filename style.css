@@ -1467,17 +1467,17 @@ input[type="submit"] {
     .read-more {
       margin: 0 4px;
       padding: 5px 10px;
-      border: 1px solid #477dca;
+      border: 1px solid #4183c4;
       background-color: transparent;
-      color: #477dca;
+      color: #4183c4;
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
       -ms-border-radius: 5px;
       border-radius: 5px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_flex\.scss}line{font-family:\00003111}}
       .read-more:hover {
-        border: 1px solid #477dca;
-        background-color: #477dca;
+        border: 1px solid #4183c4;
+        background-color: #4183c4;
         color: white; } }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_flex\.scss}line{font-family:\00003119}}
@@ -1683,6 +1683,17 @@ input[type="submit"] {
 .share {
   margin-top: 20px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_post\.scss}line{font-family:\00003171}}
+.share-top {
+  float: right;
+  margin-top: 24px; }
+  @media screen and (max-width: 640px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_post\.scss}line{font-family:\00003171}}
+    .share-top {
+      margin-top: 20px;
+      padding: 0px 23px 10px;
+      width: 100%; } }
+
 /*****************/
 /* SPECIFIC PAGES*/
 /*****************/
@@ -1792,44 +1803,31 @@ input[type="submit"] {
 /* FOOTER        */
 /*****************/
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_footer\.scss}line{font-family:\000036}}
-.share-top {
-  float: right;
-  margin-top: 27px; }
-  @media screen and (max-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_footer\.scss}line{font-family:\000036}}
-    .share-top {
-      margin-top: 0px;
-      float: left;
-      padding: 0px 10px 10px;
-      width: 100%;
-      text-align: center; } }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_footer\.scss}line{font-family:\0000318}}
 .wrapper-footer {
   margin-top: 0px;
   border-top: 1px solid #ddd;
   background-color: #333333; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_footer\.scss}line{font-family:\0000324}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_footer\.scss}line{font-family:\0000312}}
 footer {
   padding: 20px 0;
   text-align: center;
   background-color: #333333; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_footer\.scss}line{font-family:\0000330}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_footer\.scss}line{font-family:\0000318}}
 .footerinfo {
   color: #666666;
   font-size: 14px;
   padding: 8px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_footer\.scss}line{font-family:\0000336}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_footer\.scss}line{font-family:\0000324}}
 .totop {
   list-style-type: none;
   float: right;
   margin: 0px 20px;
   color: #4183c4; }
   @media screen and (max-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_footer\.scss}line{font-family:\0000336}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_footer\.scss}line{font-family:\0000324}}
     .totop {
       margin: 0px 40px 20px;
       float: none;
@@ -1839,12 +1837,12 @@ footer {
       -moz-border-radius: 5px;
       -ms-border-radius: 5px;
       border-radius: 5px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_footer\.scss}line{font-family:\0000347}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_footer\.scss}line{font-family:\0000335}}
       .totop:hover {
         background-color: #4183c4;
         color: white; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_footer\.scss}line{font-family:\0000355}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_footer\.scss}line{font-family:\0000343}}
 .custom-icon {
   margin: 0px 10px; }
 
@@ -1986,6 +1984,10 @@ footer {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_contact\.scss}line{font-family:\0000344}}
 .phone-separate {
   display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_contact\.scss}line{font-family:\0000349}}
+.form-submit-button:hover, .form-submit-reset:hover, .form-submit-print:hover, .form-screen-button:hover {
+  color: #4183c4; }
 
 /*****************/
 /* HIGHLIGHTING  */

@@ -1,10 +1,10 @@
-
 //
 // VARIABLES
 //
 
 // Colors
 $blue: #4183C4; 
+$green: #1BC446;
 
 // Grays
 $black: #000;
@@ -12,8 +12,15 @@ $darkerGray: #222;
 $darkGray: #333;
 $gray: #666;
 $lightGray: #eee;
+$lighterGray: #f7f7f7;
 $white: #fff;
-$postbackground: #f7f7f7;
+
+
+$postBorderTop: $green;
+$postbackground: $lighterGray;
+
+$color1: $blue;
+$color2: $green;
 
 // Font stacks
 $font: 'Karla', Helvetica, Arial, sans-serif;

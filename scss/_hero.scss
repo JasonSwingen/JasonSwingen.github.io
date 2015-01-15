@@ -66,10 +66,10 @@
     }
 
     button {
-      @include button(flat, $blue);
+      @include button(flat, $color1);
       padding: 1em 2em;
       a {
-        color: white;
+        color: $white;
       }
     }
   }

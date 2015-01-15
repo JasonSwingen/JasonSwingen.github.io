@@ -60,18 +60,18 @@ p {
 }
 
 a {
-  color: $blue;
+  color: $color1;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: $color1;
   }
 }
 
 a {
   @include transition(all, 0.1s, ease-in-out);
   &:hover {
-    color: $blue;
+    color: $color1;
   }
 }
 

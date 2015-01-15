@@ -3,18 +3,6 @@
 @import 'bourbon';
 @import 'mixins';
 
-.share-top {
-  float: right;
-  margin-top: 27px;
-  @include mobile {
-    margin-top: 0px;
-    float: left;
-    padding: 0px 10px 10px;
-    width: 100%;
-    text-align: center;
-  }
-}
-
 .wrapper-footer {
   margin-top: 0px;
   border-top: 1px solid #ddd;
@@ -37,15 +25,15 @@ footer {
   list-style-type: none;
   float: right;
   margin: 0px 20px;
-  color: $blue;
+  color: $color1;
   @include mobile {
     margin: 0px 40px 20px;
     float: none;
     text-align: center;
-    border: 1px solid $blue;
+    border: 1px solid $color1;
     @include border-radius(5px);
     &:hover {
-      background-color: $blue;
+      background-color: $color1;
       color: $white;
     }
 

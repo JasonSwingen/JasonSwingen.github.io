@@ -17,7 +17,7 @@
   padding: 1px 15px 40px 15px;
   @include gradient($white, $lightGray);
   @include border-radius(5px);
-  border-top: 5px solid $blue;
+  border-top: 5px solid $color1;
   margin-bottom: 40px;
   @include mobile {
     margin-bottom: 20px;
@@ -29,7 +29,7 @@
     margin: 10px 0px;
     a {
       &:hover {
-        border-bottom: 3px solid $blue;
+        border-bottom: 3px solid $color1;
         padding-bottom: 1px;
       }
     }
@@ -44,7 +44,7 @@
   margin-bottom: 30px;
   @include box-shadow(0px, 14px, 24px, -10px, $gray);
   @include border-radius(5px);
-  border-top: 5px solid $blue;
+  border-top: 5px solid $color1;
   background-color: $postbackground;
   @include mobile {
     margin: 0px 0.4em;
@@ -106,13 +106,13 @@
     @include mobile {
       margin: 0 4px;
       padding: 5px 10px;
-      border: 1px solid $blue;
+      border: 1px solid $color1;
       background-color: $white;
-      color: $blue;
+      color: $color1;
       @include border-radius(5px);
         &:hover {
-          border: 1px solid $blue;
-          background-color: $blue;
+          border: 1px solid $color1;
+          background-color: $color1;
           color: $white;
         }
     }
@@ -166,4 +166,14 @@
 
 .share {
   margin-top: 20px;
+}
+
+.share-top {
+  float: right;
+  margin-top: 24px;
+  @include mobile {
+    margin-top: 20px;
+    padding: 0px 23px 10px;
+    width: 100%;
+  }
 }

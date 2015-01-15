@@ -44,3 +44,9 @@
 .phone-separate {
   display: none;
 }
+
+.form-submit-button, .form-submit-reset, .form-submit-print, .form-screen-button {
+  &:hover {
+    color: $color1;
+  }
+}
