@@ -20,11 +20,11 @@ layout: default
 				<div class="screen"></div>
 		</div>
 </div> -->
-<div class="animateup container">
+<div class="container">
 	<div class="title"><h1>Recent Posts</h1></div>
 	<div class="flex-boxes">
 		{% for post in site.posts %}
-			<article class="flex-box">
+			<article class="animateup flex-box">
 				<h1 class="flex-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 				<div class="postdate">{{ post.date | date: "%B %e, %Y" }}</div>
 				<p>{{ post.content | truncatewords:30}}</p>

@@ -2678,7 +2678,8 @@ input[type="submit"] {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_post\.scss}line{font-family:\00003169}}
 .share-top {
   float: right;
-  margin-top: 24px; }
+  margin-top: 24px;
+  z-index: 1; }
   @media screen and (max-width: 640px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_post\.scss}line{font-family:\00003169}}
     .share-top {

@@ -169,6 +169,7 @@
 .share-top {
   float: right;
   margin-top: 24px;
+  z-index: 1;
   @include mobile {
     margin-top: 20px;
     padding: 0px 23px 10px;
