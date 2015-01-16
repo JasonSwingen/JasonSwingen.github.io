@@ -25,4 +25,80 @@
       -ms-border-radius: $radius;
           border-radius: $radius;
 }
+.animatedown, .animateleft, .animateright, .animateup, .animatereveal {
+  display: block;
+  position: relative;
+}
+.animatedown {
+  @include animation(movedown 1s);
+}
+.animateright {
+  @include animation(moveright 1s);
+}
+.animateleft {
+  @include animation(moveleft 1s);
+}
+.animateup {
+  @include animation(moveup 1.2s);
+}
+.animatereveal {
+  @include animation(reveal 2.5s);
+}
+.delay1{
+  @include animation-delay(2s);
+}
+.delay2{
+  @include animation-delay(4s);
+}
+@include keyframes(movedown) {
+    0%   {
+      @include transform(scale(0));
+      top: -300px;
+    }
+    100% {
+      @include transform(scale(1));
+      top: 0px;
+    }
+}
 
+@include keyframes(moveright) {
+    0%   {
+      left: -1200px;
+    }
+    100% {
+      left: 0px;
+    }
+}
+
+@include keyframes(moveleft) {
+    0%   {
+      right: -1200px;
+    }
+    100% {
+      right: 0px;
+    }
+}
+@include keyframes(moveup) {
+    0%   {
+      // @include transform(scale(0.5));
+      bottom: -200px;
+      opacity: 0;
+    }
+    100% {
+      // @include transform(scale(1));
+      bottom: 0px;
+      opacity: 1;
+    }
+}
+
+@include keyframes (reveal) {
+    0%   {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
