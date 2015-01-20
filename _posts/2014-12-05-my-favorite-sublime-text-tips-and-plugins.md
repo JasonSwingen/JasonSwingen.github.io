@@ -4,7 +4,7 @@ title: My Favorite Sublime Text Tips and Plugins
 published: True
 categories: [sublime-text]
 tags: [tips, tricks, plugins]
-image: /images/SublimeText.jpg
+image: /images/SublimeText.png
 ---
 
 ## My favorite Sublime Text Plugins
