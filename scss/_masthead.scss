@@ -81,7 +81,6 @@ a.menu-link {
       right: 10px;
       width: 50px;
       height: 20px;
-      z-index: 400;
   }
 }
 
@@ -121,7 +120,7 @@ nav[role=navigation] {
   max-width: 900px;
   margin: 0 auto;
   text-align: center;
-  @include transition(all, 0, linear);
+  @include transition(all, 0s, linear);
   @include mobile {
     border-top: none;
     // this can be increased as number of links increases
@@ -138,14 +137,9 @@ nav[role=navigation].active {
   max-height: 100%;
   padding-top: 0px;
   position: relative;
-  z-index: 200;
+  z-index: 20;
   top: 0px;
-  @include mobile{
-      @include transition(all, 0.6s, $ease-out-back);
-      padding-bottom: 10px;
-      top: -10px;
-  }
-
+  @include transition(all, 0.6s, $ease-out-back);
 
 }
 nav[role=navigation] ul {
