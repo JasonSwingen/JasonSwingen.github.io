@@ -17,8 +17,19 @@
   </head>
   <body>
     <div class="wrapper-masthead">
-      <div class="container">
         <header class="masthead clearfix">
+
+          <nav id="menu" role="navigation" class="navigation">
+            <ul class="flexmom">
+              <li class="flexkid"><a href="{{ site.baseurl }}/">Home</a></li>
+              <li class="flexkid"><a href="{{ site.baseurl }}/about/">About Me</a></li>
+              <li class="flexkid"><a href="{{ site.baseurl }}/resume/">My Resume</a></li>
+              <li class="flexkid"><a href="{{ site.baseurl }}/contact/">Contact Me</a></li>
+              
+            </ul>
+          </nav>
+        
+      <div class="container">
           <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
           
           <div class="site-info">
@@ -30,17 +41,12 @@
           <a class="menu-link" href="#">
             <span></span>
           </a>
-        </header>
       </div>
-      <nav id="menu" role="navigation" class="navigation">
-        <ul class="flexmom">
-          <li class="flexkid"><a href="{{ site.baseurl }}/">Home</a></li>
-          <li class="flexkid"><a href="{{ site.baseurl }}/about/">About Me</a></li>
-          <li class="flexkid"><a href="{{ site.baseurl }}/resume/">My Resume</a></li>
-          <li class="flexkid"><a href="{{ site.baseurl }}/contact/">Contact Me</a></li>
-          
-        </ul>
-      </nav>
+
+
+
+        </header>
+
     </div>
     <div>
       {{ content }}
