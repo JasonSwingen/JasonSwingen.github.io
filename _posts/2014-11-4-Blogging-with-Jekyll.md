@@ -4,6 +4,7 @@ title: Using Jekyll as a Blog
 published: True
 categories: [jekyll]
 tags: [workflow]
+image: /images/jekyll.png
 ---
 
 ## We are Live!

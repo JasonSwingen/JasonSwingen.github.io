@@ -4,6 +4,7 @@ title: My 2014 Montana Mule Deer Hunt
 published: True
 categories: [hunting]
 tags: [mule deer, montana]
+image: /images/2014-mule-deer.jpg
 ---
 ## Getting My Deer License
 

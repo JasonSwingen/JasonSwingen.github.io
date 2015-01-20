@@ -27,6 +27,9 @@
   float: left;
   width: 90px;
   margin: 7px 15px 0px 10px;
+  &:hover {
+    transform: rotateX(15deg);
+  }
   &:active {
     transform: rotateX(-15deg);
   }

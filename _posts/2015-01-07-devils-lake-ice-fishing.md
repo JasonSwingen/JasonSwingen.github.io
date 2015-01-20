@@ -4,6 +4,7 @@ title: Devils Lake North Dakota Ice Fishing Trip
 published: True
 categories: [fishing]
 tags: [devils lake, ice fishing]
+image: /images/Devils_Lake_Ice.jpg
 ---
 
 ## Devils Lake
@@ -16,8 +17,16 @@ Unfortunately, I have only fished Devils Lake one other time in the past and it 
 
 Before the trip I did some homework, printing off some contour maps and watching a few videos of others ice fishing in Devils Lake. I had a few areas picked out for where I wanted to go.
 
-I left my grandparents house around noon and drove into Devils Lake to get some minnows. I had to back track a little to get to where I wanted. Luckily There was very little snow so I was able drive my car to my spot. A great spot on six-mile bay in around 30 feet of water. I got out my hand auger and started cutting holes. I cut a half dozen holes and put our three tip-ups. It didn't take long before the first flag popped up and the first fish on the ice was a really nice crappie. I never stayed on top of a great bite, but like clockwork around every thirty minutes I would have not just a flag, but the same flag pop up and I would put another fish on the ice.
+<img class="centered" src="/images/Devils_Lake_Ice.jpg" alt="My Ice Fishing Setup">
+
+<img class="floatright" src="/images/Crappies.jpg" alt="Two Devils Lake Crappies">
+
+I left my grandparents house around noon and drove into Devils Lake to get some minnows. I had to back track a little to get to where I wanted. Luckily There was very little snow so I was able drive my car to my spot. A great spot on six-mile bay in around 30 feet of water. I got out my hand auger and started cutting holes. I cut a half dozen holes and put our three tip-ups. It didn't take long before the first flag popped up and the first fish on the ice was a really nice crappie.
+
+I never stayed on top of a great bite, but like clockwork around every thirty minutes I would have not just a flag, but the same flag pop up and I would put another fish on the ice.
 
 I ended up catching two really nice crappies, a jumbo perch and four walleyes.
+
+<img class="centered" src="/images/Devils_Lake_Fish.jpg" alt="Fish from Devils Lake">
 
 

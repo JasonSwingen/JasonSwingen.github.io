@@ -349,15 +349,15 @@ input[type="submit"] {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_mixins\.scss}line{font-family:\0000341}}
 .animateup {
-  -webkit-animation: moveup 1.2s;
-  -moz-animation: moveup 1.2s;
-  animation: moveup 1.2s; }
+  -webkit-animation: moveup 1s;
+  -moz-animation: moveup 1s;
+  animation: moveup 1s; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_mixins\.scss}line{font-family:\0000344}}
 .animatereveal {
-  -webkit-animation: reveal 2.5s;
-  -moz-animation: reveal 2.5s;
-  animation: reveal 2.5s; }
+  -webkit-animation: reveal 2s;
+  -moz-animation: reveal 2s;
+  animation: reveal 2s; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_mixins\.scss}line{font-family:\0000347}}
 .delay1 {
@@ -441,27 +441,35 @@ input[type="submit"] {
     right: 0px; } }
 @-webkit-keyframes moveup {
   0% {
-    bottom: -200px;
+    -webkit-transform: scale(0);
     opacity: 0; }
 
   100% {
-    bottom: 0px;
+    -webkit-transform: scale(1);
     opacity: 1; } }
 @-moz-keyframes moveup {
   0% {
-    bottom: -200px;
+    -moz-transform: scale(0);
     opacity: 0; }
 
   100% {
-    bottom: 0px;
+    -moz-transform: scale(1);
     opacity: 1; } }
 @keyframes moveup {
   0% {
-    bottom: -200px;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
     opacity: 0; }
 
   100% {
-    bottom: 0px;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
     opacity: 1; } }
 @-webkit-keyframes reveal {
   0% {
@@ -657,15 +665,15 @@ img {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_mixins\.scss}line{font-family:\0000341}}
 .animateup {
-  -webkit-animation: moveup 1.2s;
-  -moz-animation: moveup 1.2s;
-  animation: moveup 1.2s; }
+  -webkit-animation: moveup 1s;
+  -moz-animation: moveup 1s;
+  animation: moveup 1s; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_mixins\.scss}line{font-family:\0000344}}
 .animatereveal {
-  -webkit-animation: reveal 2.5s;
-  -moz-animation: reveal 2.5s;
-  animation: reveal 2.5s; }
+  -webkit-animation: reveal 2s;
+  -moz-animation: reveal 2s;
+  animation: reveal 2s; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_mixins\.scss}line{font-family:\0000347}}
 .delay1 {
@@ -749,27 +757,35 @@ img {
     right: 0px; } }
 @-webkit-keyframes moveup {
   0% {
-    bottom: -200px;
+    -webkit-transform: scale(0);
     opacity: 0; }
 
   100% {
-    bottom: 0px;
+    -webkit-transform: scale(1);
     opacity: 1; } }
 @-moz-keyframes moveup {
   0% {
-    bottom: -200px;
+    -moz-transform: scale(0);
     opacity: 0; }
 
   100% {
-    bottom: 0px;
+    -moz-transform: scale(1);
     opacity: 1; } }
 @keyframes moveup {
   0% {
-    bottom: -200px;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
     opacity: 0; }
 
   100% {
-    bottom: 0px;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
     opacity: 1; } }
 @-webkit-keyframes reveal {
   0% {
@@ -832,15 +848,15 @@ img {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_mixins\.scss}line{font-family:\0000341}}
 .animateup {
-  -webkit-animation: moveup 1.2s;
-  -moz-animation: moveup 1.2s;
-  animation: moveup 1.2s; }
+  -webkit-animation: moveup 1s;
+  -moz-animation: moveup 1s;
+  animation: moveup 1s; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_mixins\.scss}line{font-family:\0000344}}
 .animatereveal {
-  -webkit-animation: reveal 2.5s;
-  -moz-animation: reveal 2.5s;
-  animation: reveal 2.5s; }
+  -webkit-animation: reveal 2s;
+  -moz-animation: reveal 2s;
+  animation: reveal 2s; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_mixins\.scss}line{font-family:\0000347}}
 .delay1 {
@@ -924,27 +940,35 @@ img {
     right: 0px; } }
 @-webkit-keyframes moveup {
   0% {
-    bottom: -200px;
+    -webkit-transform: scale(0);
     opacity: 0; }
 
   100% {
-    bottom: 0px;
+    -webkit-transform: scale(1);
     opacity: 1; } }
 @-moz-keyframes moveup {
   0% {
-    bottom: -200px;
+    -moz-transform: scale(0);
     opacity: 0; }
 
   100% {
-    bottom: 0px;
+    -moz-transform: scale(1);
     opacity: 1; } }
 @keyframes moveup {
   0% {
-    bottom: -200px;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
     opacity: 0; }
 
   100% {
-    bottom: 0px;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
     opacity: 1; } }
 @-webkit-keyframes reveal {
   0% {
@@ -1003,6 +1027,9 @@ img {
   width: 90px;
   margin: 7px 15px 0px 10px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\0000330}}
+  .site-avatar:hover {
+    transform: rotateX(15deg); }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\0000333}}
   .site-avatar:active {
     transform: rotateX(-15deg); }
   @media screen and (max-width: 640px) {
@@ -1010,11 +1037,11 @@ img {
     .site-avatar {
       float: none;
       margin: 0 auto; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\0000338}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\0000341}}
   .site-avatar img {
     border-radius: 100px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\0000346}}
 .site-name {
   margin: 0;
   color: white;
@@ -1023,32 +1050,32 @@ img {
   font-size: 28px;
   letter-spacing: 1px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\0000352}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\0000355}}
 .site-description {
   margin: 0;
   color: #666666;
   font-size: 16px; }
   @media screen and (max-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\0000352}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\0000355}}
     .site-description {
       margin: 3px 0; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\0000361}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\0000364}}
 .twitter-follow-button {
   margin: 10px 0px;
   padding-top: 5px;
   height: 30px !important; }
   @media screen and (max-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\0000361}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\0000364}}
     .twitter-follow-button {
       margin: 0 auto;
       text-align: center; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\0000371}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\0000374}}
 a.menu-link {
   display: none; }
   @media screen and (max-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\0000371}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\0000374}}
     a.menu-link {
       display: block;
       padding: 5px;
@@ -1058,7 +1085,7 @@ a.menu-link {
       width: 50px;
       height: 20px; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\0000384}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\0000387}}
 .menu-link span, .menu-link span:before, .menu-link span:after {
   border-radius: 1px;
   height: 5px;
@@ -1068,15 +1095,15 @@ a.menu-link {
   display: block;
   content: ''; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\0000393}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\0000396}}
 .menu-link span:before {
   top: -10px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\0000396}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\0000399}}
 .menu-link span:after {
   bottom: -10px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\00003100}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\00003103}}
 .menu-link span, .menu-link span:before, .menu-link span:after {
   -webkit-transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   -moz-transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -1084,23 +1111,23 @@ a.menu-link {
   -o-transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\00003103}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\00003106}}
 .menu-link.active span {
   background-color: transparent; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\00003106}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\00003109}}
 .menu-link.active span:before, .menu-link.active span:after {
   top: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\00003109}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\00003112}}
 .menu-link.active span:before {
   transform: rotate(45deg); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\00003112}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\00003115}}
 .menu-link.active span:after {
   transform: rotate(-45deg); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\00003116}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\00003119}}
 nav[role=navigation] {
   max-width: 900px;
   margin: 0 auto;
@@ -1111,18 +1138,18 @@ nav[role=navigation] {
   -o-transition: all 0s linear;
   transition: all 0s linear; }
   @media screen and (max-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\00003116}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\00003119}}
     nav[role=navigation] {
       border-top: none;
       top: -400px; } }
 
 @media screen and (max-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\00003127}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\00003130}}
   .js nav[role=navigation] {
     overflow: hidden;
     max-height: 0; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\00003133}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\00003136}}
 nav[role=navigation].active {
   max-height: 100%;
   padding-top: 0px;
@@ -1135,51 +1162,51 @@ nav[role=navigation].active {
   -o-transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\00003142}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\00003145}}
 nav[role=navigation] ul {
   list-style-type: none;
   margin: 1px;
   padding: 0px 0px 10px 0px; }
   @media screen and (max-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\00003142}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\00003145}}
     nav[role=navigation] ul {
       margin: 0px;
       padding: 0px; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\00003151}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\00003154}}
 nav[role=navigation] li {
   display: inline-block;
   margin: 4px;
   background-color: #222222;
   box-shadow: inset 0 0.1em rgba(255, 255, 255, 0.1), 0 0.1em 0.1em black, 0 0.2em rgba(0, 0, 0, 0.4), 0 0 0 0.1em rgba(0, 0, 0, 0.1); }
   @media screen and (max-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\00003151}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\00003154}}
     nav[role=navigation] li {
       margin: 0px;
       display: block;
       text-align: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\00003160}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\00003163}}
       nav[role=navigation] li:hover {
         color: #4183c4; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\00003165}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\00003168}}
 nav[role=navigation] li a {
   display: block;
   padding: 10px 30px;
   color: white;
   letter-spacing: 1px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\00003170}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\00003173}}
   nav[role=navigation] li a:hover {
     color: #4183c4; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\00003173}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\00003176}}
   nav[role=navigation] li a:active {
     box-shadow: inset 0 0.1em rgba(0, 0, 0, 0.6), 0 0.2em rgba(155, 155, 155, 0.2), 0 -0.1em 0 0.1em rgba(0, 0, 0, 0.1); }
   @media screen and (max-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\00003165}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\00003168}}
     nav[role=navigation] li a {
       padding: 0.5em; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\00003181}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\00003184}}
 .flexmom {
   display: -webkit-box;
   display: -moz-box;
@@ -1191,11 +1218,11 @@ nav[role=navigation] li a {
   justify-content: flex-start;
   justify-content: space-around; }
   @media screen and (max-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\00003181}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\00003184}}
     .flexmom {
       height: 100%;
       flex-direction: column; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\00003195}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_masthead\.scss}line{font-family:\00003198}}
   .flexmom .flexkid {
     flex-grow: 1; }
 
@@ -1327,15 +1354,15 @@ nav[role=navigation] li a {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_mixins\.scss}line{font-family:\0000341}}
 .animateup {
-  -webkit-animation: moveup 1.2s;
-  -moz-animation: moveup 1.2s;
-  animation: moveup 1.2s; }
+  -webkit-animation: moveup 1s;
+  -moz-animation: moveup 1s;
+  animation: moveup 1s; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_mixins\.scss}line{font-family:\0000344}}
 .animatereveal {
-  -webkit-animation: reveal 2.5s;
-  -moz-animation: reveal 2.5s;
-  animation: reveal 2.5s; }
+  -webkit-animation: reveal 2s;
+  -moz-animation: reveal 2s;
+  animation: reveal 2s; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_mixins\.scss}line{font-family:\0000347}}
 .delay1 {
@@ -1419,27 +1446,35 @@ nav[role=navigation] li a {
     right: 0px; } }
 @-webkit-keyframes moveup {
   0% {
-    bottom: -200px;
+    -webkit-transform: scale(0);
     opacity: 0; }
 
   100% {
-    bottom: 0px;
+    -webkit-transform: scale(1);
     opacity: 1; } }
 @-moz-keyframes moveup {
   0% {
-    bottom: -200px;
+    -moz-transform: scale(0);
     opacity: 0; }
 
   100% {
-    bottom: 0px;
+    -moz-transform: scale(1);
     opacity: 1; } }
 @keyframes moveup {
   0% {
-    bottom: -200px;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
     opacity: 0; }
 
   100% {
-    bottom: 0px;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
     opacity: 1; } }
 @-webkit-keyframes reveal {
   0% {
@@ -2011,15 +2046,15 @@ input[type="submit"] {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_mixins\.scss}line{font-family:\0000341}}
 .animateup {
-  -webkit-animation: moveup 1.2s;
-  -moz-animation: moveup 1.2s;
-  animation: moveup 1.2s; }
+  -webkit-animation: moveup 1s;
+  -moz-animation: moveup 1s;
+  animation: moveup 1s; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_mixins\.scss}line{font-family:\0000344}}
 .animatereveal {
-  -webkit-animation: reveal 2.5s;
-  -moz-animation: reveal 2.5s;
-  animation: reveal 2.5s; }
+  -webkit-animation: reveal 2s;
+  -moz-animation: reveal 2s;
+  animation: reveal 2s; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_mixins\.scss}line{font-family:\0000347}}
 .delay1 {
@@ -2103,27 +2138,35 @@ input[type="submit"] {
     right: 0px; } }
 @-webkit-keyframes moveup {
   0% {
-    bottom: -200px;
+    -webkit-transform: scale(0);
     opacity: 0; }
 
   100% {
-    bottom: 0px;
+    -webkit-transform: scale(1);
     opacity: 1; } }
 @-moz-keyframes moveup {
   0% {
-    bottom: -200px;
+    -moz-transform: scale(0);
     opacity: 0; }
 
   100% {
-    bottom: 0px;
+    -moz-transform: scale(1);
     opacity: 1; } }
 @keyframes moveup {
   0% {
-    bottom: -200px;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
     opacity: 0; }
 
   100% {
-    bottom: 0px;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
     opacity: 1; } }
 @-webkit-keyframes reveal {
   0% {
@@ -2225,64 +2268,53 @@ input[type="submit"] {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_flex\.scss}line{font-family:\0000356}}
     .flex-boxes .flex-box:nth-child(1) {
       border-top: 6px solid tomato; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_flex\.scss}line{font-family:\0000360}}
-      .flex-boxes .flex-box:nth-child(1):hover {
-        background-color: rgba(255, 99, 71, 0.1); }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_flex\.scss}line{font-family:\0000356}}
     .flex-boxes .flex-box:nth-child(2) {
       border-top: 6px solid #72bfbf; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_flex\.scss}line{font-family:\0000360}}
-      .flex-boxes .flex-box:nth-child(2):hover {
-        background-color: rgba(114, 191, 191, 0.1); }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_flex\.scss}line{font-family:\0000356}}
     .flex-boxes .flex-box:nth-child(3) {
       border-top: 6px solid #92b1e3; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_flex\.scss}line{font-family:\0000360}}
-      .flex-boxes .flex-box:nth-child(3):hover {
-        background-color: rgba(146, 177, 227, 0.1); }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_flex\.scss}line{font-family:\0000356}}
     .flex-boxes .flex-box:nth-child(4) {
       border-top: 6px solid #e3d743; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_flex\.scss}line{font-family:\0000360}}
-      .flex-boxes .flex-box:nth-child(4):hover {
-        background-color: rgba(227, 215, 67, 0.1); }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_flex\.scss}line{font-family:\0000356}}
     .flex-boxes .flex-box:nth-child(5) {
       border-top: 6px solid #cccccc; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_flex\.scss}line{font-family:\0000360}}
-      .flex-boxes .flex-box:nth-child(5):hover {
-        background-color: rgba(204, 204, 204, 0.1); }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_flex\.scss}line{font-family:\0000356}}
     .flex-boxes .flex-box:nth-child(6) {
       border-top: 6px solid #f6c05c; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_flex\.scss}line{font-family:\0000360}}
-      .flex-boxes .flex-box:nth-child(6):hover {
-        background-color: rgba(246, 192, 92, 0.1); }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_flex\.scss}line{font-family:\0000366}}
     .flex-boxes .flex-box img {
       display: block;
-      height: 3em;
-      margin-bottom: 2em;
-      margin: auto;
-      opacity: .4; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_flex\.scss}line{font-family:\0000374}}
+      width: 100%;
+      max-width: 440px;
+      margin: 0em auto 1em;
+      min-height: 133px;
+      -webkit-transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      -moz-transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      -ms-transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      -o-transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_flex\.scss}line{font-family:\0000373}}
+      .flex-boxes .flex-box img:hover {
+        transform: scale(1.1, 1.1); }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_flex\.scss}line{font-family:\0000378}}
     .flex-boxes .flex-box .flex-title {
-      color: rgba(51, 51, 51, 0.9);
       font-size: 1.6em;
       font-weight: 800;
       margin-bottom: .5em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_flex\.scss}line{font-family:\0000381}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_flex\.scss}line{font-family:\0000384}}
     .flex-boxes .flex-box p {
       color: rgba(51, 51, 51, 0.8);
       line-height: 1.5em;
       padding-bottom: .5em;
       margin: auto; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_flex\.scss}line{font-family:\0000388}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_flex\.scss}line{font-family:\0000391}}
     .flex-boxes .flex-box h2 {
       font-size: 1.1em;
       color: rgba(51, 51, 51, 0.9);
       margin-bottom: .5em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_flex\.scss}line{font-family:\0000396}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_flex\.scss}line{font-family:\0000399}}
   .flex-boxes .flex-box-big {
     -webkit-box-flex: 1;
     -moz-box-flex: 1;
@@ -2292,12 +2324,12 @@ input[type="submit"] {
     -ms-flex: 1 1 40em;
     flex: 1 1 40em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_flex\.scss}line{font-family:\00003101}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_flex\.scss}line{font-family:\00003104}}
 .read-more {
   text-transform: uppercase;
   font-size: 15px; }
   @media screen and (max-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_flex\.scss}line{font-family:\00003101}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_flex\.scss}line{font-family:\00003104}}
     .read-more {
       margin: 0 4px;
       padding: 5px 10px;
@@ -2308,13 +2340,13 @@ input[type="submit"] {
       -moz-border-radius: 5px;
       -ms-border-radius: 5px;
       border-radius: 5px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_flex\.scss}line{font-family:\00003111}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_flex\.scss}line{font-family:\00003114}}
       .read-more:hover {
         border: 1px solid #4183c4;
         background-color: #4183c4;
         color: white; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_flex\.scss}line{font-family:\00003119}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_flex\.scss}line{font-family:\00003122}}
 .postdate {
   text-align: center;
   font-size: 12px;
@@ -2363,15 +2395,15 @@ input[type="submit"] {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_mixins\.scss}line{font-family:\0000341}}
 .animateup {
-  -webkit-animation: moveup 1.2s;
-  -moz-animation: moveup 1.2s;
-  animation: moveup 1.2s; }
+  -webkit-animation: moveup 1s;
+  -moz-animation: moveup 1s;
+  animation: moveup 1s; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_mixins\.scss}line{font-family:\0000344}}
 .animatereveal {
-  -webkit-animation: reveal 2.5s;
-  -moz-animation: reveal 2.5s;
-  animation: reveal 2.5s; }
+  -webkit-animation: reveal 2s;
+  -moz-animation: reveal 2s;
+  animation: reveal 2s; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_mixins\.scss}line{font-family:\0000347}}
 .delay1 {
@@ -2455,27 +2487,35 @@ input[type="submit"] {
     right: 0px; } }
 @-webkit-keyframes moveup {
   0% {
-    bottom: -200px;
+    -webkit-transform: scale(0);
     opacity: 0; }
 
   100% {
-    bottom: 0px;
+    -webkit-transform: scale(1);
     opacity: 1; } }
 @-moz-keyframes moveup {
   0% {
-    bottom: -200px;
+    -moz-transform: scale(0);
     opacity: 0; }
 
   100% {
-    bottom: 0px;
+    -moz-transform: scale(1);
     opacity: 1; } }
 @keyframes moveup {
   0% {
-    bottom: -200px;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
     opacity: 0; }
 
   100% {
-    bottom: 0px;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
     opacity: 1; } }
 @-webkit-keyframes reveal {
   0% {
@@ -2820,15 +2860,15 @@ input[type="submit"] {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_mixins\.scss}line{font-family:\0000341}}
 .animateup {
-  -webkit-animation: moveup 1.2s;
-  -moz-animation: moveup 1.2s;
-  animation: moveup 1.2s; }
+  -webkit-animation: moveup 1s;
+  -moz-animation: moveup 1s;
+  animation: moveup 1s; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_mixins\.scss}line{font-family:\0000344}}
 .animatereveal {
-  -webkit-animation: reveal 2.5s;
-  -moz-animation: reveal 2.5s;
-  animation: reveal 2.5s; }
+  -webkit-animation: reveal 2s;
+  -moz-animation: reveal 2s;
+  animation: reveal 2s; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_mixins\.scss}line{font-family:\0000347}}
 .delay1 {
@@ -2912,27 +2952,35 @@ input[type="submit"] {
     right: 0px; } }
 @-webkit-keyframes moveup {
   0% {
-    bottom: -200px;
+    -webkit-transform: scale(0);
     opacity: 0; }
 
   100% {
-    bottom: 0px;
+    -webkit-transform: scale(1);
     opacity: 1; } }
 @-moz-keyframes moveup {
   0% {
-    bottom: -200px;
+    -moz-transform: scale(0);
     opacity: 0; }
 
   100% {
-    bottom: 0px;
+    -moz-transform: scale(1);
     opacity: 1; } }
 @keyframes moveup {
   0% {
-    bottom: -200px;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
     opacity: 0; }
 
   100% {
-    bottom: 0px;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
     opacity: 1; } }
 @-webkit-keyframes reveal {
   0% {
@@ -3033,15 +3081,15 @@ footer {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_mixins\.scss}line{font-family:\0000341}}
 .animateup {
-  -webkit-animation: moveup 1.2s;
-  -moz-animation: moveup 1.2s;
-  animation: moveup 1.2s; }
+  -webkit-animation: moveup 1s;
+  -moz-animation: moveup 1s;
+  animation: moveup 1s; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_mixins\.scss}line{font-family:\0000344}}
 .animatereveal {
-  -webkit-animation: reveal 2.5s;
-  -moz-animation: reveal 2.5s;
-  animation: reveal 2.5s; }
+  -webkit-animation: reveal 2s;
+  -moz-animation: reveal 2s;
+  animation: reveal 2s; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_mixins\.scss}line{font-family:\0000347}}
 .delay1 {
@@ -3125,27 +3173,35 @@ footer {
     right: 0px; } }
 @-webkit-keyframes moveup {
   0% {
-    bottom: -200px;
+    -webkit-transform: scale(0);
     opacity: 0; }
 
   100% {
-    bottom: 0px;
+    -webkit-transform: scale(1);
     opacity: 1; } }
 @-moz-keyframes moveup {
   0% {
-    bottom: -200px;
+    -moz-transform: scale(0);
     opacity: 0; }
 
   100% {
-    bottom: 0px;
+    -moz-transform: scale(1);
     opacity: 1; } }
 @keyframes moveup {
   0% {
-    bottom: -200px;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
     opacity: 0; }
 
   100% {
-    bottom: 0px;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
     opacity: 1; } }
 @-webkit-keyframes reveal {
   0% {

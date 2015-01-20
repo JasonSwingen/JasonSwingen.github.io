@@ -4,6 +4,7 @@ title: My Online Resume
 published: True
 categories: [resume]
 tags: [workflow]
+image: /images/AdwordsCertified.png
 ---
 
 ## My Resume is now Live

@@ -25,6 +25,7 @@ layout: default
 	<div class="flex-boxes">
 		{% for post in site.posts %}
 			<article class="animateup flex-box">
+				<a href="{{ site.baseurl }}{{ post.url }}"><img src="{{ post.image }}" /></a>
 				<h1 class="flex-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 				<div class="postdate">{{ post.date | date: "%B %e, %Y" }}</div>
 				<p>{{ post.content | truncatewords:30}}</p>

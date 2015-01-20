@@ -39,10 +39,10 @@
   @include animation(moveleft 1s);
 }
 .animateup {
-  @include animation(moveup 1.2s);
+  @include animation(moveup 1s);
 }
 .animatereveal {
-  @include animation(reveal 2.5s);
+  @include animation(reveal 2s);
 }
 .delay1{
   @include animation-delay(2s);
@@ -80,13 +80,13 @@
 }
 @include keyframes(moveup) {
     0%   {
-      // @include transform(scale(0.5));
-      bottom: -200px;
+      @include transform(scale(0));
+      // bottom: -400px;
       opacity: 0;
     }
     100% {
-      // @include transform(scale(1));
-      bottom: 0px;
+      @include transform(scale(1));
+      // bottom: 0px;
       opacity: 1;
     }
 }
