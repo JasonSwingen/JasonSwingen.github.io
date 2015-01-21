@@ -1066,20 +1066,29 @@ header.navigation {
     float: left;
     max-height: 60px;
     padding-left: 1em;
-    padding-right: 1em;
-    font-size: 2.1em; }
+    padding-right: 1em; }
     @media screen and (max-width: 640px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\0000348}}
       header.navigation .logo {
-        padding-right: 0.1em;
-        font-size: 1.9em;
-        padding-left: 0.3em;
-        padding-top: 0.1em; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\0000360}}
+        float: none;
+        text-align: center; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\0000357}}
+    header.navigation .logo .title {
+      position: relative;
+      top: -16px;
+      font-size: 2.6em;
+      font-variant: small-caps;
+      font-style: oblique; }
+      @media screen and (max-width: 640px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\0000357}}
+        header.navigation .logo .title {
+          top: -20px;
+          height: 30px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\0000368}}
     header.navigation .logo img {
       max-height: 60px;
       padding: 0.8em 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\0000368}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\0000376}}
   header.navigation .navigation-menu-button {
     color: rgba(255, 255, 255, 0.7);
     display: block;
@@ -1089,23 +1098,27 @@ header.navigation {
     margin: 0;
     padding-right: 1em;
     text-transform: uppercase; }
+    @media screen and (max-width: 640px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\0000376}}
+      header.navigation .navigation-menu-button {
+        float: none;
+        text-align: center; } }
     @media screen and (min-width: 53.75em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\0000368}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\0000376}}
       header.navigation .navigation-menu-button {
         display: none; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\0000382}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\0000394}}
     header.navigation .navigation-menu-button:focus, header.navigation .navigation-menu-button:hover {
       color: white; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\0000390}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003102}}
   header.navigation nav {
     float: none;
-    min-height: 60px;
     z-index: 9999999; }
     @media screen and (min-width: 53.75em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\0000390}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003102}}
       header.navigation nav {
         float: left; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003100}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003112}}
   header.navigation ul.navigation-menu {
     -webkit-transform-style: preserve-3d;
     clear: both;
@@ -1115,66 +1128,66 @@ header.navigation {
     padding: 0;
     width: 100%;
     z-index: 9999; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003110}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003122}}
     header.navigation ul.navigation-menu.show {
       display: block; }
     @media screen and (min-width: 53.75em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003100}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003112}}
       header.navigation ul.navigation-menu {
         display: inline;
         margin: 0;
         padding: 0; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003123}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003135}}
   header.navigation ul li.nav-link {
     background: #333333;
     display: block;
     line-height: 60px;
     overflow: hidden;
     padding-right: 0.8em;
-    text-align: right;
+    text-align: center;
     width: 100%;
     z-index: 9999; }
     @media screen and (min-width: 53.75em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003123}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003135}}
       header.navigation ul li.nav-link {
         background: transparent;
         display: inline;
         line-height: 60px;
         text-decoration: none;
         width: auto; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003141}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003153}}
     header.navigation ul li.nav-link a {
       color: rgba(255, 255, 255, 0.7);
       display: inline-block;
       font-weight: 400; }
       @media screen and (min-width: 53.75em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003141}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003153}}
         header.navigation ul li.nav-link a {
           padding-right: 1em; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003150}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003162}}
       header.navigation ul li.nav-link a:focus, header.navigation ul li.nav-link a:hover {
         color: white; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003157}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003169}}
   header.navigation .active-nav-item a {
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     padding-bottom: 3px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003164}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003176}}
   header.navigation li.more.nav-link {
     padding-right: 0; }
     @media screen and (min-width: 53.75em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003164}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003176}}
       header.navigation li.more.nav-link {
         padding-right: 1em; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003171}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003183}}
     header.navigation li.more.nav-link > ul > li:first-child a {
       padding-top: 1em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003175}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003187}}
     header.navigation li.more.nav-link a {
       margin-right: 1em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003179}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003191}}
     header.navigation li.more.nav-link > a {
       padding-right: 0.6em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003183}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003195}}
     header.navigation li.more.nav-link > a:after {
       position: absolute;
       top: auto;
@@ -1183,81 +1196,82 @@ header.navigation {
       left: auto;
       content: '\25BE';
       color: rgba(255, 255, 255, 0.7); }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003190}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003202}}
   header.navigation li.more {
     overflow: visible;
     padding-right: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003194}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003206}}
     header.navigation li.more a {
       padding-right: 0.8em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003198}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003210}}
     header.navigation li.more > a {
       padding-right: 1.6em;
       position: relative; }
       @media screen and (min-width: 53.75em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003198}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003210}}
         header.navigation li.more > a {
           margin-right: 1em; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003206}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003218}}
       header.navigation li.more > a:after {
         content: '›';
         font-size: 1.2em;
         position: absolute;
         right: 0.5em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003214}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003226}}
     header.navigation li.more:focus > .submenu, header.navigation li.more:hover > .submenu {
       display: block; }
     @media screen and (min-width: 53.75em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003190}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003202}}
       header.navigation li.more {
         padding-right: 0.8em;
         position: relative; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003225}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003237}}
   header.navigation ul.submenu {
     display: none;
     padding-left: 0; }
     @media screen and (min-width: 53.75em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003225}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003237}}
       header.navigation ul.submenu {
         left: -1em;
         position: absolute;
         top: 1.5em; } }
     @media screen and (min-width: 53.75em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003235}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003247}}
       header.navigation ul.submenu .submenu {
         left: 11.8em;
         top: 0; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003242}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003254}}
     header.navigation ul.submenu li {
       display: block;
       padding-right: 0; }
       @media screen and (min-width: 53.75em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003242}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003254}}
         header.navigation ul.submenu li {
           line-height: 46.15385px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003249}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003261}}
           header.navigation ul.submenu li:first-child > a {
             border-top-left-radius: 0.1875em;
             border-top-right-radius: 0.1875em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003254}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003266}}
           header.navigation ul.submenu li:last-child > a {
             border-bottom-left-radius: 0.1875em;
             border-bottom-right-radius: 0.1875em;
             padding-bottom: 0.7em; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003261}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003273}}
       header.navigation ul.submenu li a {
         background-color: #2b2b2b;
         display: inline-block;
         text-align: right;
         width: 100%; }
         @media screen and (min-width: 53.75em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003261}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003273}}
           header.navigation ul.submenu li a {
             background-color: #333333;
             padding-left: 1em;
+            padding-right: 1em;
             text-align: left;
             width: 12em; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003279}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003292}}
   header.navigation .navigation-tools {
     background: #505050;
     clear: both;
@@ -1266,12 +1280,12 @@ header.navigation {
     padding-left: 0.5em;
     padding-right: 1em; }
     @media screen and (min-width: 53.75em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003279}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003292}}
       header.navigation .navigation-tools {
         background: transparent;
         clear: none;
         float: right; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003294}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003307}}
   header.navigation .sign-up {
     background-color: #477dca;
     border-radius: 3px;
@@ -1301,15 +1315,15 @@ header.navigation {
     header.navigation .sign-up:disabled {
       opacity: 0.5;
       cursor: not-allowed; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003306}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003319}}
   header.navigation .search-bar {
     float: left;
     padding: 0.85em 0.6em 0.7em 0.6em;
     width: 60%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003315}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003328}}
     header.navigation .search-bar form {
       position: relative; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003318}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003331}}
       header.navigation .search-bar form input[type=search] {
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
@@ -1324,10 +1338,10 @@ header.navigation {
         padding: 0.5em 0.8em;
         width: 100%; }
         @media screen and (min-width: 53.75em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003318}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003331}}
           header.navigation .search-bar form input[type=search] {
             width: 100%; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003335}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003348}}
       header.navigation .search-bar form button[type=submit] {
         background-color: #404040;
         border-radius: 3px;
@@ -1376,23 +1390,28 @@ header.navigation {
         header.navigation .search-bar form button[type=submit]:disabled {
           opacity: 0.5;
           cursor: not-allowed; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003358}}
         header.navigation .search-bar form button[type=submit] img {
           height: 12px;
           opacity: 0.7;
           padding: 1px; }
     @media screen and (min-width: 53.75em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003306}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003319}}
       header.navigation .search-bar {
         display: inline-block;
         position: relative;
         width: 16em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003371}}
         header.navigation .search-bar input {
           -webkit-box-sizing: border-box;
           -moz-box-sizing: border-box;
           box-sizing: border-box;
           display: block; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_navigation\.scss}line{font-family:\00003379}}
+.twitter-btn {
+  float: right;
+  margin-top: 17px; }
 
 /*****************/
 /* MASTHEAD      */
@@ -1414,17 +1433,16 @@ header.navigation {
 .modal label {
   cursor: pointer;
   margin-bottom: 0;
-  padding-top: 0.3em;
-  float: right; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_modal\.scss}line{font-family:\0000344}}
+  padding-top: 0.3em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_modal\.scss}line{font-family:\0000343}}
 .modal label img {
   border-radius: 150px;
   display: block;
   max-width: 300px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_modal\.scss}line{font-family:\0000350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_modal\.scss}line{font-family:\0000349}}
 .modal .modal-state {
   display: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_modal\.scss}line{font-family:\0000354}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_modal\.scss}line{font-family:\0000353}}
 .modal .modal-trigger {
   background-color: #477dca;
   border-radius: 3px;
@@ -1450,10 +1468,10 @@ header.navigation {
   .modal .modal-trigger:disabled {
     opacity: 0.5;
     cursor: not-allowed; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_modal\.scss}line{font-family:\0000360}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_modal\.scss}line{font-family:\0000359}}
 .modal .modal-open {
   overflow: hidden; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_modal\.scss}line{font-family:\0000364}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_modal\.scss}line{font-family:\0000363}}
 .modal .modal-window {
   -webkit-transition: opacity 0.25s ease;
   -moz-transition: opacity 0.25s ease;
@@ -1470,10 +1488,10 @@ header.navigation {
   visibility: hidden;
   z-index: 99999999999; }
   @media screen and (min-width: 40em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_modal\.scss}line{font-family:\0000364}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_modal\.scss}line{font-family:\0000363}}
     .modal .modal-window {
       padding-top: 3em; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_modal\.scss}line{font-family:\0000382}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_modal\.scss}line{font-family:\0000381}}
   .modal .modal-window .modal-bg {
     position: absolute;
     top: 0px;
@@ -1481,7 +1499,7 @@ header.navigation {
     bottom: 0px;
     left: 0px;
     cursor: pointer; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_modal\.scss}line{font-family:\0000388}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_modal\.scss}line{font-family:\0000387}}
 .modal .modal-close {
   position: absolute;
   top: 0.5em;
@@ -1490,7 +1508,7 @@ header.navigation {
   width: 1.5em;
   background: white;
   cursor: pointer; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_modal\.scss}line{font-family:\0000394}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_modal\.scss}line{font-family:\0000393}}
   .modal .modal-close:after, .modal .modal-close:before {
     position: absolute;
     top: 3px;
@@ -1508,17 +1526,17 @@ header.navigation {
     content: '';
     display: block;
     margin: -3px 0 0 -1px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_modal\.scss}line{font-family:\00003105}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_modal\.scss}line{font-family:\00003104}}
   .modal .modal-close:hover:after, .modal .modal-close:hover:before {
     background: #c4c4c4; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_modal\.scss}line{font-family:\00003110}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_modal\.scss}line{font-family:\00003109}}
   .modal .modal-close:before {
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg); }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_modal\.scss}line{font-family:\00003115}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_modal\.scss}line{font-family:\00003114}}
 .modal .modal-inner {
   -webkit-transition: opacity 0.25s ease;
   -moz-transition: opacity 0.25s ease;
@@ -1533,48 +1551,48 @@ header.navigation {
   position: relative;
   width: 95%; }
   @media screen and (min-width: 40em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_modal\.scss}line{font-family:\00003115}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_modal\.scss}line{font-family:\00003114}}
     .modal .modal-inner {
       max-height: 95%;
       padding: 1em;
       width: 85%; } }
   @media screen and (min-width: 53.75em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_modal\.scss}line{font-family:\00003115}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_modal\.scss}line{font-family:\00003114}}
     .modal .modal-inner {
       width: 55%;
       max-height: 95%; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_modal\.scss}line{font-family:\00003138}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_modal\.scss}line{font-family:\00003137}}
   .modal .modal-inner h1 {
     color: #333333;
     margin-bottom: 0.6em;
     text-align: left;
     text-transform: capitalize; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_modal\.scss}line{font-family:\00003145}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_modal\.scss}line{font-family:\00003144}}
   .modal .modal-inner .modal-intro {
     font-weight: 800; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_modal\.scss}line{font-family:\00003149}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_modal\.scss}line{font-family:\00003148}}
   .modal .modal-inner .modal-content {
     color: #333333; }
     @media screen and (min-width: 40em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_modal\.scss}line{font-family:\00003149}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_modal\.scss}line{font-family:\00003148}}
       .modal .modal-inner .modal-content {
         -webkit-columns: 2 8em;
         -moz-columns: 2 8em;
         columns: 2 8em; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_modal\.scss}line{font-family:\00003157}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_modal\.scss}line{font-family:\00003156}}
   .modal .modal-inner a.cta {
     color: white;
     display: inline-block;
     margin-right: 0.5em;
     margin-top: 1em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_modal\.scss}line{font-family:\00003163}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_modal\.scss}line{font-family:\00003162}}
     .modal .modal-inner a.cta:last-child {
       padding: 0 2em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_modal\.scss}line{font-family:\00003169}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_modal\.scss}line{font-family:\00003168}}
 .modal .modal-state:checked + .modal-window {
   opacity: 1;
   visibility: visible; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_modal\.scss}line{font-family:\00003174}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_modal\.scss}line{font-family:\00003173}}
 .modal .modal-state:checked + .modal-window .modal-inner {
   top: 0.5em; }
 
@@ -2669,11 +2687,11 @@ input[type="submit"] {
       max-width: 440px;
       margin: 0em auto 1em;
       min-height: 133px;
-      -webkit-transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      -moz-transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      -ms-transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      -o-transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -ms-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out; }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_flex\.scss}line{font-family:\0000373}}
       .flex-boxes .flex-box img:hover {
         transform: scale(1.1, 1.1); }

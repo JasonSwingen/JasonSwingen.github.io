@@ -50,12 +50,20 @@ header.navigation {
     max-height: $navigation-height;
     padding-left: $navigation-padding;
     padding-right: 1em;
-    font-size: 2.1em;
     @include mobile {
-      padding-right: 0.1em;
-      font-size: 1.9em;
-      padding-left: 0.3em;
-      padding-top: 0.1em;
+      float: none;
+      text-align: center;
+    }
+    .title {
+      position: relative;
+      top: -16px;
+      font-size: 2.6em;
+      font-variant: small-caps;
+      font-style: oblique;
+      @include mobile {
+        top: -20px;
+        height: 30px;
+      }
     }
     img {
       max-height: $navigation-height;
@@ -74,6 +82,10 @@ header.navigation {
     margin: 0;
     padding-right: 1em;
     text-transform: uppercase;
+    @include mobile {
+      float: none;
+      text-align: center;
+    }
 
     @include media ($horizontal-bar-mode) {
       display: none;
@@ -89,7 +101,7 @@ header.navigation {
 
   nav {
     float: none;
-    min-height: $navigation-height;
+    // min-height: $navigation-height;
     z-index: 9999999;
 
     @include media ($horizontal-bar-mode) {
@@ -126,7 +138,7 @@ header.navigation {
     line-height: $navigation-height;
     overflow: hidden;
     padding-right: 0.8em;
-    text-align: right;
+    text-align: center;
     width: 100%;
     z-index: 9999;
 
@@ -267,6 +279,7 @@ header.navigation {
         @include media($horizontal-bar-mode) {
           background-color: $navigation-background;
           padding-left: $navigation-submenu-padding;
+          padding-right: $navigation-submenu-padding;
           text-align: left;
           width: $navigation-submenu-width;
         }
@@ -361,4 +374,9 @@ header.navigation {
       }
     }
   }
+}
+
+.twitter-btn {
+  float: right;
+  margin-top: 17px;
 }
