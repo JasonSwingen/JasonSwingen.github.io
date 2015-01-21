@@ -59,6 +59,12 @@ p {
   margin: 15px 0;
 }
 
+button {
+  -webkit-font-smoothing: antialiased;
+  @include button(flat, $color1);
+  padding: .7em 1em;
+}
+
 a {
   color: $color1;
   text-decoration: none;

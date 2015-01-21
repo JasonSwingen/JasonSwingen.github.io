@@ -24,19 +24,11 @@ footer {
 .totop {
   list-style-type: none;
   float: right;
-  margin: 0px 20px;
-  color: $color1;
+  margin: 20px;
   @include mobile {
     margin: 0px 40px 20px;
     float: none;
     text-align: center;
-    border: 1px solid $color1;
-    @include border-radius(5px);
-    &:hover {
-      background-color: $color1;
-      color: $white;
-    }
-
   }
 }
 

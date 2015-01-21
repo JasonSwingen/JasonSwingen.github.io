@@ -9,7 +9,7 @@ image: /images/AdwordsCertified.png
 
 ## My Resume is now Live
 
-You can view [Jason Swingen's Resume](http://jasonswingen.github.io/resume/).
+You can view [Jason Swingen's Resume](http://jasonswingen.github.io/resume2).
 
 I have been working on my online resume. I wanted to start from scratch, without using any templates, bootstrap, or anything pre-built. I started my design with the new Google Material Design in mind. A the navigation and footer buttons are inspired more from Twitter's buttons than Google's. I used the Meyer reset in my stylesheet, but everything else was coded from scratch. I was able to incorporate a few new to me technologies and resources. Just like this blog I am using Prepros to preprocess my SCSS into CSS as well as minify the small amount of jquery I used for the go to top button, and the smooth transitions to each section.
 

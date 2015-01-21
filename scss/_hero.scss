@@ -21,7 +21,7 @@
   $hero-image: 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png';
 
   // @include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
-  background-color: $white;
+  background-color: $color2;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -66,10 +66,10 @@
     }
 
     button {
-      @include button(flat, $color1);
+      @include button(flat, $lightGray);
       padding: 1em 2em;
       a {
-        color: $white;
+        color: $color2;
       }
     }
   }
