@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'bourbon';
+@import 'neat';
 @import 'variables';
 
 .modal {
@@ -37,9 +38,7 @@
     cursor: pointer;
     margin-bottom: 0;
     padding-top: 0.3em;
-    @include mobile {
-      text-align: center;
-    }
+    float: right;
   }
 
   label img {
@@ -55,7 +54,7 @@
   .modal-trigger {
     @include button(flat, $base-accent-color);
     padding: 0.8em 1em;
-    // float: right;
+    text-align: center;
   }
 
   .modal-open {
