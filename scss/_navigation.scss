@@ -47,8 +47,14 @@ header.navigation {
     float: left;
     max-height: $navigation-height;
     padding-left: $navigation-padding;
-    padding-right: 2em;
-
+    padding-right: 1em;
+    font-size: 2.1em;
+    @include mobile {
+      padding-right: 0.1em;
+      font-size: 1.9em;
+      padding-left: 0.3em;
+      padding-top: 0.1em;
+    }
     img {
       max-height: $navigation-height;
       padding: 0.8em 0;
