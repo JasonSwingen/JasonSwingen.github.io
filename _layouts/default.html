@@ -1,102 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
-    <meta name="author" content="{{ site.name }}" />
-    <meta name="description" content="{{ site.description }}">
-    <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    {% include header.html %}
+
   </head>
   <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-          
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-            <a href="https://twitter.com/jasonswingen" class="animatereveal twitter-follow-button" data-show-count="false"> Follow @jasonswingen</a>
-          </div>
-          
-          <a class="menu-link" href="#">
-            <span></span>
-          </a>
-        </header>
-      </div>
-      <nav id="menu" role="navigation" class="navigation">
-        <ul class="flexmom">
-          <li class="flexkid"><a href="{{ site.baseurl }}/">Home</a></li>
-          <li class="flexkid"><a href="{{ site.baseurl }}/about/">About Me</a></li>
-          <li class="flexkid"><a href="{{ site.baseurl }}/resume/">My Resume</a></li>
-          <li class="flexkid"><a href="{{ site.baseurl }}/contact/">Contact Me</a></li>
-          
-        </ul>
-      </nav>
-    </div>
+    <!-- {% include masthead.html %} -->
+    {% include navigation.html %}
     <div>
       {{ content }}
     </div>
-    <div class="wrapper-footer clearfix">
-      <div class="container">
-        <ul class="bullets">
-          <li class="bullet two-col-bullet">
-            <div class="bullet-content">
-              <div class="bullet">{% if site.footer-links.email %}<a href="mailto: {{ site.footer-links.email }}">{% include svg/mail.svg %}</a>{% endif %} <span class="socialText">Send me an <a href="mailto: {{ site.footer-links.email }}">email</a></span></div>
-              <div class="bullet">{% if site.footer-links.github %}<a href="http://github.com/{{ site.footer-links.github }}">{% include svg/github.svg %}</a>{% endif %} <span class="socialText">View my <a href="http://github.com/{{ site.footer-links.github }}">Github</a></span></div>
-              <div class="bullet">{% if site.footer-links.linkedin %}<a href="http://linkedin.com/in/{{ site.footer-links.linkedin }}">{% include svg/linkedin.svg %}</a>{% endif %} <span class="socialText">View my <a href="http://linkedin.com/in/{{ site.footer-links.linkedin }}">Linkedin</a></span></div>
-              <div class="bullet">{% if site.footer-links.twitter %}<a href="http://twitter.com/{{ site.footer-links.twitter }}">{% include svg/twitter.svg %}</a>{% endif %} <span class="socialText">Follow me <a href="http://twitter.com/{{ site.footer-links.twitter }}">@jasonswingen</a></span></div>
-            </div>
-          </li>
-          <li class="bullet two-col-bullet">
-            <div class="bullet-content">
-              <p>A Graduate of Marketing and Management, Jason combines his education with over 3 years of internet marketing, and web development. With experience in CSS3, HTML5, Javascript, Wordpress, Jekyll, and more to create fantastic websites for a great user experience. <a href="/about">Read More</a></p>
-            </div>
-          </li>
-        </ul>
-        <div><a href="#"><li class="totop btn"><button>Back To Top</button></li></a></div>
-        <div class="footerinfo">© 2015 Jason Swingen</div>
-      </div>
-    </div>
+    {% include footer.html %}
     {% include analytics.html %}
-    
-    <!-- Beginning of Javascript Snippets -->
-    <!-- Google+ -->
-    <script type="text/javascript">
-    (function() {
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-    po.src = 'https://apis.google.com/js/plusone.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-    })();
-    </script>
-    <!-- Twitter -->
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-    <!-- Twitter Follow Nav Link -->
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-    <!-- Disqus -->
-    <script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'jasonswingen'; // required: replace example with your forum shortname
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function () {
-    var s = document.createElement('script'); s.async = true;
-    s.type = 'text/javascript';
-    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-    </script>
-    <!-- Jquery -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script src="/min/script.min.js"></script>
-    <!-- End of Javascript Snippets -->
+    {% include javascript.html %}
   </body>
 </html>
