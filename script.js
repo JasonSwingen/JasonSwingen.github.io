@@ -61,15 +61,19 @@ $(function() {
   });
 });
 
-  // $('body').addClass('js');
-  // var $menu = $('#menu'),
-  //   $menulink = $('.menu-link');
+  $('body').addClass('js');
+  var $menu = $('#menu'),
+    $menulink = $('.menu-link');
+
+  $('#js-navigation-menu').slideToggle(function(){
+      if($('#js-navigation-menu').is(':hidden')) {
+        $('#js-navigation-menu').removeAttr('style');
   
   // $menulink.click(function() {
   //   $menulink.toggleClass('active');
   //   $menu.toggleClass('active');
   //   return false;
-  // });
+  });
 
   addEventListener( "click", function() {
     this.classList.toggle( "active" );
