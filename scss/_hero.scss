@@ -8,11 +8,9 @@
   $base-accent-color: #477DCA !default;
   $large-screen: em(860) !default;
   -webkit-font-smoothing: antialiased;
-  .center{
-    text-align: center;
-    button {
-     -webkit-font-smoothing: antialiased;
-    }
+
+  button {
+    -webkit-font-smoothing: antialiased;
   }
   //////////////////////////////////////////////////////////////////////////////////
 

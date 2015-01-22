@@ -379,40 +379,4 @@ header.navigation {
 .twitter-btn {
   float: right;
   margin-top: 17px;
-  @include mobile {
-    float: none;
-    text-align: center;
-  }
-}
-
-.menu-link span, .menu-link span:before, .menu-link span:after {
-  border-radius: 1px;
-  height: 5px;
-  width: 35px;
-  background: white;
-  position: absolute;
-  display: block;
-  content: '';
-}
-.menu-link span:before {
-  top: -10px; 
-}
-.menu-link span:after {
-  bottom: -10px;
-}
-
-.menu-link span, .menu-link span:before, .menu-link span:after {
-  @include transition(all, 0.6s, $ease-out-back);
-}
-.menu-link.active span {
-  background-color: transparent;
-}
-.menu-link.active span:before, .menu-link.active span:after {
-  top: 0;
-}
-.menu-link.active span:before {
-  transform: rotate(45deg);
-}
-.menu-link.active span:after {
-  transform: rotate(-45deg);
 }
