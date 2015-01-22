@@ -81,12 +81,12 @@
 @include keyframes(moveup) {
     0%   {
       @include transform(scale(0));
-      // bottom: -400px;
+      bottom: -600px;
       opacity: 0;
     }
     100% {
       @include transform(scale(1));
-      // bottom: 0px;
+      bottom: 0px;
       opacity: 1;
     }
 }

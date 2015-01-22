@@ -69,7 +69,7 @@
       max-width: 440px;
       margin: 0em auto 1em;
       min-height: 133px;
-      @include transition(all, 0.2s, ease-in-out);
+      @include transition(all, 0.3s, $ease-out-quint);
       &:hover {
         transform: scale(1.1, 1.1);
       }

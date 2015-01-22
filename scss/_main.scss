@@ -63,6 +63,7 @@ button {
   -webkit-font-smoothing: antialiased;
   @include button(flat, $color1);
   padding: .7em 1em;
+  margin-top: 1em;
 }
 
 a {
