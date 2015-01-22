@@ -1661,7 +1661,7 @@ header.navigation {
           .hero .hero-inner .hero-copy p {
             font-size: 1.1em;
             max-width: 50%; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_hero\.scss}line{font-family:\0000368}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_hero\.scss}line{font-family:\0000367}}
     .hero .hero-inner button {
       background-color: #eeeeee;
       border-radius: 3px;
@@ -1704,7 +1704,7 @@ header.navigation {
       .hero .hero-inner button:disabled {
         opacity: 0.5;
         cursor: not-allowed; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_hero\.scss}line{font-family:\0000371}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_hero\.scss}line{font-family:\0000370}}
       .hero .hero-inner button a {
         color: orange; }
 

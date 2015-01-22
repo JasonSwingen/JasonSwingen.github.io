@@ -64,13 +64,12 @@
         }
       }
     }
-
-    button {
-      @include button(flat, $lightGray);
-      padding: 1em 2em;
-      a {
-        color: $color2;
+      button {
+        @include button(flat, $lightGray);
+        padding: 1em 2em;
+        a {
+          color: $color2;
+        }
       }
-    }
   }
 }
