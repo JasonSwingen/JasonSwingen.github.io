@@ -2640,36 +2640,27 @@ input[type="submit"] {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_post\.scss}line{font-family:\00003141}}
 .centered {
-  margin: 30px auto;
-  position: relative;
-  left: -10%;
-  max-width: 120%;
+  width: 100%;
   -webkit-box-shadow: 0px 7px 16px -1px #666666;
   -moz-box-shadow: 0px 7px 16px -1px #666666;
   -ms-box-shadow: 0px 7px 16px -1px #666666;
   box-shadow: 0px 7px 16px -1px #666666; }
-  @media screen and (max-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_post\.scss}line{font-family:\00003141}}
-    .centered {
-      margin: 10px auto;
-      left: -5%;
-      max-width: 110%; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_post\.scss}line{font-family:\00003154}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_post\.scss}line{font-family:\00003158}}
 .tags, .categories {
   list-style-type: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_post\.scss}line{font-family:\00003165}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_post\.scss}line{font-family:\00003169}}
 .share {
   margin-top: 20px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_post\.scss}line{font-family:\00003169}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_post\.scss}line{font-family:\00003173}}
 .share-top {
   float: right;
   margin-top: 24px;
   z-index: 1; }
   @media screen and (max-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_post\.scss}line{font-family:\00003169}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_post\.scss}line{font-family:\00003173}}
     .share-top {
       margin-top: 20px;
       padding: 0px 23px 10px;
