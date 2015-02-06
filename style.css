@@ -349,9 +349,9 @@ input[type="submit"] {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_mixins\.scss}line{font-family:\0000341}}
 .animateup {
-  -webkit-animation: moveup 1s;
-  -moz-animation: moveup 1s;
-  animation: moveup 1s; }
+  -webkit-animation: moveup 0.2s;
+  -moz-animation: moveup 0.2s;
+  animation: moveup 0.2s; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_mixins\.scss}line{font-family:\0000344}}
 .animatereveal {
@@ -441,40 +441,38 @@ input[type="submit"] {
     right: 0px; } }
 @-webkit-keyframes moveup {
   0% {
-    -webkit-transform: scale(0);
-    bottom: -600px;
+    bottom: -20px;
     opacity: 0; }
 
+  50% {
+    bottom: -10px;
+    opacity: 1; }
+
   100% {
-    -webkit-transform: scale(1);
     bottom: 0px;
     opacity: 1; } }
 @-moz-keyframes moveup {
   0% {
-    -moz-transform: scale(0);
-    bottom: -600px;
+    bottom: -20px;
     opacity: 0; }
 
+  50% {
+    bottom: -10px;
+    opacity: 1; }
+
   100% {
-    -moz-transform: scale(1);
     bottom: 0px;
     opacity: 1; } }
 @keyframes moveup {
   0% {
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -ms-transform: scale(0);
-    -o-transform: scale(0);
-    transform: scale(0);
-    bottom: -600px;
+    bottom: -20px;
     opacity: 0; }
 
+  50% {
+    bottom: -10px;
+    opacity: 1; }
+
   100% {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1);
     bottom: 0px;
     opacity: 1; } }
 @-webkit-keyframes reveal {
@@ -699,9 +697,9 @@ img {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_mixins\.scss}line{font-family:\0000341}}
 .animateup {
-  -webkit-animation: moveup 1s;
-  -moz-animation: moveup 1s;
-  animation: moveup 1s; }
+  -webkit-animation: moveup 0.2s;
+  -moz-animation: moveup 0.2s;
+  animation: moveup 0.2s; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_mixins\.scss}line{font-family:\0000344}}
 .animatereveal {
@@ -791,40 +789,38 @@ img {
     right: 0px; } }
 @-webkit-keyframes moveup {
   0% {
-    -webkit-transform: scale(0);
-    bottom: -600px;
+    bottom: -20px;
     opacity: 0; }
 
+  50% {
+    bottom: -10px;
+    opacity: 1; }
+
   100% {
-    -webkit-transform: scale(1);
     bottom: 0px;
     opacity: 1; } }
 @-moz-keyframes moveup {
   0% {
-    -moz-transform: scale(0);
-    bottom: -600px;
+    bottom: -20px;
     opacity: 0; }
 
+  50% {
+    bottom: -10px;
+    opacity: 1; }
+
   100% {
-    -moz-transform: scale(1);
     bottom: 0px;
     opacity: 1; } }
 @keyframes moveup {
   0% {
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -ms-transform: scale(0);
-    -o-transform: scale(0);
-    transform: scale(0);
-    bottom: -600px;
+    bottom: -20px;
     opacity: 0; }
 
+  50% {
+    bottom: -10px;
+    opacity: 1; }
+
   100% {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1);
     bottom: 0px;
     opacity: 1; } }
 @-webkit-keyframes reveal {
@@ -888,9 +884,9 @@ img {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_mixins\.scss}line{font-family:\0000341}}
 .animateup {
-  -webkit-animation: moveup 1s;
-  -moz-animation: moveup 1s;
-  animation: moveup 1s; }
+  -webkit-animation: moveup 0.2s;
+  -moz-animation: moveup 0.2s;
+  animation: moveup 0.2s; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_mixins\.scss}line{font-family:\0000344}}
 .animatereveal {
@@ -980,40 +976,38 @@ img {
     right: 0px; } }
 @-webkit-keyframes moveup {
   0% {
-    -webkit-transform: scale(0);
-    bottom: -600px;
+    bottom: -20px;
     opacity: 0; }
 
+  50% {
+    bottom: -10px;
+    opacity: 1; }
+
   100% {
-    -webkit-transform: scale(1);
     bottom: 0px;
     opacity: 1; } }
 @-moz-keyframes moveup {
   0% {
-    -moz-transform: scale(0);
-    bottom: -600px;
+    bottom: -20px;
     opacity: 0; }
 
+  50% {
+    bottom: -10px;
+    opacity: 1; }
+
   100% {
-    -moz-transform: scale(1);
     bottom: 0px;
     opacity: 1; } }
 @keyframes moveup {
   0% {
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -ms-transform: scale(0);
-    -o-transform: scale(0);
-    transform: scale(0);
-    bottom: -600px;
+    bottom: -20px;
     opacity: 0; }
 
+  50% {
+    bottom: -10px;
+    opacity: 1; }
+
   100% {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1);
     bottom: 0px;
     opacity: 1; } }
 @-webkit-keyframes reveal {
@@ -1440,9 +1434,9 @@ nav[role=navigation] li a {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_mixins\.scss}line{font-family:\0000341}}
 .animateup {
-  -webkit-animation: moveup 1s;
-  -moz-animation: moveup 1s;
-  animation: moveup 1s; }
+  -webkit-animation: moveup 0.2s;
+  -moz-animation: moveup 0.2s;
+  animation: moveup 0.2s; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_mixins\.scss}line{font-family:\0000344}}
 .animatereveal {
@@ -1532,40 +1526,38 @@ nav[role=navigation] li a {
     right: 0px; } }
 @-webkit-keyframes moveup {
   0% {
-    -webkit-transform: scale(0);
-    bottom: -600px;
+    bottom: -20px;
     opacity: 0; }
 
+  50% {
+    bottom: -10px;
+    opacity: 1; }
+
   100% {
-    -webkit-transform: scale(1);
     bottom: 0px;
     opacity: 1; } }
 @-moz-keyframes moveup {
   0% {
-    -moz-transform: scale(0);
-    bottom: -600px;
+    bottom: -20px;
     opacity: 0; }
 
+  50% {
+    bottom: -10px;
+    opacity: 1; }
+
   100% {
-    -moz-transform: scale(1);
     bottom: 0px;
     opacity: 1; } }
 @keyframes moveup {
   0% {
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -ms-transform: scale(0);
-    -o-transform: scale(0);
-    transform: scale(0);
-    bottom: -600px;
+    bottom: -20px;
     opacity: 0; }
 
+  50% {
+    bottom: -10px;
+    opacity: 1; }
+
   100% {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1);
     bottom: 0px;
     opacity: 1; } }
 @-webkit-keyframes reveal {
@@ -1982,9 +1974,9 @@ input[type="submit"] {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_mixins\.scss}line{font-family:\0000341}}
 .animateup {
-  -webkit-animation: moveup 1s;
-  -moz-animation: moveup 1s;
-  animation: moveup 1s; }
+  -webkit-animation: moveup 0.2s;
+  -moz-animation: moveup 0.2s;
+  animation: moveup 0.2s; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_mixins\.scss}line{font-family:\0000344}}
 .animatereveal {
@@ -2074,40 +2066,38 @@ input[type="submit"] {
     right: 0px; } }
 @-webkit-keyframes moveup {
   0% {
-    -webkit-transform: scale(0);
-    bottom: -600px;
+    bottom: -20px;
     opacity: 0; }
 
+  50% {
+    bottom: -10px;
+    opacity: 1; }
+
   100% {
-    -webkit-transform: scale(1);
     bottom: 0px;
     opacity: 1; } }
 @-moz-keyframes moveup {
   0% {
-    -moz-transform: scale(0);
-    bottom: -600px;
+    bottom: -20px;
     opacity: 0; }
 
+  50% {
+    bottom: -10px;
+    opacity: 1; }
+
   100% {
-    -moz-transform: scale(1);
     bottom: 0px;
     opacity: 1; } }
 @keyframes moveup {
   0% {
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -ms-transform: scale(0);
-    -o-transform: scale(0);
-    transform: scale(0);
-    bottom: -600px;
+    bottom: -20px;
     opacity: 0; }
 
+  50% {
+    bottom: -10px;
+    opacity: 1; }
+
   100% {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1);
     bottom: 0px;
     opacity: 1; } }
 @-webkit-keyframes reveal {
@@ -2337,9 +2327,9 @@ input[type="submit"] {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_mixins\.scss}line{font-family:\0000341}}
 .animateup {
-  -webkit-animation: moveup 1s;
-  -moz-animation: moveup 1s;
-  animation: moveup 1s; }
+  -webkit-animation: moveup 0.2s;
+  -moz-animation: moveup 0.2s;
+  animation: moveup 0.2s; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_mixins\.scss}line{font-family:\0000344}}
 .animatereveal {
@@ -2429,40 +2419,38 @@ input[type="submit"] {
     right: 0px; } }
 @-webkit-keyframes moveup {
   0% {
-    -webkit-transform: scale(0);
-    bottom: -600px;
+    bottom: -20px;
     opacity: 0; }
 
+  50% {
+    bottom: -10px;
+    opacity: 1; }
+
   100% {
-    -webkit-transform: scale(1);
     bottom: 0px;
     opacity: 1; } }
 @-moz-keyframes moveup {
   0% {
-    -moz-transform: scale(0);
-    bottom: -600px;
+    bottom: -20px;
     opacity: 0; }
 
+  50% {
+    bottom: -10px;
+    opacity: 1; }
+
   100% {
-    -moz-transform: scale(1);
     bottom: 0px;
     opacity: 1; } }
 @keyframes moveup {
   0% {
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -ms-transform: scale(0);
-    -o-transform: scale(0);
-    transform: scale(0);
-    bottom: -600px;
+    bottom: -20px;
     opacity: 0; }
 
+  50% {
+    bottom: -10px;
+    opacity: 1; }
+
   100% {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1);
     bottom: 0px;
     opacity: 1; } }
 @-webkit-keyframes reveal {
@@ -2799,9 +2787,9 @@ input[type="submit"] {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_mixins\.scss}line{font-family:\0000341}}
 .animateup {
-  -webkit-animation: moveup 1s;
-  -moz-animation: moveup 1s;
-  animation: moveup 1s; }
+  -webkit-animation: moveup 0.2s;
+  -moz-animation: moveup 0.2s;
+  animation: moveup 0.2s; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_mixins\.scss}line{font-family:\0000344}}
 .animatereveal {
@@ -2891,40 +2879,38 @@ input[type="submit"] {
     right: 0px; } }
 @-webkit-keyframes moveup {
   0% {
-    -webkit-transform: scale(0);
-    bottom: -600px;
+    bottom: -20px;
     opacity: 0; }
 
+  50% {
+    bottom: -10px;
+    opacity: 1; }
+
   100% {
-    -webkit-transform: scale(1);
     bottom: 0px;
     opacity: 1; } }
 @-moz-keyframes moveup {
   0% {
-    -moz-transform: scale(0);
-    bottom: -600px;
+    bottom: -20px;
     opacity: 0; }
 
+  50% {
+    bottom: -10px;
+    opacity: 1; }
+
   100% {
-    -moz-transform: scale(1);
     bottom: 0px;
     opacity: 1; } }
 @keyframes moveup {
   0% {
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -ms-transform: scale(0);
-    -o-transform: scale(0);
-    transform: scale(0);
-    bottom: -600px;
+    bottom: -20px;
     opacity: 0; }
 
+  50% {
+    bottom: -10px;
+    opacity: 1; }
+
   100% {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1);
     bottom: 0px;
     opacity: 1; } }
 @-webkit-keyframes reveal {
@@ -3016,9 +3002,9 @@ footer {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_mixins\.scss}line{font-family:\0000341}}
 .animateup {
-  -webkit-animation: moveup 1s;
-  -moz-animation: moveup 1s;
-  animation: moveup 1s; }
+  -webkit-animation: moveup 0.2s;
+  -moz-animation: moveup 0.2s;
+  animation: moveup 0.2s; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_mixins\.scss}line{font-family:\0000344}}
 .animatereveal {
@@ -3108,40 +3094,38 @@ footer {
     right: 0px; } }
 @-webkit-keyframes moveup {
   0% {
-    -webkit-transform: scale(0);
-    bottom: -600px;
+    bottom: -20px;
     opacity: 0; }
 
+  50% {
+    bottom: -10px;
+    opacity: 1; }
+
   100% {
-    -webkit-transform: scale(1);
     bottom: 0px;
     opacity: 1; } }
 @-moz-keyframes moveup {
   0% {
-    -moz-transform: scale(0);
-    bottom: -600px;
+    bottom: -20px;
     opacity: 0; }
 
+  50% {
+    bottom: -10px;
+    opacity: 1; }
+
   100% {
-    -moz-transform: scale(1);
     bottom: 0px;
     opacity: 1; } }
 @keyframes moveup {
   0% {
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -ms-transform: scale(0);
-    -o-transform: scale(0);
-    transform: scale(0);
-    bottom: -600px;
+    bottom: -20px;
     opacity: 0; }
 
+  50% {
+    bottom: -10px;
+    opacity: 1; }
+
   100% {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1);
     bottom: 0px;
     opacity: 1; } }
 @-webkit-keyframes reveal {

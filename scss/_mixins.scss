@@ -39,7 +39,7 @@
   @include animation(moveleft 1s);
 }
 .animateup {
-  @include animation(moveup 1s);
+  @include animation(moveup 0.2s);
 }
 .animatereveal {
   @include animation(reveal 2s);
@@ -80,12 +80,14 @@
 }
 @include keyframes(moveup) {
     0%   {
-      @include transform(scale(0));
-      bottom: -600px;
+      bottom: -20px;
       opacity: 0;
     }
+    50% {
+      bottom: -10px;
+      opacity: 1;
+    }
     100% {
-      @include transform(scale(1));
       bottom: 0px;
       opacity: 1;
     }
