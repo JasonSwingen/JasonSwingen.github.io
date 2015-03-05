@@ -1347,12 +1347,12 @@ nav[role=navigation] li a {
       .hero .hero-inner .hero-copy p {
         font-weight: 200;
         line-height: 1.4em;
-        margin: 0 auto 3em auto; }
+        margin: 0 auto 0em auto; }
         @media screen and (min-width: 53.75em) {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_hero\.scss}line{font-family:\0000356}}
           .hero .hero-inner .hero-copy p {
             font-size: 1.1em;
-            max-width: 50%; } }
+            max-width: 75%; } }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/Documents\/GitHub\/JasonSwingen\.github\.io\/scss\/_hero\.scss}line{font-family:\0000367}}
     .hero .hero-inner button {
       background-color: #eeeeee;
