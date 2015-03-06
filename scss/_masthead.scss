@@ -127,7 +127,7 @@ nav[role=navigation] {
   @include mobile {
     border-top: none;
     // this can be increased as number of links increases
-    top: -400px;
+    top: -200px;
   }
 }
 .js nav[role=navigation] {
