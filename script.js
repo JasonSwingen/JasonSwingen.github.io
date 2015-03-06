@@ -62,6 +62,39 @@ $(document).ready(function($) { // Start of Document Ready Javascript
     this.classList.toggle( "active" );
   });
 
+  // Parallax
+
+  $(function() {
+    if ($("#js-parallax-window").length) {
+      parallax();
+    }
+  });
+
+  $(window).scroll(function(e) {
+    if ($("#js-parallax-window").length) {
+      parallax();
+    }
+  });
+
+  function parallax(){
+    if( $("#js-parallax-window").length > 0 ) {
+      var plxBackground = $("#js-parallax-background");
+      var plxWindow = $("#js-parallax-window");
+
+      var plxWindowTopToPageTop = $(plxWindow).offset().top;
+      var windowTopToPageTop = $(window).scrollTop();
+      var plxWindowTopToWindowTop = plxWindowTopToPageTop - windowTopToPageTop;
+
+      var plxBackgroundTopToPageTop = $(plxBackground).offset().top;
+      var windowInnerHeight = window.innerHeight;
+      var plxBackgroundTopToWindowTop = plxBackgroundTopToPageTop - windowTopToPageTop;
+      var plxBackgroundTopToWindowBottom = windowInnerHeight - plxBackgroundTopToWindowTop;
+      var plxSpeed = 0.35;
+
+      plxBackground.css('top', - (plxWindowTopToWindowTop * plxSpeed) + 'px');
+    }
+  }
+
   // Map
   var bittersMap = (function () {
     var myLatlng = new google.maps.LatLng(46.7687250,-92.1293140),
