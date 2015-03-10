@@ -47,7 +47,7 @@
   border-top: 5px solid $color1;
   background-color: $postbackground;
   @include mobile {
-    margin: 0px 0.4em;
+    margin: 0px 0.4em 2em;
   }
   .postdate {
     text-align: center;
