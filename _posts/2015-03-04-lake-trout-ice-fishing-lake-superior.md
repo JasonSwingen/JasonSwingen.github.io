@@ -23,6 +23,6 @@ The short answer is 60 to 120 feet. You can catch them in shallower and deeper w
 
 Lake trout fishing has been the most exiting ice fishing I have have ever done. It is extremely fun fighting these large aggressive fish. If you are close to Lake Superior or any other lake with lake trout I would highly recommend giving it a try.
 
-<img class="centered" src="/images/2015-lake-trout.jpg" alt="Fish from Devils Lake">
+<img class="centered" src="/images/2015-lake-trout.jpg" alt="Huge Lake Trout">
 
 I caught this fish off of a 3.5 inch white tube jig in 75 feet of water. I let the jig free fall until it hit bottom then bounce it against the ground a few times and then would lift it a few feet off the bottom. After a few repetitions a huge mark showed up on my Marcum and caught my jig right at its peak a few feet off the bottom. I didn't even have time to set the hook. My rod was bend all the was over and my reel was screaming. It took five minutes until I finally saw him. It is amazing seeing these fish fight through such clear ice and water. You can see 30 feet down and the ice is often like glass. They will flex and roll and just when they get to the hole and you think you are done they will take off clear to the bottom of the lake again. The entire fight too over 10 minutes and I ended up soaking both arms up to my elbows trying to get him onto the ice. He ended up weighing over 15 pounds and was nearly 35 inches in length.
