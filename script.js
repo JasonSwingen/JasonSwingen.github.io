@@ -47,6 +47,15 @@ $(document).ready(function($) { // Start of Document Ready Javascript
     });
   });
 
+  $(".post").hover(
+    function () {
+      $(this).addClass("posthover");
+    },
+    function () {
+      $(this).removeClass("posthover");
+    }
+  );
+
   // Menu Toggle
   $('body').addClass('js');
   var $menu = $('#menu'),
