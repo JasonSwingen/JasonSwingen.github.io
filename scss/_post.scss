@@ -16,22 +16,28 @@ $flex-box-color: transparentize($base-font-color, .1);
 }
 
 .postimg {
-display: block;
-width: 100%;
-margin: 0em auto;
-@include transition(all, 0.4s, $ease-out-quint);
--webkit-filter: grayscale(0.6);
-filter: grayscale(0.6);
-&:hover {
-  // transform: scale(1.1, 1.1);
+  display: block;
+  width: 100%;
+  margin: 0em auto;
+  @include transition(all, 0.4s, $ease-out-quint);
+}
+
+.postnohover {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  @include mobile {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+  }
+}
+.posthover {
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
-  }
 }
 
 .posts {
   @include clearfix;
-  @include display(flex);
+  @include flexbox;
   @include justify-content(center);
   @include align-items(stretch);
   @include flex-wrap(wrap);
@@ -62,6 +68,10 @@ filter: grayscale(0.6);
   }
   .padding {
     padding: 1px 15px 40px 15px;
+  }
+  &.post:last-child, &.post:first-child {
+    flex-grow: 2;
+    min-width: 65%;
   }
 }
 
@@ -95,8 +105,6 @@ filter: grayscale(0.6);
 }
 
 .posts > .post:last-child {
-  padding-bottom: 1em;
-  border-bottom: none;
 }
 
 .post {
