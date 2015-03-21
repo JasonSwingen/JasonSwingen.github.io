@@ -84,11 +84,11 @@
 }
 @include keyframes(moveup) {
     0%   {
-      bottom: -20px;
+      bottom: -40px;
       opacity: 0;
     }
     50% {
-      bottom: -10px;
+      bottom: -20px;
       opacity: 1;
     }
     100% {

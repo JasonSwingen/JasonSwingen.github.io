@@ -7,6 +7,8 @@ $parallax-background-height: $parallax-window-height * 2;
   position: relative;
   text-align: center;
   width: 100%;
+  margin-bottom: -130px;
+  z-index: -1;
 
   h1 {
     font-size: 3em;
@@ -53,7 +55,7 @@ $parallax-background-height: $parallax-window-height * 2;
 }
 
 .downarrow {
-  margin: 0 auto;
+  margin: 0 auto 100px;
   border-radius: 0px;
   width: 0;
   height: 0;

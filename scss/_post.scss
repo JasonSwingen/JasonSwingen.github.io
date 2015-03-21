@@ -1,6 +1,9 @@
-// @import 'mixins';
-// @import 'breakpoints';
-// @import 'variables';
+$flex-box-border-color: $light-gray;
+$flex-box-border: 1px solid $flex-box-border-color;
+$flex-box-background: $white;
+$flex-box-gutter: .4em;
+$flex-box-width: 18em;
+$flex-box-color: transparentize($base-font-color, .1);
 
 .title {
   margin: 0 auto;
@@ -12,19 +15,28 @@
   }
 }
 
-
-.posts > .post {
-  padding: 1px 15px 40px 15px;
-  @include gradient($white, $lightGray);
-  @include border-radius(5px);
-  border-top: 5px solid $color1;
-  margin-bottom: 40px;
-  @include mobile {
-    margin-bottom: 20px;
+.postimg {
+display: block;
+width: 100%;
+margin: 0em auto;
+@include transition(all, 0.4s, $ease-out-quint);
+-webkit-filter: grayscale(1);
+filter: grayscale(1);
+&:hover {
+  // transform: scale(1.1, 1.1);
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
   }
 }
 
 .posts {
+  @include clearfix;
+  @include display(flex);
+  @include justify-content(center);
+  @include align-items(stretch);
+  @include flex-wrap(wrap);
+  clear: both;
+  text-align: center;
   h1 {
     margin: 10px 0px;
     a {
@@ -39,16 +51,37 @@
   }
 }
 
+.posts > .post {
+  background-color: $postbackground;
+  // @include gradient($lightGray, $white);
+  @include box-shadow(0px, -4px, 16px, -6px, $gray);
+  padding: 0;
+  .padding {
+    padding: 1px 15px 40px 15px;
+  }
+}
+
 .post {
-  padding: 15px;
-  margin-bottom: 30px;
-  @include box-shadow(0px, 14px, 24px, -10px, $gray);
+  @include transition (all, 0.2s, ease-in-out);
+  @include flex(2 2 15em);
+  @include align-self(stretch);
+  background: $postbackground;
   @include border-radius(5px);
   border-top: 5px solid $color1;
-  background-color: $postbackground;
-  @include mobile {
-    margin: 0px 0.4em 2em;
-  }
+  // border-radius: $base-border-radius;
+  // box-shadow: inset 0 0 1px $flex-box-border-color, 0 2px 4px darken($base-background-color, 10);
+  display: block;
+  margin: $flex-box-gutter;
+  padding: 0em 1em;
+
+  // margin-bottom: 30px;
+  @include box-shadow(0px, -10px, 24px, -10px, $gray);
+  @include border-radius(5px);
+  // border-top: 5px solid $color1;
+
+  // @include mobile {
+  //   margin: 0px 0.4em 2em;
+  // }
   .postdate {
     text-align: center;
     font-size: 12px;
@@ -172,10 +205,10 @@
 
 .share-top {
   float: right;
-  margin-top: 24px;
+  margin-top: -45px;
   z-index: 1;
   @include mobile {
-    margin-top: 20px;
+    margin-top: 25px;
     padding: 0px 23px 10px;
     width: 100%;
   }

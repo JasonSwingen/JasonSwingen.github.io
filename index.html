@@ -16,7 +16,26 @@ layout: default
 <!-- Posts -->
 <div class="big-container">
 	<!-- <div class="title"><h1>Recent Posts</h1></div> -->
-	<div class="flex-boxes">
+
+	<div class="posts">
+	{% for post in site.posts %}
+	  <article class="post">
+	    <div class="postimg">
+	      <a href="{{ site.baseurl }}{{ post.url }}"><img src="{{ post.image }}" /></a>
+	    </div>
+	    <div class="padding">
+	      <div class="postdate">{{ post.date | date: "%B %e, %Y" }}</div>
+	      <h1>{{ post.title }}</h1>
+	      <div class="entry">
+	        {{ post.content | truncatewords:27}}
+	      </div>
+	      <a href="{{ site.baseurl }}{{ post.url }}"><button>Continue reading...</button></a>
+	    </div>
+	  </article>
+	{% endfor %}
+	</div>
+
+<!-- 	<div class="flex-boxes">
 		{% for post in site.posts %}
 			<article class="flex-box">
 				<a href="{{ site.baseurl }}{{ post.url }}"><img src="{{ post.image }}" /></a>
@@ -26,7 +45,7 @@ layout: default
 				<a href="{{ site.baseurl }}{{ post.url }}"><button>Continue reading...</button></a>
 			</article>
 		{% endfor %}
-	</div>
+	</div> -->
 </div>
 <!-- Hero -->
 <!-- <div class="hero">
