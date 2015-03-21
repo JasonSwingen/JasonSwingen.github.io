@@ -3,15 +3,19 @@ layout: default
 ---
 <div id="main" role="main" class="container">
   <div class="posts">
-    <h1>Recent Posts</h1>
     {% for post in site.posts %}
       <article class="post">
-        <div class="postdate">{{ post.date | date: "%B %e, %Y" }}</div>
-        <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-        <div class="entry">
-          {{ post.content | truncatewords:60}}
+        <div class="postimage">
+          <a href="{{ site.baseurl }}{{ post.url }}"><img src="{{ post.image }}" /></a>
         </div>
-        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Continue reading...</a>
+        <div class="padding">
+          <div class="postdate">{{ post.date | date: "%B %e, %Y" }}</div>
+          <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+          <div class="entry">
+            {{ post.content | truncatewords:30}}
+          </div>
+          <a href="{{ site.baseurl }}{{ post.url }}"><button>Continue reading...</button></a>
+        </div>
       </article>
     {% endfor %}
   </div>
