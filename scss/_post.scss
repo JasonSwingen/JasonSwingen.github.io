@@ -20,8 +20,8 @@ display: block;
 width: 100%;
 margin: 0em auto;
 @include transition(all, 0.4s, $ease-out-quint);
--webkit-filter: grayscale(1);
-filter: grayscale(1);
+-webkit-filter: grayscale(0.6);
+filter: grayscale(0.6);
 &:hover {
   // transform: scale(1.1, 1.1);
   -webkit-filter: grayscale(0);
@@ -56,6 +56,10 @@ filter: grayscale(1);
   // @include gradient($lightGray, $white);
   @include box-shadow(0px, -4px, 16px, -6px, $gray);
   padding: 0;
+  @include transition(all, 0.4s, $ease-out-quint);
+  &:hover {
+    @include box-shadow(0px, 0px, 10px, 0px, $gray);
+  }
   .padding {
     padding: 1px 15px 40px 15px;
   }
