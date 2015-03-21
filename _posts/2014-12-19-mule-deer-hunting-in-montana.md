@@ -6,7 +6,6 @@ categories: [hunting]
 tags: [mule deer, montana]
 image: /images/tn/2014-mule-deer.jpg
 ---
-## Getting My Deer License
 
 This is the second year I have gotten a non-resident mule deer license for Montana. Luckily the Montana Fish Wildlife and Parks has a special tag for hunters that grew up in Montana and moved away. As long as your parents are still living in Montana you are able to pick up a mule deer, and upland game combo hundreds less than a standard non-resident tag. It is really a great deal.
 

@@ -7,8 +7,6 @@ tags: [tips, tricks, plugins]
 image: /images/tn/SublimeText.jpg
 ---
 
-## My favorite Sublime Text Plugins
-
 Lets just get things rolling. Here is a list of my currently used and favorite Sublime Text Plugins. I am currently running Sublime Text 3 on Windows 8.1.
 
 * Package Control

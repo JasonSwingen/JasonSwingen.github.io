@@ -7,9 +7,7 @@ tags: [workflow]
 image: /images/Jekyll.png
 ---
 
-## We are Live!
-
-This is my first post after getting my github pages set up and running with __Jekyll__.
+This is my first post after getting my github pages set up and running with <a target="_blank" href="http://jekyllrb.com/">Jekyll</a>.
 
 ## My Workflow
 
