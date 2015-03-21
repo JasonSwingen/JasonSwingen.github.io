@@ -4,7 +4,7 @@ title: Ice Fishing for Lake Trout Video
 published: True
 categories: [fishing]
 tags: [lake trout, ice fishing, video]
-image: /images/tn/Superior_Lake_Trout.jpg
+image: /images/Superior_Lake_Trout.jpg
 ---
 
 My last opportunity to ice fish for lake trout this year. The weather has taken a huge turn and spring decided to come with little warning. There was still 12 inches of ice on the lake, but there were many massive cracks that made getting out onto the lake slightly more difficult.

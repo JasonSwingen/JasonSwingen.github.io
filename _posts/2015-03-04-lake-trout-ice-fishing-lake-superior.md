@@ -4,7 +4,7 @@ title: Ice Fishing for Lake Trout in Lake Superior
 published: True
 categories: [fishing]
 tags: [lake trout, ice fishing]
-image: /images/tn/2015-lake-trout.jpg
+image: /images/2015-lake-trout.jpg
 ---
 
 Last year Duluth had an intensely cold winter which froze nearly all of Lake Superior allowing anglers the opportunity to travel miles onto the lake in search of monster lakers. This year was not nearly as cold but there was still enough of the lake that froze over to allow many fisherman get onto the ice. 

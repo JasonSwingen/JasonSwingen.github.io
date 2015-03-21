@@ -4,7 +4,7 @@ title: Devils Lake North Dakota Ice Fishing Trip
 published: True
 categories: [fishing]
 tags: [devils lake, ice fishing]
-image: /images/tn/Devils_Lake_Ice.jpg
+image: /images/Devils_Lake_Ice.jpg
 ---
 
 Luckily my grandparents have a farm less than 30 miles from Devils Lake, which makes Devils Lake a very convenient location to fish. I have heard great things about the lake and seen it grow tremendously in size over the last decade. From a 45,000 acre lake and a max depth of 20 feet to over 200,000 acres of water with a max depth of 65 feet.
