@@ -87,6 +87,7 @@ $flex-box-color: transparentize($base-font-color, .1);
   display: block;
   margin: $flex-box-gutter;
   padding: 0em 1em;
+  max-width: 100%;
 
   // margin-bottom: 30px;
   @include box-shadow(0px, -10px, 24px, -10px, $gray);
