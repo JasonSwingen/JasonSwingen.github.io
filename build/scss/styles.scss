@@ -1,0 +1,4689 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+// HTML5 display-role reset for older browsers
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+// Apply a natural box layout model to all elements
+// from: http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+//
+// VARIABLES
+//
+
+// Colors
+$blue: #4183C4; 
+$green: #418564;
+$orange: orange;
+
+// Grays
+$black: #000;
+$darkerGray: #222;
+$darkGray: #333;
+$gray: #666;
+$lightGray: #eee;
+$lighterGray: rgb(234, 234, 234);
+$white: #fff;
+
+
+$postBorderTop: $green;
+$postbackground: $white;
+
+$color1: $blue;
+$color2: $orange;
+
+// Font stacks
+$font: 'Karla', Helvetica, Arial, sans-serif;
+$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$georgia: Georgia, serif;
+
+// Mobile breakpoints
+@mixin mobile {
+  @media screen and (max-width: 640px) {
+    @content;
+  }
+}
+//************************************************************************//
+// Example: @include prefixer(border-radius, $radii, webkit ms spec);
+//************************************************************************//
+// Variables located in /settings/_prefixer.scss
+
+@mixin prefixer ($property, $value, $prefixes) {
+  @each $prefix in $prefixes {
+    @if $prefix == webkit {
+      @if $prefix-for-webkit {
+        -webkit-#{$property}: $value;
+      }
+    }
+    @else if $prefix == moz {
+      @if $prefix-for-mozilla {
+        -moz-#{$property}: $value;
+      }
+    }
+    @else if $prefix == ms {
+      @if $prefix-for-microsoft {
+        -ms-#{$property}: $value;
+      }
+    }
+    @else if $prefix == o {
+      @if $prefix-for-opera {
+        -o-#{$property}: $value;
+      }
+    }
+    @else if $prefix == spec {
+      @if $prefix-for-spec {
+        #{$property}: $value;
+      }
+    }
+    @else  {
+      @warn "Unrecognized prefix: #{$prefix}";
+    }
+  }
+}
+
+@mixin disable-prefix-for-all() {
+  $prefix-for-webkit:    false !global;
+  $prefix-for-mozilla:   false !global;
+  $prefix-for-microsoft: false !global;
+  $prefix-for-opera:     false !global;
+  $prefix-for-spec:      false !global;
+}
+
+// The following features have been deprecated and will be removed in the next MAJOR version release
+
+@mixin inline-block {
+  display: inline-block;
+
+  @warn "The inline-block mixin is deprecated and will be removed in the next major version release";
+}
+
+@mixin button ($style: simple, $base-color: #4294f0, $text-size: inherit, $padding: 7px 18px) {
+
+  @if type-of($style) == string and type-of($base-color) == color {
+    @include buttonstyle($style, $base-color, $text-size, $padding);
+  }
+
+  @if type-of($style) == string and type-of($base-color) == number {
+    $padding: $text-size;
+    $text-size: $base-color;
+    $base-color: #4294f0;
+
+    @if $padding == inherit {
+      $padding: 7px 18px;
+    }
+
+    @include buttonstyle($style, $base-color, $text-size, $padding);
+  }
+
+  @if type-of($style) == color and type-of($base-color) == color {
+    $base-color: $style;
+    $style: simple;
+    @include buttonstyle($style, $base-color, $text-size, $padding);
+  }
+
+  @if type-of($style) == color and type-of($base-color) == number {
+    $padding: $text-size;
+    $text-size: $base-color;
+    $base-color: $style;
+    $style: simple;
+
+    @if $padding == inherit {
+      $padding: 7px 18px;
+    }
+
+    @include buttonstyle($style, $base-color, $text-size, $padding);
+  }
+
+  @if type-of($style) == number {
+    $padding: $base-color;
+    $text-size: $style;
+    $base-color: #4294f0;
+    $style: simple;
+
+    @if $padding == #4294f0 {
+      $padding: 7px 18px;
+    }
+
+    @include buttonstyle($style, $base-color, $text-size, $padding);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  @warn "The button mixin is deprecated and will be removed in the next major version release";
+}
+
+// Selector Style Button
+@mixin buttonstyle($type, $b-color, $t-size, $pad) {
+  // Grayscale button
+  @if $type == simple and $b-color == grayscale($b-color) {
+    @include simple($b-color, true, $t-size, $pad);
+  }
+
+  @if $type == shiny and $b-color == grayscale($b-color) {
+    @include shiny($b-color, true, $t-size, $pad);
+  }
+
+  @if $type == pill and $b-color == grayscale($b-color) {
+    @include pill($b-color, true, $t-size, $pad);
+  }
+
+  @if $type == flat and $b-color == grayscale($b-color) {
+    @include flat($b-color, true, $t-size, $pad);
+  }
+
+  // Colored button
+  @if $type == simple {
+    @include simple($b-color, false, $t-size, $pad);
+  }
+
+  @else if $type == shiny {
+    @include shiny($b-color, false, $t-size, $pad);
+  }
+
+  @else if $type == pill {
+    @include pill($b-color, false, $t-size, $pad);
+  }
+
+  @else if $type == flat {
+    @include flat($b-color, false, $t-size, $pad);
+  }
+}
+
+// Simple Button
+@mixin simple($base-color, $grayscale: false, $textsize: inherit, $padding: 7px 18px) {
+  $color:         hsl(0, 0, 100%);
+  $border:        adjust-color($base-color, $saturation:  9%,  $lightness: -14%);
+  $inset-shadow:  adjust-color($base-color, $saturation: -8%,  $lightness:  15%);
+  $stop-gradient: adjust-color($base-color, $saturation:  9%,  $lightness: -11%);
+  $text-shadow:   adjust-color($base-color, $saturation:  15%, $lightness: -18%);
+
+  @if is-light($base-color) {
+    $color:       hsl(0, 0, 20%);
+    $text-shadow: adjust-color($base-color, $saturation: 10%, $lightness: 4%);
+  }
+
+  @if $grayscale == true {
+    $border:        grayscale($border);
+    $inset-shadow:  grayscale($inset-shadow);
+    $stop-gradient: grayscale($stop-gradient);
+    $text-shadow:   grayscale($text-shadow);
+  }
+
+  border: 1px solid $border;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 0 0 $inset-shadow;
+  color: $color;
+  display: inline-block;
+  font-size: $textsize;
+  font-weight: bold;
+  @include linear-gradient ($base-color, $stop-gradient);
+  padding: $padding;
+  text-decoration: none;
+  text-shadow: 0 1px 0 $text-shadow;
+  background-clip: padding-box;
+
+  &:hover:not(:disabled) {
+    $base-color-hover:    adjust-color($base-color, $saturation: -4%, $lightness: -5%);
+    $inset-shadow-hover:  adjust-color($base-color, $saturation: -7%, $lightness:  5%);
+    $stop-gradient-hover: adjust-color($base-color, $saturation:  8%, $lightness: -14%);
+
+    @if $grayscale == true {
+      $base-color-hover:    grayscale($base-color-hover);
+      $inset-shadow-hover:  grayscale($inset-shadow-hover);
+      $stop-gradient-hover: grayscale($stop-gradient-hover);
+    }
+
+    box-shadow: inset 0 1px 0 0 $inset-shadow-hover;
+    cursor: pointer;
+    @include linear-gradient ($base-color-hover, $stop-gradient-hover);
+  }
+
+  &:active:not(:disabled),
+  &:focus:not(:disabled) {
+    $border-active:       adjust-color($base-color, $saturation: 9%, $lightness: -14%);
+    $inset-shadow-active: adjust-color($base-color, $saturation: 7%, $lightness: -17%);
+
+    @if $grayscale == true {
+      $border-active:       grayscale($border-active);
+      $inset-shadow-active: grayscale($inset-shadow-active);
+    }
+
+    border: 1px solid $border-active;
+    box-shadow: inset 0 0 8px 4px $inset-shadow-active, inset 0 0 8px 4px $inset-shadow-active;
+  }
+}
+
+// Shiny Button
+@mixin shiny($base-color, $grayscale: false, $textsize: inherit, $padding: 7px 18px) {
+  $color:         hsl(0, 0, 100%);
+  $border:        adjust-color($base-color, $red: -117, $green: -111, $blue: -81);
+  $border-bottom: adjust-color($base-color, $red: -126, $green: -127, $blue: -122);
+  $fourth-stop:   adjust-color($base-color, $red: -79,  $green: -70,  $blue: -46);
+  $inset-shadow:  adjust-color($base-color, $red:  37,  $green:  29,  $blue:  12);
+  $second-stop:   adjust-color($base-color, $red: -56,  $green: -50,  $blue: -33);
+  $text-shadow:   adjust-color($base-color, $red: -140, $green: -141, $blue: -114);
+  $third-stop:    adjust-color($base-color, $red: -86,  $green: -75,  $blue: -48);
+
+  @if is-light($base-color) {
+    $color:       hsl(0, 0, 20%);
+    $text-shadow: adjust-color($base-color, $saturation: 10%, $lightness: 4%);
+  }
+
+  @if $grayscale == true {
+    $border:        grayscale($border);
+    $border-bottom: grayscale($border-bottom);
+    $fourth-stop:   grayscale($fourth-stop);
+    $inset-shadow:  grayscale($inset-shadow);
+    $second-stop:   grayscale($second-stop);
+    $text-shadow:   grayscale($text-shadow);
+    $third-stop:    grayscale($third-stop);
+  }
+
+  border: 1px solid $border;
+  border-bottom: 1px solid $border-bottom;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 0 0 $inset-shadow;
+  color: $color;
+  display: inline-block;
+  font-size: $textsize;
+  font-weight: bold;
+  @include linear-gradient(top, $base-color 0%, $second-stop 50%, $third-stop 50%, $fourth-stop 100%);
+  padding: $padding;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 -1px 1px $text-shadow;
+
+  &:hover:not(:disabled) {
+    $first-stop-hover:  adjust-color($base-color, $red: -13, $green: -15, $blue: -18);
+    $second-stop-hover: adjust-color($base-color, $red: -66, $green: -62, $blue: -51);
+    $third-stop-hover:  adjust-color($base-color, $red: -93, $green: -85, $blue: -66);
+    $fourth-stop-hover: adjust-color($base-color, $red: -86, $green: -80, $blue: -63);
+
+    @if $grayscale == true {
+      $first-stop-hover:  grayscale($first-stop-hover);
+      $second-stop-hover: grayscale($second-stop-hover);
+      $third-stop-hover:  grayscale($third-stop-hover);
+      $fourth-stop-hover: grayscale($fourth-stop-hover);
+    }
+
+    cursor: pointer;
+    @include linear-gradient(top, $first-stop-hover  0%,
+                                  $second-stop-hover 50%,
+                                  $third-stop-hover  50%,
+                                  $fourth-stop-hover 100%);
+  }
+
+  &:active:not(:disabled),
+  &:focus:not(:disabled) {
+    $inset-shadow-active: adjust-color($base-color, $red: -111, $green: -116, $blue: -122);
+
+    @if $grayscale == true {
+      $inset-shadow-active: grayscale($inset-shadow-active);
+    }
+
+    box-shadow: inset 0 0 20px 0 $inset-shadow-active;
+  }
+}
+
+// Pill Button
+@mixin pill($base-color, $grayscale: false, $textsize: inherit, $padding: 7px 18px) {
+  $color:         hsl(0, 0, 100%);
+  $border-bottom: adjust-color($base-color, $hue:  8, $saturation: -11%, $lightness: -26%);
+  $border-sides:  adjust-color($base-color, $hue:  4, $saturation: -21%, $lightness: -21%);
+  $border-top:    adjust-color($base-color, $hue: -1, $saturation: -30%, $lightness: -15%);
+  $inset-shadow:  adjust-color($base-color, $hue: -1, $saturation: -1%,  $lightness:  7%);
+  $stop-gradient: adjust-color($base-color, $hue:  8, $saturation:  14%, $lightness: -10%);
+  $text-shadow:   adjust-color($base-color, $hue:  5, $saturation: -19%, $lightness: -15%);
+
+  @if is-light($base-color) {
+    $color:       hsl(0, 0, 20%);
+    $text-shadow: adjust-color($base-color, $saturation: 10%, $lightness: 4%);
+  }
+
+  @if $grayscale == true {
+    $border-bottom: grayscale($border-bottom);
+    $border-sides:  grayscale($border-sides);
+    $border-top:    grayscale($border-top);
+    $inset-shadow:  grayscale($inset-shadow);
+    $stop-gradient: grayscale($stop-gradient);
+    $text-shadow:   grayscale($text-shadow);
+  }
+
+  border: 1px solid $border-top;
+  border-color: $border-top $border-sides $border-bottom;
+  border-radius: 16px;
+  box-shadow: inset 0 1px 0 0 $inset-shadow;
+  color: $color;
+  display: inline-block;
+  font-size: $textsize;
+  font-weight: normal;
+  line-height: 1;
+  @include linear-gradient ($base-color, $stop-gradient);
+  padding: $padding;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 -1px 1px $text-shadow;
+  background-clip: padding-box;
+
+  &:hover:not(:disabled) {
+    $base-color-hover:    adjust-color($base-color,                                $lightness: -4.5%);
+    $border-bottom:       adjust-color($base-color, $hue:  8, $saturation:  13.5%, $lightness: -32%);
+    $border-sides:        adjust-color($base-color, $hue:  4, $saturation: -2%,    $lightness: -27%);
+    $border-top:          adjust-color($base-color, $hue: -1, $saturation: -17%,   $lightness: -21%);
+    $inset-shadow-hover:  adjust-color($base-color,           $saturation: -1%,    $lightness:  3%);
+    $stop-gradient-hover: adjust-color($base-color, $hue:  8, $saturation: -4%,    $lightness: -15.5%);
+    $text-shadow-hover:   adjust-color($base-color, $hue:  5, $saturation: -5%,    $lightness: -22%);
+
+    @if $grayscale == true {
+      $base-color-hover:    grayscale($base-color-hover);
+      $border-bottom:       grayscale($border-bottom);
+      $border-sides:        grayscale($border-sides);
+      $border-top:          grayscale($border-top);
+      $inset-shadow-hover:  grayscale($inset-shadow-hover);
+      $stop-gradient-hover: grayscale($stop-gradient-hover);
+      $text-shadow-hover:   grayscale($text-shadow-hover);
+    }
+
+    border: 1px solid $border-top;
+    border-color: $border-top $border-sides $border-bottom;
+    box-shadow: inset 0 1px 0 0 $inset-shadow-hover;
+    cursor: pointer;
+    @include linear-gradient ($base-color-hover, $stop-gradient-hover);
+    text-shadow: 0 -1px 1px $text-shadow-hover;
+    background-clip: padding-box;
+  }
+
+  &:active:not(:disabled),
+  &:focus:not(:disabled) {
+    $active-color:         adjust-color($base-color, $hue: 4,  $saturation: -12%,  $lightness: -10%);
+    $border-active:        adjust-color($base-color, $hue: 6,  $saturation: -2.5%, $lightness: -30%);
+    $border-bottom-active: adjust-color($base-color, $hue: 11, $saturation:  6%,   $lightness: -31%);
+    $inset-shadow-active:  adjust-color($base-color, $hue: 9,  $saturation:  2%,   $lightness: -21.5%);
+    $text-shadow-active:   adjust-color($base-color, $hue: 5,  $saturation: -12%,  $lightness: -21.5%);
+
+    @if $grayscale == true {
+      $active-color:         grayscale($active-color);
+      $border-active:        grayscale($border-active);
+      $border-bottom-active: grayscale($border-bottom-active);
+      $inset-shadow-active:  grayscale($inset-shadow-active);
+      $text-shadow-active:   grayscale($text-shadow-active);
+    }
+
+    background: $active-color;
+    border: 1px solid $border-active;
+    border-bottom: 1px solid $border-bottom-active;
+    box-shadow: inset 0 0 6px 3px $inset-shadow-active;
+    text-shadow: 0 -1px 1px $text-shadow-active;
+  }
+}
+
+// Flat Button
+@mixin flat($base-color, $grayscale: false, $textsize: inherit, $padding: 7px 18px) {
+  $color:         hsl(0, 0, 100%);
+
+  @if is-light($base-color) {
+    $color:       hsl(0, 0, 20%);
+  }
+
+  background-color: $base-color;
+  border-radius: 3px;
+  border: none;
+  color: $color;
+  display: inline-block;
+  font-size: $textsize;
+  font-weight: bold;
+  padding: $padding;
+  text-decoration: none;
+  background-clip: padding-box;
+
+  &:hover:not(:disabled){
+    $base-color-hover:    adjust-color($base-color, $saturation: 4%, $lightness: 5%);
+
+    @if $grayscale == true {
+      $base-color-hover: grayscale($base-color-hover);
+    }
+
+    background-color: $base-color-hover;
+    cursor: pointer;
+  }
+
+  &:active:not(:disabled),
+  &:focus:not(:disabled) {
+    $base-color-active: adjust-color($base-color, $saturation: -4%, $lightness: -5%);
+
+    @if $grayscale == true {
+      $base-color-active: grayscale($base-color-active);
+    }
+
+    background-color: $base-color-active;
+    cursor: pointer;
+  }
+}
+
+// Flexible grid
+@function flex-grid($columns, $container-columns: $fg-max-columns) {
+  $width: $columns * $fg-column + ($columns - 1) * $fg-gutter;
+  $container-width: $container-columns * $fg-column + ($container-columns - 1) * $fg-gutter;
+  @return percentage($width / $container-width);
+
+  @warn "The flex-grid function is deprecated and will be removed in the next major version release";
+}
+
+// Flexible gutter
+@function flex-gutter($container-columns: $fg-max-columns, $gutter: $fg-gutter) {
+  $container-width: $container-columns * $fg-column + ($container-columns - 1) * $fg-gutter;
+  @return percentage($gutter / $container-width);
+
+  @warn "The flex-gutter function is deprecated and will be removed in the next major version release";
+}
+
+@function grid-width($n) {
+  @return $n * $gw-column + ($n - 1) * $gw-gutter;
+
+  @warn "The grid-width function is deprecated and will be removed in the next major version release";
+}
+
+@function golden-ratio($value, $increment) {
+  @return modular-scale($increment, $value, $ratio: $golden);
+
+  @warn "The golden-ratio function is deprecated and will be removed in the next major version release. Please use the modular-scale function, instead.";
+}
+
+// Bourbon 4.1.0
+// http://bourbon.io
+// Copyright 2011-2014 thoughtbot, inc.
+// MIT License
+
+// Settings
+@import "settings/prefixer";
+@import "settings/px-to-em";
+@import "settings/asset-pipeline";
+
+// Custom Helpers
+@import "helpers/convert-units";
+@import "helpers/font-source-declaration";
+@import "helpers/gradient-positions-parser";
+@import "helpers/is-num";
+@import "helpers/linear-angle-parser";
+@import "helpers/linear-gradient-parser";
+@import "helpers/linear-positions-parser";
+@import "helpers/linear-side-corner-parser";
+@import "helpers/radial-arg-parser";
+@import "helpers/radial-positions-parser";
+@import "helpers/radial-gradient-parser";
+@import "helpers/render-gradients";
+@import "helpers/shape-size-stripper";
+@import "helpers/str-to-num";
+
+// Custom Functions
+@import "functions/assign";
+@import "functions/color-lightness";
+@import "functions/contains";
+@import "functions/is-length";
+@import "functions/is-size";
+@import "functions/px-to-em";
+@import "functions/px-to-rem";
+@import "functions/strip-units";
+@import "functions/tint-shade";
+@import "functions/transition-property-name";
+@import "functions/unpack";
+@import "functions/modular-scale";
+
+// CSS3 Mixins
+@import "css3/animation";
+@import "css3/appearance";
+@import "css3/backface-visibility";
+@import "css3/background";
+@import "css3/background-image";
+@import "css3/border-image";
+@import "css3/border-radius";
+@import "css3/box-sizing";
+@import "css3/calc";
+@import "css3/columns";
+@import "css3/filter";
+@import "css3/flex-box";
+@import "css3/font-face";
+@import "css3/font-feature-settings";
+@import "css3/hidpi-media-query";
+@import "css3/hyphens";
+@import "css3/image-rendering";
+@import "css3/keyframes";
+@import "css3/linear-gradient";
+@import "css3/perspective";
+@import "css3/placeholder";
+@import "css3/radial-gradient";
+@import "css3/selection";
+@import "css3/text-decoration";
+@import "css3/transform";
+@import "css3/transition";
+@import "css3/user-select";
+
+// Addons & other mixins
+@import "addons/clearfix";
+@import "addons/directional-values";
+@import "addons/ellipsis";
+@import "addons/font-family";
+@import "addons/hide-text";
+@import "addons/html5-input-types";
+@import "addons/position";
+@import "addons/prefixer";
+@import "addons/retina-image";
+@import "addons/size";
+@import "addons/timing-functions";
+@import "addons/triangle";
+@import "addons/word-wrap";
+
+// Soon to be deprecated Mixins
+@import "bourbon-deprecated-upcoming";
+
+// Functions
+@import "functions/private";
+@import "functions/new-breakpoint";
+
+// Settings
+@import "settings/grid";
+@import "settings/visual-grid";
+@import "settings/disable-warnings";
+
+// Neat 1.7.1
+// http://neat.bourbon.io
+// Copyright 2012-2015 thoughtbot, inc.
+// MIT License
+
+// Helpers
+@import "neat-helpers";
+
+// Grid
+@import "grid/private";
+@import "grid/box-sizing";
+@import "grid/omega";
+@import "grid/outer-container";
+@import "grid/span-columns";
+@import "grid/row";
+@import "grid/shift";
+@import "grid/pad";
+@import "grid/fill-parent";
+@import "grid/media";
+@import "grid/to-deprecate";
+@import "grid/visual-grid";
+@import "grid/display-context";
+@import "grid/direction-context";
+
+@charset "UTF-8";
+
+/// Returns a media context (media query / grid context) that can be stored in a variable and passed to `media()` as a single-keyword argument. Media contexts defined using `new-breakpoint` are used by the visual grid, as long as they are defined before importing Neat.
+///
+/// @param {List} $query
+///   A list of media query features and values. Each `$feature` should have a corresponding `$value`.
+///
+///   If there is only a single `$value` in `$query`, `$default-feature` is going to be used.
+///
+///   The number of total columns in the grid can be set by passing `$columns` at the end of the list (overrides `$total-columns`). For a list of valid values for `$feature`, click [here](http://www.w3.org/TR/css3-mediaqueries/#media1).
+///
+/// @param {Number (unitless)} $total-columns ($grid-columns)
+///   - Number of columns to use in the new grid context. Can be set as a shorthand in the first parameter.
+///
+/// @example scss - Usage
+///   $mobile: new-breakpoint(max-width 480px 4);
+///
+///   .element {
+///     @include media($mobile) {
+///       @include span-columns(4);
+///     }
+///   }
+///
+/// @example css - CSS Output
+///   @media screen and (max-width: 480px) {
+///     .element {
+///       display: block;
+///       float: left;
+///       margin-right: 7.42297%;
+///       width: 100%;
+///     }
+///     .element:last-child {
+///       margin-right: 0;
+///     }
+///   }
+
+@function new-breakpoint($query: $feature $value $columns, $total-columns: $grid-columns) {
+  @if length($query) == 1 {
+    $query: $default-feature nth($query, 1) $total-columns;
+  } @else if is-even(length($query)) {
+    $query: append($query, $total-columns);
+  }
+
+  @if is-not(belongs-to($query, $visual-grid-breakpoints)) {
+    $visual-grid-breakpoints: append($visual-grid-breakpoints, $query, comma) !global;
+  }
+
+  @return $query;
+}
+
+// Not function for Libsass compatibility
+// https://github.com/sass/libsass/issues/368
+@function is-not($value) {
+  @return if($value, false, true);
+}
+
+// Checks if a number is even
+@function is-even($int) {
+  @return $int % 2 == 0;
+}
+
+// Checks if an element belongs to a list or not
+@function belongs-to($tested-item, $list) {
+  @return is-not(not-belongs-to($tested-item, $list));
+}
+
+@function not-belongs-to($tested-item, $list) {
+  @return is-not(index($list, $tested-item));
+}
+
+// Contains display value
+@function contains-display-value($query) {
+  @return belongs-to(table, $query)
+       or belongs-to(block, $query)
+       or belongs-to(inline-block, $query)
+       or belongs-to(inline, $query);
+}
+
+// Parses the first argument of span-columns()
+@function container-span($span: $span) {
+  @if length($span) == 3 {
+    $container-columns: nth($span, 3);
+    @return $container-columns;
+  } @else if length($span) == 2 {
+    $container-columns: nth($span, 2);
+    @return $container-columns;
+  }
+
+  @return $grid-columns;
+}
+
+@function container-shift($shift: $shift) {
+  $parent-columns: $grid-columns !default !global;
+
+  @if length($shift) == 3 {
+    $container-columns: nth($shift, 3);
+    @return $container-columns;
+  } @else if length($shift) == 2 {
+    $container-columns: nth($shift, 2);
+    @return $container-columns;
+  }
+
+  @return $parent-columns;
+}
+
+// Generates a striped background
+@function gradient-stops($grid-columns, $color: $visual-grid-color) {
+  $transparent: transparent;
+
+  $column-width: flex-grid(1, $grid-columns);
+  $gutter-width: flex-gutter($grid-columns);
+  $column-offset: $column-width;
+
+  $values: ($transparent 0, $color 0);
+
+  @for $i from 1 to $grid-columns*2 {
+    @if is-even($i) {
+      $values: append($values, $transparent $column-offset, comma);
+      $values: append($values, $color $column-offset, comma);
+      $column-offset: $column-offset + $column-width;
+    } @else {
+      $values: append($values, $color $column-offset, comma);
+      $values: append($values, $transparent $column-offset, comma);
+      $column-offset: $column-offset + $gutter-width;
+    }
+  }
+
+  @return $values;
+}
+
+// Layout direction
+@function get-direction($layout, $default) {
+  $direction: null;
+
+  @if to-upper-case($layout) == "LTR" or to-upper-case($layout) == "RTL" {
+    $direction: direction-from-layout($layout);
+  } @else {
+    $direction: direction-from-layout($default);
+  }
+
+  @return $direction;
+}
+
+@function direction-from-layout($layout) {
+  $direction: null;
+
+  @if to-upper-case($layout) == "LTR" {
+    $direction: right;
+  } @else {
+    $direction: left;
+  }
+
+  @return $direction;
+}
+
+@function get-opposite-direction($direction) {
+  $opposite-direction: left;
+
+  @if $direction == "left" {
+    $opposite-direction: right;
+  }
+
+  @return $opposite-direction;
+}
+
+@charset "UTF-8";
+
+@if $border-box-sizing == true {
+  html { // http://bit.ly/1qk2tVR
+    @include box-sizing(border-box);
+  }
+
+  * {
+    &,
+    &:before,
+    &:after {
+      @include box-sizing(inherit);
+    }
+  }
+}
+
+@charset "UTF-8";
+
+/// Changes the direction property used by other mixins called in the code block argument.
+///
+/// @param {String} $direction (left-to-right)
+///   Layout direction to be used within the block. Can be `left-to-right` or `right-to-left`.
+///
+/// @example scss - Usage
+///   @include direction-context(right-to-left) {
+///    .right-to-left-block {
+///      @include span-columns(6);
+///     }
+///   }
+///
+/// @example css - CSS Output
+///   .right-to-left-block {
+///     float: right;
+///      ...
+///   }
+
+@mixin direction-context($direction: left-to-right) {
+  $scope-direction: $layout-direction;
+
+  @if to-lower-case($direction) == "left-to-right" {
+    $layout-direction: LTR !global;
+  } @else if to-lower-case($direction) == "right-to-left" {
+    $layout-direction: RTL !global;
+  }
+
+  @content;
+
+  $layout-direction: $scope-direction !global;
+}
+
+@charset "UTF-8";
+
+/// Changes the display property used by other mixins called in the code block argument.
+///
+/// @param {String} $display (block)
+///   Display value to be used within the block. Can be `table` or `block`.
+///
+/// @example scss
+///   @include display-context(table) {
+///    .display-table {
+///      @include span-columns(6);
+///     }
+///   }
+///
+/// @example css
+///   .display-table {
+///      display: table-cell;
+///      ...
+///   }
+
+@mixin display-context($display: block) {
+  $scope-display: $container-display-table;
+  $container-display-table: $display == table !global;
+
+  @content;
+
+  $container-display-table: $scope-display !global;
+}
+
+@charset "UTF-8";
+
+/// Forces the element to fill its parent container.
+///
+/// @example scss - Usage
+///   .element {
+///     @include fill-parent;
+///   }
+///
+/// @example css - CSS Output
+///   .element {
+///     width: 100%;
+///     -webkit-box-sizing: border-box;
+///     -moz-box-sizing: border-box;
+///     box-sizing: border-box;
+///   }
+
+@mixin fill-parent() {
+  width: 100%;
+
+  @if $border-box-sizing == false {
+    @include box-sizing(border-box);
+  }
+}
+
+@charset "UTF-8";
+
+/// Outputs a media-query block with an optional grid context (the total number of columns used in the grid).
+///
+/// @param {List} $query
+///   A list of media query features and values, where each `$feature` should have a corresponding `$value`.
+///   For a list of valid values for `$feature`, click [here](http://www.w3.org/TR/css3-mediaqueries/#media1).
+///
+///   If there is only a single `$value` in `$query`, `$default-feature` is going to be used.
+///
+///   The number of total columns in the grid can be set by passing `$columns` at the end of the list (overrides `$total-columns`).
+///
+///
+/// @param {Number (unitless)} $total-columns ($grid-columns)
+///   - Number of columns to use in the new grid context. Can be set as a shorthand in the first parameter.
+///
+/// @example scss - Usage
+///   .responsive-element {
+///      @include media(769px) {
+///        @include span-columns(6);
+///      }
+///   }
+///
+///  .new-context-element {
+///    @include media(min-width 320px max-width 480px, 6) {
+///      @include span-columns(6);
+///    }
+///  }
+///
+/// @example css - CSS Output
+///  @media screen and (min-width: 769px) {
+///    .responsive-element {
+///      display: block;
+///      float: left;
+///      margin-right: 2.35765%;
+///      width: 48.82117%;
+///    }
+///
+///    .responsive-element:last-child {
+///      margin-right: 0;
+///    }
+///  }
+///
+///  @media screen and (min-width: 320px) and (max-width: 480px) {
+///    .new-context-element {
+///      display: block;
+///      float: left;
+///      margin-right: 4.82916%;
+///      width: 100%;
+///    }
+///
+///    .new-context-element:last-child {
+///      margin-right: 0;
+///    }
+///  }
+
+@mixin media($query: $feature $value $columns, $total-columns: $grid-columns) {
+  @if length($query) == 1 {
+    @media screen and ($default-feature: nth($query, 1)) {
+      $default-grid-columns: $grid-columns;
+      $grid-columns: $total-columns !global;
+      @content;
+      $grid-columns: $default-grid-columns !global;
+    }
+  } @else {
+    $loop-to: length($query);
+    $media-query: "screen and ";
+    $default-grid-columns: $grid-columns;
+    $grid-columns: $total-columns !global;
+
+    @if is-not(is-even(length($query))) {
+      $grid-columns: nth($query, $loop-to) !global;
+      $loop-to: $loop-to - 1;
+    }
+
+    $i: 1;
+    @while $i <= $loop-to {
+      $media-query: $media-query + "(" + nth($query, $i) + ": " + nth($query, $i + 1) + ") ";
+
+      @if ($i + 1) != $loop-to {
+        $media-query: $media-query + "and ";
+      }
+
+      $i: $i + 2;
+    }
+
+    @media #{$media-query} {
+      @content;
+      $grid-columns: $default-grid-columns !global;
+    }
+  }
+}
+
+@charset "UTF-8";
+
+/// Removes the element's gutter margin, regardless of its position in the grid hierarchy or display property. It can target a specific element, or every `nth-child` occurrence. Works only with `block` layouts.
+///
+/// @param {List} $query (block)
+///   List of arguments. Supported arguments are `nth-child` selectors (targets a specific pseudo element) and `auto` (targets `last-child`).
+///
+///   When passed an `nth-child` argument of type `*n` with `block` display, the omega mixin automatically adds a clear to the `*n+1` th element. Note that composite arguments such as `2n+1` do not support this feature.
+///
+///   **Deprecation warning**: The omega mixin will no longer take a `$direction` argument. To change the layout direction, use `row($direction)` or set `$default-layout-direction` instead.
+///
+/// @example scss - Usage
+///   .element {
+///     @include omega;
+///   }
+///
+///   .nth-element {
+///     @include omega(4n);
+///   }
+///
+/// @example css - CSS Output
+///   .element {
+///     margin-right: 0;
+///   }
+///
+///   .nth-element:nth-child(4n) {
+///     margin-right: 0;
+///   }
+///
+///   .nth-element:nth-child(4n+1) {
+///     clear: left;
+///   }
+
+@mixin omega($query: block, $direction: default) {
+  $table: belongs-to(table, $query);
+  $auto: belongs-to(auto, $query);
+
+  @if $direction != default {
+    @include -neat-warn("The omega mixin will no longer take a $direction argument. To change the layout direction, use the direction(){...} mixin.");
+  } @else {
+    $direction: get-direction($layout-direction, $default-layout-direction);
+  }
+
+  @if $table {
+    @include -neat-warn("The omega mixin no longer removes padding in table layouts.");
+  }
+
+  @if length($query) == 1 {
+    @if $auto {
+      &:last-child {
+        margin-#{$direction}: 0;
+      }
+    }
+
+    @else if contains-display-value($query) and $table == false {
+      margin-#{$direction}: 0;
+    }
+
+    @else {
+      @include nth-child($query, $direction);
+    }
+  } @else if length($query) == 2 {
+    @if $auto {
+      &:last-child {
+        margin-#{$direction}: 0;
+      }
+    } @else {
+      @include nth-child(nth($query, 1), $direction);
+    }
+  } @else {
+    @include -neat-warn("Too many arguments passed to the omega() mixin.");
+  }
+}
+
+@mixin nth-child($query, $direction) {
+  $opposite-direction: get-opposite-direction($direction);
+
+  &:nth-child(#{$query}) {
+    margin-#{$direction}: 0;
+  }
+
+  @if type-of($query) == number and unit($query) == "n" {
+    &:nth-child(#{$query}+1) {
+      clear: $opposite-direction;
+    }
+  }
+}
+
+@charset "UTF-8";
+
+/// Makes an element a outer container by centring it in the viewport, clearing its floats, and setting its `max-width`.
+/// Although optional, using `outer-container` is recommended. The mixin can be called on more than one element per page, as long as they are not nested.
+///
+/// @param {Number (unit)} $local-max-width ($max-width)
+///   Max width to be applied to the element. Can be a percentage or a measure.
+///
+/// @example scss - Usage
+///   .element {
+///     @include outer-container(100%);
+///   }
+///
+/// @example css - CSS Output
+///   .element {
+///     *zoom: 1;
+///     max-width: 100%;
+///     margin-left: auto;
+///     margin-right: auto;
+///   }
+///
+///   .element:before, .element:after {
+///     content: " ";
+///     display: table;
+///   }
+///
+///   .element:after {
+///     clear: both;
+///   }
+
+@mixin outer-container($local-max-width: $max-width) {
+  @include clearfix;
+  max-width: $local-max-width;
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
+
+@charset "UTF-8";
+
+/// Adds padding to the element.
+///
+/// @param {List} $padding (flex-gutter())
+///   A list of padding value(s) to use. Passing `default` in the list will result in using the gutter width as a padding value.
+///
+/// @example scss - Usage
+///   .element {
+///     @include pad(30px -20px 10px default);
+///   }
+///
+/// @example css - CSS Output
+///   .element {
+///     padding: 30px -20px 10px 2.35765%;
+///   }
+
+@mixin pad($padding: flex-gutter()) {
+  $padding-list: null;
+  @each $value in $padding {
+    $value: if($value == 'default', flex-gutter(), $value);
+    $padding-list: join($padding-list, $value);
+  }
+  padding: $padding-list;
+}
+
+$parent-columns: $grid-columns !default;
+$fg-column: $column;
+$fg-gutter: $gutter;
+$fg-max-columns: $grid-columns;
+$container-display-table: false !default;
+$layout-direction: LTR !default;
+
+@function flex-grid($columns, $container-columns: $fg-max-columns) {
+  $width: $columns * $fg-column + ($columns - 1) * $fg-gutter;
+  $container-width: $container-columns * $fg-column + ($container-columns - 1) * $fg-gutter;
+  @return percentage($width / $container-width);
+}
+
+@function flex-gutter($container-columns: $fg-max-columns, $gutter: $fg-gutter) {
+  $container-width: $container-columns * $fg-column + ($container-columns - 1) * $fg-gutter;
+  @return percentage($gutter / $container-width);
+}
+
+@function grid-width($n) {
+  @return $n * $gw-column + ($n - 1) * $gw-gutter;
+}
+
+@function get-parent-columns($columns) {
+  @if $columns != $grid-columns {
+    $parent-columns: $columns !global;
+  } @else {
+    $parent-columns: $grid-columns !global;
+  }
+
+  @return $parent-columns;
+}
+
+@function is-display-table($container-is-display-table, $display) {
+  @return $container-is-display-table == true or $display == table;
+}
+
+@charset "UTF-8";
+
+/// Designates the element as a row of columns in the grid layout. It clears the floats on the element and sets its display property. Rows can't be nested, but there can be more than one row element—with different display properties—per layout.
+///
+/// @param {String} $display (default)
+///  Sets the display property of the element and the display context that will be used by its children. Can be `block` or `table`.
+///
+/// @param {String} $direction ($default-layout-direction)
+///  Sets the layout direction. Can be `LTR` (left-to-right) or `RTL` (right-to-left).
+///
+/// @example scss - Usage
+///  .element {
+///    @include row();
+///  }
+///
+/// @example css - CSS Output
+///  .element {
+///    *zoom: 1;
+///    display: block;
+///  }
+///
+/// .element:before, .element:after {
+///   content: " ";
+///   display: table;
+/// }
+///
+/// .element:after {
+///   clear: both;
+/// }
+
+@mixin row($display: default, $direction: $default-layout-direction) {
+  @if $direction != $default-layout-direction {
+    @include -neat-warn("The $direction argument will be deprecated in future versions in favor of the direction(){...} mixin.");
+  }
+
+  $layout-direction: $direction !global;
+
+  @if $display != default {
+    @include -neat-warn("The $display argument will be deprecated in future versions in favor of the display(){...} mixin.");
+  }
+
+  @if $display == table {
+    display: table;
+    @include fill-parent;
+    table-layout: fixed;
+    $container-display-table: true !global;
+  } @else {
+    @include clearfix;
+    display: block;
+    $container-display-table: false !global;
+  }
+}
+
+@charset "UTF-8";
+
+/// Translates an element horizontally by a number of columns. Positive arguments shift the element to the active layout direction, while negative ones shift it to the opposite direction.
+///
+/// @param {Number (unitless)} $n-columns (1)
+///   Number of columns by which the element shifts.
+///
+/// @example scss - Usage
+///   .element {
+///     @include shift(-3);
+///   }
+///
+/// @example css - CSS output
+///   .element {
+///     margin-left: -25.58941%;
+///   }
+
+@mixin shift($n-columns: 1) {
+  @include shift-in-context($n-columns);
+}
+
+/// Translates an element horizontally by a number of columns, in a specific nesting context.
+///
+/// @param {List} $shift
+///   A list containing the number of columns to shift (`$columns`) and the number of columns of the parent element (`$container-columns`).
+///
+///   The two values can be separated with any string such as `of`, `/`, etc.
+///
+/// @example scss - Usage
+///   .element {
+///     @include shift(-3 of 6);
+///   }
+///
+/// @example css - CSS output
+///   .element {
+///     margin-left: -52.41458%;
+///   }
+
+@mixin shift-in-context($shift: $columns of $container-columns) {
+  $n-columns: nth($shift, 1);
+  $parent-columns: container-shift($shift) !global;
+
+  $direction: get-direction($layout-direction, $default-layout-direction);
+  $opposite-direction: get-opposite-direction($direction);
+
+  margin-#{$opposite-direction}: $n-columns * flex-grid(1, $parent-columns) + $n-columns * flex-gutter($parent-columns);
+
+  // Reset nesting context
+  $parent-columns: $grid-columns !global;
+}
+
+@charset "UTF-8";
+
+/// Specifies the number of columns an element should span. If the selector is nested the number of columns of its parent element should be passed as an argument as well.
+///
+/// @param {List} $span
+///   A list containing `$columns`, the unitless number of columns the element spans (required), and `$container-columns`, the number of columns the parent element spans (optional).
+///
+///   If only one value is passed, it is assumed that it's `$columns` and that that `$container-columns` is equal to `$grid-columns`, the total number of columns in the grid.
+///
+///   The values can be separated with any string such as `of`, `/`, etc.
+///
+/// @param {String} $display (block)
+///   Sets the display property of the element. By default it sets the display propert of the element to `block`.
+///
+///   If passed `block-collapse`, it also removes the margin gutter by adding it to the element width.
+///
+///   If passed `table`, it sets the display property to `table-cell` and calculates the width of the element without taking gutters into consideration. The result does not align with the block-based grid.
+///
+/// @example scss - Usage
+///   .element {
+///     @include span-columns(6);
+///
+///    .nested-element {
+///      @include span-columns(2 of 6);
+///    }
+///  }
+///
+/// @example css - CSS Output
+///   .element {
+///     display: block;
+///     float: left;
+///     margin-right: 2.35765%;
+///     width: 48.82117%;
+///   }
+///
+///   .element:last-child {
+///     margin-right: 0;
+///   }
+///
+///   .element .nested-element {
+///     display: block;
+///     float: left;
+///     margin-right: 4.82916%;
+///     width: 30.11389%;
+///   }
+///
+///   .element .nested-element:last-child {
+///     margin-right: 0;
+///   }
+
+@mixin span-columns($span: $columns of $container-columns, $display: block) {
+  $columns: nth($span, 1);
+  $container-columns: container-span($span);
+
+  $parent-columns: get-parent-columns($container-columns) !global;
+
+  $direction: get-direction($layout-direction, $default-layout-direction);
+  $opposite-direction: get-opposite-direction($direction);
+
+  $display-table: is-display-table($container-display-table, $display);
+
+  @if $display-table  {
+    display: table-cell;
+    width: percentage($columns / $container-columns);
+  } @else {
+    float: #{$opposite-direction};
+
+    @if $display != no-display {
+      display: block;
+    }
+
+    @if $display == collapse {
+      @include -neat-warn("The 'collapse' argument will be deprecated. Use 'block-collapse' instead.");
+    }
+
+    @if $display == collapse or $display == block-collapse {
+      width: flex-grid($columns, $container-columns) + flex-gutter($container-columns);
+
+      &:last-child {
+        width: flex-grid($columns, $container-columns);
+      }
+
+    } @else {
+      margin-#{$direction}: flex-gutter($container-columns);
+      width: flex-grid($columns, $container-columns);
+
+      &:last-child {
+        margin-#{$direction}: 0;
+      }
+    }
+  }
+}
+
+@charset "UTF-8";
+
+@mixin breakpoint($query:$feature $value $columns, $total-columns: $grid-columns) {
+  @include -neat-warn("The breakpoint() mixin was renamed to media() in Neat 1.0. Please update your project with the new syntax before the next version bump.");
+
+  @if length($query) == 1 {
+    @media screen and ($default-feature: nth($query, 1)) {
+      $default-grid-columns: $grid-columns;
+      $grid-columns: $total-columns;
+      @content;
+      $grid-columns: $default-grid-columns;
+    }
+  } @else if length($query) == 2 {
+    @media screen and (nth($query, 1): nth($query, 2)) {
+      $default-grid-columns: $grid-columns;
+      $grid-columns: $total-columns;
+      @content;
+      $grid-columns: $default-grid-columns;
+    }
+  } @else if length($query) == 3 {
+    @media screen and (nth($query, 1): nth($query, 2)) {
+      $default-grid-columns: $grid-columns;
+      $grid-columns: nth($query, 3);
+      @content;
+      $grid-columns: $default-grid-columns;
+    }
+  } @else if length($query) == 4 {
+    @media screen and (nth($query, 1): nth($query, 2)) and (nth($query, 3): nth($query, 4)) {
+      $default-grid-columns: $grid-columns;
+      $grid-columns: $total-columns;
+      @content;
+      $grid-columns: $default-grid-columns;
+    }
+  } @else if length($query) == 5 {
+    @media screen and (nth($query, 1): nth($query, 2)) and (nth($query, 3): nth($query, 4)) {
+      $default-grid-columns: $grid-columns;
+      $grid-columns: nth($query, 5);
+      @content;
+      $grid-columns: $default-grid-columns;
+    }
+  } @else {
+    @include -neat-warn("Wrong number of arguments for breakpoint(). Read the documentation for more details.");
+  }
+}
+
+@mixin nth-omega($nth, $display: block, $direction: default) {
+  @include -neat-warn("The nth-omega() mixin is deprecated. Please use omega() instead.");
+  @include omega($nth $display, $direction);
+}
+
+/// Resets the active display property to `block`. Particularly useful when changing the display property in a single row.
+///
+/// @example scss - Usage
+///   .element {
+///     @include row(table);
+///     // Context changed to table display
+///   }
+///
+///   @include reset-display;
+///   // Context is reset to block display
+
+@mixin reset-display {
+  $container-display-table: false !global;
+  @include -neat-warn("Resetting $display will be deprecated in future versions in favor of the display(){...} mixin.");
+}
+
+/// Resets the active layout direction to the default value set in `$default-layout-direction`. Particularly useful when changing the layout direction in a single row.
+///
+/// @example scss - Usage
+///   .element {
+///     @include row($direction: RTL);
+///     // Context changed to right-to-left
+///   }
+///
+///   @include reset-layout-direction;
+///   // Context is reset to left-to-right
+
+@mixin reset-layout-direction {
+  $layout-direction: $default-layout-direction !global;
+  @include -neat-warn("Resetting $direction will be deprecated in future versions in favor of the direction(){...} mixin.");
+}
+
+/// Resets both the active layout direction and the active display property.
+///
+/// @example scss - Usage
+///   .element {
+///     @include row(table, RTL);
+///     // Context changed to table table and right-to-left
+///   }
+///
+///   @include reset-all;
+///   // Context is reset to block display and left-to-right
+
+@mixin reset-all {
+  @include reset-display;
+  @include reset-layout-direction;
+}
+
+@charset "UTF-8";
+
+@mixin grid-column-gradient($values...) {
+  background-image: -webkit-linear-gradient(left, $values);
+  background-image: -moz-linear-gradient(left, $values);
+  background-image: -ms-linear-gradient(left, $values);
+  background-image: -o-linear-gradient(left, $values);
+  background-image: unquote("linear-gradient(to left, #{$values})");
+}
+
+@if $visual-grid == true or $visual-grid == yes {
+  body:before {
+    @include grid-column-gradient(gradient-stops($grid-columns));
+    content: "";
+    display: inline-block;
+    height: 100%;
+    left: 0;
+    margin: 0 auto;
+    max-width: $max-width;
+    opacity: $visual-grid-opacity;
+    pointer-events: none;
+    position: fixed;
+    right: 0;
+    width: 100%;
+
+    @if $visual-grid-index == back {
+      z-index: -1;
+    }
+
+    @else if $visual-grid-index == front {
+      z-index: 9999;
+    }
+
+    @each $breakpoint in $visual-grid-breakpoints {
+      @if $breakpoint {
+        @include media($breakpoint) {
+          @include grid-column-gradient(gradient-stops($grid-columns));
+        }
+      }
+    }
+  }
+}
+
+@charset "UTF-8";
+
+/// Disable all deprecation warnings. Defaults to `false`. Set with a `!global` flag.
+///
+/// @type Bool
+
+$disable-warnings: false !default;
+
+@mixin -neat-warn($message) {
+  @if $disable-warnings == false {
+    @warn "#{$message}";
+  }
+}
+
+@charset "UTF-8";
+
+/// Sets the relative width of a single grid column. The unit used should be the same one used to define `$gutter`. To learn more about golden-ratio() see [Bourbon docs](http://bourbon.io/docs/#golden-ratio). Set with a `!global` flag.
+///
+/// @type Number (Unit)
+
+$column: golden-ratio(1em, 3) !default;
+
+/// Sets the relative width of a single grid gutter. The unit used should be the same one used to define `$column`. To learn more about golden-ratio() see [Bourbon docs](http://bourbon.io/docs/#golden-ratio). Set with the `!global` flag.
+///
+/// @type Number (Unit)
+
+$gutter: golden-ratio(1em, 1) !default;
+
+/// Sets the total number of columns in the grid. Its value can be overridden inside a media query using the `media()` mixin. Set with the `!global` flag.
+///
+/// @type Number (Unitless)
+
+$grid-columns: 12 !default;
+
+/// Sets the max-width property of the element that includes `outer-container()`. To learn more about `em()` see [Bourbon docs](http://bourbon.io/docs/#px-to-em). Set with the `!global` flag.
+///
+/// @type Number (Unit)
+///
+$max-width: em(1088) !default;
+
+/// When set to true, it sets the box-sizing property of all elements to `border-box`. Set with a `!global` flag.
+///
+/// @type Bool
+///
+/// @example css - CSS Output
+///   html {
+///     -webkit-box-sizing: border-box;
+///     -moz-box-sizing: border-box;
+///     box-sizing: border-box; }
+///
+///   *, *:before, *:after {
+///     -webkit-box-sizing: inherit;
+///     -moz-box-sizing: inherit;
+///     box-sizing: inherit;
+///   }
+
+$border-box-sizing: true !default;
+
+/// Sets the default [media feature](http://www.w3.org/TR/css3-mediaqueries/#media) that `media()` and `new-breakpoint()` revert to when only a breakpoint value is passed. Set with a `!global` flag.
+///
+/// @type String
+
+$default-feature: min-width; // Default @media feature for the breakpoint() mixin
+
+///Sets the default layout direction of the grid. Can be `LTR` or `RTL`. Set with a `!global` flag.
+///
+///@type String
+
+$default-layout-direction: LTR !default;
+
+@charset "UTF-8";
+
+/// Displays the visual grid when set to true. The overlaid grid may be few pixels off depending on the browser's rendering engine and pixel rounding algorithm. Set with the `!global` flag.
+///
+/// @type Bool
+
+$visual-grid: false !default;
+
+/// Sets the visual grid color. Set with `!global` flag.
+///
+/// @type Color
+
+$visual-grid-color: #eee !default;
+
+/// Sets the `z-index` property of the visual grid. Can be `back` (behind content) or `front` (in front of content). Set with `!global` flag.
+///
+/// @type String
+
+$visual-grid-index: back !default;
+
+/// Sets the opacity property of the visual grid. Set with `!global` flag.
+///
+/// @type Number (unitless)
+
+$visual-grid-opacity: 0.4 !default;
+
+$visual-grid-breakpoints: () !default;
+
+/* Bitters 0.10.0
+ * http://bitters.bourbon.io
+ * Copyright 2013–2014 thoughtbot, inc.
+ * MIT License */
+
+// Variables
+@import "variables";
+
+// Neat Settings -- uncomment if using Neat -- must be imported before Neat
+// @import "grid-settings";
+
+// Extends
+@import "extends/button";
+@import "extends/clearfix";
+@import "extends/errors";
+@import "extends/flashes";
+@import "extends/hide-text";
+
+// Typography and Elements
+@import "typography";
+@import "forms";
+@import "tables";
+@import "lists";
+@import "buttons";
+
+button,
+input[type="submit"] {
+  @extend %button;
+  @include appearance(none);
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+fieldset {
+  background: lighten($base-border-color, 10);
+  border: $base-border;
+  margin: 0 0 ($base-spacing / 2) 0;
+  padding: $base-spacing;
+}
+
+input,
+label,
+select {
+  display: block;
+  font-family: $form-font-family;
+  font-size: $form-font-size;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: $base-spacing / 4;
+
+  &.required:after {
+    content: "*";
+  }
+
+  abbr {
+    display: none;
+  }
+}
+
+textarea,
+#{$all-text-inputs},
+select[multiple=multiple] {
+  @include box-sizing(border-box);
+  @include transition(border-color);
+  background-color: white;
+  border-radius: $form-border-radius;
+  border: 1px solid $form-border-color;
+  box-shadow: $form-box-shadow;
+  font-family: $form-font-family;
+  font-size: $form-font-size;
+  margin-bottom: $base-spacing / 2;
+  padding: ($base-spacing / 3) ($base-spacing / 3);
+  width: 100%;
+
+  &:hover {
+    border-color: $form-border-color-hover;
+  }
+
+  &:focus {
+    border-color: $form-border-color-focus;
+    box-shadow: $form-box-shadow-focus;
+    outline: none;
+  }
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="search"] {
+  @include appearance(none);
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+  margin-right: $base-spacing / 4;
+}
+
+input[type="file"] {
+  padding-bottom: $base-spacing / 2;
+  width: 100%;
+}
+
+select {
+  margin-bottom: $base-spacing;
+  max-width: 100%;
+  width: auto;
+}
+
+@import "neat-helpers"; // or "../neat/neat-helpers" when not in Rails
+
+// Neat Overrides
+// $column: 90px;
+// $gutter: 30px;
+// $grid-columns: 12;
+// $max-width: em(1088);
+
+// Neat Breakpoints
+$medium-screen: em(640);
+$large-screen: em(860);
+
+$medium-screen-up: new-breakpoint(min-width $medium-screen 4);
+$large-screen-up: new-breakpoint(min-width $large-screen 8);
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  &%default-ul {
+    list-style-type: disc;
+    margin-bottom: $base-spacing / 2;
+    padding-left: $base-spacing;
+  }
+
+  &%default-ol {
+    list-style-type: decimal;
+    margin-bottom: $base-spacing / 2;
+    padding-left: $base-spacing;
+  }
+}
+
+dl {
+  margin-bottom: $base-spacing / 2;
+
+  dt {
+    font-weight: bold;
+    margin-top: $base-spacing / 2;
+  }
+
+  dd {
+    margin: 0;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  margin: ($base-spacing / 2) 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+th {
+  border-bottom: 1px solid darken($base-border-color, 15);
+  font-weight: bold;
+  padding: ($base-spacing / 2) 0;
+  text-align: left;
+}
+
+td {
+  border-bottom: $base-border;
+  padding: ($base-spacing / 2) 0;
+}
+
+tr,
+td,
+th {
+  vertical-align: middle;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: $base-background-color;
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $header-font-family;
+  line-height: $header-line-height;
+  margin: 0;
+  text-rendering: optimizeLegibility; // Fix the character spacing for headings
+}
+
+h1 {
+  font-size: $h1-font-size;
+}
+
+h2 {
+  font-size: $h2-font-size;
+}
+
+h3 {
+  font-size: $h3-font-size;
+}
+
+h4 {
+  font-size: $h4-font-size;
+}
+
+h5 {
+  font-size: $h5-font-size;
+}
+
+h6 {
+  font-size: $h6-font-size;
+}
+
+p {
+  margin: 0 0 ($base-spacing / 2);
+}
+
+a {
+  @include transition(color 0.1s linear);
+  color: $base-link-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $hover-link-color;
+  }
+
+  &:active, &:focus {
+    color: $hover-link-color;
+    outline: none;
+  }
+}
+
+hr {
+  border-bottom: $base-border;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: $base-spacing 0;
+}
+
+img,
+picture {
+  margin: 0;
+  max-width: 100%;
+}
+
+blockquote {
+  border-left: 2px solid $base-border-color;
+  color: lighten($base-font-color, 15);
+  margin: $base-spacing 0;
+  padding-left: $base-spacing / 2;
+}
+
+cite {
+  color: lighten($base-font-color, 25);
+  font-style: italic;
+
+  &:before {
+    content: "\2014 \00A0";
+  }
+}
+
+// Typography
+$sans-serif: $helvetica;
+$serif: $georgia;
+$base-font-family: $sans-serif;
+$header-font-family: $base-font-family;
+
+// Font Sizes
+$base-font-size: 1em;
+$h1-font-size: $base-font-size * 2.25;
+$h2-font-size: $base-font-size * 2;
+$h3-font-size: $base-font-size * 1.75;
+$h4-font-size: $base-font-size * 1.5;
+$h5-font-size: $base-font-size * 1.25;
+$h6-font-size: $base-font-size;
+
+// Line height
+$base-line-height: 1.5;
+$header-line-height: 1.25;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: $base-line-height * 1em;
+$base-z-index: 0;
+
+// Colors
+$blue: #477DCA;
+$dark-gray: #333;
+$medium-gray: #999;
+$light-gray: #DDD;
+$light-red: #FBE3E4;
+$light-yellow: #FFF6BF;
+$light-green: #E6EFC2;
+
+// Background Color
+$base-background-color: white;
+
+// Font Colors
+$base-font-color: $dark-gray;
+$base-accent-color: $blue;
+
+// Link Colors
+$base-link-color: $base-accent-color;
+$hover-link-color: darken($base-accent-color, 15);
+$base-button-color: $base-link-color;
+$hover-button-color: $hover-link-color;
+
+// Flash Colors
+$alert-color: $light-yellow;
+$error-color: $light-red;
+$notice-color: lighten($base-accent-color, 40);
+$success-color: $light-green;
+
+// Border color
+$base-border-color: $light-gray;
+$base-border: 1px solid $base-border-color;
+
+// Forms
+$form-border-color: $base-border-color;
+$form-border-color-hover: darken($base-border-color, 10);
+$form-border-color-focus: $base-accent-color;
+$form-border-radius: $base-border-radius;
+$form-box-shadow: inset 0 1px 3px rgba(black,0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px rgba(darken($form-border-color-focus, 5), 0.7);
+$form-font-size: $base-font-size;
+$form-font-family: $base-font-family;
+
+%button {
+  -webkit-font-smoothing: antialiased;
+  background-color: $base-button-color;
+  border-radius: $base-border-radius;
+  color: white;
+  display: inline-block;
+  font-size: $base-font-size;
+  font-weight: bold;
+  line-height: 1;
+  padding: 0.75em 1em;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $hover-button-color;
+    color: white;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
+
+%clearfix {
+  @include clearfix;
+}
+
+%error {
+  color: darken($error-color, 60);
+}
+
+%warning {
+  color: darken($alert-color, 60);
+}
+
+%notice {
+  color: darken($notice-color, 60);
+}
+
+@mixin flash($color) {
+  background: $color;
+  color: darken($color, 60);
+
+  a {
+    color: darken($color, 70);
+
+    &:hover {
+      color: darken($color, 90);
+    }
+  }
+}
+
+%flash-base {
+  font-weight: bold;
+  margin-bottom: $base-spacing / 2;
+  padding: $base-spacing / 2;
+}
+
+%flash-alert {
+  @extend %flash-base;
+  @include flash($alert-color);
+}
+
+%flash-error {
+  @extend %flash-base;
+  @include flash($error-color);
+}
+
+%flash-notice {
+  @extend %flash-base;
+  @include flash($notice-color);
+}
+
+%flash-success {
+  @extend %flash-base;
+  @include flash($success-color);
+}
+
+%hide-text {
+  @include hide-text;
+}
+
+// @import 'variables';
+// @import 'mixins';
+
+html {
+  font-size: 100%;
+}
+
+body {
+	background: $lighterGray !important;
+  font: 18px/1.4 $font;
+  color: $darkGray;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 0 10px;
+  @include mobile {
+    padding: 0px 0px;
+  }
+  width: 100%;
+}
+.big-container {
+  @extend .container;
+  max-width: 1150px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $helveticaNeue;
+  color: $darkerGray;
+  font-weight: bold;
+  
+  line-height: 1.7;
+  margin: 1em 0 15px;
+  padding: 0;
+
+  @include mobile {
+    line-height: 1.4;
+  }
+}
+  
+h1 {  
+  font-size: 30px;
+  a {
+    color: inherit;
+  }
+}
+
+h2 {  
+  font-size: 24px;
+}
+
+h3 {  
+  font-size: 20px;
+}
+
+h4 {  
+  font-size: 18px;
+  color: $gray;
+}
+
+p {
+  margin: 15px 0;
+}
+
+button {
+  -webkit-font-smoothing: antialiased;
+  @include button(flat, $color1);
+  padding: .7em 1em;
+  margin-top: 1em;
+}
+
+a {
+  color: $color1;
+  text-decoration: none;
+	cursor: pointer;
+  &:hover, &:active {
+    color: $color1;
+  }
+}
+
+a {
+  @include transition(all, 0.1s, ease-in-out);
+  &:hover {
+    color: $color1;
+  }
+}
+
+ul, ol {
+  margin: 15px 0;
+  padding-left: 30px;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+ol ul, ul ol, ul ul, ol ol {
+  margin: 0;
+}
+
+ul ul, ol ul {
+  list-style-type: circle;
+}
+
+em, i {
+  font-style: italic;
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+}
+
+.date {
+  font-style: italic;
+  color: $gray;
+}
+
+// Specify the color of the selection
+::-moz-selection {
+  color: $black;
+  background: $lightGray;
+}
+::selection {
+  color: $black;
+  background: $lightGray;
+}
+  .clearfix:before,
+  .clearfix:after {
+      content: " ";
+      display: table;
+  }
+
+  .clearfix:after {
+      clear: both;
+  }
+@mixin gradient($colorFrom, $colorTo) {
+  background-color: $colorTo;
+  background-image: -webkit-gradient(linear, left top, right top, from($colorFrom), to($colorTo));
+  background-image: -webkit-linear-gradient(bottom, $colorFrom, $colorTo);
+  background-image: -moz-linear-gradient(bottom, $colorFrom, $colorTo);
+  background-image: -o-linear-gradient(bottom, $colorFrom, $colorTo);
+  background-image: linear-gradient(to top, $colorFrom, $colorTo);
+}
+@mixin transition($transition-property, $transition-time, $method) {
+  -webkit-transition: $transition-property $transition-time $method;
+  -moz-transition: $transition-property $transition-time $method;
+  -ms-transition: $transition-property $transition-time $method;
+  -o-transition: $transition-property $transition-time $method;
+  transition: $transition-property $transition-time $method;
+}
+@mixin box-shadow($left, $top, $blur, $size, $shadow-color) {
+  -webkit-box-shadow: $left $top $blur $size $shadow-color;
+     -moz-box-shadow: $left $top $blur $size $shadow-color;
+      -ms-box-shadow: $left $top $blur $size $shadow-color;
+          box-shadow: $left $top $blur $size $shadow-color;
+}
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex:  $values;
+  -webkit-flex:  $values;
+  -ms-flex:  $values;
+  flex:  $values;
+}
+
+.animatedown, .animateleft, .animateright, .animateup, .animatereveal {
+  display: block;
+  position: relative;
+}
+.animatedown {
+  @include animation(movedown 1s);
+}
+.animateright {
+  @include animation(moveright 1s);
+}
+.animateleft {
+  @include animation(moveleft 1s);
+}
+.animateup {
+  @include animation(moveup 0.2s);
+}
+.animatereveal {
+  @include animation(reveal 2s);
+}
+.delay1{
+  @include animation-delay(2s);
+}
+.delay2{
+  @include animation-delay(4s);
+}
+.pulse {
+  @include animation(pulse 2s infinite alternate ease-in-out);
+}
+
+@include keyframes(movedown) {
+    0%   {
+      @include transform(scale(0));
+      top: -300px;
+    }
+    100% {
+      @include transform(scale(1));
+      top: 0px;
+    }
+}
+
+@include keyframes(moveright) {
+    0%   {
+      left: -1200px;
+    }
+    100% {
+      left: 0px;
+    }
+}
+
+@include keyframes(moveleft) {
+    0%   {
+      right: -1200px;
+    }
+    100% {
+      right: 0px;
+    }
+}
+@include keyframes(moveup) {
+    0%   {
+      bottom: -40px;
+      opacity: 0;
+    }
+    50% {
+      bottom: -20px;
+      opacity: 1;
+    }
+    100% {
+      bottom: 0px;
+      opacity: 1;
+    }
+}
+
+@include keyframes (reveal) {
+    0%   {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+@include keyframes (pulse) {
+    0%   { 
+      -webkit-transform: translateY(0); opacity: 0.4
+    }
+    100% {
+      -webkit-transform: translateY(1em); opacity: 0.9
+    }
+}
+  // Mobile breakpoints
+  @mixin mobile {
+    @media screen and (max-width: 640px) {
+      @content;
+    }
+  }
+// @import 'variables';
+// @import 'mixins';
+
+.wrapper-masthead {
+  background-color: $darkerGray;
+  color: $white;
+  .container  {
+    background-color: $darkerGray;
+    position: relative;
+    z-index: 30;
+  }
+}
+
+.masthead {
+  padding-top: 10px;
+  @include mobile {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+}
+.site-info {
+  height: 110px;
+}
+
+.site-avatar {
+  display: block;
+  float: left;
+  width: 90px;
+  margin: 7px 15px 0px 10px;
+  &:hover {
+    transform: rotateX(15deg);
+  }
+  &:active {
+    transform: rotateX(-15deg);
+  }
+  @include mobile {
+    float: none;
+    margin: 0 auto;
+  }
+
+  img {
+    border-radius: 100px;
+  }
+}
+
+.site-name {
+  margin: 0;
+  color: $white;
+  font-family: $helveticaNeue; 
+  font-weight: 300;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.site-description {
+  margin: 0;
+  color: $gray;
+  font-size: 16px;
+  @include mobile {
+    margin: 3px 0;
+  }
+}
+
+.twitter-follow-button {
+  margin: 10px 0px;
+  padding-top: 5px;
+  height: 30px !important;
+  @include mobile {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+a.menu-link {
+  display: none;
+    @include mobile {
+      display: block;
+      padding: 5px;
+      position: absolute;
+      top: 20px;
+      right: 10px;
+      width: 50px;
+      height: 20px;
+  }
+}
+
+.menu-link span, .menu-link span:before, .menu-link span:after {
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: white;
+  position: absolute;
+  display: block;
+  content: '';
+}
+.menu-link span:before {
+  top: -10px; 
+}
+.menu-link span:after {
+  bottom: -10px;
+}
+.menu-link span {
+  @include transition(all, 3s, $ease-out-circ);
+}
+.menu-link span:before, .menu-link span:after {
+  @include transition(all, 0.8s, $ease-out-back);
+}
+.menu-link.active span {
+  background-color: transparent;
+  @include transition(all, 0s, $ease-out-circ);
+}
+.menu-link.active span:before, .menu-link.active span:after {
+  top: 0;
+}
+.menu-link.active span:before {
+  transform: rotate(225deg);
+}
+.menu-link.active span:after {
+  transform: rotate(-225deg);
+}
+
+nav[role=navigation] {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  @include transition(all, 0s, linear);
+  @include mobile {
+    border-top: none;
+    // this can be increased as number of links increases
+    top: -200px;
+  }
+}
+.js nav[role=navigation] {
+  @include mobile {
+    overflow: hidden;
+    max-height: 0;
+   }
+}
+nav[role=navigation].active {
+  max-height: 100%;
+  padding-top: 0px;
+  position: relative;
+  z-index: 20;
+  top: 0px;
+  @include transition(all, 0.6s, $ease-out-back);
+
+}
+nav[role=navigation] ul {
+  list-style-type: none;
+  margin: 1px;
+  padding: 0px 0px 10px 0px;
+  @include mobile {
+    margin: 0px;
+    padding: 0px;
+  }
+}
+nav[role=navigation] li {
+  display: inline-block;
+  margin: 4px;
+  background-color: $darkerGray;
+  box-shadow: inset 0 .1em rgba(255,255,255,0.1), 0 .1em .1em black, 0 0.2em rgba(0,0,0,0.4), 0 0 0 .1em rgba(0,0,0,0.1);
+  @include mobile {
+    margin: 0px;
+    display: block;
+    text-align: center;
+    &:hover {
+      color: $color1;
+    }
+  }
+}
+nav[role=navigation] li a {
+  display: block;
+  padding: 10px 30px;
+  color: white;
+  letter-spacing: 1px;
+  &:hover {
+    color: $color1;
+  }
+  &:active {
+    box-shadow: inset 0 .1em rgba(0,0,0,0.6), 0 0.2em rgba(155,155,155,0.2), 0 -0.1em 0 .1em rgba(0,0,0,0.1);
+  }
+  @include mobile {
+    padding: 0.5em;
+  }
+}
+
+.flexmom {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: flex-start;
+  justify-content: space-around;
+  @include mobile {
+    height: 100%;
+    flex-direction: column;
+  }
+  .flexkid {
+    flex-grow: 1;
+  }
+}
+$parallax-window-height: 30em;
+$parallax-background-height: $parallax-window-height * 2;
+
+.parallax-window {
+  // max-height: $parallax-window-height;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  margin-bottom: -130px;
+  z-index: -1;
+
+  h1 {
+    font-size: 3em;
+    margin: 0em .5em 1em;
+    text-shadow: 2px 1px 4px #fff;
+
+    @include mobile {
+       font-size: 2em;
+    }
+  }
+
+  p {
+    font-size:1.2em;
+    font-weight: 200;
+    line-height: 1.6em;
+    margin: 0em 3em 4em;
+    color: $black;
+    text-shadow: 1px 1px 1px #fff; 
+
+    @include mobile {
+      font-size: 1.1em;
+      margin: 0em 1em 2em;
+    }
+  }
+}
+
+.parallax-static-content {
+  color: #9A9A8A;
+  padding: 6em 0;
+  position: relative;
+  z-index: 9;
+}
+
+.parallax-background {
+  background: url("/images/ft-peck.jpg");
+  background-position: top;
+  background-size: cover;
+  background-color: #fff;
+  height: $parallax-background-height;
+  left: 0;
+  position: absolute;
+  top: - $parallax-window-height / 3;
+  width: 100%;
+}
+
+.downarrow {
+  margin: 0 auto 100px;
+  border-radius: 0px;
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid white;
+}
+
+// Based on http://codepen.io/skeurentjes/
+
+// @import 'bourbon';
+// @import 'neat';
+// @import 'variables';
+// @import 'base';
+// @import 'mixins';
+
+.flex-boxes {
+  ///////////////////////////////////////////////////////////////////////////////////
+  $base-border-radius: 3px !default;
+  $base-background-color: white !default;
+  $dark-gray: #333 !default;
+  $light-gray: #DDD !default;
+  $base-font-color: $dark-gray !default;
+  -webkit-font-smoothing: antialiased;
+
+  a {
+    text-decoration: none;
+  }
+  margin: 1em 0em 2em; 
+  //////////////////////////////////////////////////////////////////////////////////
+
+  $flex-box-border-color: $light-gray;
+  $flex-box-border: 1px solid $flex-box-border-color;
+  $flex-box-background: $white;
+  $flex-box-gutter: .4em;
+  $flex-box-width: 18em;
+  $flex-box-color: transparentize($base-font-color, .1);
+  $flex-box-top-colors: 
+    tomato, 
+    #72BFBF, 
+    #92B1E3, 
+    #E3D743,
+    #CCC,
+    #F6C05C;
+
+    @include clearfix;
+    @include display(flex);
+    @include justify-content(center);
+    @include align-items(stretch);
+    @include flex-wrap(wrap);
+    clear: both;
+    text-align: center;
+
+  .flex-box {
+    @include transition (all, 0.2s, ease-in-out);
+    @include flex(2 2 15em);
+    @include align-self(stretch);
+    background: $flex-box-background;
+    border-radius: $base-border-radius;
+    box-shadow: inset 0 0 1px $flex-box-border-color, 0 2px 4px darken($base-background-color, 10);
+    display: block;
+    margin: $flex-box-gutter;
+    padding: 2em 1em;
+
+    @for $i from 1 to 7 { // assign colors from $flex-box-top-colors list
+      &:nth-child(#{$i}) {
+        $color-from-list: nth($flex-box-top-colors, $i);
+        border-top: 6px solid $color-from-list;
+        
+        // &:hover {
+        //   background-color: transparentize($color-from-list, .9);
+        // }
+      }
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      max-width: 440px;
+      margin: 0em auto 1em;
+      @include transition(all, 0.3s, $ease-out-quint);
+      -webkit-filter: grayscale(1);
+      filter: grayscale(1);
+      &:hover {
+        transform: scale(1.1, 1.1);
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
+      }
+    }
+
+    .flex-title {
+      font-size: 1.6em;
+      font-weight: 800;
+      margin-bottom: .5em;
+    }
+
+    p {
+      color: transparentize($flex-box-color, .1);
+      line-height: 1.5em;
+      padding-bottom: .5em;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 1.1em;
+      color: $flex-box-color;
+      margin-bottom: .5em;
+    }
+
+  }
+
+  .flex-box-big {
+    @include flex(1 1 40em);
+  }
+}
+
+.read-more {
+    text-transform: uppercase;
+    font-size: 15px;
+    @include mobile {
+      margin: 0 4px;
+      padding: 5px 10px;
+      border: 1px solid $color1;
+      background-color: transparent;
+      color: $color1;
+      @include border-radius(5px);
+        &:hover {
+          border: 1px solid $color1;
+          background-color: $color1;
+          color: $white;
+        }
+    }
+}
+
+.postdate {
+  text-align: center;
+  font-size: 12px;
+  margin: 12px;
+  color: $gray;
+}
+$flex-box-border-color: $light-gray;
+$flex-box-border: 1px solid $flex-box-border-color;
+$flex-box-background: $white;
+$flex-box-gutter: .4em;
+$flex-box-width: 18em;
+$flex-box-color: transparentize($base-font-color, .1);
+
+.title {
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 10px;
+  @include mobile {
+    float: none;
+    text-align: center;
+  }
+}
+
+.postimg {
+  display: block;
+  width: 100%;
+  margin: 0em auto;
+  @include transition(all, 0.4s, $ease-out-quint);
+}
+
+.postnohover {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  @include mobile {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+  }
+}
+.posthover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+.posts {
+  @include clearfix;
+  @include flexbox;
+  @include justify-content(center);
+  @include align-items(stretch);
+  @include flex-wrap(wrap);
+  clear: both;
+  text-align: center;
+  h1 {
+    margin: 10px 0px;
+    a {
+      &:hover {
+        border-bottom: 3px solid $color1;
+        padding-bottom: 1px;
+      }
+    }
+    @include mobile {
+      text-align: center;
+    }
+  }
+}
+
+.posts > .post {
+  background-color: $postbackground;
+  // @include gradient($lightGray, $white);
+  @include box-shadow(0px, -4px, 16px, -6px, $gray);
+  padding: 0;
+  @include transition(all, 0.4s, $ease-out-quint);
+  &:hover {
+    @include box-shadow(0px, 0px, 10px, 0px, $gray);
+  }
+  .padding {
+    padding: 1px 15px 40px 15px;
+  }
+  &.post:last-child, &.post:first-child {
+    flex-grow: 2;
+    min-width: 65%;
+  }
+}
+
+.post {
+  @include transition (all, 0.2s, ease-in-out);
+  @include flex(2 2 15em);
+  @include align-self(stretch);
+  background: $postbackground;
+  @include border-radius(5px);
+  border-top: 5px solid $color1;
+  // border-radius: $base-border-radius;
+  // box-shadow: inset 0 0 1px $flex-box-border-color, 0 2px 4px darken($base-background-color, 10);
+  display: block;
+  margin: $flex-box-gutter;
+  padding: 1em;
+  max-width: 100%;
+
+  // margin-bottom: 30px;
+  @include box-shadow(0px, -10px, 24px, -10px, $gray);
+  @include border-radius(5px);
+  // border-top: 5px solid $color1;
+
+  // @include mobile {
+  //   margin: 0px 0.4em 2em;
+  // }
+  .postdate {
+    text-align: center;
+    font-size: 12px;
+    margin: 12px;
+    color: $gray;
+  }
+}
+
+.posts > .post:last-child {
+}
+
+.post {
+  h1 {
+    margin-bottom: 0.3em;
+  }
+  h2 {
+    font-size: 1.6em;
+    margin-bottom: 0.3em;
+  }
+
+  h3 {
+    font-size: 1.3em;
+    margin-bottom: 0.3em;
+  }
+
+  p {
+    color: $gray;
+  }
+
+  ul {
+    list-style-type: disc;
+    margin: 15px 0px;
+    padding-left: 30px;
+    color: $gray;
+  }
+
+  blockquote {
+    margin: 1.8em .8em;
+    border-left: 2px solid $gray;
+    padding: 0.1em 1em;
+    color: $gray;
+    font-size: 22px;
+    font-style: italic;
+  }
+
+  .comments {
+    margin-top: 10px;
+  }
+
+  .read-more {
+    text-transform: uppercase;
+    font-size: 15px;
+    @include mobile {
+      margin: 0 4px;
+      padding: 5px 10px;
+      border: 1px solid $color1;
+      background-color: $white;
+      color: $color1;
+      @include border-radius(5px);
+        &:hover {
+          border: 1px solid $color1;
+          background-color: $color1;
+          color: $white;
+        }
+    }
+  }
+}
+
+.page {
+  padding: 0px;
+}
+
+
+.floatright {
+  float: right;
+  max-width: 50%;
+  max-height: 250px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.floatleft {
+  float: left;
+  max-width: 50%;
+  max-height: 250px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.centered {
+  width: 100%;
+  @include box-shadow(0px, 7px, 16px, -1px, $gray);
+}
+// .centered {
+//   margin: 30px auto;
+//   position: relative;
+//   left: -10%;
+//   max-width: 120%;
+//   @include box-shadow(0px, 7px, 16px, -1px, $gray);
+//   @include mobile {
+//     margin: 10px auto;
+//     left: -5%;
+//     max-width: 110%;
+//   }
+// }
+
+.tags, .categories {
+  list-style-type: none;
+}
+
+.tags {
+
+}
+.categories {
+
+}
+
+.share {
+  margin-top: 20px;
+}
+
+.share-top {
+  float: right;
+  margin-top: -45px;
+  z-index: 1;
+  @include mobile {
+    margin-top: 25px;
+    padding: 0px 23px 10px;
+    width: 100%;
+  }
+}
+// @import "bourbon";
+// @import "neat";
+// @import "breakpoints";
+
+.resume {
+	section {
+	  @include outer-container;
+	  aside {
+	  	@include span-columns(4);
+	  	margin-bottom: 0.5em;
+	  	clear: both;
+	  	@include mobile {
+			@include span-columns(12);
+	  	}
+	  }
+	  article {
+	  	min-height: 125px;
+	  	@include span-columns(7);
+	  	@include mobile {
+	  		min-height: 0px;
+	  		margin-bottom: 1em;
+	  		@include span-columns(12);
+	  	}
+	  }
+	}
+	h1 {
+		margin-bottom: 0.7em;
+		border-bottom: 1px dotted black;
+		padding-bottom: 0.1em;
+	}
+	h3 {
+		margin-top: 0.4em;
+	}
+	h4 {
+		margin-top: 0em;
+		margin-bottom: 0.4em;
+	}
+	.date {
+		font-size: 0.8em;
+	}
+	.position {
+		font-size: 1.1em;
+	}
+}
+.video-wrapper {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%; // For ratio 16:9. 75% if ratio is 4:3
+  position: relative;
+
+  embed,
+  object,
+  iframe {
+    @include position(absolute, 0px null null 0px);
+    @include size(100%);
+  }
+}
+
+// @import 'breakpoints';
+// @import 'variables';
+// @import 'bourbon';
+// @import 'mixins';
+
+.wrapper-footer {
+  margin-top: -50px;
+  border-top: 1px solid #ddd;
+  background-color: $darkGray;
+  padding-top: 50px;
+}
+
+footer {
+  padding: 20px 0;
+  text-align: center;
+  background-color: $darkGray;
+}
+
+.footerinfo {
+  color: $gray;
+  font-size: 14px;
+  padding: 8px;
+}
+
+.totop {
+  list-style-type: none;
+  float: right;
+  margin: 20px;
+  @include mobile {
+    margin: 0px 40px 20px;
+    float: none;
+    text-align: center;
+  }
+}
+
+.custom-icon {
+  margin: 0px 10px;
+}
+// @import 'variables';
+// @import 'bourbon';
+// @import 'mixins';
+
+.bullets {
+  ///////////////////////////////////////////////////////////////////////////////////
+  $base-line-height: 1.5em !default;
+  $base-accent-color: #477DCA !default;
+  $base-link-color: $base-accent-color !default;
+  $dark-gray: #333 !default;
+  $base-font-color: $dark-gray !default;
+  -webkit-font-smoothing: antialiased;
+  color: $white;
+
+  padding: 0;
+
+  h2 {
+    margin: 0;
+    color: $white;
+  }
+
+  li {
+    list-style: none;
+
+  }
+
+  p {
+    color: $white;
+    line-height: $base-line-height;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  @include mobile {
+    align-content: stretch;
+    justify-content: flex-start;
+    justify-content: space-around;
+  }
+
+  //////////////////////////////////////////////////////////////////////////////////
+
+  $icon-bullet-size: 3.5em;
+
+  @include display(flex);
+  @include flex-wrap(wrap);
+  margin-bottom: $base-line-height;
+  margin: 2em 0.2em 0em;
+  overflow: auto;
+
+  .bullet {
+    @include flex-basis(20em);
+    @include flex-grow(1);
+    @include mobile {
+      margin: 0em 0em 1em;
+    }
+  }
+
+  .bullet-icon {
+    background: $base-accent-color;
+    border-radius: 50%;
+    float: left;
+    height: $icon-bullet-size;
+    padding: $icon-bullet-size /4;
+    width: $icon-bullet-size;
+  }
+
+  .bullet-icon-1 {
+    background: $base-accent-color;
+  }
+
+  .bullet-icon-2 {
+    background: adjust-hue($base-accent-color, -50);
+  }
+
+  .bullet-icon-3 {
+    background: adjust-hue($base-accent-color, -140);
+  }
+
+  .bullet-content {
+    margin: 0em 1em 2em;
+  }
+
+  h2 {
+    border-bottom: 1px solid transparentize($base-font-color, .8);
+    display: inline-block;
+    font-size: $icon-bullet-size /2.5;
+    margin-bottom: $icon-bullet-size /6;
+    padding-top: 0em;
+  }
+  ul {
+    padding-left: 12px;
+  }
+
+  .socialText {
+    position: relative;
+    top: -1em;
+  }
+}
+
+// @import 'breakpoints';
+
+.form-label-left {
+    width:150px !important;
+    @include mobile {
+      margin: 4px auto;
+      text-align: center;
+      width: 100%;
+    }
+}
+.form-line {
+  @include mobile {
+    padding: 12px 15px 12px 15px;
+    max-width: 350px;
+  }
+}
+.text-box {
+  @include mobile {
+    max-width: 100% !important;
+  }
+}
+.form-label-right {
+    width:150px !important;
+    @include mobile {
+      margin: 4px auto;
+      text-align: center;
+      width: 100%;
+    }
+}
+.form-all {
+    width:100%;
+    color:#555 !important;
+    font-family:'Lucida Grande';
+    font-size:14px;
+    @include mobile {
+      width: 100%;
+    }
+}
+.form-sub-label-container, .form-input, .form-text-box, .form-textbox, .form-textarea {
+  @include mobile {
+    width: 100%;
+  }
+}
+.phone-separate {
+  display: none;
+}
+
+.form-submit-button, .form-submit-reset, .form-submit-print, .form-screen-button {
+  &:hover {
+    color: $color1;
+  }
+}
+.tip-up {
+  margin: 50px auto;
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+.base {
+  position: relative;
+  margin: 0 auto;
+  top: 100px;
+  display: block;
+  width: 160px;
+  height: 12px;
+  border: 4px solid orange;
+  border-radius: 2px;
+  z-index: 40;
+}
+.spool {
+  position: relative;
+  margin: 0 auto;
+  top: 30%;
+  display: block;
+  width: 4px;
+  height: 110px;
+  background-color: lightgray;
+  border-radius: 2px;
+  z-index: 0;
+}
+.spool-top {
+  position: absolute;
+  left: -9px;
+  top: 6px;
+  display: block;
+  width: 24px;
+  height: 4px;
+  background-color: lightgray;
+  border-radius: 2px;
+  z-index: 0;
+}
+.spool-bottom {
+  position: absolute;
+  left: -9px;
+  top: 94px;
+  display: block;
+  width: 24px;
+  height: 14px;
+  background-color: lightgray;
+  border-radius: 2px;
+  z-index: 0;
+}
+.flag-pole {
+  position: absolute;
+  display: block;
+  left: -70px;
+  bottom: 80px;
+  width: 4px;
+  height: 100px;
+  background-color: lightgray;
+  border-radius: 2px;
+  z-index: 9999;
+}
+.flag  {
+  position: relative;
+  display: block;
+  top: 2px;
+  left: 4px;
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border-top-right-radius: 15%;
+  border-bottom-right-radius: 15%;
+}
+.spin {
+  -webkit-animation: rotate .3s infinite alternate;
+  -moz-animation:    rotate .3s infinite alternate;
+  -o-animation:      rotate .3s infinite alternate;
+  animation:         rotate .3s infinite alternate;
+  -webkit-animation-delay: 1s; 
+  -moz-animation-delay: 1s;    
+  -o-animation-delay: 1s;      
+  animation-delay: 1s;
+}
+@-webkit-keyframes rotate {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@-moz-keyframes rotate {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@-o-keyframes rotate {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+.pop {
+  -webkit-animation: turn 2s cubic-bezier(.42,.66,.5,1.35);
+  -moz-animation:    turn 2s cubic-bezier(.42,.66,.5,1.35);
+  -o-animation:      turn 2s cubic-bezier(.42,.66,.5,1.35);
+  animation:         rotate 2s cubic-bezier(.42,.66,.5,1.35);       
+}
+@-webkit-keyframes turn {
+  0% {
+    transform: rotateZ(74deg);
+    transform-origin: 0% 100%;
+  }
+  50% {
+    transform: rotateZ(76deg);
+    transform-origin: 0% 100%;
+  }
+  100% {
+    transform: rotateZ(0deg);
+    transform-origin: 0% 100%;
+  }
+}
+@-moz-keyframes turn {
+  0% {
+    transform: rotateZ(74deg);
+    transform-origin: 0% 100%;
+  }
+  50% {
+    transform: rotateZ(76deg);
+    transform-origin: 0% 100%;
+  }
+  100% {
+    transform: rotateZ(0deg);
+    transform-origin: 0% 100%;
+  }
+}
+@-o-keyframes turn {
+  0% {
+    transform: rotateZ(74deg);
+    transform-origin: 0% 100%;
+  }
+  50% {
+    transform: rotateZ(76deg);
+    transform-origin: 0% 100%;
+  }
+  100% {
+    transform: rotateZ(0deg);
+    transform-origin: 0% 100%;
+  }
+}
+@keyframes turn {
+  0% {
+    transform: rotateZ(74deg);
+    transform-origin: 0% 100%;
+  }
+  50% {
+    transform: rotateZ(76deg);
+    transform-origin: 0% 100%;
+  }
+  100% {
+    transform: rotateZ(0deg);
+    transform-origin: 0% 100%;
+  }
+}
+
+// @import 'variables';
+
+/***********************/
+/* SYNTAX HIGHLIGHTING */
+/***********************/
+
+.highlight { 
+  background-color: $darkerGray;
+  padding: 5px 10px;
+  margin: 20px 0;
+}
+
+.highlight pre {
+  /* overflow: scroll; Prefer no word wrap? Uncomment this line and comment out the 2 lines below. */
+  word-break: break-all;
+  word-wrap: break-word;
+}
+ 
+code {
+  font-family: 'Courier', monospace;
+  font-size: 14px;
+  color: #999
+}
+ 
+// Solarized Light Pygments 
+// Thanks https://gist.github.com/edwardhotchkiss/2005058
+/* Comment */
+.highlight .c, .highlight .c1 { color: #586E75 }
+/* Error */
+.highlight .err { color: #93A1A1 }
+/* Generic */
+.highlight .g { color: #93A1A1 }
+/* Keyword */
+.highlight .k { color: #859900 }
+/* Literal */
+.highlight .l { color: #93A1A1 }
+/* Name */
+.highlight .n { color: #93A1A1 }
+/* Operator */
+.highlight .o { color: #859900 }
+/* Other */
+.highlight .x { color: #CB4B16 }
+/* Punctuation */
+.highlight .p { color: #93A1A1 }
+/* Comment.Multiline */
+.highlight .cm { color: #586E75 }
+/* Comment.Preproc */
+.highlight .cp { color: #859900 }
+/* Comment.Single */
+.highlight .c1 { color: #586E75 }
+/* Comment.Special */
+.highlight .cs { color: #859900 }
+/* Generic.Deleted */
+.highlight .gd { color: #2AA198 }
+/* Generic.Emph */
+.highlight .ge { color: #93A1A1; font-style: italic }
+/* Generic.Error */
+.highlight .gr { color: #DC322F }
+/* Generic.Heading */
+.highlight .gh { color: #CB4B16 }
+/* Generic.Inserted */
+.highlight .gi { color: #859900 }
+/* Generic.Output */
+.highlight .go { color: #93A1A1 }
+/* Generic.Prompt */
+.highlight .gp { color: #93A1A1 }
+/* Generic.Strong */
+.highlight .gs { color: #93A1A1; font-weight: bold }
+/* Generic.Subheading */
+.highlight .gu { color: #CB4B16 }
+/* Generic.Traceback */
+.highlight .gt { color: #93A1A1 }
+/* Keyword.Constant */
+.highlight .kc { color: #CB4B16 }
+/* Keyword.Declaration */
+.highlight .kd { color: #268BD2 }
+/* Keyword.Namespace */
+.highlight .kn { color: #859900 }
+/* Keyword.Pseudo */
+.highlight .kp { color: #859900 }
+/* Keyword.Reserved */
+.highlight .kr { color: #268BD2 }
+/* Keyword.Type */
+.highlight .kt { color: #DC322F }
+/* Literal.Date */
+.highlight .ld { color: #93A1A1 }
+/* Literal.Number */
+.highlight .m { color: #2AA198 }
+/* Literal.String */
+.highlight .s { color: #2AA198 }
+/* Name.Attribute */
+.highlight .na { color: #93A1A1 }
+/* Name.Builtin */
+.highlight .nb { color: #B58900 }
+/* Name.Class */
+.highlight .nc { color: #268BD2 }
+/* Name.Constant */
+.highlight .no { color: #CB4B16 }
+/* Name.Decorator */
+.highlight .nd { color: #268BD2 }
+/* Name.Entity */
+.highlight .ni { color: #CB4B16 }
+/* Name.Exception */
+.highlight .ne { color: #CB4B16 }
+/* Name.Function */
+.highlight .nf { color: #268BD2 }
+/* Name.Label */
+.highlight .nl { color: #93A1A1 }
+/* Name.Namespace */
+.highlight .nn { color: #93A1A1 }
+/* Name.Other */
+.highlight .nx { color: #555 }
+/* Name.Property */
+.highlight .py { color: #93A1A1 }
+/* Name.Tag */
+.highlight .nt { color: #268BD2 }
+/* Name.Variable */
+.highlight .nv { color: #268BD2 }
+/* Operator.Word */
+.highlight .ow { color: #859900 }
+/* Text.Whitespace */
+.highlight .w { color: #93A1A1 }
+/* Literal.Number.Float */
+.highlight .mf { color: #2AA198 }
+/* Literal.Number.Hex */
+.highlight .mh { color: #2AA198 }
+/* Literal.Number.Integer */
+.highlight .mi { color: #2AA198 }
+/* Literal.Number.Oct */
+.highlight .mo { color: #2AA198 }
+/* Literal.String.Backtick */
+.highlight .sb { color: #586E75 }
+/* Literal.String.Char */
+.highlight .sc { color: #2AA198 }
+/* Literal.String.Doc */
+.highlight .sd { color: #93A1A1 }
+/* Literal.String.Double */
+.highlight .s2 { color: #2AA198 }
+/* Literal.String.Escape */
+.highlight .se { color: #CB4B16 }
+/* Literal.String.Heredoc */
+.highlight .sh { color: #93A1A1 }
+/* Literal.String.Interpol */
+.highlight .si { color: #2AA198 }
+/* Literal.String.Other */
+.highlight .sx { color: #2AA198 }
+/* Literal.String.Regex */
+.highlight .sr { color: #DC322F }
+/* Literal.String.Single */
+.highlight .s1 { color: #2AA198 }
+/* Literal.String.Symbol */
+.highlight .ss { color: #2AA198 }
+/* Name.Builtin.Pseudo */
+.highlight .bp { color: #268BD2 }
+/* Name.Variable.Class */
+.highlight .vc { color: #268BD2 }
+/* Name.Variable.Global */
+.highlight .vg { color: #268BD2 }
+/* Name.Variable.Instance */
+.highlight .vi { color: #268BD2 }
+/* Literal.Number.Integer.Long */
+.highlight .il { color: #2AA198 }
+// @import 'bourbon';
+// @import 'neat';
+// @import 'variables';
+
+.cards {
+  @include display(flex);
+  @include flex-wrap(wrap);
+  @include justify-content(space-between);
+}
+
+.card {
+  ///////////////////////////////////////////////////////////////////////////////////
+  $base-border-color: gainsboro !default;
+  $base-border-radius: 3px !default;
+  $base-background-color: white !default;
+  $base-spacing: 1.5em !default;
+  $base-accent-color: #477DCA !default;
+  $base-link-color: $base-accent-color !default;
+  $dark-gray: #333 !default;
+  $base-font-color: $dark-gray !default;
+  -webkit-font-smoothing: antialiased;  
+  //////////////////////////////////////////////////////////////////////////////////
+
+  $card-border-color: $base-border-color;
+  $card-border: 1px solid $card-border-color;
+  $card-background: lighten($card-border-color, 10);
+  $card-header-background: $card-background;
+  $card-hover-background: lighten($card-background, 5);
+  $card-image-background: #DBD199;
+  $card-image-hover-background: lighten($card-image-background, 5);
+  $card-stats-color: lighten($base-accent-color, 10);
+  $card-padding-for-absolute-stats: 5em;
+  $card-margin: 1em;
+
+  @include flex-basis(15em);
+  @include flex-grow(1);
+  @include transition (all 0.2s ease-in-out);
+  background-color: $card-background;
+  border-radius: $base-border-radius;
+  border: $card-border;
+  box-shadow: 0 2px 4px darken($base-background-color, 10);
+  cursor: pointer;
+  margin: 0 $card-margin $base-spacing $card-margin;
+  padding-bottom: $card-padding-for-absolute-stats;
+  position: relative;
+  position: relative;
+
+  .card-image {
+    overflow: hidden;
+    max-height: 150px;
+
+    img {
+      @include transition (all 0.2s ease-in-out);
+      background: $card-image-background;
+      border-top-left-radius: $base-border-radius;
+      border-top-right-radius: $base-border-radius;
+      width: 100%;
+    }
+  }
+
+  .ribbon-wrapper {
+    $ribbon-background: $base-accent-color;
+    $ribbon-size: 85px;
+    @include size($ribbon-size);
+    overflow: hidden;
+    position: absolute;
+    right: -1px;
+    top: -1px;
+
+    .ribbon {
+      @include transform(rotate(45deg));
+      background-color: $ribbon-background;
+      box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+      color: white;
+      font-size: .8em;
+      font-weight: 800;
+      left: -5px;
+      line-height: 1.5em;
+      padding: 2px 7px;
+      position: relative;
+      text-align: center;
+      top: 15px;
+      width: 120px;
+    }
+  }
+
+  .card-header {
+    @include transition (all 0.2s ease-in-out);
+    background-color: $card-header-background;
+    border-bottom: $card-border;
+    border-radius: $base-border-radius $base-border-radius 0 0;
+    font-weight: bold;
+    line-height: 1.5em;
+    padding: $base-spacing/3 $base-spacing/2;
+  }
+
+  .card-copy {
+    font-size: .9em;
+    line-height: 1.5em;
+    padding: $base-spacing/2 $base-spacing/2;
+
+    p {
+      margin: 0 0 ($base-spacing / 2);
+    }
+  }
+
+  .card-stats {
+    @include align-self(flex-end);
+    bottom: .5em;
+    overflow: auto;
+    padding: $base-spacing/2 $base-spacing/2;
+    position: absolute;
+
+    ul {
+      padding: 0;
+    }
+
+    li {
+      border-right: 1px solid transparentize($base-font-color, .8);
+      color: $card-stats-color;
+      display: inline;
+      float: left;
+      font-size: 1.2em;
+      font-weight: 800;
+      line-height: 1.1em;
+      padding: 0 .7em 0 .7em;
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        border-right: 0;
+      }
+
+      span {
+        color: $base-font-color;
+        display: block;
+        font-size: .7em;
+        font-weight: normal;
+      }
+    }
+  }
+
+  &:hover {
+    background-color: $card-hover-background;
+    
+    .card-image img {
+      background: $card-image-hover-background;
+    }
+  
+    .card-header {
+      background-color: $card-hover-background;
+    }
+  }
+
+  &:active {
+    background-color: $card-background;
+
+    .card-header {
+      background-color: $card-background;
+    }
+  }
+}
+
+// @import 'bourbon';
+// @import 'neat';
+// @import 'mixins';
+
+.device-background {
+  ///////////////////////////////////////////////////////////////////////////////////
+  $base-border-radius: 3px !default;
+  $base-accent-color: #477DCA !default;
+  $large-screen: em(860) !default;
+  -webkit-font-smoothing: antialiased;
+  margin: 120px 0px;
+  @include mobile {
+    margin: 40px 0px;
+  }
+
+  button {
+    -webkit-font-smoothing: antialiased;
+  }
+
+  p {
+    line-height: 1.5em;
+  }
+
+  h4 {
+    font-size: 1.7em;
+    margin: 0;
+    color: $white;
+    @include mobile {
+      font-size: 5.5vw;
+    }
+  }
+  //////////////////////////////////////////////////////////////////////////////////
+
+  $device-padding-vertical: 5em;
+  $device-padding-horizontal: .4em;
+  $device-screen-width: 14em;
+  $device-screen-height: 25em;
+  $device-background: darken(gray, 40);
+  $device-backside-background: darken($device-background, 10);
+  $device-text-color: white;
+
+  $device-background-top: #162C4C; 
+  $device-background-bottom: #0A120D;
+  $gradient-angle: 10deg;
+  $device-image: 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png';
+  $device-screen-image: '/images/jasonswingen_mobile.jpg';
+
+  @include background(url($device-image), linear-gradient($gradient-angle, $device-background-bottom, $device-background-top), no-repeat $device-background-top scroll);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 20em;
+  width: 100%;
+
+  .device-text {
+    color: $device-text-color;
+    padding: 2em;
+
+    @include media($large-screen) {
+      float: left;
+      max-width: 50%;
+      padding: 4em;
+    }
+
+    h4 {
+      border-bottom: 1px solid transparentize($device-text-color, .7);
+      margin-bottom: .5em;
+      padding-bottom: .5em;
+    }
+
+    p {
+      margin-bottom: 1.5em;
+    }
+
+    button {
+      @include button(flat, $base-accent-color);
+      padding: .7em 1em;
+    }
+  }
+
+  .device {
+    display: none;
+    position: relative;
+
+    @include media($large-screen) {
+      @include transform(
+        perspective(800px) 
+        translateX(0px) 
+        translateY(-100px) 
+        translateZ(50px) 
+        rotateX(0deg) 
+        rotateY(-20deg) 
+        rotateZ(-0deg));
+      background: $device-background;
+      border-radius: 2em;
+      box-shadow: 
+        1px 0px lighten($device-backside-background, 20), 
+        4px 0px lighten($device-backside-background, 2),
+        7px 0px $device-backside-background,
+        10px 0px $device-backside-background,
+        13px 0px $device-backside-background;
+      display: block;
+      float: right;
+      margin-bottom: -12em;
+      margin-right: 5em;
+      padding: $device-padding-vertical 0;
+      width: $device-screen-width + (2 * $device-padding-horizontal);
+      z-index: 99999;
+
+      .screen {
+        @include size($device-screen-width $device-screen-height);
+        background-image: url($device-screen-image);
+        background-size: cover;
+        border-radius: .2em;
+        box-shadow: inset 0 1px 8px transparentize(black, .5);
+        margin: auto;
+      }
+    }
+  }
+}
+
+@import 'bourbon';
+
+.js-fade-element-hide {
+  opacity: 0;
+}
+
+.js-fade-element-show {
+  @include transition (all 0.4s ease-in-out);
+  opacity: 1;
+}
+// @import 'bourbon';
+// @import 'neat';
+// @import 'variables';
+
+.hero {  
+  ///////////////////////////////////////////////////////////////////////////////////
+  $base-border-radius: 3px !default;
+  $base-accent-color: #477DCA !default;
+  $large-screen: em(860) !default;
+  -webkit-font-smoothing: antialiased;
+
+  button {
+    -webkit-font-smoothing: antialiased;
+  }
+  //////////////////////////////////////////////////////////////////////////////////
+
+  $hero-background-top: #7F99BE; 
+  $hero-background-bottom: #20392B;
+  $hero-color: $darkGray;
+  $gradient-angle: 10deg;
+  $hero-image: 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png';
+
+  // @include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
+  background-color: $color2;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 3em;
+  margin-top: -1px;
+
+  .hero-logo img {
+    height: 4em;
+    margin-bottom: 1em;
+  }
+
+  .hero-inner {
+    @include outer-container;
+    @include clearfix;
+    color: $hero-color;
+    margin: auto;
+    padding: 3.5em;
+    text-align: center;
+
+    .hero-copy {
+      text-align: center;
+      
+      h1 {
+        font-size: 1.6em;
+        margin-bottom: .5em;
+
+        @include media($large-screen) {
+          font-size: 3em;
+        }
+      }
+
+      p {
+        font-weight: 200;
+        line-height: 1.4em;
+        margin: 0 auto 0em auto; 
+
+        @include media($large-screen) {
+          font-size: 1.1em;
+          max-width: 75%;
+        }
+      }
+    }
+      button {
+        @include button(flat, $lightGray);
+        padding: 1em 2em;
+        a {
+          color: $color2;
+        }
+      }
+  }
+}
+
+@import 'breakpoints';
+@import 'variables';
+@import 'bourbon';
+@import 'mixins';
+
+.hover-tile-outer {
+  ///////////////////////////////////////////////////////////////////////////////////
+  $base-border-color: gainsboro !default;
+  $base-line-height: 1.5em !default;
+  $medium-screen: em(640) !default;
+  
+  h4 {
+    margin: 0;
+  }
+
+  p {
+    line-height: $base-line-height;
+  }
+  //////////////////////////////////////////////////////////////////////////////////
+
+  $hover-tile-height: 10em;
+
+  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png");
+  background-position: top;
+  background-size: cover;
+  background-color: beige;
+  border: 1px solid $base-border-color;
+  cursor: pointer;
+  height: $hover-tile-height;
+  margin-bottom: $base-line-height;
+  
+  @include media($medium-screen) {
+    width: 40%;
+  }
+
+  .hover-tile-container {
+    height: $hover-tile-height;
+    overflow: hidden;
+  }
+
+  .hover-tile-container:hover > .hover-tile {
+    @include transform(translate(0, -100%));
+  }
+
+  .hover-tile {
+    @include transition(all, 0.2s ease-in-out);
+    background: inherit;
+    color: white;
+    height: inherit;
+    overflow: hidden;
+    padding: $base-spacing;
+  }
+
+  .hover-tile-hidden {
+    background: transparentize(#000, 0.5);
+
+    p {
+      color: transparentize(#fff, 0.3);
+    }
+
+    h4 {
+      margin-bottom: 0.5em;
+    }
+  }
+}
+
+// @import 'breakpoints';
+
+#map_canvas {
+  height: 400px;
+  width: 100%;
+  @include mobile {
+    display: none;
+  }
+}
+
+#map_canvas img { 
+  max-width: none; // to prevent UI control bug
+}
+
+#map_canvas .content {
+  padding: 0 .5em 1em .5em;
+}
+
+#map_canvas .firstHeading {
+  font-size: 1em;
+  line-height: 1em;
+  font-weight: bold;
+  margin: 0;
+}
+
+#map_canvas #bodyContent p {
+  font-size: 1em;
+  margin: 0;
+}
+
+// @import 'variables';
+// @import 'bourbon';
+// @import 'neat';
+// @import 'variables';
+
+.modal {
+  ///////////////////////////////////////////////////////////////////////////////////
+  $base-border-color: gainsboro !default;
+  $base-border-radius: 3px !default;
+  $base-background-color: white !default;
+  $base-font-size: 1em !default;
+  $base-line-height: 1.5em !default;
+  $base-accent-color: #477DCA !default;
+  $dark-gray: #333 !default;
+  $light-gray: #DDD !default;
+  $medium-screen: em(640) !default;
+  $large-screen: em(860) !default;
+  $base-font-color: $dark-gray !default;
+
+  h1 {
+    margin: 0;
+  }
+
+  p {
+    color: $base-font-color;
+    line-height: $base-line-height;
+  }
+  //////////////////////////////////////////////////////////////////////////////////
+
+  $modal-padding: 1em;
+  $modal-background: $base-background-color;
+  $modal-close-color: $light-gray;
+  $modal-image-height: 135px;
+  $modal-image-width: $modal-image-height;
+  $modal-trigger-image-width: 300px;
+
+  label {
+    cursor: pointer;
+    margin-bottom: 0;
+    padding-top: 0.3em;
+  }
+
+  label img {
+    border-radius: $modal-trigger-image-width / 2;
+    display: block;
+    max-width: $modal-trigger-image-width;
+  }
+
+  .modal-state {
+    display: none;
+  }
+
+  .modal-trigger {
+    @include button(flat, $base-accent-color);
+    padding: 0.8em 1em;
+    text-align: center;
+  }
+
+  .modal-open {
+    overflow: hidden;
+  }
+
+  .modal-window { // overlay
+    @include transition(opacity 0.25s ease);
+    @include position(fixed, 0px 0px 0px 0px);
+    background: rgba(0,0,0, 0.85);
+    opacity: 0;
+    padding-top: 0.6em;
+    text-align: left;
+    visibility: hidden;
+    z-index: 99999999999;
+
+    @include media($medium-screen) {
+      padding-top: 3em;
+    }
+
+    // @include media($large-screen) {
+    //   padding-top: 5em;
+    // }
+
+    .modal-bg {
+      @include position(absolute, 0px 0px 0px 0px);
+      cursor: pointer;
+    }
+  }
+
+  .modal-close {
+    @include position(absolute, ($modal-padding /2) ($modal-padding /2) null null);
+    @include size(1.5em);
+    background: $modal-background;
+    cursor: pointer;
+
+    &:after,
+    &:before {
+      @include position(absolute, 3px 3px 0 50%);
+      @include transform(rotate(45deg));
+      @include size(0.15em 1.5em);
+      background: $modal-close-color;
+      content: '';
+      display: block;
+      margin: -3px 0 0 -1px;
+    }
+
+    &:hover:after,
+    &:hover:before {
+      background: darken($modal-close-color, 10%);
+    }
+
+    &:before {
+      @include transform(rotate(-45deg));
+    }
+  }
+
+  .modal-inner {
+    @include transition(opacity 0.25s ease);
+    background: $modal-background;
+    border-radius: $base-border-radius;
+    margin-top: 0;
+    margin: auto;
+    max-height: 95%;
+    overflow: auto;
+    padding: $modal-padding / 2;
+    position: relative;
+    width: 95%;
+
+    @include media($medium-screen) {
+      max-height: 95%;
+      padding: $modal-padding;
+      width: 85%;
+    }
+
+    @include media($large-screen) {
+      width: 55%;
+      max-height: 95%
+    }
+
+    h1 {
+      color: $base-font-color;
+      margin-bottom: 0.6em;
+      text-align: left;
+      text-transform: capitalize;
+    }
+
+    .modal-intro {
+      font-weight: 800;
+    }
+
+    .modal-content {
+      color: $base-font-color;
+
+      @include media($medium-screen) {
+        @include columns(2 8em);
+      }
+    }
+
+    a.cta {
+      color: white;
+      display: inline-block;
+      margin-right: 0.5em;
+      margin-top: 1em;
+
+      &:last-child {
+        padding: 0 2em;
+      }
+    }
+  }
+
+  .modal-state:checked + .modal-window {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .modal-state:checked + .modal-window .modal-inner {
+    top: 0.5em;
+  }
+}
+
+// Based on code by Kasper Mikiewicz
+
+// @import 'variables';
+// @import 'bourbon';
+// @import 'neat';
+// @import 'mixins';
+// @import 'variables';
+
+header.navigation {
+  ///////////////////////////////////////////////////////////////////////////////////
+  $base-border-color: gainsboro !default;
+  $base-border-radius: 3px !default;
+  $base-accent-color: #477DCA !default;
+  $dark-gray: #333 !default;
+  $large-screen: em(860) !default;
+  
+  a {
+    text-decoration: none;
+  }
+  //////////////////////////////////////////////////////////////////////////////////
+
+  $navigation-padding: 1em;
+  $navigation-background: $dark-gray;
+  $navigation-color: transparentize(white, 0.3);
+  $navigation-color-hover: white;
+  $navigation-height: 60px;
+  $navigation-nav-button-background: $base-accent-color;
+  $navigation-nav-button-background-hover: lighten($navigation-background, 10%);
+  $navigation-nav-button-border: 1px solid lighten($navigation-nav-button-background, 20%);
+  $navigation-search-background: lighten($navigation-background, 5);
+  $navigation-search-border: 1px solid darken($navigation-background, 5);
+  $navigation-active-link-color: transparentize(white, 0.5);
+  $navigation-submenu-padding: 1em;
+  $navigation-submenu-width: 12em;
+  $horizontal-bar-mode: $large-screen;
+
+  background-color: $navigation-background;
+  border-bottom: 1px solid darken($navigation-background, 10);
+  min-height: $navigation-height;
+  width: 100%;
+  z-index: 999;
+
+  .navigation-wrapper {
+    @include clearfix;
+    @include outer-container;
+    position: relative;
+    z-index: 9999;
+  }
+
+  .logo {
+    float: left;
+    max-height: $navigation-height;
+    padding-left: $navigation-padding;
+    padding-right: 1em;
+    @include mobile {
+      float: none;
+      text-align: center;
+    }
+    .title {
+      position: relative;
+      top: -16px;
+      font-size: 2.6em;
+      font-variant: small-caps;
+      font-style: oblique;
+      @include mobile {
+        top: -20px;
+        height: 30px;
+      }
+    }
+    img {
+      max-height: $navigation-height;
+      padding: 0.8em 0;
+    }
+  }
+
+  // Mobile view
+
+  .navigation-menu-button {
+    color: $navigation-color;
+    display: block;
+    float: right;
+    font-weight: 700;
+    line-height: $navigation-height;
+    margin: 0;
+    padding-right: 1em;
+    text-transform: uppercase;
+    @include mobile {
+      float: none;
+      text-align: center;
+    }
+
+    @include media ($horizontal-bar-mode) {
+      display: none;
+    }
+
+    &:focus,
+    &:hover {
+      color: $navigation-color-hover;
+    }
+  }
+
+  // Nav menu
+
+  nav {
+    float: none;
+    // min-height: $navigation-height;
+    z-index: 9999999;
+
+    @include media ($horizontal-bar-mode) {
+      float: left;
+    }
+  }
+
+//   ul.navigation-menu {
+//     -webkit-transform-style: preserve-3d; // stop webkit flicker
+//     clear: both;
+//     display: none;
+//     margin: 0 auto;
+//     overflow: visible;
+//     padding: 0;
+//     width: 100%;
+//     z-index: 9999;
+
+//     &.show {
+//       display: block;
+//     }
+
+//     @include media ($horizontal-bar-mode) {
+//       display: inline;
+//       margin: 0;
+//       padding: 0;
+//     }
+//   }
+
+//   // The nav items
+
+//   ul li.nav-link {
+//     background: $navigation-background;
+//     display: block;
+//     line-height: $navigation-height;
+//     overflow: hidden;
+//     padding-right: 0.8em;
+//     text-align: center;
+//     width: 100%;
+//     z-index: 9999;
+
+//     @include media ($horizontal-bar-mode) {
+//       background: transparent;
+//       display: inline;
+//       line-height: $navigation-height;
+//       text-decoration: none;
+//       width: auto;
+//     }
+
+//     a {
+//       color: $navigation-color;
+//       display: inline-block;
+//       font-weight: 400;
+
+//       @include media ($horizontal-bar-mode) {
+//         padding-right: 1em;
+//       }
+
+//       &:focus,
+//       &:hover {
+//         color: $navigation-color-hover;
+//       }
+//     }
+//   }
+
+//   .active-nav-item a {
+//     border-bottom: 1px solid $navigation-active-link-color;
+//     padding-bottom: 3px;
+//   }
+
+//   // Sub menus
+
+//   li.more.nav-link {
+//     padding-right: 0;
+
+//     @include media($large-screen) {
+//       padding-right: $navigation-submenu-padding;
+//     }
+
+//     > ul > li:first-child a  {
+//       padding-top: 1em;
+//     }
+
+//     a {
+//       margin-right: $navigation-submenu-padding;
+//     }
+
+//     > a {
+//       padding-right: 0.6em;
+//     }
+
+//     > a:after {
+//       @include position(absolute, auto -0.4em auto auto);
+//       content: '\25BE';
+//       color: $navigation-color;
+//     }
+//   }
+
+//   li.more {
+//     overflow: visible;
+//     padding-right: 0;
+
+//     a {
+//       padding-right: 0.8em;
+//     }
+
+//     > a {
+//       padding-right: 1.6em;
+//       position: relative;
+
+//       @include media($large-screen) {
+//         margin-right: $navigation-submenu-padding;
+//       }
+
+//       &:after {
+//         content: '›';
+//         font-size: 1.2em;
+//         position: absolute;
+//         right: $navigation-submenu-padding / 2;
+//       }
+//     }
+
+//     &:focus > .submenu,
+//     &:hover > .submenu {
+//       display: block;
+//     }
+
+//     @include media($horizontal-bar-mode) {
+//       padding-right: 0.8em;
+//       position: relative;
+//     }
+//   }
+
+//   ul.submenu {
+//     display: none;
+//     padding-left: 0;
+
+//     @include media($horizontal-bar-mode) {
+//       left: -$navigation-submenu-padding;
+//       position: absolute;
+//       top: 1.5em;
+//     }
+
+//     .submenu {
+//       @include media($horizontal-bar-mode) {
+//         left: $navigation-submenu-width - 0.2em;
+//         top: 0;
+//       }
+//     }
+
+//     li {
+//       display: block;
+//       padding-right: 0;
+
+//       @include media($horizontal-bar-mode) {
+//         line-height: $navigation-height / 1.3;
+
+//         &:first-child > a {
+//           border-top-left-radius: $base-border-radius;
+//           border-top-right-radius: $base-border-radius;
+//         }
+
+//         &:last-child > a {
+//           border-bottom-left-radius: $base-border-radius;
+//           border-bottom-right-radius: $base-border-radius;
+//           padding-bottom: 0.7em;
+//         }
+//       }
+
+//       a {
+//         background-color: darken($navigation-background, 3%);
+//         display: inline-block;
+//         text-align: right;
+//         width: 100%;
+
+//         @include media($horizontal-bar-mode) {
+//           background-color: $navigation-background;
+//           padding-left: $navigation-submenu-padding;
+//           padding-right: $navigation-submenu-padding;
+//           text-align: left;
+//           width: $navigation-submenu-width;
+//         }
+//       }
+//     }
+//   }
+
+//   // Elements on the far right
+
+//   .navigation-tools {
+//     background: #505050;
+//     clear: both;
+//     display: block;
+//     height: $navigation-height;
+//     padding-left: $navigation-padding / 2;
+//     padding-right: $navigation-padding;
+
+//     @include media($large-screen) {
+//       background: transparent;
+//       clear: none;
+//       float: right;
+//     }
+//   }
+
+//   .sign-up {
+//     @include button(flat, $base-accent-color);
+//     display: inline;
+//     float: right;
+//     font-size: 0.8em;
+//     margin-top: 1em;
+//     padding: 0.75em 1em;
+//     text-transform: uppercase;
+//   }
+
+//   // Search bar
+
+//   .search-bar {
+//     $search-bar-border-color: $base-border-color;
+//     $search-bar-border: 1px solid $search-bar-border-color;
+//     $search-bar-background: lighten($search-bar-border-color, 10%);
+
+//     float: left;
+//     padding: 0.85em 0.6em 0.7em 0.6em;
+//     width: 60%;
+
+//     form {
+//       position: relative;
+
+//       input[type=search] {
+//         @include box-sizing(border-box);
+//         background: $navigation-search-background;
+//         border-radius: $base-border-radius * 2;
+//         border: $navigation-search-border;
+//         color: $navigation-color;
+//         font-size: 0.9em;
+//         font-style: italic;
+//         margin: 0;
+//         padding: 0.5em 0.8em;
+//         width: 100%;
+
+//         @include media($large-screen) {
+//           width: 100%;
+//         }
+//       }
+
+//       button[type=submit] {
+//         @include button(flat, $navigation-search-background);
+//         bottom: 0.3em;
+//         left: auto;
+//         outline: none;
+//         padding: 0 9px;
+//         position: absolute;
+//         right: 0.3em;
+//         top: 0.3em;
+
+//         img {
+//           height: 12px;
+//           opacity: 0.7;
+//           padding: 1px;
+//         }
+//       }
+//     }
+
+//     @include media($horizontal-bar-mode) {
+//       display: inline-block;
+//       position: relative;
+//       width: 16em;
+
+//       input {
+//         @include box-sizing(border-box);
+//         display: block;
+//       }
+//     }
+//   }
+}
+
+.twitter-btn {
+  float: right;
+  margin-top: 17px;
+}
+
+.sliding-menu-content {  
+  ///////////////////////////////////////////////////////////////////////////////////
+  $base-accent-color: #477DCA !default;
+  $dark-gray: #333 !default;
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  //////////////////////////////////////////////////////////////////////////////////
+
+  $sliding-menu-border-color: $dark-gray;
+  $sliding-menu-background: lighten($sliding-menu-border-color, 5%);
+  $sliding-menu-color: #fff;
+  $sliding-menu-border: 1px solid $sliding-menu-border-color;
+  $sliding-menu-background-hover: $base-accent-color;
+  $sliding-menu-color-hover: #fff;
+  $sliding-menu-background-focus: lighten($sliding-menu-background, 5%);
+
+  @include position(fixed, 0px auto 0px 0px);
+  @include size(220px 100%);
+  @include transform(translateX(-220px));
+  @include transition(all 0.25s linear);
+  background: $sliding-menu-background;
+  z-index: 999999;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+
+  li a {
+    border-bottom: $sliding-menu-border;
+    color: $sliding-menu-color;
+    display: block;
+    font-weight: bold;
+    padding: 1em;
+
+    &:focus {
+      background-color: $sliding-menu-background-focus;
+    }
+
+    &:hover {
+      background-color: $sliding-menu-background-hover;
+      color: $sliding-menu-color-hover;
+    }
+  }
+
+  &.is-visible {
+    @include transform(translateX(0));
+  }
+}
+
+.sliding-menu-fade-screen {
+  @include position(fixed, 0px 0px 0px 0px);
+  @include transition;
+  background: black;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999998;
+
+  &.is-visible {
+    opacity: 0.4;
+    visibility: visible;
+  }
+}
+
+.sliding-menu-button {
+  @include button(flat, #477DCA);
+  padding: 10px 16px;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+
+  img {
+    height: 1.3em;
+  }
+}
+
+// Based on code by Diego Eis
