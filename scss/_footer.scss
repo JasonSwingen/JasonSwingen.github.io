@@ -3,6 +3,23 @@
 // @import 'bourbon';
 // @import 'mixins';
 
+.flexparent {
+  @include clearfix;
+  @include flexbox;
+  @include justify-content(space-around);
+  @include align-items(stretch);
+  @include flex-wrap(wrap);
+  @include flex-direction(row);
+  margin: 2em 0.4em;
+  .flexkid {
+    p {
+      color: $white;
+      margin-top: 2em;
+    }
+  }
+}
+
+
 .wrapper-footer {
   margin-top: -50px;
   border-top: 1px solid #ddd;
@@ -24,15 +41,32 @@ footer {
 
 .totop {
   list-style-type: none;
-  float: right;
-  margin: 20px;
-  @include mobile {
-    margin: 0px 40px 20px;
-    float: none;
-    text-align: center;
+  margin: 1em;
+  position: fixed;
+  bottom: 0em;
+  right: 0em;
+  opacity: 0.5;
+  display: none;
+  &:hover {
+    opacity: 1;
   }
+  @include mobile {
+    margin: 0em 0.4em 0.4em 0em;
+  }
+}
+
+.appear {
+  @include transition(all, 0.8s, $ease-out-back);
+  @include animation(slideup 1s);
+  display: block;
 }
 
 .custom-icon {
   margin: 0px 10px;
+  height: 98px !important;
+  width: 98px !important;
+  @include mobile {
+    height: 50px !important;
+    width: 50px !important;
+  }
 }
