@@ -47,7 +47,7 @@ $(document).ready(function($) { // Start of Document Ready Javascript
     });
   });
 
-  $(".post").hover(
+  $(".articles").hover(
     function () {
       $(this).addClass("posthover");
     },
@@ -55,6 +55,15 @@ $(document).ready(function($) { // Start of Document Ready Javascript
       $(this).removeClass("posthover");
     }
   );
+
+  $(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+      if (scroll >= 1400) {
+          $(".totop").addClass("appear");
+      } else {
+          $(".totop").removeClass("appear");
+      }
+  });
 
   // Menu Toggle
   $('body').addClass('js');
