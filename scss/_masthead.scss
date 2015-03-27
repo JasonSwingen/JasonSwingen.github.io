@@ -185,15 +185,13 @@ nav[role=navigation] li a {
 }
 
 .flexmom {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: stretch;
-  justify-content: flex-start;
-  justify-content: space-around;
+  @include clearfix;
+  @include flexbox;
+  @include justify-content(space-around);
+  @include align-content(stretch);
+  @include align-items(stretch);
+  @include flex-wrap(wrap);
+  @include flex-direction(row);
   @include mobile {
     height: 100%;
     flex-direction: column;
