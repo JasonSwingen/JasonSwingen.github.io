@@ -63,7 +63,7 @@ permalink: /contact/
       <li class="form-line" data-type="control_button" id="id_6">
         <div id="cid_6" class="form-input-wide">
           <div style="margin-left:156px" class="form-buttons-wrapper">
-            <button id="input_6" type="submit" class="form-submit-button">
+            <button type="submit">
               Submit
             </button>
           </div>
