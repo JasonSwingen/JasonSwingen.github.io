@@ -1,35 +1,35 @@
 module.exports = function(grunt) {
 	grunt.initConfig({
 		
-		// concat: {                             // Task 
-	 //    scss: {
-	 //      src: ['scss/_reset.scss',
-	 //      			'scss/_variables.scss',
-	 //      			'plugins/bourbon/addons/_prefixer.scss',
-	 //      			'plugins/bourbon/*.scss',
-	 //      			'plugins/neat/*.scss',
-	 //      			'plugins/neat/**/*.scss',
-	 //      			'plugins/base/*.scss',
-	 //      			'plugins/base/**/*.scss',
-	 //      			'scss/_main.scss',
-		// 					'scss/_clearfix.scss',
-	 //      			'scss/_mixins.scss',
-	 //      			'scss/_breakpoints.scss',
-	 //      			'scss/_masthead.scss',
-	 //      			'scss/_parallax.scss',
-	 //      			'scss/_flex.scss',
-	 //      			'scss/_post.scss',
-	 //      			'scss/_page.scss',
-	 //      			'scss/_youtube.scss',
-		// 					'scss/_footer.scss',
-	 //      			'scss/_bullets.scss',
-	 //      			'scss/_contact.scss',
-	 //      			'scss/_tip-up.scss',
-	 //      			'scss/_highlights.scss',
-	 //      			'scss/*.scss'],
-	 //      dest: 'build/scss/styles.scss',
-	 //    },
-		// },
+		concat: {                             // Task 
+	    scss: {
+	      src: ['scss/_reset.scss',
+	      			'scss/_variables.scss',
+	      			'plugins/base/*.scss',
+	      			'plugins/base/**/*.scss',
+	      			'plugins/bourbon/*.scss',
+	      			'plugins/bourbon/**/*.scss',
+	      			'plugins/neat/*.scss',
+	      			'plugins/neat/**/*.scss',
+	      			'scss/_main.scss',
+							'scss/_clearfix.scss',
+	      			'scss/_mixins.scss',
+	      			'scss/_breakpoints.scss',
+	      			'scss/_masthead.scss',
+	      			'scss/_parallax.scss',
+	      			'scss/_flex.scss',
+	      			'scss/_post.scss',
+	      			'scss/_page.scss',
+	      			'scss/_youtube.scss',
+							'scss/_footer.scss',
+	      			'scss/_bullets.scss',
+	      			'scss/_contact.scss',
+	      			'scss/_tip-up.scss',
+	      			'scss/_highlights.scss',
+	      			'scss/*.scss'],
+	      dest: 'build/scss/styles.scss',
+	    },
+		},
 
 		sass: {                              // Task 
 			dist: {                            // Target 
@@ -37,7 +37,7 @@ module.exports = function(grunt) {
 			    style: 'compressed'
 			  },
 			  files: {                         // Dictionary of files 
-			    'build/css/*.css': 'scss/*.scss'     // 'destination': 'source' 
+			    'build/css/styles.css': 'build/scss/styles.scss'     // 'destination': 'source' 
 			  }
 			}
 		}
@@ -82,10 +82,10 @@ module.exports = function(grunt) {
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-sass');
-	// grunt.loadNpmTasks('grunt-contrib-uglify');
-	// grunt.loadNpmTasks('grunt-jekyll');
-	// grunt.loadNpmTasks('grunt-contrib-watch');
-	// grunt.loadNpmTasks('grunt-contrib-concat');
+	grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-jekyll');
+	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-concat');
 	 
 	grunt.registerTask('default', ['sass']);
 	// grunt.registerTask('default', ['concat', 'sass', 'watch', 'uglify', 'jshint', 'jekyll']);
