@@ -1,0 +1,69 @@
+/*
+Error: Undefined mixin 'appearance'.
+        on line 113 of build/scss/styles.scss, in `appearance'
+        from line 113 of build/scss/styles.scss
+
+108: 
+109: 
+110: button,
+111: input[type="submit"] {
+112:   @extend %button;
+113:   @include appearance(none);
+114:   border: none;
+115:   cursor: pointer;
+116:   user-select: none;
+117:   vertical-align: middle;
+118:   white-space: nowrap;
+
+Backtrace:
+build/scss/styles.scss:113:in `appearance'
+build/scss/styles.scss:113
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:348:in `block in visit_mixin'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/stack.rb:98:in `block in with_mixin'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/stack.rb:98:in `with_mixin'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:346:in `visit_mixin'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `map'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:157:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/engine.rb:285:in `render_with_sourcemap'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/exec/sass_scss.rb:407:in `run'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/bin/sass:13:in `<top (required)>'
+C:/Ruby193/bin/sass:23:in `load'
+C:/Ruby193/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'appearance'.\A         on line 113 of build/scss/styles.scss, in `appearance'\A         from line 113 of build/scss/styles.scss\A \A 108: \A 109: \A 110: button,\A 111: input[type=\"submit\"] {\A 112:   @extend %button;\A 113:   @include appearance(none);\A 114:   border: none;\A 115:   cursor: pointer;\A 116:   user-select: none;\A 117:   vertical-align: middle;\A 118:   white-space: nowrap;"; }
