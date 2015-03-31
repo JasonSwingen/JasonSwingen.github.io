@@ -58,26 +58,26 @@ $(document).ready(function($) { // Start of Document Ready Javascript
   );
 
   // Elements appear after scroll down
-  $(window).scroll(function() {    
-    var scroll = $(window).scrollTop();
-      if (scroll >= 1600) {
-        $(".totop").addClass("appear");
-      } else {
-        $(".totop").removeClass("appear");
-      }
-  });
+  // $(window).scroll(function() {    
+  //   var scroll = $(window).scrollTop();
+  //     if (scroll >= 1600) {
+  //       $(".totop").addClass("appear");
+  //     } else {
+  //       $(".totop").removeClass("appear");
+  //     }
+  // });
 
   // Elements appear on scroll up or scroll down
-  // var position = $(window).scrollTop();
-  // $(window).scroll(function() {
-  //   var scroll = $(window).scrollTop();
-  //     if(scroll > position) {
-  //       $(".totop").removeClass("appear");
-  //     } else {
-  //       $(".totop").addClass("appear");
-  //     }
-  //     position = scroll;
-  // });
+  var position = $(window).scrollTop();
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+      if(scroll > position && scroll <= 1600) {
+        $(".totop").removeClass("appear");
+      } else {
+        $(".totop").addClass("appear");
+      }
+      position = scroll;
+  });
 
   // Menu Toggle
   $('body').addClass('js');
