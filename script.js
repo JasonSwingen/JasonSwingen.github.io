@@ -1,6 +1,6 @@
 $(document).ready(function($) { // Start of Document Ready Javascript
 
-  // Animate the scroll to top
+  // Animated scroll to top
   $('.totop').click(function(event){
     event.preventDefault();
     $('html, body').animate({scrollTop: 0}, 900)
@@ -22,31 +22,32 @@ $(document).ready(function($) { // Start of Document Ready Javascript
     });
   });
 
-  //Fade In
-  $(function() {
-    var element = document.getElementById("js-fadeInElement");
-    $(element).addClass('js-fade-element-hide');
+  // Fade In element
+  // $(function() {
+  //   var element = document.getElementById("js-fadeInElement");
+  //   $(element).addClass('js-fade-element-hide');
 
-    $(window).scroll(function() {
-      if( $("#js-fadeInElement").length > 0 ) {
-        var elementTopToPageTop = $(element).offset().top;
-        var windowTopToPageTop = $(window).scrollTop();
-        var windowInnerHeight = window.innerHeight;
-        var elementTopToWindowTop = elementTopToPageTop - windowTopToPageTop;
-        var elementTopToWindowBottom = windowInnerHeight - elementTopToWindowTop;
-        var distanceFromBottomToAppear = 300;
+  //   $(window).scroll(function() {
+  //     if( $("#js-fadeInElement").length > 0 ) {
+  //       var elementTopToPageTop = $(element).offset().top;
+  //       var windowTopToPageTop = $(window).scrollTop();
+  //       var windowInnerHeight = window.innerHeight;
+  //       var elementTopToWindowTop = elementTopToPageTop - windowTopToPageTop;
+  //       var elementTopToWindowBottom = windowInnerHeight - elementTopToWindowTop;
+  //       var distanceFromBottomToAppear = 300;
 
-        if(elementTopToWindowBottom > distanceFromBottomToAppear) {
-          $(element).addClass('js-fade-element-show');
-        }
-        else if(elementTopToWindowBottom < 0) {
-          $(element).removeClass('js-fade-element-show');
-          $(element).addClass('js-fade-element-hide');
-        }
-      }
-    });
-  });
+  //       if(elementTopToWindowBottom > distanceFromBottomToAppear) {
+  //         $(element).addClass('js-fade-element-show');
+  //       }
+  //       else if(elementTopToWindowBottom < 0) {
+  //         $(element).removeClass('js-fade-element-show');
+  //         $(element).addClass('js-fade-element-hide');
+  //       }
+  //     }
+  //   });
+  // });
 
+  // Add posthover (color and box-shadow)
   $(".articles").hover(
     function () {
       $(this).addClass("posthover");
@@ -56,44 +57,52 @@ $(document).ready(function($) { // Start of Document Ready Javascript
     }
   );
 
+  // Elements appear after scroll down
   $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
-      if (scroll >= 1400) {
-          $(".totop").addClass("appear");
+      if (scroll >= 1600) {
+        $(".totop").addClass("appear");
       } else {
-          $(".totop").removeClass("appear");
+        $(".totop").removeClass("appear");
       }
   });
+
+  // Elements appear on scroll up or scroll down
+  // var position = $(window).scrollTop();
+  // $(window).scroll(function() {
+  //   var scroll = $(window).scrollTop();
+  //     if(scroll > position) {
+  //       $(".totop").removeClass("appear");
+  //     } else {
+  //       $(".totop").addClass("appear");
+  //     }
+  //     position = scroll;
+  // });
 
   // Menu Toggle
   $('body').addClass('js');
   var $menu = $('#menu'),
     $menulink = $('.menu-link');
-  
   $menulink.click(function() {
     $menulink.toggleClass('active');
     $menu.toggleClass('active');
     return false;
   });
-
   addEventListener( "click", function() {
     this.classList.toggle( "active" );
   });
 
   // Parallax
-
   $(function() {
     if ($("#js-parallax-window").length) {
       parallax();
     }
   });
-
   $(window).scroll(function(e) {
     if ($("#js-parallax-window").length) {
       parallax();
     }
   });
-
   function parallax(){
     if( $("#js-parallax-window").length > 0 ) {
       var plxBackground = $("#js-parallax-background");
