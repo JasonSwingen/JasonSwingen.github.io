@@ -41,6 +41,19 @@ layout: default
       <a href="https://twitter.com/share" class="twitter-share-button" data-via="jasonswingen">Tweet</a>
       <g:plusone size="medium"></g:plusone>
     </div>
-    {% include disqus.html disqus_identifier=page.disqus_identifier %}
   </article>
+
+  <div class="post">
+    <div class="socialmedia">
+      <div class="share facebook"><img src="http://www.clipartbest.com/cliparts/xTg/o5r/xTgo5rLXc.svg" alt="" /></div>
+      <div class="share google">Google</div>
+      <div class="share twitter">{% if site.footer-links.twitter %}<a href="http://twitter.com/{{ site.footer-links.twitter }}">{% include svg/twitter.svg %}</a>{% endif %}</div>
+      <div class="share pinterest">Pinterest</div>
+    </div>
+  </div>
+
+  <div class="post">
+    {% include disqus.html disqus_identifier=page.disqus_identifier %}
+  </div>
+
 </div>
