@@ -1,9 +1,9 @@
-$flex-box-border-color: $light-gray;
+$flex-box-border-color: $lightGray;
 $flex-box-border: 1px solid $flex-box-border-color;
 $flex-box-background: $white;
 $flex-box-gutter: .4em;
 $flex-box-width: 18em;
-$flex-box-color: transparentize($base-font-color, .1);
+$flex-box-color: transparentize($gray, .1);
 
 .title {
   margin: 0 auto;

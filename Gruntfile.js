@@ -34,10 +34,12 @@ module.exports = function(grunt) {
 		sass: {                              // Task 
 			dist: {                            // Target 
 			  options: {                       // Target options 
+			  	loadPath: require('node-bourbon').includePaths,
+			  	loadPath: require('node-neat').includePaths,
 			    style: 'compressed'
 			  },
 			  files: {                         // Dictionary of files 
-			    'build/css/styles.css': 'build/scss/styles.scss'     // 'destination': 'source' 
+			    'build/css/styles.css': 'style.scss'     // 'destination': 'source' 
 			  }
 			}
 		}
