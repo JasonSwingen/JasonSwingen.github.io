@@ -1,12 +1,13 @@
 module.exports = function(grunt) {
 	grunt.initConfig({
+		// Gathers information from package.json
 		pkg: grunt.file.readJSON('package.json'),
-		// JSHINT
+		// JSHINT - Checks javascript for errors
 		jshint: {
 			PreUglify: ['script.js'],
 			PostUglify: ['build/js/script.min.js']
 	  },
-		// UGLIFY
+		// UGLIFY - compresses javascript
 		uglify: {                            // Task 
     	my_target: {                       // Target 
     		options: {                       // Target options 
@@ -32,49 +33,56 @@ module.exports = function(grunt) {
 			  }
 			}
 		},
-
-	  // jekyll: {                             // Task 
-	  //   options: {                          // Universal options 
-	  //     bundleExec: true,
-	  //     src : '<%= app %>'
-	  //   },
-	  //   dist: {                             // Target 
-	  //     options: {                        // Target options 
-	  //       dest: '<%= dist %>',
-	  //       config: '_config.yml,_config.build.yml'
-	  //     }
-	  //   },
-	  //   serve: {                            // Another target 
-	  //     options: {
-	  //       dest: '.jekyll',
-	  //       drafts: true
-	  //     }
-	  //   }
-	  // },
-
+		//JEKYLL - Builds site and runs a jekyll server
+	  jekyll: {  
+	  	server: {
+	  		source: '/',
+	  		destination: '/_gruntsite',
+	  		server: 'true',
+	  		server_port: 4000,
+	  		auto: 'true'
+	  	},                         // Task 
+	    options: {                          // Universal options 
+	      bundleExec: true,
+	      source : '<%= app %>'
+	    },
+	    dist: {                             // Target 
+	      options: {                        // Target options 
+	        destination: '<%= dist %>',
+	        config: '_config.yml,_config.build.yml'
+	      }
+	    },
+	    serve: {                            // Another target 
+	      options: {
+	        destination: '.jekyll',
+	        drafts: true
+	      }
+	    }
+	  },
 	 	// WATCH - watches files for changes
-	 //  watch: {                             // Task 
-		//   js: {
-		//     files: ['script.js'],
-		//     tasks: ['jshint'],
-		//     options: {
-		//       spawn: false,
-		//     }
-		//   site: {
-		//     files: ['*.html', '_layouts/*.html', ''],
-		//     tasks: [''],
-		//     options: {
-		//       spawn: false,
-		//     }
-		//   css: {
-		//     files: ['scss/*.scss'],
-		//     tasks: ['sass'],
-		//     options: {
-		//       spawn: false,
-		//     }
-		//   }
-		// },
-	
+	  watch: {                             // Task 
+		  js: {
+		    files: ['script.js'],
+		    tasks: ['jshint:PreUglify', 'uglify'],
+		    options: {
+		      spawn: false,
+	    	}
+	    },
+		  site: {
+		    files: ['/*.html', '_layouts/*.html'],
+		    tasks: [''],
+		    options: {
+		      spawn: false,
+		    }
+		  },
+		  css: {
+		    files: ['scss/*.scss', 'style.scss'],
+		    tasks: ['sass'],
+		    options: {
+		      spawn: false,
+		    }
+		  }
+		}
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-sass');
@@ -84,6 +92,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	// grunt.loadNpmTasks('grunt-contrib-concat');
 	 
-	grunt.registerTask('default', ['jshint:PreUglify', 'uglify', 'sass']);
+	grunt.registerTask('default', ['jshint:PreUglify', 'uglify', 'sass', 'watch']);
 	// grunt.registerTask('default', ['concat', 'sass', 'watch', 'uglify', 'jshint', 'jekyll']);
 };
