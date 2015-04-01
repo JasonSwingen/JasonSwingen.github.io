@@ -9,6 +9,11 @@
 @import 'scss/variables';
 
 /*****************/
+/* BREAKPOINTS   */
+/*****************/
+@import 'scss/breakpoints';
+
+/*****************/
 /* BOURBON       */
 /*****************/
 @import 'bourbon';
@@ -24,6 +29,11 @@
 // @import 'base';
 
 /*****************/
+/* MIXINS        */
+/*****************/
+@import 'scss/mixins';
+
+/*****************/
 /* MAIN          */
 /*****************/
 @import 'scss/main';
@@ -33,15 +43,6 @@
 /*****************/
 @import 'scss/clearfix';
 
-/*****************/
-/* MIXINS        */
-/*****************/
-@import 'scss/mixins';
-
-/*****************/
-/* BREAKPOINTS   */
-/*****************/
-@import 'scss/breakpoints';
 
 /*****************/
 /* FONTS         */
