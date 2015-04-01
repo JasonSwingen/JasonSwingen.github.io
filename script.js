@@ -3,7 +3,7 @@ $(document).ready(function($) { // Start of Document Ready Javascript
   // Animated scroll to top
   $('.totop').click(function(event){
     event.preventDefault();
-    $('html, body').animate({scrollTop: 0}, 900)
+    $('html, body').animate({scrollTop: 0}, 900);
   });
 
   // Smooth scrolling to sections
