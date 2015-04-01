@@ -1,36 +1,25 @@
 module.exports = function(grunt) {
 	grunt.initConfig({
-		
-		concat: {                             // Task 
-	    scss: {
-	      src: ['scss/_reset.scss',
-	      			'scss/_variables.scss',
-	      			'plugins/base/*.scss',
-	      			'plugins/base/**/*.scss',
-	      			'plugins/bourbon/*.scss',
-	      			'plugins/bourbon/**/*.scss',
-	      			'plugins/neat/*.scss',
-	      			'plugins/neat/**/*.scss',
-	      			'scss/_main.scss',
-							'scss/_clearfix.scss',
-	      			'scss/_mixins.scss',
-	      			'scss/_breakpoints.scss',
-	      			'scss/_masthead.scss',
-	      			'scss/_parallax.scss',
-	      			'scss/_flex.scss',
-	      			'scss/_post.scss',
-	      			'scss/_page.scss',
-	      			'scss/_youtube.scss',
-							'scss/_footer.scss',
-	      			'scss/_bullets.scss',
-	      			'scss/_contact.scss',
-	      			'scss/_tip-up.scss',
-	      			'scss/_highlights.scss',
-	      			'scss/*.scss'],
-	      dest: 'build/scss/styles.scss',
-	    },
-		},
-
+		pkg: grunt.file.readJSON('package.json'),
+		// JSHINT
+		jshint: {
+			PreUglify: ['script.js'],
+			PostUglify: ['build/js/script.min.js']
+	  },
+		// UGLIFY
+		uglify: {                            // Task 
+    	my_target: {                       // Target 
+    		options: {                       // Target options 
+  				sourceMap: 'build/js/script.min.js.map',
+  				banner: '/* Script created by Jason Swingen */',
+  				mangle: false
+    		},
+    	  files: {                         // Dictionary of files 
+      	  'build/js/script.min.js': 'script.js'     // 'destination': 'source' 
+      	}
+      }
+   	},
+		// SASS - compiles scss files
 		sass: {                              // Task 
 			dist: {                            // Target 
 			  options: {                       // Target options 
@@ -42,53 +31,59 @@ module.exports = function(grunt) {
 			    'build/css/styles.css': 'style.scss'     // 'destination': 'source' 
 			  }
 			}
-		}
+		},
 
-		// uglify: {                             // Task 
-  //   	my_target: {
-  //   	  files: {
-  //     	  'dest/output.min.js': ['src/input1.js', 'src/input2.js']
-  //     	},
-  //     },
-  //  	},
+	  // jekyll: {                             // Task 
+	  //   options: {                          // Universal options 
+	  //     bundleExec: true,
+	  //     src : '<%= app %>'
+	  //   },
+	  //   dist: {                             // Target 
+	  //     options: {                        // Target options 
+	  //       dest: '<%= dist %>',
+	  //       config: '_config.yml,_config.build.yml'
+	  //     }
+	  //   },
+	  //   serve: {                            // Another target 
+	  //     options: {
+	  //       dest: '.jekyll',
+	  //       drafts: true
+	  //     }
+	  //   }
+	  // },
 
-	 //  jekyll: {                             // Task 
-	 //    options: {                          // Universal options 
-	 //      bundleExec: true,
-	 //      src : '<%= app %>'
-	 //    },
-	 //    dist: {                             // Target 
-	 //      options: {                        // Target options 
-	 //        dest: '<%= dist %>',
-	 //        config: '_config.yml,_config.build.yml'
-	 //      }
-	 //    },
-	 //    serve: {                            // Another target 
-	 //      options: {
-	 //        dest: '.jekyll',
-	 //        drafts: true
-	 //      },
-	 //    },
-	 //  },
-
+	 	// WATCH - watches files for changes
 	 //  watch: {                             // Task 
-		//   scripts: {
-		//     files: ['**/*.js'],
+		//   js: {
+		//     files: ['script.js'],
 		//     tasks: ['jshint'],
 		//     options: {
 		//       spawn: false,
-		//     },
-		//   },
+		//     }
+		//   site: {
+		//     files: ['*.html', '_layouts/*.html', ''],
+		//     tasks: [''],
+		//     options: {
+		//       spawn: false,
+		//     }
+		//   css: {
+		//     files: ['scss/*.scss'],
+		//     tasks: ['sass'],
+		//     options: {
+		//       spawn: false,
+		//     }
+		//   }
 		// },
 	
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-sass');
+	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-jekyll');
 	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-contrib-concat');
+	// grunt.loadNpmTasks('grunt-contrib-concat');
 	 
-	grunt.registerTask('default', ['sass']);
+	grunt.registerTask('default', ['jshint:PreUglify', 'uglify', 'sass']);
 	// grunt.registerTask('default', ['concat', 'sass', 'watch', 'uglify', 'jshint', 'jekyll']);
 };
