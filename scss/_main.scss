@@ -66,20 +66,27 @@ p {
 
 button {
   -webkit-font-smoothing: antialiased;
-  background-color: $color1;
+  background-color: $white;
+  color: $color1;
   border-radius: $base-border-radius;
-  color: $white;
   display: inline-block;
-  font-size: $base-font-size;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border: 1px solid $color1;
   text-decoration: none;
   padding: .7em 1em;
   margin-top: 1em;
   cursor: pointer;
+  @include transition (all, 0.1s, ease-in-out);
   &:hover {
     @include box-shadow(0px, 5px, 16px, -6px, $gray);
+      border: 1px solid $color1;
+      background-color: $color1;
+      color: $white;
   }
   &:active {
     @include box-shadow(0px, -3px, 16px, -6px, $gray);
+    background-color: darken($color1, 10%);
   }
 }
 

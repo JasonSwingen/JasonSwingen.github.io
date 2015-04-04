@@ -71,7 +71,7 @@ $(document).ready(function($) { // Start of Document Ready Javascript
   var position = $(window).scrollTop();
   $(window).scroll(function() {
     var scroll = $(window).scrollTop();
-      if(scroll > position && scroll <= 1600) {
+      if(scroll <= 1600) {
         $(".totop").removeClass("appear");
       } else {
         $(".totop").addClass("appear");
