@@ -43,6 +43,9 @@ $flex-box-color: transparentize($gray, .1);
   @include flex-wrap(wrap);
   clear: both;
   text-align: center;
+  position: relative;
+  top: -7em;
+  margin-bottom: -11em;
   h1 {
     margin: 10px 0px;
     a {

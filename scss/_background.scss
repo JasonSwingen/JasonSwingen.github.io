@@ -1,0 +1,49 @@
+.fixedbackground {
+  background: url("/images/ft-peck.jpg");
+  height: 800px;
+  position: relative;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.parallax-static-content {
+  color: #9A9A8A;
+  padding: 6em 0;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  margin-bottom: -130px;
+  
+  h1 {
+	  font-size: 3em;
+	  margin: 0em .5em 1em;
+	  text-shadow: 2px 1px 4px #fff;
+
+	  @include mobile {
+	     font-size: 2em;
+	  }
+	}
+	p {
+	  font-size: 1.1em;
+	  font-weight: 100;
+	  line-height: 1.6em;
+	  margin: 0em 3em 4em;
+	  color: $white;
+
+	  @include mobile {
+	    margin: 0em 1em 2em;
+	  }
+	}
+}
+
+.downarrow {
+  margin: 0 auto 8em;
+  border-radius: 0px;
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid white;
+}
