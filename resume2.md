@@ -1,7 +1,7 @@
 ---
 layout: page
 title: My Resume
-permalink: /resume/
+permalink: /resume2/
 ---
 <div class="resume">
 	<h1>Summary</h1>
