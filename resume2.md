@@ -5,7 +5,7 @@ permalink: /resume2/
 ---
 <div class="resume">
 	<h1>Summary</h1>
-	<p>Though I have worked in multiple disciplines, my passion is front-end development. I am looking for a position that will allow me to continue growing in my skillset while providing modern and engaging websites.</p>
+	<p>Though I have worked in multiple disciplines, my passion is front-end development. I am looking for a position that will allow me to continue growing in my skillset while building and optimizing  modern and engaging websites.</p>
 	<h1>Experience</h1>
 	<section>
 		<aside>
@@ -61,10 +61,10 @@ permalink: /resume2/
 		<ul>
 			<li>Search Engine Optimization</li>
 			<li>Search Engine Marketing</li>
+			<li>Google and Microsoft Adwords</li>
 			<li>Social Media Marketing</li>
 			<li>Content Marketing</li>
 			<li>Google Analytics</li>
-			<li>Graphic Design</li>
 		</ul>
 	</article>
 	<aside>
@@ -75,9 +75,9 @@ permalink: /resume2/
 			<li>HTML5</li>
 			<li>CSS3 via SASS</li>
 			<li>jQuery / Javascript</li>
-			<li>Markup</li>
 			<li>Wordpress</li>
 			<li>Bootstrap</li>
+			<li>Markup</li>
 			<li>Json</li>
 			<li>Python</li>
 			<li>PHP</li>
@@ -93,10 +93,10 @@ permalink: /resume2/
 			<li>Git and Github</li>
 			<li>Wamp / Xampp</li>
 			<li>Prepros</li>
+			<li>Grunt</li>
+			<li>Yeoman</li>
 			<li>Gimp / Photoshop</li>
 			<li>Microsoft Suite</li>
-			<li>Screaming Frog SEO Spider</li>
-			<li>Windows and OSX</li>
 		</ul>
 	</article>
 	<aside>
