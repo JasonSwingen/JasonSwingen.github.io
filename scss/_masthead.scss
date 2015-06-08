@@ -4,6 +4,14 @@
 .wrapper-masthead {
   background-color: $darkerGray;
   color: $white;
+  @include desktop {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 25%;
+  }
   .container  {
     background-color: $darkerGray;
     position: relative;
