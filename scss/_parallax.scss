@@ -26,10 +26,10 @@ $parallax-background-height: $parallax-window-height * 2;
     line-height: 1.6em;
     margin: 0em 3em 4em;
     color: $black;
-    text-shadow: 1px 1px 1px #fff; 
+    text-shadow: 1px 1px 1px #000; 
 
     @include mobile {
-      font-size: 1.1em;
+      font-size: 0.9em;
       margin: 0em 1em 2em;
     }
   }
@@ -37,7 +37,7 @@ $parallax-background-height: $parallax-window-height * 2;
 
 .parallax-static-content {
   color: #9A9A8A;
-  padding: 6em 0;
+  padding: 2em 0;
   position: relative;
   z-index: 9;
 }
