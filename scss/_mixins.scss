@@ -47,7 +47,7 @@
   position: relative;
 }
 .animatedown {
-  @include animation(movedown 1s);
+  @include animation(movedown 1s $ease-out-back);
 }
 .animateright {
   @include animation(moveright 1s);
@@ -56,7 +56,7 @@
   @include animation(moveleft 1s);
 }
 .animateup {
-  @include animation(moveup 0.2s);
+  @include animation(moveup 1.3s $ease-out-back);
 }
 .animatereveal {
   @include animation(reveal 2s);
@@ -73,12 +73,12 @@
 
 @include keyframes(movedown) {
     0%   {
-      @include transform(scale(0));
-      top: -300px;
+      bottom: 700px;
+      opacity: 0.3;
     }
     100% {
-      @include transform(scale(1));
-      top: 0px;
+      bottom: 0px;
+      opacity: 1;
     }
 }
 
@@ -101,16 +101,10 @@
 }
 @include keyframes(moveup) {
     0%   {
-      bottom: -40px;
-      opacity: 0;
-    }
-    50% {
-      bottom: -20px;
-      opacity: 1;
+      bottom: -800px;
     }
     100% {
       bottom: 0px;
-      opacity: 1;
     }
 }
 @include keyframes(slideup) {
