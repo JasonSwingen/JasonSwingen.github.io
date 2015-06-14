@@ -23,8 +23,8 @@ $flex-box-color: transparentize($gray, .1);
 }
 
 .postnohover {
-  -webkit-filter: grayscale(1);
-  filter: grayscale(1);
+  -webkit-filter: grayscale(0.4);
+  filter: grayscale(0.4);
   @include mobile {
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
