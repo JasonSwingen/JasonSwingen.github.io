@@ -2,12 +2,8 @@
 layout: default
 ---
 <div id="main" role="main" class="container">
+  <article class="post">
   <h1 class="title">{{ page.title }}</h1>
-  <div class="share-top">
-    <a href="https://twitter.com/share" class="twitter-share-button" data-via="jasonswingen">Tweet</a>
-    <g:plusone size="medium"></g:plusone>
-  </div>
-  <article class="post animateup">
     <div class="entry">
       {{ content }}
     </div>
@@ -42,9 +38,32 @@ layout: default
       <g:plusone size="medium"></g:plusone>
     </div>
   </article>
+
+  <div class="post">
+    <h1>Share</h1>
+    <div class="social-share flexparent">
+      <a class="social-share-element flexkid" id="social-twitter" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ url }}&via=Jason Swingen&hashtags={{ tagStr }}" target="_blank" title="Share this post on Twitter">{% include svg/twitter.svg %}</a>
+      <a class="social-share-element flexkid" id="social-facebook" href="https://www.facebook.com/sharer/sharer.php?t={{ page.title }}&u={{ url }}" target="_blank" title="Share this post on Facebook">{% include svg/facebook-square.svg %}</a>
+      <a class="social-share-element flexkid" id="social-google" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" target="_blank" title="Share this post on Google Plus">{% include svg/googleplus-square.svg %}</a>
+      <a class="social-share-element flexkid" id="social-linkedin" href="http://www.linkedin.com/shareArticle?mini=true&title={{ page.title }}&url={{ url }}&source=jasonswingen.com" target="_blank" title="Share this post on LinkedIn">{% include svg/linkedin.svg %}</a>
+      <a class="social-share-element flexkid" id="social-linkedin" href="http://pinterest.com/pin/create/button/?url=&description=Jason%20Swingen%20-%20the%20full%20stack%20outdoorsman" target="_blank" title="Pin this post on Pinterest">{% include svg/pinterest.svg %}</a>
+    </div>
+  </div>
   
   <div class="post">
+  <h1>Comment</h1>
     {% include disqus.html disqus_identifier=page.disqus_identifier %}
+  </div>
+
+  <div class="post">
+    <h1>Follow Jason Swingen</h1>
+    <div class="flexparent">
+      <div class="flexkid"><a href="http://github.com/{{ site.footer-links.github }}" title="follow Jason Swingen on Github">{% include svg/github.svg %}</a></div>
+      <div class="flexkid"><a href="http://linkedin.com/in/{{ site.footer-links.linkedin }}" title="follow Jason Swingen on Linkedin">{% include svg/linkedin.svg %}</a></div>
+      <div class="flexkid"><a href="http://twitter.com/{{ site.footer-links.twitter }}" title="follow Jason Swingen on Twitter">{% include svg/twitter.svg %}</a></div>
+      <div class="flexkid"><a href="http://instagram.com/{{ site.footer-links.instagram }}" title="follow Jason Swingen Instagram">{% include svg/instagram.svg %}</a></div>
+      <div class="flexkid"><a href="plus.google.com/u/0/+JasonSwingen" title="follow Jason Swingen on Google+">{% include svg/googleplus-square.svg %}</a></div>
+    </div>
   </div>
 
 </div>

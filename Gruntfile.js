@@ -70,7 +70,7 @@ module.exports = function(grunt) {
 	    },
 		  site: {
 		    files: ['/*.html', '_layouts/*.html'],
-		    tasks: [''],
+		    tasks: ['sass'],
 		    options: {
 		      spawn: false,
 		    }

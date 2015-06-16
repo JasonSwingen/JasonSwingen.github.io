@@ -184,7 +184,6 @@ nav[role=navigation] li a {
   @include justify-content(space-around);
   @include align-content(stretch);
   @include align-items(stretch);
-  @include flex-wrap(wrap);
   @include flex-direction(row);
   @include mobile {
     height: 100%;

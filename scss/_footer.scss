@@ -8,7 +8,6 @@
   @include flexbox;
   @include justify-content(space-around);
   @include align-items(stretch);
-  @include flex-wrap(wrap);
   @include flex-direction(row);
   margin: 2em 0.4em;
   .flexkid {
@@ -26,12 +25,15 @@
   background-color: $darkGray;
   padding-top: 3em;
   position: relative;
+  height: 400px; // hack to fill footer to bottom of page FIX!
 }
 
 footer {
-  padding: 20px 0;
-  text-align: center;
   background-color: $darkGray;
+  color: white;
+  @include mobile {
+      padding: 20px 15px;
+  }
 }
 
 .footerinfo {
@@ -51,11 +53,11 @@ footer {
   z-index: 9999;
   display: none;
   &:hover {
-    opacity: 1;
   }
   @include mobile {
     position: relative;
     opacity: 1;
+    text-align: center;
   }
 }
 
@@ -67,8 +69,8 @@ footer {
 
 .custom-icon {
   margin: 0px 10px;
-  height: 98px !important;
-  width: 98px !important;
+  height: 86px !important;
+  width: 86px !important;
   @include mobile {
     height: 36px !important;
     width: 36px !important;
