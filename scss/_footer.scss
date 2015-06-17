@@ -25,7 +25,7 @@
   background-color: $darkGray;
   padding-top: 3em;
   position: relative;
-  height: 400px; // hack to fill footer to bottom of page FIX!
+  min-height: 400px;
 }
 
 footer {
@@ -62,7 +62,7 @@ footer {
 }
 
 .appear {
-  @include transition(all, 0.6s, $ease-out-back);
+  @include transition(slideup, 0.6s, $ease-out-back);
   @include animation(slideup 0.6s);
   display: block;
 }
@@ -71,8 +71,14 @@ footer {
   margin: 0px 10px;
   height: 86px !important;
   width: 86px !important;
+  fill: $color1 !important;
+  @include transition(all, 0.8s, $ease-out-back);
+  &:hover {
+    fill: $color2 !important;
+    @include transition(all, 0.8s, $ease-out-back);
+  }
   @include mobile {
-    height: 36px !important;
-    width: 36px !important;
+    height: 44px !important;
+    width: 44px !important;
   }
 }

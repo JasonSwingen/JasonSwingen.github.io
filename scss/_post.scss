@@ -161,8 +161,8 @@ $flex-box-color: transparentize($gray, .1);
     @include border-radius(5px);
     @include transition(all, 0.8s, $ease-out-back);
       &:hover {
-        border: 1px solid $color1;
-        background-color: $color1;
+        border: 1px solid $color2;
+        background-color: $color2;
         color: $white;
       }
   }
