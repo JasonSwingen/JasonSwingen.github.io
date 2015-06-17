@@ -154,3 +154,19 @@ img {
   color: $black;
   background: $lightGray;
 }
+
+.custom-icon {
+  margin: 0px 10px;
+  height: 100px !important;
+  width: 100px !important;
+  fill: $color2 !important;
+  @include transition(all, 0.8s, $ease-out-back);
+  &:hover {
+    fill: $color1 !important;
+    @include transition(all, 0.8s, $ease-out-back);
+  }
+  @include mobile {
+    height: 50px !important;
+    width: 50px !important;
+  }
+}

@@ -66,19 +66,3 @@ footer {
   @include animation(slideup 0.6s);
   display: block;
 }
-
-.custom-icon {
-  margin: 0px 10px;
-  height: 86px !important;
-  width: 86px !important;
-  fill: $color1 !important;
-  @include transition(all, 0.8s, $ease-out-back);
-  &:hover {
-    fill: $color2 !important;
-    @include transition(all, 0.8s, $ease-out-back);
-  }
-  @include mobile {
-    height: 44px !important;
-    width: 44px !important;
-  }
-}
