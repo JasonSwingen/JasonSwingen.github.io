@@ -3,7 +3,7 @@ layout: post
 title: Using Jekyll as a Blog
 published: True
 categories: [jekyll]
-tags: [workflow]
+tags: [workflow, blogging, jekyll]
 image: /images/Jekyll.png
 ---
 

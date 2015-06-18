@@ -3,7 +3,7 @@ layout: post
 title: Ice Fishing for Lake Trout Video
 published: True
 categories: [fishing]
-tags: [lake trout, ice fishing, video]
+tags: [lake trout, ice fishing, fishing, video]
 image: /images/Superior_Lake_Trout.jpg
 ---
 

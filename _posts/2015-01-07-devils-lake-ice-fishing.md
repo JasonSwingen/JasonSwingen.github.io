@@ -3,7 +3,7 @@ layout: post
 title: Devils Lake North Dakota Ice Fishing Trip
 published: True
 categories: [fishing]
-tags: [devils lake, ice fishing]
+tags: [devils lake, ice fishing, fishing]
 image: /images/Devils_Lake_Ice.jpg
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: Ice Fishing for Lake Trout in Lake Superior
 published: True
 categories: [fishing]
-tags: [lake trout, ice fishing]
+tags: [lake trout, ice fishing, fishing]
 image: /images/2015-lake-trout.jpg
 ---
 

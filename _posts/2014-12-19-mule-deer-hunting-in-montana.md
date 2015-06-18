@@ -3,7 +3,7 @@ layout: post
 title: My 2014 Montana Mule Deer Hunt
 published: True
 categories: [hunting]
-tags: [mule deer, montana]
+tags: [mule deer, montana, hunting]
 image: /images/2014-mule-deer.jpg
 ---
 
