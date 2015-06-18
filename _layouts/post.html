@@ -4,16 +4,32 @@ layout: default
 <div id="main" role="main" class="container">
   <article class="post">
   <h1 class="title">{{ page.title }}</h1>
+    <div class="meta date">
+      Written on {{ page.date | date: "%B %e, %Y" }}
+    </div>
+    <div class="meta words">
+      {% capture words %}
+        {{ page.content | number_of_words | minus: 180 }}
+      {% endcapture %}
+      {% unless words contains "-" %}
+        {{ words | plus: 180 | divided_by: 180 | append: " minutes to read" }}
+      {% endunless %}
+    </div>
     <div class="entry">
       {{ content }}
     </div>
-    <div class="date">
-      Written on {{ page.date | date: "%B %e, %Y" }}
+    <div class="tallmargin">
+    {% if page.next %}
+      <a href="{{ page.next.url }}" title="{{ page.next.title }}"> &#8592; Previous </a>
+    {% endif %}
+    {% if page.previous %}
+      <a class="floatright" href="{{ page.previous.url }}" title="{{ page.previous.title }}"> Next &#8594; </a>
+    {% endif %} 
     </div>
   </article>
 
   <div class="post">
-    <h1>Share</h1>
+    <h2>Share</h2>
     <div class="social-share flexparent">
       <a class="social-share-element flexkid" id="social-twitter" rel="canonical" href="https://twitter.com/intent/tweet?text={{ page.title }}&url=http:%2F%2Fjasonswingen.com{{ page.url }}&via=jasonswingen&hashtags={{ tagStr }}" target="_blank" title="Share this post on Twitter">{% include svg/twitter.svg %}</a>
       <a class="social-share-element flexkid" id="social-google" rel="canonical" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" target="_blank" title="Share this post on Google Plus">{% include svg/googleplus-square.svg %}</a>
@@ -24,7 +40,10 @@ layout: default
   </div>
 
   <div class="post">
-  <h1>Related</h1>
+  <h2>Comment</h2>
+    {% include disqus.html disqus_identifier=page.disqus_identifier %}
+  </div>
+
       {% assign hasSimilar = '' %}
       {% for post in site.related_posts %}
           {% assign postHasSimilar = false %}
@@ -32,34 +51,51 @@ layout: default
               {% for thisTag in page.tags %}
                   {% if postHasSimilar == false and hasSimilar.size < 6 and post != page and tag == thisTag %}
                       {% if hasSimilar.size == 0 %}
-                      <ul>
-                      {% endif %}
-                      <li class="relatedPost">
-                        <a href="{{ site.url }}{{ post.url }}">{{ post.title }}
-                        {% if post.series %}
-                            (Series: {{ post.series }})
+                      <div class="post">
+                      <h2>Related</h2>
+                        <ul>
                         {% endif %}
-                        <img class="" src="{{ post.image }}" />
-                        </a>
-                      </li>
-                      {% capture hasSimilar %}{{ hasSimilar }}*{% endcapture %}
-                      {% assign postHasSimilar = true %}
-                  {% endif %}
-              {% endfor %}
-          {% endfor %}
-      {% endfor %}
-      {% if hasSimilar.size > 0 %}
-          </ul>
+                        <li class="relatedPost">
+                          <a href="{{ site.url }}{{ post.url }}">
+                          <img class="" src="{{ post.image }}" />
+                          {{ post.title }}
+                          {% if post.series %}
+                              (Series: {{ post.series }})
+                          {% endif %}
+                          
+                          </a>
+                        </li>
+                        {% capture hasSimilar %}{{ hasSimilar }}*{% endcapture %}
+                        {% assign postHasSimilar = true %}
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+        {% endfor %}
+        {% if hasSimilar.size > 0 %}
+                        </ul>
+                      </div>
       {% endif %}
-  </div>
-  
-  <div class="post">
-  <h1>Comment</h1>
-    {% include disqus.html disqus_identifier=page.disqus_identifier %}
-  </div>
+
+
+      <div class="post">
+      <h2>Recent</h2>
+        <ul>
+        {% for post in site.posts limit:5 %}
+          <li class="relatedPost">
+            <a href="{{ site.url }}{{ post.url }}">
+              <img class="" src="{{ post.image }}" />
+              {{ post.title }}
+              {% if post.series %}
+                  (Series: {{ post.series }})
+              {% endif %}
+            </a>
+          </li>
+        {% endfor %}
+        </ul>
+      </div>
 
   <div class="post">
-    <h1>Follow</h1>
+  <h2>Follow</h2>
     <div class="flexparent">
       <div class="flexkid"><a target="_blank" href="http://instagram.com/{{ site.footer-links.instagram }}" title="follow Jason Swingen Instagram">{% include svg/instagram.svg %}</a></div>
       <div class="flexkid"><a target="_blank" href="http://twitter.com/{{ site.footer-links.twitter }}" title="follow Jason Swingen on Twitter">{% include svg/twitter.svg %}</a></div>

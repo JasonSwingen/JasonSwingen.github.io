@@ -3,22 +3,6 @@
 // @import 'bourbon';
 // @import 'mixins';
 
-.flexparent {
-  @include clearfix;
-  @include flexbox;
-  @include justify-content(space-around);
-  @include align-items(stretch);
-  @include flex-direction(row);
-  margin: 2em 0.4em;
-  .flexkid {
-    p {
-      color: $white;
-      margin-top: 2em;
-    }
-  }
-}
-
-
 .wrapper-footer {
   margin-top: -3em;
   border-top: 1px solid #ddd;
