@@ -15,6 +15,6 @@ Living in Duluth, MN. This kayak is great! It is easy to carry around by yoursel
 
 <img class="centered" src="/images/Kayak-Largemouth.jpg" alt="First Largemout Bass from my new Kayak">
 
-<img class="centered" src="/images/Kayak-Smallie.jpg" alt="First Smallmouth Bass from my new Kayak">
+<img class="centered" src="/images/Kayak-smallie.jpg" alt="First Smallmouth Bass from my new Kayak">
 
 <img class="centered" src="/images/Honey-Hole.jpg" alt="The Honey Hole">
