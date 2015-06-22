@@ -229,3 +229,21 @@ img {
   }
 }
 
+.gallery {
+  padding: .5vw;
+  font-size: 0;
+  @include clearfix;
+  @include flexbox;
+  @include justify-content(space-around);
+  @include align-items(stretch);
+  @include flex-direction(row);
+  @include flex-wrap(wrap);
+  div {
+    width: 200px;
+    margin: .5vw;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
