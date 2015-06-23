@@ -1,6 +1,6 @@
 .fixedbackground {
   background: url("/images/ft-peck.jpg");
-  height: 600px;
+  height: 400px;
   position: relative;
   background-size: cover;
   background-attachment: fixed;
@@ -24,7 +24,7 @@
     padding: 2em 0;
   }
   @include desktop {
-    padding: 7em 0 !important;
+    padding: 4em 0 !important;
   }
   h1 {
 	  font-size: 2em;

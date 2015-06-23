@@ -6,6 +6,7 @@
 $blue: #4183C4; 
 $green: #418564;
 $orange: #FF9512;
+$graygreen: #81918E;
 
 // Grays
 $black: #000;
@@ -20,9 +21,10 @@ $white: #fff;
 $postBorderTop: $green;
 $postbackground: $white;
 
-$color1: $blue;
+$color1: darken($orange, 13%);
 $color2: $orange;
-$color3: $green;
+$color3: $graygreen;
+$color4: $green;
 
 // Font stacks
 $font: 'Karla', Helvetica, Arial, sans-serif;

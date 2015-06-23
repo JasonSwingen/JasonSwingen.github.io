@@ -4,16 +4,16 @@
 // @import 'mixins';
 
 .wrapper-footer {
-  margin-top: 12em;
+  margin-top: 26em;
   border-top: 1px solid #ddd;
   background-color: $darkGray;
   padding-top: 5em;
   position: relative;
-  min-height: 415px;
+  min-height: 200px;
   @include desktop {
     float: left;
     width: 75%;
-    min-height: 200px;
+    // min-height: 200px;
   }
 }
 
@@ -41,7 +41,9 @@ footer {
   opacity: 0.5;
   z-index: 9999;
   display: none;
+  color: white;
   &:hover {
+    color: $color2 !important;
   }
   @include mobile {
     position: relative;

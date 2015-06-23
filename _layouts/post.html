@@ -1,9 +1,9 @@
 ---
-layout: default
+layout: no-footer
 ---
 <div id="main" role="main" class="container postcontainer">
-  <article class="post">
   <h1 class="title">{{ page.title }}</h1>
+  <article class="post">
     <div class="meta date">
       Written on {{ page.date | date: "%B %e, %Y" }}
     </div>
@@ -29,7 +29,7 @@ layout: default
   </article>
 
   <div class="post">
-    <h2>Share</h2>
+    <h2>Share With Your Friends</h2>
     <div class="social-share flexdad">
       <a class="social-share-element flexkid" id="social-twitter" rel="canonical" href="https://twitter.com/intent/tweet?text={{ page.title }}&url=http:%2F%2Fjasonswingen.com{{ page.url }}&via=jasonswingen&hashtags={{ tagStr }}" target="_blank" title="Share this post on Twitter">{% include svg/twitter.svg %}</a>
       <a class="social-share-element flexkid" id="social-google" rel="canonical" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" target="_blank" title="Share this post on Google Plus">{% include svg/googleplus-square.svg %}</a>
@@ -40,7 +40,7 @@ layout: default
   </div>
 
   <div class="post">
-  <h2>Comment</h2>
+  <h2>Leave A Comment</h2>
     {% include disqus.html disqus_identifier=page.disqus_identifier %}
   </div>
 
@@ -52,7 +52,7 @@ layout: default
                   {% if postHasSimilar == false and hasSimilar.size < 6 and post != page and tag == thisTag %}
                       {% if hasSimilar.size == 0 %}
                       <div class="post">
-                      <h2>Related</h2>
+                      <h2>Related Articles</h2>
                         <ul>
                         {% endif %}
                         <li class="relatedPost">
@@ -78,7 +78,7 @@ layout: default
 
 
       <div class="post">
-      <h2>Recent</h2>
+      <h2>Recent Articles</h2>
         <ul>
         {% for post in site.posts limit:5 %}
           <li class="relatedPost">
@@ -95,7 +95,9 @@ layout: default
       </div>
 
   <div class="post">
-  <h2>Follow</h2>
+  <h2>Follow The Auther</h2>
+    <img class="auther-avatar" src="{{ site.avatar }}" />
+    <p class="about-auther">A Graduate of Marketing and Management, Jason combines his education with over 3 years of Internet marketing, and web development. With experience in CSS3, HTML5, Javascript, Wordpress, Jekyll, and more to create fantastic websites for a great user experience. If you need a website, an update to your current website or any internet marketing please feel free to <a href="/contact">Contact Me</a>, read more <a href="/about">About Me</a>, or check out <a href="{{ site.baseurl }}/resume2">My Resume</a>.</p>
     <div class="flexdad">
       <div class="flexkid"><a target="_blank" href="http://instagram.com/{{ site.footer-links.instagram }}" title="follow Jason Swingen Instagram">{% include svg/instagram.svg %}</a></div>
       <div class="flexkid"><a target="_blank" href="http://twitter.com/{{ site.footer-links.twitter }}" title="follow Jason Swingen on Twitter">{% include svg/twitter.svg %}</a></div>

@@ -25,9 +25,9 @@ body {
 .postcontainer {
   margin-bottom: -15em;
   @include desktop {
-    margin: 0;
+    margin: 0 5%;
     max-width: none;
-    width: 75%;
+    width: 65%;
     margin-bottom: -15em;
   }
 }
@@ -57,9 +57,6 @@ h1, h2, h3, h4, h5, h6 {
   
 h1 {  
   font-size: 30px;
-  a {
-    color: inherit;
-  }
 }
 
 h2 {  
@@ -95,18 +92,18 @@ button {
   @include transition(all, 0.8s, $ease-out-back);
   &:hover {
     @include box-shadow(0px, 5px, 16px, -6px, $gray);
-      border: 1px solid $color1;
-      background-color: $color1;
+      border: 1px solid $color2;
+      background-color: $color2;
       color: $white;
   }
   &:active {
     @include box-shadow(0px, -3px, 16px, -6px, $gray);
-    background-color: darken($color1, 10%);
+    background-color: lighten($color1, 5%);
   }
 }
 
 a {
-  color: $color1;
+  color: $color2;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
@@ -227,6 +224,7 @@ img {
 .meta {
   font-style: italic;
   font-size: 0.8em;
+  color: $gray;
 }
 
 .flexdad {
