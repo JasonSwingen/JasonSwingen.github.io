@@ -7,16 +7,25 @@
   background-repeat: no-repeat;
   background-position: center center;
   box-shadow: inset 0px -100px 50px -50px #eaeaea;
+  @include transition(all, 1s, $ease-out-back);
+  @include desktop {
+    width: 75%;
+    @include transition(all, 1s, $ease-out-back);
+  }
 }
 
 .parallax-static-content {
   color: #9A9A8A;
-  padding: 2em 0;
   position: relative;
   text-align: center;
   width: 100%;
   margin-bottom: -130px;
-  
+  @include tablet {
+    padding: 2em 0;
+  }
+  @include desktop {
+    padding: 7em 0 !important;
+  }
   h1 {
 	  font-size: 2em;
 	  margin: 0em .5em .5em;

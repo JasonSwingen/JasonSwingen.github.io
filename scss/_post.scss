@@ -7,7 +7,6 @@ $flex-box-color: transparentize($gray, .1);
 
 .title {
   margin: 0 auto;
-  max-width: 900px;
   padding: 10px 0em;
   @include mobile {
     float: none;
@@ -44,8 +43,12 @@ $flex-box-color: transparentize($gray, .1);
   clear: both;
   text-align: center;
   position: relative;
-  top: -19em;
-  margin-bottom: -22em;
+    top: -20em;
+    margin-bottom: -35em;
+  @include desktop {
+    top: -7em;
+    margin-bottom: -22em;
+  }
   h1 {
     margin: 10px 0px;
     a {
@@ -81,7 +84,7 @@ $flex-box-color: transparentize($gray, .1);
 }
 
 .post {
-  // @include transition (all, 0.2s, ease-in-out);
+  @include transition (all, 0.1s, ease-in-out);
   @include flex(2 2 15em);
   @include align-self(stretch);
   background: $postbackground;
