@@ -120,10 +120,10 @@ a.menu-link {
   bottom: -10px;
 }
 .menu-link span {
-  @include transition(all, 3s, $ease-out-circ);
+  @include transition(all, 0.3s, $ease-out-circ);
 }
 .menu-link span:before, .menu-link span:after {
-  @include transition(all, 0.8s, $ease-out-back);
+  @include transition(all, 0.3s, $ease-out-back);
 }
 .menu-link.active span {
   background-color: transparent;
@@ -133,10 +133,12 @@ a.menu-link {
   top: 0;
 }
 .menu-link.active span:before {
-  transform: rotate(225deg);
+  // transform: rotate(225deg);
+  transform: rotate(45deg);
 }
 .menu-link.active span:after {
-  transform: rotate(-225deg);
+  // transform: rotate(-225deg);
+  transform: rotate(-45deg);
 }
 
 nav[role=navigation] {
@@ -165,7 +167,7 @@ nav[role=navigation].active {
   position: relative;
   z-index: 20;
   top: 0px;
-  @include transition(all, 0.6s, $ease-out-back);
+  @include transition(all, 0.3s, $ease-out-back);
 
 }
 nav[role=navigation] ul {
