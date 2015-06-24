@@ -7,12 +7,12 @@ permalink: /gallery/
 <div class="gallery">
 	<div class="thumb" style="background-image: url('/images/First-muley-with-Mark.jpg');" title=""></div>
 	<div class="thumb" style="background-image: url('/images/Pike-on.jpg');" title=""></div>
-	<div class="thumb" style="background-image: url('/images/Antelope3.2.jpg');" title=""></div>
+	<div class="thumb" style="background-image: url('/images/Antelope3.2.JPG');" title=""></div>
 	<!-- <div class="thumb" style="background-image: url('/images/Antelope1.jpg');" title=""></div> -->
 	<div class="thumb" style="background-image: url('/images/Montana-ice-fishing.jpg');" title=""></div>
 	<div class="thumb" style="background-image: url('/images/Montana-pike.jpg');" title=""></div>
 	<div class="thumb" style="background-image: url('/images/Antelope2.jpg');" title=""></div>
-	<!-- <div class="thumb" style="background-image: url('/images/Antelope2.1.JPG');" title=""></div> -->
+	<!-- <div class="thumb" style="background-image: url('/images/Antelope2.1.jpg');" title=""></div> -->
 	<div class="thumb" style="background-image: url('/images/Geese.jpg');" title=""></div>
 	<div class="thumb" style="background-image: url('/images/Antelope3.jpg');" title=""></div>
 	<div class="thumb" style="background-image: url('/images/Antelope3.1.jpg');" title=""></div>
