@@ -12,7 +12,7 @@ permalink: /gallery/
 	<div class="thumb" style="background-image: url('/images/Montana-ice-fishing.jpg');" title=""></div>
 	<div class="thumb" style="background-image: url('/images/Montana-pike.jpg');" title=""></div>
 	<div class="thumb" style="background-image: url('/images/Antelope2.jpg');" title=""></div>
-	<!-- <div class="thumb" style="background-image: url('/images/Antelope2.1.jpg');" title=""></div> -->
+	<!-- <div class="thumb" style="background-image: url('/images/Antelope2.1.JPG');" title=""></div> -->
 	<div class="thumb" style="background-image: url('/images/Geese.jpg');" title=""></div>
 	<div class="thumb" style="background-image: url('/images/Antelope3.jpg');" title=""></div>
 	<div class="thumb" style="background-image: url('/images/Antelope3.1.jpg');" title=""></div>
@@ -21,7 +21,7 @@ permalink: /gallery/
 	<div class="thumb" style="background-image: url('/images/Sharptail-Grouse.jpg');" title=""></div>
 	<div class="thumb" style="background-image: url('/images/Mule-deer2.jpg');" title=""></div>
 	<div class="thumb" style="background-image: url('/images/Pheasants2.jpg');" title=""></div>
-	<div class="thumb" style="background-image: url('/images/Perch-fishing.jpg');" title=""></div>
+	<div class="thumb" style="background-image: url('/images/Perch-fishing.JPG');" title=""></div>
 	<div class="thumb" style="background-image: url('/images/Pheasants-with-Mark.jpg');" title=""></div>
 	<div class="thumb" style="background-image: url('/images/Pheasants.jpg');" title=""></div>
 	<div class="thumb" style="background-image: url('/images/Mule-deer2.1.jpg');" title=""></div>
