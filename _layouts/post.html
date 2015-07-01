@@ -3,6 +3,27 @@ layout: no-footer
 ---
 <div id="main" role="main" class="container postcontainer">
   <h1 class="title">{{ page.title }}</h1>
+
+<!-- {% capture url_parts %} {{ page.url | remove: "/index.html" | replace:'/'," " }}{% endcapture %}
+{% capture num_parts %}{{ url_parts | number_of_words | minus: 1 }}{% endcapture %}
+{% assign previous="" %}
+<ol>
+ {% if num_parts == "0" or num_parts == "-1" %}
+  <li><a href="/">home</a> &nbsp; </li>
+ {% else %}
+  <li><a href="/">home</a> &#187; </li>
+
+  {% for unused in page.content limit:num_parts %}
+   {% capture first_word %}{{ url_parts | truncatewords:1 | remove:"..."}}{% endcapture %}
+   {% capture previous %}{{ previous }}/{{ first_word }}{% endcapture %}
+
+   <li><a href="{{previous}}">{{ first_word }}</a> &#187; </li>
+
+   {% capture url_parts %}{{ url_parts | remove_first:first_word }}{% endcapture %}
+  {% endfor %}
+ {% endif %}
+</ol> -->
+  
   <article class="post">
     <div class="meta date">
       Written on {{ page.date | date: "%B %e, %Y" }}
@@ -99,11 +120,11 @@ layout: no-footer
     <img class="auther-avatar" src="{{ site.avatar }}" />
     <p class="about-auther">A Graduate of Marketing and Management, Jason combines his education with over 3 years of Internet marketing, and web development. With experience in CSS3, HTML5, Javascript, Wordpress, Jekyll, and more to create fantastic websites for a great user experience. If you need a website, an update to your current website or any internet marketing please feel free to <a href="/contact">Contact Me</a>, read more <a href="/about">About Me</a>, or check out <a href="{{ site.baseurl }}/resume2">My Resume</a>.</p>
     <div class="flexdad">
-      <div class="flexkid"><a target="_blank" href="http://instagram.com/{{ site.footer-links.instagram }}" title="follow Jason Swingen Instagram">{% include svg/instagram.svg %}</a></div>
-      <div class="flexkid"><a target="_blank" href="http://twitter.com/{{ site.footer-links.twitter }}" title="follow Jason Swingen on Twitter">{% include svg/twitter.svg %}</a></div>
-      <div class="flexkid"><a target="_blank" href="plus.google.com/u/0/+JasonSwingen" title="follow Jason Swingen on Google+">{% include svg/googleplus-square.svg %}</a></div>
-      <div class="flexkid"><a target="_blank" href="http://linkedin.com/in/{{ site.footer-links.linkedin }}" title="follow Jason Swingen on Linkedin">{% include svg/linkedin.svg %}</a></div>
-      <div class="flexkid"><a target="_blank" href="http://github.com/{{ site.footer-links.github }}" title="follow Jason Swingen on Github">{% include svg/github.svg %}</a></div>
+      <div class="flexkid"><a target="_blank" id="social-instagram" href="http://instagram.com/{{ site.footer-links.instagram }}" title="follow Jason Swingen Instagram">{% include svg/instagram.svg %}</a></div>
+      <div class="flexkid"><a target="_blank" id="social-twitter" href="http://twitter.com/{{ site.footer-links.twitter }}" title="follow Jason Swingen on Twitter">{% include svg/twitter.svg %}</a></div>
+      <div class="flexkid"><a target="_blank" id="social-google" href="plus.google.com/u/0/+JasonSwingen" title="follow Jason Swingen on Google+">{% include svg/googleplus-square.svg %}</a></div>
+      <div class="flexkid"><a target="_blank" id="social-linkedin" href="http://linkedin.com/in/{{ site.footer-links.linkedin }}" title="follow Jason Swingen on Linkedin">{% include svg/linkedin.svg %}</a></div>
+      <div class="flexkid"><a target="_blank" id="social-github" href="http://github.com/{{ site.footer-links.github }}" title="follow Jason Swingen on Github">{% include svg/github.svg %}</a></div>
     </div>
   </div>
 

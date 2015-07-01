@@ -171,16 +171,43 @@ img {
   margin: 0px 10px;
   height: 100px !important;
   width: 100px !important;
-  fill: $color2 !important;
   @include transition(all, 0.8s, $ease-out-back);
   &:hover {
-    fill: $color1 !important;
+    color: $color2;
     @include transition(all, 0.8s, $ease-out-back);
   }
   @include mobile {
     height: 50px !important;
     width: 50px !important;
   }
+}
+
+#social-twitter {
+  fill: #00aced;
+}
+
+#social-facebook {
+  fill: #3b5998;
+}
+
+#social-google {
+  fill: #dd4b39;
+}
+
+#social-pinterest {
+  fill: #cb2027;
+}
+
+#social-linkedin {
+  fill: #007bb6;
+}
+
+#social-github {
+  fill: #000; 
+}
+
+#social-instagram {
+  fill: #517fa4; 
 }
 
 .floatright {
