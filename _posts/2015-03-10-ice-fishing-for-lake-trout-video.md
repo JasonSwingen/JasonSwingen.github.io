@@ -17,4 +17,4 @@ I was fishing off of Brighton Beach on the Northeast end of Duluth MN in 120 fee
   </div>
 </div>
 
-<img class="centered" src="/images/Superior_Lake_Trout.jpg" alt="Lake Superior Laker">
+<a href="/images/Superior_Lake_Trout.jpg" data-lightbox="Lake Superior Laker" data-title="Lake Superior Laker"><img class="centered" src="/images/Superior_Lake_Trout.jpg" alt="Lake Superior Laker"></a>

@@ -52,4 +52,4 @@ Only a small sample of this BaitMate came in the box, and I haven't used it yet.
 
 My First Cast with the 2.5RSC Crankbait landed this nice smallie.
 
-<img class="centered" src="/images/RSC-Bass.jpg" alt="">
+<a href="/images/RSC-Bass.jpg" data-lightbox="RSC Bass" data-title="RSC Bass"><img class="centered" src="/images/RSC-Bass.jpg" alt="RSC Bass"></a>

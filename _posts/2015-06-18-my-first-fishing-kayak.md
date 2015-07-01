@@ -11,10 +11,10 @@ My wife bought me this kayak for my birthday! It is a Sun Dolphin Journey 10. It
 
 Living in Duluth, MN. This kayak is great! It is easy to carry around by yourself as well as lift it on and off of a car rack.
 
-<img class="centered" src="/images/Sun-Dolphin.jpg" alt="Sun Dolphin Journey 10">
+<a href="/images/Sun-Dolphin.jpg" data-lightbox="My First Fishing Kayak" data-title="Sun Dolphin Journey 10"><img class="centered" src="/images/Sun-Dolphin.jpg" alt="Sun Dolphin Journey 10"></a>
 
-<img class="centered" src="/images/Kayak-Largemouth.jpg" alt="First Largemout Bass from my new Kayak">
+<a href="/images/Kayak-Largemouth.jpg" data-lightbox="My First Fishing Kayak" data-title="First Largemout Bass from my new Kayak"><img class="centered" src="/images/Kayak-Largemouth.jpg" alt="First Largemout Bass from my new Kayak"></a>
 
-<img class="centered" src="/images/Kayak-smallie.jpg" alt="First Smallmouth Bass from my new Kayak">
+<a href="/images/Kayak-smallie.jpg" data-lightbox="My First Fishing Kayak" data-title="First Smallmouth Bass from my new Kayak"><img class="centered" src="/images/Kayak-smallie.jpg" alt="First Smallmouth Bass from my new Kayak"></a>
 
-<img class="centered" src="/images/Honey-Hole.jpg" alt="The Honey Hole">
+<a href="/images/Honey-Hole.jpg" data-lightbox="My First Fishing Kayak" data-title="The Honey Hole"><img class="centered" src="/images/Honey-Hole.jpg" alt="The Honey Hole"></a>

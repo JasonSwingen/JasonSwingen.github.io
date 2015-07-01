@@ -224,22 +224,22 @@ img {
   @include flex-direction(row);
   @include flex-wrap(wrap);
   @include desktop {
-    div {
+    a {
       width: 31%;
     }
   }
   @include tablet {
     width: 100%;
-    div {
+    a {
       width: 48%;
     }
   }
   @include mobile {
-    div {
+    a {
       width: 100%;
     }
   }
-  div {
+  a {
     margin: 0.5vw;
   }
 }

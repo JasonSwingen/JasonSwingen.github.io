@@ -55,4 +55,4 @@ Great concept. I don't think they are any faster than using a regular clip.
   </div>
 </div>
 
-<img class="centered" src="/images/Sebile-Walker.jpg" alt="Lake Superior Laker">
+<a href="/images/Sebile-Walker.jpg" data-lightbox="Sebile-Walker" data-title="Sebile-Walker"><img class="centered" src="/images/Sebile-Walker.jpg" alt="Lake Superior Laker"></a>
