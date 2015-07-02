@@ -4,26 +4,27 @@ layout: no-footer
 <div id="main" role="main" class="container postcontainer">
   <h1 class="title">{{ page.title }}</h1>
 
-<!-- {% capture url_parts %} {{ page.url | remove: "/index.html" | replace:'/'," " }}{% endcapture %}
-{% capture num_parts %}{{ url_parts | number_of_words | minus: 1 }}{% endcapture %}
-{% assign previous="" %}
-<ol>
- {% if num_parts == "0" or num_parts == "-1" %}
-  <li><a href="/">home</a> &nbsp; </li>
- {% else %}
-  <li><a href="/">home</a> &#187; </li>
-
-  {% for unused in page.content limit:num_parts %}
-   {% capture first_word %}{{ url_parts | truncatewords:1 | remove:"..."}}{% endcapture %}
-   {% capture previous %}{{ previous }}/{{ first_word }}{% endcapture %}
-
-   <li><a href="{{previous}}">{{ first_word }}</a> &#187; </li>
-
-   {% capture url_parts %}{{ url_parts | remove_first:first_word }}{% endcapture %}
+  <ol class="breadcrumb">
+    <li><a href="/">Home</a></li>
+    {% assign crumbs = page.url | split: '/' %}
+    {% assign crumbs_total = crumbs | size | minus: 1 %}
+    {% for crumb in crumbs offset: 1 %}
+      {% if forloop.index == crumbs_total %}
+        <li class="active"><a href="{{ site.baseurl }}{{ page.url }}">{{page.title}}</a></li>
+      {% else %}
+        {% assign crumb_limit = forloop.index | plus: 1 %}
+      {% capture crumb_url %}{% for c in crumbs limit: crumb_limit %}{{ c | append: '/' }}{% endfor %}{% endcapture %}
+    {% capture crumb_with_index %}{{ crumb_url | append: 'index.html' }}{% endcapture %}
+  {% capture current_page %}{{ site.baseurl }}{{ page.url }}{% endcapture %}
+  {% for p in site.pages %}
+    {% if crumb_with_index != current_page and crumb_with_index == p.url %}
+      <li class="active">{{ crumb_with_index }}{{ crumb | replace:'-',' ' | capitalize}}
+    {% endif %}
   {% endfor %}
- {% endif %}
-</ol> -->
-  
+  {% endif %}
+  {% endfor %}
+  </ol>
+
   <article class="post">
     <div class="meta date">
       Written on {{ page.date | date: "%B %e, %Y" }}

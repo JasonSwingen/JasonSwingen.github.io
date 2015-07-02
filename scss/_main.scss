@@ -23,12 +23,12 @@ body {
 }
 
 .postcontainer {
-  margin-bottom: -15em;
+  margin-bottom: 1em;
   @include desktop {
     margin: 0 5%;
     max-width: none;
     width: 65%;
-    margin-bottom: -15em;
+    margin-bottom: 3em;
   }
 }
 
@@ -286,5 +286,25 @@ img {
   }
   @include mobile {
     height: 300px;
+  }
+}
+
+.breadcrumb {
+  list-style-type: none;
+  display: inline-flex;
+  padding-left: 1em;
+  font-size: 0.8em;
+  margin: 0em;
+  li {
+    color: $gray;
+    padding-left: 4px;
+    &:not(:last-child) {
+      &::after {
+        content: " >";
+      }
+    }
+  }
+  @include mobile {
+    display: none;
   }
 }
