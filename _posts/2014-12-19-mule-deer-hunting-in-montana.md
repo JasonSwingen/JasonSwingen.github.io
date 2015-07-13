@@ -16,8 +16,6 @@ It is a two day drive out to Montana from Duluth, luckily I have family in North
 <a href="/images/target.jpg" data-lightbox="2014 Mule Deer Hunt" data-title="Target"><img class="floatright" src="/images/target.jpg" alt="Target"></a>
 I was also fortunate to find a fantastic shooting range just south of Lincoln that I could sight my gun. I haven't been able to find a good shooting range in Minnesota since most gun hunting in Minnesota, and Wisconsin is done at close ranges, there are few long range rifle shooting ranges. I met another hunter there that was sighting his rifle in preparing for his cow elk hunt in Wyoming. It was 7 degrees and I was not dressed well enough to spend very much time outside. I set up at 200 yards and put some lead downrange. Luckily my first three shots ended up being my only three shots as I could barely feel my fingers. I was pretty confident that any nice buck withing 300 yards was going down.
 
-## Hunting Buddies
-
 After a day of playing with Henry, I hit the road for the second time to begin my hunt in Montana's region 6 (Northeast section). I arrived at my hunting buddy, Mark Sullivan's house and began unloading my gear. Mark has taken me hunting and fishing dozens and dozens of times when I was growing up, and is really the one that has gotten me to be the outdoorsman that I am today.
 
 <a href="/images/ft-peck.jpg" data-lightbox="2014 Mule Deer Hunt" data-title="View of Fort Peck Reservoir"><img class="centered" src="/images/ft-peck.jpg" alt="View of Fort Peck Reservoir"></a>

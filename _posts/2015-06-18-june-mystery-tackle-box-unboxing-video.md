@@ -25,6 +25,8 @@ I was initially unimpressed with these. Simply because house little they seemed 
 <img class="floatrightsm" src="http://mysterytacklebox.com/media/catalog/product/cache/1/small_image/175x141/9df78eab33525d08d6e5fb8d27136e95/b/a/batwingz_web.jpg" alt="">
 These are great. Small Profile with buoyant pinchers that give a good presentation. They are extremely stretchy and will last for bite after bite. Make sure you keep them out of the sun! I was out on a local lake for a few hours and when I returned home I looked through my soft plastics plano box. Every other soft plastic was fine, except the two Batwingz I had in there melted together.
 
+UPDATE - I did a little research after my Z-man Batwingz basically disintegrated, and the elaZtech that is used to make these baits will react to the plasticizer found in other soft plastics and plastic tackle boxes. There is a very faint warning on their packages, but obviously can easily overlooked. I have recently purchased more Z-man elaZtech soft plastics and they are extremely durable, and stretchy. I have learned my lesson about storing Z-man baits.
+
 ## Vibragrub
 <img class="floatrightsm" src="http://mysterytacklebox.com/media/catalog/product/cache/1/small_image/175x141/9df78eab33525d08d6e5fb8d27136e95/f/l/flashshad.jpg" alt="">
 I only used these one time and was unable to catch a fish. I was will try to use with a drop shot set up next time in deeper, less weedy water.

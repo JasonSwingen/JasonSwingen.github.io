@@ -3,12 +3,12 @@ layout: default
 ---
 
 <!-- Fixed Background -->
-<div class="fixedbackground clearfix">
+<!-- <div class="fixedbackground clearfix">
 	<div class="parallax-static-content">
 		<h1><a href="{{ site.baseurl }}/hunting.html">Hunting</a> and <a href="{{ site.baseurl }}/fishing.html">Fishing</a> the Midwest</h1>
 		<p>My name is Jason Swingen and I am a freelance developer with a passion for a the outdoors. Check out the most recent hunting and fishing stories below.</p>
 	</div>
-</div>
+</div> -->
 
 <!-- Posts -->
 <div class="big-container">
@@ -19,8 +19,8 @@ layout: default
 	      <a href="{{ site.baseurl }}{{ post.url }}"><img src="{{ post.image }}" /></a>
 	    </div>
 	    <div class="padding">
-	      <div class="postdate">{{ post.date | date: "%B %e, %Y" }}</div>
 	      <h1>{{ post.title }}</h1>
+	      <!-- <div class="postdate">{{ post.date | date: "%B %e, %Y" }}</div> -->
 	      <div class="entry">
 	        {{ post.content | truncatewords:27}}
 	      </div>

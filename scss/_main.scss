@@ -171,10 +171,10 @@ img {
   margin: 0px 10px;
   height: 100px !important;
   width: 100px !important;
-  @include transition(all, 0.8s, $ease-out-back);
+  @include transition(fill, 0.8s, $ease-out-back);
   &:hover {
-    color: $color2;
-    @include transition(all, 0.8s, $ease-out-back);
+    fill: $color2;
+    @include transition(fill, 0.8s, $ease-out-back);
   }
   @include mobile {
     height: 50px !important;
@@ -212,6 +212,7 @@ img {
 
 .floatright {
   float: right;
+  text-align: right;
 }
 
 .tallmargin {

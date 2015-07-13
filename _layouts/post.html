@@ -42,16 +42,16 @@ layout: no-footer
     </div>
     <div class="tallmargin">
     {% if page.next %}
-      <a href="{{ page.next.url }}" title="{{ page.next.title }}"> &#8592; Previous </a>
+      <a href="{{ page.next.url }}" title="{{ page.next.title }}"> &#8592; {{ page.next.title }} </a>
     {% endif %}
     {% if page.previous %}
-      <a class="floatright" href="{{ page.previous.url }}" title="{{ page.previous.title }}"> Next &#8594; </a>
+      <a class="floatright" href="{{ page.previous.url }}" title="{{ page.previous.title }}"> {{ page.previous.title }} &#8594; </a>
     {% endif %} 
     </div>
   </article>
 
   <div class="post">
-    <h2>Share With Your Friends</h2>
+    <h2>Share This Post</h2>
     <div class="social-share flexdad">
       <a class="social-share-element flexkid" id="social-twitter" rel="canonical" href="https://twitter.com/intent/tweet?text={{ page.title }}&url=http:%2F%2Fjasonswingen.com{{ page.url }}&via=jasonswingen&hashtags={{ tagStr }}" target="_blank" title="Share this post on Twitter">{% include svg/twitter.svg %}</a>
       <a class="social-share-element flexkid" id="social-google" rel="canonical" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" target="_blank" title="Share this post on Google Plus">{% include svg/googleplus-square.svg %}</a>
@@ -123,7 +123,7 @@ layout: no-footer
     <div class="flexdad">
       <div class="flexkid"><a target="_blank" id="social-instagram" href="http://instagram.com/{{ site.footer-links.instagram }}" title="follow Jason Swingen Instagram">{% include svg/instagram.svg %}</a></div>
       <div class="flexkid"><a target="_blank" id="social-twitter" href="http://twitter.com/{{ site.footer-links.twitter }}" title="follow Jason Swingen on Twitter">{% include svg/twitter.svg %}</a></div>
-      <div class="flexkid"><a target="_blank" id="social-google" href="plus.google.com/u/0/+JasonSwingen" title="follow Jason Swingen on Google+">{% include svg/googleplus-square.svg %}</a></div>
+      <div class="flexkid"><a target="_blank" id="social-google" href="http://plus.google.com/u/0/+JasonSwingen" title="follow Jason Swingen on Google+">{% include svg/googleplus-square.svg %}</a></div>
       <div class="flexkid"><a target="_blank" id="social-linkedin" href="http://linkedin.com/in/{{ site.footer-links.linkedin }}" title="follow Jason Swingen on Linkedin">{% include svg/linkedin.svg %}</a></div>
       <div class="flexkid"><a target="_blank" id="social-github" href="http://github.com/{{ site.footer-links.github }}" title="follow Jason Swingen on Github">{% include svg/github.svg %}</a></div>
     </div>

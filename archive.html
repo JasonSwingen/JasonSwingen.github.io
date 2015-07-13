@@ -9,7 +9,7 @@ layout: no-footer
     {% for post in site.posts %}
       <ul class="padding">
         <li>
-          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> {{ post.date | date: "%B %e, %Y" }}
+          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %e, %Y" }}
         </li>
       </ul>
     {% endfor %}
@@ -19,7 +19,7 @@ layout: no-footer
   {% for post in site.tags.hunting %}
     <ul class="padding">
       <li>
-        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> {{ post.date | date: "%B %e, %Y" }}
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %e, %Y" }}
       </li>
     </ul>
   {% endfor %}
@@ -28,7 +28,7 @@ layout: no-footer
   {% for post in site.tags.fishing %}
     <ul class="padding">
       <li>
-        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> {{ post.date | date: "%B %e, %Y" }}
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %e, %Y" }}
       </li>
     </ul>
   {% endfor %}

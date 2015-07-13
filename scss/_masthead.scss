@@ -207,6 +207,7 @@ nav[role=navigation] li a {
   }
   @include mobile {
     padding: 0.5em;
+    width: 100%;
   }
   @include desktop {
     width: 100%;
