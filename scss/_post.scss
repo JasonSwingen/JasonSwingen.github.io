@@ -42,11 +42,7 @@ $flex-box-color: transparentize($gray, .1);
   text-align: center;
   position: relative;
   top: 0em;
-  margin-bottom: -29em;
-  @include desktop {
-    top: 0em;
-    margin-bottom: -29em;
-  }
+  margin-bottom: 0em;
   h1 {
     margin: 10px 0px;
     a {
@@ -76,15 +72,16 @@ $flex-box-color: transparentize($gray, .1);
   .padding {
     padding: 1px 15px 40px 15px;
   }
-  &.post:last-child, &.post:first-child {
-    flex-grow: 2;
-    min-width: 65.3%;
-  }
+  // This makes the first and last post larger than the rest
+  // &.post:last-child, &.post:first-child {
+  //   flex-grow: 2;
+  //   min-width: 65.3%;
+  // }
 }
 
 .post {
-  @include transition (all, 0.1s, ease-in-out);
-  @include flex(2 2 15em);
+  // @include transition (all, 0.1s, ease-in-out);
+  @include flex(2 2 19em);
   @include align-self(stretch);
   background: $postbackground;
   @include border-radius(5px);

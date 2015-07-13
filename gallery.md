@@ -1,5 +1,5 @@
 ---
-layout: no-footer
+layout: default
 title: Hunting and Fishing Gallery
 permalink: /gallery/
 ---
