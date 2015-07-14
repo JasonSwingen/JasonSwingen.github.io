@@ -44,14 +44,20 @@ footer {
   z-index: 9999;
   display: none;
   color: white;
+  &::after {
+    content: "BACK TO TOP";
+  }
   &:hover {
     color: $color2 !important;
   }
   @include mobile {
-    position: relative;
+    // position: relative;
     opacity: 1;
     text-align: center;
     color: $color2;
+    &::after {
+      content: "TOP";
+    }
   }
 }
 

@@ -42,7 +42,7 @@ body {
 }
 
 .section {
-  padding: 10px;
+  padding: 10px 20px;
   background-color: $postbackground;
   margin: 1em 0.4em 0em;
   @include box-shadow(0px, -4px, 16px, -6px, $gray);
@@ -228,6 +228,10 @@ img {
 .tallmargin {
   margin: 2em 0em 1em;
   padding-bottom: 1em;
+}
+
+.align-center {
+  text-align: center;
 }
 
 .meta {
