@@ -32,7 +32,7 @@ permalink: /portfolio/
 
 	  <article class="post articles postnohover">
 	    <div class="postimg">
-	      <a target="_blank" href="http://saveyourashmn.com"><img src="/images/portfolio/SaveYourAshMN.jpg" /></a>
+	      <a target="_blank" href="http://saveyourashmn.com"><img src="/images/portfolio/SaveYourAshMN.JPG" /></a>
 	    </div>
 	    <div class="padding">
 	      <!-- <h1><a target="_blank" href="http://saveyourashmn.com">Save Your Ash MN</a></h1> -->
