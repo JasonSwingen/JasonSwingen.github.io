@@ -4,7 +4,7 @@ title: 2015 Duluth City Bowhunt
 categories: [hunting]
 tags: [hunting, bow, bowhunting, duluth]
 published: True
-image: /images/Whitetail-deer.jpg
+image: /images/Whitetail-Deer.jpg
 ---
 
 Last year was a slow year for bowhunting for me. I hunted a few sections public land south of Duluth, and only saw a few deer a couple of the times I went out. The only antlers I saw were on a little fork-horn on the last day of the season that didn't get any closer than 100 yards away.
