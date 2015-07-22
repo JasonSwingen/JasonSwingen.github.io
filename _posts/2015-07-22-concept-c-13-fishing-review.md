@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Review of the 13 Fishing Concept C
-categories: [fishing]
-tags: [review, fishing, reel, 13 fishing, concept c]
+categories: [reviews]
+tags: [reviews, fishing, reel, 13 fishing, concept c]
 published: True
 image: /images/Concept-C.jpg
 ---

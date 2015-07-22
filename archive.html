@@ -33,4 +33,13 @@ layout: no-footer
     </ul>
   {% endfor %}
 
+<h2>Reviews</h2>
+  {% for post in site.tags.reviews %}
+    <ul class="padding">
+      <li>
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %e, %Y" }}
+      </li>
+    </ul>
+  {% endfor %}
+
 </div> <!-- End of main -->
