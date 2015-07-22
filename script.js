@@ -22,6 +22,7 @@ $(document).ready(function($) { // Start of Document Ready Javascript
     });
   });
 
+  // Open all external links in a new tab
   $('a').each(function() {
    var a = new RegExp('/' + window.location.host + '/');
    if(!a.test(this.href)) {

@@ -11,8 +11,9 @@
   margin-top: 1em;
   position: relative;
   min-height: 200px;
+  float: left;
+  width: 100%;
   @include desktop {
-    float: left;
     width: 75%;
     // min-height: 200px;
   }

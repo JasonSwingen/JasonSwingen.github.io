@@ -81,7 +81,7 @@ $flex-box-color: transparentize($gray, .1);
 
 .post {
   // @include transition (all, 0.1s, ease-in-out);
-  @include flex(2 2 19em);
+  @include flex(2 2 17em);
   @include align-self(stretch);
   background: $postbackground;
   @include border-radius(5px);
@@ -145,7 +145,8 @@ $flex-box-color: transparentize($gray, .1);
 
   blockquote {
     margin: 1.8em .8em;
-    border-left: 2px solid $gray;
+    font-family: serif;
+    border-left: 4px solid $color2;
     padding: 0.1em 1em;
     color: $gray;
     font-size: 22px;
