@@ -30,13 +30,13 @@ As a new hunter I was unable to get my first or second choices in DHA. I was abl
 I will be going out to do a little scouting before the season opens to figure out where to put my stand.
 
 ## My Setup
-*Bear Done Deal Bow
-*Cobra Sight
-*Trophy Ridge Quiver
-*Trophy Ridge Stabilizer
-*Tru-Fire Release
-*Trophy Hunter 400 Arrows
-*Lumenok Nocks
-*QAD Exodus Broadheads
+* Bear Done Deal Bow
+* Cobra Sight
+* Trophy Ridge Quiver
+* Trophy Ridge Stabilizer
+* Tru-Fire Release
+* Trophy Hunter 400 Arrows
+* Lumenok Nocks
+* QAD Exodus Broadheads
 
 <b>Stay tuned, I will be updating this blog post throughout the season.</b>
