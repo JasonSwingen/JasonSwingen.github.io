@@ -2,8 +2,8 @@
 layout: post
 title: Mystery Tackle Box Review for May 2015
 published: True
-categories: [fishing]
-tags: [mystery tackle box]
+categories: [reviews]
+tags: [reviews, fishing, mystery tackle box, unboxing]
 image: /images/May15MTB.jpg
 ---
 
