@@ -328,3 +328,21 @@ img {
     display: none;
   }
 }
+
+.entry {
+  ul {
+    text-align: left;
+    li {
+    }
+  }
+}
+
+// .snippet {
+//   @include outer-container;
+//   .aboutme {
+//     @include span-columns(3);
+//   }
+//   .whatido {
+//     @include span-columns(9);
+//   }
+// }
