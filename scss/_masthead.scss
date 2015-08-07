@@ -201,6 +201,7 @@ nav[role=navigation] li a {
   color: white;
   letter-spacing: 0px;
   font-weight: bold;
+  border-bottom: 3px solid transparent;
   @include transition(all, 0.6s, $ease-out-back);
   &:hover {
     color: $color2;
@@ -208,9 +209,21 @@ nav[role=navigation] li a {
   @include mobile {
     padding: 0.5em;
     width: 100%;
+    &:hover {
+      border-bottom: 3px solid transparent;
+    }
+  }
+  @include tablet {
+    &:hover {
+      border-bottom: 3px solid $color2;
+    }
   }
   @include desktop {
     width: 100%;
+    &:hover {
+      border-left: 3px solid $color2;
+      border-right: 3px solid $color2;
+    }
   }
 }
 
