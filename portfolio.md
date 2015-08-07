@@ -7,13 +7,13 @@ permalink: /portfolio/
 <div class="big-container">
 
 	  <h1>About Me</h1>
-	  <div class="section">
+	  <div class="section" >
 	    <p>I am a Front-End Web Developer and Internet Marketer specializing in Search Engine Optimization, Adwords, and Analytics. I went to college at Minnesota State University Moorhead, in Moorhead MN to study Marketing and Management. I received my Bachelor of Science in Both Marketing and Business Administration with an emphasis in Management, and minor in Music.</p>
 	  </div>
 
 	  <h1>What I Do</h1>
 	  <div class="section">
-	  <img class="floatright" src="/images/SublimeText.png" alt="">
+	  <img id="js-fadeInElement" class="fade-in-element floatright" src="/images/SublimeText.png" alt="">
 		  <ul>
 			<li>Web Development</li>
 			<li>Web Design</li>
@@ -32,7 +32,7 @@ permalink: /portfolio/
 
 	  <article class="post articles postnohover">
 	    <div class="postimg">
-	      <a target="_blank" href="http://saveyourashmn.com"><img src="/images/portfolio/SaveYourAshMN.JPG" /></a>
+	      <img src="/images/portfolio/SaveYourAshMN.JPG" />
 	    </div>
 	    <div class="padding">
 	      <!-- <h1><a target="_blank" href="http://saveyourashmn.com">Save Your Ash MN</a></h1> -->
@@ -44,7 +44,7 @@ permalink: /portfolio/
 
 	  <article class="post articles postnohover">
 	    <div class="postimg">
-	      <a target="_blank" href="http://www.auctionmnonline.com"><img src="/images/portfolio/AAA_Auction.jpg" /></a>
+	      <img src="/images/portfolio/AAA_Auction.jpg" />
 	    </div>
 	    <div class="padding">
 	      <!-- <h1><a target="_blank" href="http://www.auctionmnonline.com">AAA Auction</a></h1> -->
@@ -56,7 +56,7 @@ permalink: /portfolio/
 
 	  <article class="post articles postnohover">
 	    <div class="postimg">
-	      <a target="_blank" href="http://spapoolbilliards.com"><img src="/images/portfolio/BackyardLeisure.jpg" /></a>
+	      <img src="/images/portfolio/BackyardLeisure.jpg" />
 	    </div>
 	    <div class="padding">
 	      <!-- <h1><a target="_blank" href="http://spapoolbilliards.com">Backyard Leisure</a></h1> -->
@@ -68,7 +68,7 @@ permalink: /portfolio/
 
   	  <article class="post articles postnohover">
 	    <div class="postimg">
-	      <a target="_blank" href="http://www.zeroreznc.com/"><img src="/images/portfolio/zerorez.png" /></a>
+	      <img src="/images/portfolio/zerorez.png" />
 	    </div>
 	    <div class="padding">
 	      <!-- <h1><a target="_blank" href="http://www.zeroreznc.com/">Zerorez NC</a></h1> -->
@@ -80,7 +80,7 @@ permalink: /portfolio/
 
 	  <article class="post articles postnohover">
 	    <div class="postimg">
-	      <a target="_blank" href="http://www.whittenlasereye.com/"><img src="/images/portfolio/WhittenLaserEye.jpg" /></a>
+	      <img src="/images/portfolio/WhittenLaserEye.jpg" />
 	    </div>
 	    <div class="padding">
 	      <!-- <h1><a target="_blank" href="http://www.whittenlasereye.com/">Whitten Laser Eye</a></h1> -->
@@ -92,7 +92,7 @@ permalink: /portfolio/
 
   	  <article class="post articles postnohover">
 	    <div class="postimg">
-	      <a target="_blank" href="http://keillasik.com/"><img src="/images/portfolio/KeilLasik.jpg" /></a>
+	      <img src="/images/portfolio/KeilLasik.jpg" />
 	    </div>
 	    <div class="padding">
 	      <!-- <h1><a target="_blank" href="http://keillasik.com/">Keil Lasik</a></h1> -->
@@ -104,7 +104,7 @@ permalink: /portfolio/
 
   	  <article class="post articles postnohover">
 	    <div class="postimg">
-	      <a target="_blank" href="http://dinahvice-sunrisedental.com/"><img src="/images/portfolio/SunriseDental.jpg" /></a>
+	      <img src="/images/portfolio/SunriseDental.jpg" />
 	    </div>
 	    <div class="padding">
 	      <!-- <h1><a target="_blank" href="http://dinahvice-sunrisedental.com/">Sunrise Dental</a></h1> -->

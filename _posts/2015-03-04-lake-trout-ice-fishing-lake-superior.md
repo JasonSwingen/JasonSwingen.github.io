@@ -7,6 +7,8 @@ tags: [lake trout, ice fishing, fishing]
 image: /images/2015-lake-trout.jpg
 ---
 
+<style>.parallax-background {background: url("/images/2015-lake-trout.jpg");}</style>
+
 Last year Duluth had an intensely cold winter which froze nearly all of Lake Superior allowing anglers the opportunity to travel miles onto the lake in search of monster lakers. This year was not nearly as cold but there was still enough of the lake that froze over to allow many fisherman get onto the ice. 
 
 I had never been trout fishing before other than catching a few small rainbow trout as a kid. After talking to a few guys getting off the lake and talking to the bait shop employees I bought a few more pieces of equipment and was ready to give it a shot.

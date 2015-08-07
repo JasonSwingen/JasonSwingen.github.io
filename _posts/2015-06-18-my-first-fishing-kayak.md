@@ -7,6 +7,8 @@ tags: [fishing, kayak fishing]
 image: /images/Fishing-Kayak.jpg
 ---
 
+<style>.parallax-background {background: url("/images/Fishing-Kayak.jpg");}</style>
+
 My wife bought me this kayak for my birthday! It is a Sun Dolphin Journey 10. It is great for rivers, creeks, and smaller lakes. I have been continuing to add rod holders, storage, and anchor trolleys.
 
 Living in Duluth, MN. This kayak is great! It is easy to carry around by yourself as well as lift it on and off of a car rack.

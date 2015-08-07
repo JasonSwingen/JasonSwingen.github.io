@@ -7,6 +7,8 @@ tags: [mystery tackle box, unboxing]
 image: /images/June15MTB.jpg
 ---
 
+<style>.parallax-background {background: url("/images/June15MTB.jpg");}</style>
+
 This is my second Mystery Tackle Box, and my first unboxing. I was very excited about using the Sebile Flat Belly Walker as well as the Batwingz by Z-man. 
 
 ## Flat Belly Walker

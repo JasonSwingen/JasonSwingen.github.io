@@ -7,6 +7,8 @@ tags: [workflow, blogging, jekyll]
 image: /images/Jekyll.png
 ---
 
+<style>.parallax-background {background: url("/images/Jekyll.png");}</style>
+
 This is my first post after getting my github pages set up and running with <a target="_blank" href="http://jekyllrb.com/">Jekyll</a>.
 
 ## My Workflow

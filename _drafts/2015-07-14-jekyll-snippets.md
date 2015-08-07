@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 2015-07-14-jekyll-snippets
+title: Jekyll Snippets
 categories: []
 tags: []
 published: False

@@ -7,6 +7,8 @@ tags: [mystery tackle box]
 image: /images/May15MTB.jpg
 ---
 
+<style>.parallax-background {background: url("/images/May15MTB.jpg");}</style>
+
 My First [Mystery Tackle Box](http://www.mysterytacklebox.com). I used the their coupon code GET499 to get this box for just $4.99. Out of everything that came in this box.
 
 ## 2.5RSC

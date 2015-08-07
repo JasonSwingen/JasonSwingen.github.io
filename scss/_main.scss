@@ -53,14 +53,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
   color: $darkerGray;
   font-weight: bold;
-  
-  line-height: 1.7;
+  line-height: 1.2;
   margin: 1em 0 15px;
   padding: 0;
-
-  @include mobile {
-    line-height: 1.4;
-  }
 }
   
 h1 {  
@@ -257,6 +252,12 @@ img {
     }
   }
 }
+.three {
+  max-width: 31%
+}
+.four {
+  max-width: 23%;
+}
 
 .gallery {
   float: left;
@@ -313,7 +314,7 @@ img {
   display: inline-flex;
   padding-left: 1em;
   font-size: 0.8em;
-  margin: 0em;
+  margin: 1em 0em 0em;
   li {
     color: $gray;
     padding-left: 4px;

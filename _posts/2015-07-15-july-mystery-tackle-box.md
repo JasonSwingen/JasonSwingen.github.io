@@ -7,6 +7,8 @@ published: True
 image: /images/July15MTB.jpg
 ---
 
+<style>.parallax-background {background: url("/images/July15MTB.jpg");}</style>
+
 I am very excited to see a Live Target Lure in this box. I have looked at them so many times and just couldn't bring myself to pay $16 for one lure. The colors of the soft plastics weren't what I would have picked out in a store, but seen like great for slightly dirtier waters.
 
 ## Threadfin Shad Baitball Squarebill

@@ -62,8 +62,8 @@
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
-  &:hover {
-    color: $color1 !important;
+  a:hover {
+    color: $color2 !important;
   }
   @include mobile {
     text-align: left;

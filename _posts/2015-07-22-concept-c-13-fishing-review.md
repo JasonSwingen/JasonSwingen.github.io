@@ -7,17 +7,19 @@ published: True
 image: /images/Concept-C.jpg
 ---
 
+<style>.parallax-background {background: url("/images/Concept-C.jpg");}</style>
+
 13 fishing is a tackle manufacturer based out of Tampa Florida. They currently make fishing products such as reels and rods for freshwater, saltwater as well as ice fishing.
 
 I have a LH Concept C in an 8.1.1 gear ratio, but this is a general review on the Concept C.
 
 > Enjoy life outside and in, respect your fellow man and woman, always honor our precious fishing environment and its resources. Make your own luck.
 
-<div class="flexdad">
-	<a href="/images/Concept-C-1.jpg" data-lightbox="13 Fishing Concept C" data-title="13 Fishing Concept C" target="_self" class="flexkid"><img src="/images/Concept-C-1.jpg" alt="13 Fishing Concept C"></a>
-	<a href="/images/Concept-C-2.jpg" data-lightbox="13 Fishing Concept C" data-title="13 Fishing Concept C" target="_self" class="flexkid"><img src="/images/Concept-C-2.jpg" alt="13 Fishing Concept C"></a>
-	<a href="/images/Concept-C-3.jpg" data-lightbox="13 Fishing Concept C" data-title="13 Fishing Concept C" target="_self" class="flexkid"><img src="/images/Concept-C-3.jpg" alt="13 Fishing Concept C"></a>
-	<a href="/images/Concept-C-4.jpg" data-lightbox="13 Fishing Concept C" data-title="13 Fishing Concept C" target="_self" class="flexkid"><img src="/images/Concept-C-4.jpg" alt="13 Fishing Concept C"></a>
+<div  class="flexdad">
+	<a href="/images/Concept-C-1.jpg" data-lightbox="13 Fishing Concept C" data-title="13 Fishing Concept C" target="_self" class="flexkid four"><img src="/images/Concept-C-1.jpg" alt="13 Fishing Concept C"></a>
+	<a href="/images/Concept-C-2.jpg" data-lightbox="13 Fishing Concept C" data-title="13 Fishing Concept C" target="_self" class="flexkid four"><img src="/images/Concept-C-2.jpg" alt="13 Fishing Concept C"></a>
+	<a href="/images/Concept-C-3.jpg" data-lightbox="13 Fishing Concept C" data-title="13 Fishing Concept C" target="_self" class="flexkid four"><img src="/images/Concept-C-3.jpg" alt="13 Fishing Concept C"></a>
+	<a href="/images/Concept-C-4.jpg" data-lightbox="13 Fishing Concept C" data-title="13 Fishing Concept C" target="_self" class="flexkid four"><img src="/images/Concept-C-4.jpg" alt="13 Fishing Concept C"></a>
 </div>
 
 ## MSRP

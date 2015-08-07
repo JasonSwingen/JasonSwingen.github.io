@@ -7,6 +7,8 @@ tags: [tips, tricks, plugins]
 image: /images/SublimeText.png
 ---
 
+<style>.parallax-background {background: url("/images/SublimeText.png");}</style>
+
 Lets just get things rolling. Here is a list of my currently used and favorite Sublime Text Plugins. I am currently running Sublime Text 3 on Windows 8.1.
 
 * Package Control
