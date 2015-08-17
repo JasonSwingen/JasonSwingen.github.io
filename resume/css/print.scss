@@ -13,6 +13,10 @@ body {
 	top: 0px;
 	box-shadow: none;
 	padding-bottom: 0px;
+	a {
+	  font-size: 18px;
+	  border-bottom: none;
+	}
 }
 h1 {
 	font-size: 32px;
@@ -58,6 +62,12 @@ p {
 		font-family: helvetica, sans-serif;
 		font-size: 13px;
 	}
+}
+
+a:after{
+	content: " (" attr(href) ") ";
+	font-size: 8px;
+	font-weight: normal;
 }
 //Enable the following attribute to show lists in a single column
 // .twoway {

@@ -194,6 +194,14 @@ main {
     margin: 0 auto 100px;
     border-radius: 0px;
   }
+  a {
+    color: black;
+    border-bottom: 2px solid $main-color;
+    &:hover {
+      color: $main-color;
+      border-bottom: inherit;
+    }
+  }
 }
 
 .paper > div {
@@ -231,6 +239,10 @@ main {
   width: 24%;
   @include tablet {
     width: 100%;
+  }
+  ul {
+    list-style: circle;
+    margin-left: 16px;
   }
 }
 
