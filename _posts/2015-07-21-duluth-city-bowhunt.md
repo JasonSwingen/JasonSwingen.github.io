@@ -31,14 +31,28 @@ As a new hunter I was unable to get my first or second choices in DHA. I was abl
 
 I will be going out to do a little scouting before the season opens to figure out where to put my stand.
 
+Things are looking good. I put out my trail camera during the middle of the day and that night captured pictures of a doe. The area has a few possible trails though it so I moved my camera to show a different angle. Fingers crossed.
+
+<div class="flexdad">
+	<a href="/images/2015-08-14_Doe_1.1.jpg" data-lightbox="DHA2A Doe" data-title="DHA2A Doe" target="_self" class="flexkid"><img src="/images/2015-08-14_Doe_1.1.jpg" alt="Whitetail Doe on Trail Camera"></a>
+	<a href="/images/2015-08-14_Doe_1.2.jpg" data-lightbox="DHA2A Doe" data-title="DHA2A Doe" target="_self" class="flexkid"><img src="/images/2015-08-14_Doe_1.2.jpg" alt="Whitetail Doe on Trail Camera"></a>
+	<a href="/images/2015-08-14_Doe_1.3.jpg" data-lightbox="DHA2A Doe" data-title="DHA2A Doe" target="_self" class="flexkid"><img src="/images/2015-08-14_Doe_1.3.jpg" alt="Whitetail Doe on Trail Camera"></a>
+	<a href="/images/2015-08-14_Doe_1.4.jpg" data-lightbox="DHA2A Doe" data-title="DHA2A Doe" target="_self" class="flexkid"><img src="/images/2015-08-14_Doe_1.4.jpg" alt="Whitetail Doe on Trail Camera"></a>
+	<a href="/images/2015-08-14_Doe_1.5.jpg" data-lightbox="DHA2A Doe" data-title="DHA2A Doe" target="_self" class="flexkid"><img src="/images/2015-08-14_Doe_1.5.jpg" alt="Whitetail Doe on Trail Camera"></a>
+</div>
+
+
+<a href="/images/Archery_Practice.jpg" data-lightbox="Archery Target Practice" data-title="2 shots from 40 yards and 2 shots from 50 yards"><img class="floatright" src="/images/Archery_Practice.jpg" alt="Target"></a>
+
 ## My Setup
 * Bear Done Deal Bow
 * Cobra Sight
+* QAD Ultra-Rest Hunter Fall-Away Arrow Rest
 * Trophy Ridge Quiver
 * Trophy Ridge Stabilizer
 * Tru-Fire Release
 * Trophy Hunter 400 Arrows
 * Lumenok Nocks
-* QAD Exodus Broadheads
+* Muzzy 100 grain Broadheads
 
 <b>Stay tuned, I will be updating this blog post throughout the season.</b>
