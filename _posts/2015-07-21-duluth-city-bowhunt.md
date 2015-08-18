@@ -34,11 +34,11 @@ I will be going out to do a little scouting before the season opens to figure ou
 Things are looking good. I put out my trail camera during the middle of the day and that night captured pictures of a doe. The area has a few possible trails though it so I moved my camera to show a different angle. Fingers crossed.
 
 <div class="flexdad">
-	<a href="/images/2015-08-14_Doe_1.1.jpg" data-lightbox="DHA2A Doe" data-title="DHA2A Doe" target="_self" class="flexkid"><img src="/images/2015-08-14_Doe_1.1.jpg" alt="Whitetail Doe on Trail Camera"></a>
-	<a href="/images/2015-08-14_Doe_1.2.jpg" data-lightbox="DHA2A Doe" data-title="DHA2A Doe" target="_self" class="flexkid"><img src="/images/2015-08-14_Doe_1.2.jpg" alt="Whitetail Doe on Trail Camera"></a>
-	<a href="/images/2015-08-14_Doe_1.3.jpg" data-lightbox="DHA2A Doe" data-title="DHA2A Doe" target="_self" class="flexkid"><img src="/images/2015-08-14_Doe_1.3.jpg" alt="Whitetail Doe on Trail Camera"></a>
-	<a href="/images/2015-08-14_Doe_1.4.jpg" data-lightbox="DHA2A Doe" data-title="DHA2A Doe" target="_self" class="flexkid"><img src="/images/2015-08-14_Doe_1.4.jpg" alt="Whitetail Doe on Trail Camera"></a>
-	<a href="/images/2015-08-14_Doe_1.5.jpg" data-lightbox="DHA2A Doe" data-title="DHA2A Doe" target="_self" class="flexkid"><img src="/images/2015-08-14_Doe_1.5.jpg" alt="Whitetail Doe on Trail Camera"></a>
+	<a href="/images/2015-08-14_Doe_1.1.JPG" data-lightbox="DHA2A Doe" data-title="DHA2A Doe" target="_self" class="flexkid"><img src="/images/2015-08-14_Doe_1.1.JPG" alt="Whitetail Doe on Trail Camera"></a>
+	<a href="/images/2015-08-14_Doe_1.2.JPG" data-lightbox="DHA2A Doe" data-title="DHA2A Doe" target="_self" class="flexkid"><img src="/images/2015-08-14_Doe_1.2.JPG" alt="Whitetail Doe on Trail Camera"></a>
+	<a href="/images/2015-08-14_Doe_1.3.JPG" data-lightbox="DHA2A Doe" data-title="DHA2A Doe" target="_self" class="flexkid"><img src="/images/2015-08-14_Doe_1.3.JPG" alt="Whitetail Doe on Trail Camera"></a>
+	<a href="/images/2015-08-14_Doe_1.4.JPG" data-lightbox="DHA2A Doe" data-title="DHA2A Doe" target="_self" class="flexkid"><img src="/images/2015-08-14_Doe_1.4.JPG" alt="Whitetail Doe on Trail Camera"></a>
+	<a href="/images/2015-08-14_Doe_1.5.JPG" data-lightbox="DHA2A Doe" data-title="DHA2A Doe" target="_self" class="flexkid"><img src="/images/2015-08-14_Doe_1.5.JPG" alt="Whitetail Doe on Trail Camera"></a>
 </div>
 
 
