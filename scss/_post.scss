@@ -20,8 +20,8 @@ $flex-box-color: transparentize($gray, .1);
 }
 
 .postnohover {
-  -webkit-filter: grayscale(0.4);
-  filter: grayscale(0.4);
+  -webkit-filter: grayscale(0.7);
+  filter: grayscale(0.7);
   @include mobile {
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
@@ -81,7 +81,7 @@ $flex-box-color: transparentize($gray, .1);
 
 .post {
   // @include transition (all, 0.1s, ease-in-out);
-  @include flex(2 2 17em);
+  @include flex(2 2 14em);
   @include align-self(stretch);
   background: $postbackground;
   @include border-radius(5px);

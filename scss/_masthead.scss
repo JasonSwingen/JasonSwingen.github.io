@@ -10,7 +10,7 @@
     right: 0;
     z-index: 999;
     height: 100%;
-    width: 25%;
+    width: 20%;
     padding: 3em 0em;
   }
   .container  {
@@ -43,7 +43,7 @@
   margin: 7px 15px 0px 10px;
   float: none;
   margin: 0 auto;
-  @include transition(all, 0.8s, $ease-out-back);
+  // @include transition(all, 0.8s, $ease-out-back);
   &:hover {
     transform: rotateX(20deg);
   }

@@ -9,13 +9,15 @@ $parallax-background-height: $parallax-window-height * 2;
   width: 100%;
   top: 0px;
   @include desktop {
-    width: 75%;
+    width: 80%;
   }
   h1 {
     font-size: 3em;
     margin: 0em .5em 1em;
-    color: black;
-    text-shadow: 1px 1px 0px #fff;
+    color: #FFF;
+    text-shadow: 2px 2px 2px $color2, 4px 4px 2px black;
+    font-stretch: extra-expanded;
+    font-weight: 300;
     @include tablet {
       font-size: 2.5em;
     }
