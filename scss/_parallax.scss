@@ -10,6 +10,7 @@ $parallax-background-height: $parallax-window-height * 2;
   top: 0px;
   @include desktop {
     width: 80%;
+    float: right;
   }
   h1 {
     font-size: 3em;

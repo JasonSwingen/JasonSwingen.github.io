@@ -15,7 +15,7 @@ I was fishing off of Brighton Beach on the Northeast end of Duluth MN in 120 fee
 
 <div class="video">
   <div class="video-wrapper">
-      <iframe src="http://www.youtube.com/embed/xNv6j5CNuwc?showinfo=0&iv_load_policy=3&controls=0" frameborder="0" allowfullscreen></iframe>
+      <iframe src="http://www.youtube.com/embed/xNv6j5CNuwc?showinfo=0&iv_load_policy=3&controls=1" frameborder="0" allowfullscreen></iframe>
   </div>
 </div>
 

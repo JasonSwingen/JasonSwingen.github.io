@@ -30,6 +30,7 @@ body {
     max-width: none;
     width: 65%;
     margin-bottom: 3em;
+    float: right;
   }
 }
 
@@ -38,7 +39,7 @@ body {
   max-width: 1300px;
   @include desktop {
     width: 80%;
-    float: left;
+    float: right;
   }
 }
 
@@ -261,8 +262,8 @@ img {
 }
 
 .gallery {
-  float: left;
-  width: 75%;
+  float: right;
+  width: 80%;
   padding: .5vw;
   font-size: 0;
   @include clearfix;
