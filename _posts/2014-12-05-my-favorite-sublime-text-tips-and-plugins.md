@@ -1,7 +1,7 @@
 ---
 layout: post
 title: My Favorite Sublime Text Tips and Plugins
-published: True
+published: False
 categories: [sublime-text]
 tags: [tips, tricks, plugins]
 image: /images/SublimeText.png

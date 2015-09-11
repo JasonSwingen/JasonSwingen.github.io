@@ -1,7 +1,7 @@
 ---
 layout: post
 title: My Online Resume
-published: True
+published: False
 categories: [resume]
 tags: [workflow, resume]
 image: /images/AdwordsCertified.png

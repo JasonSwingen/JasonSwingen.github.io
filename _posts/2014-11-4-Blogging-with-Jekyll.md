@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Using Jekyll as a Blog
-published: True
+published: False
 categories: [jekyll]
 tags: [workflow, blogging, jekyll]
 image: /images/Jekyll.png
