@@ -43,6 +43,6 @@ It's a wide gap hook. It's sharp, has a wide gap, and has a large fully-closed e
 * 6" Lizard
 * D39z Fatgap Worm/Tube Hook 5/0
 
-[For More Information About This Box](http://www.mtb-baits.com/9oj)
+[For More Information About This Box](http://mysterytacklebox.com/boxes/bass113)
 
 <img class="centered" src="/images/Aug-MTBslam.jpg" alt="">
