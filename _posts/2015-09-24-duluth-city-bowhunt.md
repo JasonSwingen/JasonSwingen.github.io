@@ -81,6 +81,14 @@ I made a trip earlier in the week to get my stand set up and shooting lanes cut.
 
 I set my alarm for 4 a.m. but my excitement had me up by quarter to. I got out to to my spot and was up in my stand an hour and a half before sunrise. I had just strapped my climber to the tree and heard some rustling behind me. I still had my headlamp on, but quickly shut it off and held still. It was so dark I was unable to see what it was. It sounded like a deer and it walked directly under my stand. That was the only action I got that morning. I left my stand and mid morning so I would be ready for a full evening hunt. Unfortunately, nothing came by in the evening either.
 
+### October 4th 2015 - First Deer Sighting
+
+On Saturday, October 3rd I decided to move my stand. Just a week I had moved it around 100 yards away from my original spot earlier in the week as I had seen some fresh deer sign on my way to my stand. There was a new spot I can checked out and was planning on moving my stand there, but after checking my stand I realized a doe had been right where my original stand was placed just a few hours before I got there, as well as the two days prior. So, back to my first location I went.
+
+Just a few minutes before sunrise, I heard crunch crunch... crunch crunch. This was it. I new there were deer coming my way. There are two main trails coming into the opening I was set up in that would funnel them either directly under me or 20 yards away. The deer just kept on walking by and ended up walking up a hill on the back side of my stand. I could see the doe and later a fawn. The only shot I would have had was a 35 yard, facing away shot through a 6 inch window of branches.
+
+Deer 1 - Jason 0
+
 ### More To Come...
 
 <b>Stay tuned, I will be updating this blog post throughout the season.</b>
