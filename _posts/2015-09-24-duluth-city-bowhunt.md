@@ -89,6 +89,18 @@ Just a few minutes before sunrise, I heard crunch crunch... crunch crunch. This 
 
 Deer 1 - Jason 0
 
+### November 3rd 2015 - Not the animal I want to see
+
+I decided to hunt a quick afternoon and got everything ready and headed out to my stand. There was a white car parked next to where I normally do that didn't look like a hunters car, but I figured that wouldn't be a problem as I'm headed off the trail. After less than and hour of getting into my stand, I hear movement to my right! Unfortunatly the driver of the car and her dog decided to take a walk off the trail, right next to my stand. Her dog never saw me but about 25 yards away it was barking up a different tree, most likely smelling the buck bomb I had just sprayed a half hour before. Hunt over.
+
+### It's already November! - Good News and Bad News
+
+So it's finally November and the deer are just starting to get into the rut. This is prime time and I need to get out in the stand as soon as possible.
+
+As I drove out to check my trail camera I was greeted with a three cement barriers with a sign that read "road closed". There is only one road that passes through the Magney-Snively area and it is now closed on both ends of the land I'm able to hunt...
+
+I'm not done yet, I just need to figure out how to get back into the field.
+
 ### More To Come...
 
 <b>Stay tuned, I will be updating this blog post throughout the season.</b>
