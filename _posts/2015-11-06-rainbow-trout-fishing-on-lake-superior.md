@@ -9,6 +9,8 @@ image: /images/Superior_Rainbow_Trout.jpeg
 
 <style>.parallax-background {background: url("/images/Superior_Rainbow_Trout.jpeg");}</style>
 
+## October 22nd, 2015
+
 My friends Ben and Shane drove up from near the Cities to hit up the shore and see what we could catch.
 
 We were planning on heading up the north shore and fishing the mouth of the rivers on our way back to Duluth. Driving past the Lester river just on the edge of town, we could see fishing rising just as the first light was starting to shine on Lake Superior. It didn't take long and Ben had a fish on.
