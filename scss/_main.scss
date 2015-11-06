@@ -36,7 +36,7 @@ body {
 
 .big-container {
   @extend .container;
-  max-width: 1300px;
+  max-width: 1500px;
   @include desktop {
     width: 80%;
     float: right;
@@ -248,6 +248,7 @@ img {
   @include align-items(stretch);
   margin: 2em 0em;
   .flexkid {
+    padding: 0px 2px;
     p {
       color: $white;
       margin-top: 2em;
