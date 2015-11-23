@@ -184,8 +184,8 @@ img {
     @include transition(fill, 0.8s, $ease-out-back);
   }
   @include mobile {
-    height: 50px !important;
-    width: 50px !important;
+    height: 35px !important;
+    width: 35px !important;
   }
 }
 
