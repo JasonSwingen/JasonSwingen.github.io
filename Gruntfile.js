@@ -20,20 +20,33 @@ module.exports = function(grunt) {
       	}
       }
    	},
-		// SASS - compiles scss files
-		sass: {                              // Task 
-			dist: {                            // Target 
-			  options: {                       // Target options 
-			  	loadPath: require('node-bourbon').includePaths,
-			  	loadPath: require('node-neat').includePaths,
-			    style: 'compressed'
-			  },
-			  files: {                         // Dictionary of files 
-			    'build/css/styles.css': 'style.scss'     // 'destination': 'source' 
-			  }
-			}
-		},
-		//JEKYLL - Builds site and runs a jekyll server
+	// SASS - compiles scss files
+	sass: {                              // Task 
+		dist: {                            // Target 
+		  options: {                       // Target options 
+		  	loadPath: require('node-bourbon').includePaths,
+		  	loadPath: require('node-neat').includePaths,
+		    style: 'compressed'
+		  },
+		  files: {                         // Dictionary of files 
+		    'build/css/styles.css': 'style.scss'     // 'destination': 'source' 
+		  }
+		}
+	},
+	// imagemin: {
+	//     jpgs: {
+	//         options: {
+	//             progressive: true
+	//         },
+	//         files: [{
+	//             expand: true,
+	//             cwd: 'images/large',
+	//             src: ['*.jpg'],
+	//             dest: 'images/'
+	//         }]
+	//     }
+	// },
+	  // JEKYLL - Builds site and runs a jekyll server
 	  jekyll: {  
 	  	server: {
 	  		source: '/',
@@ -90,6 +103,8 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-jekyll');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	// grunt.loadNpmTasks('grunt-contrib-imagemin');
+	// grunt.loadNpmTasks('grunt-newer');
 	// grunt.loadNpmTasks('grunt-contrib-concat');
 	 
 	grunt.registerTask('default', ['jshint:PreUglify', 'uglify', 'sass', 'watch']);
