@@ -4,7 +4,7 @@ title: My Portfolio
 permalink: /portfolio/
 ---
 
-<div class="big-container">
+<div class="container">
 
     <div class="snippet">
       <h1>About Me</h1>
