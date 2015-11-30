@@ -7,17 +7,17 @@ permalink: /gallery/
 <div class="gallery">
 	<a href="/images/gallery_1.jpg" data-lightbox="Gallery" data-title="Smallie with 13 Fishing" class="thumb" style="background-image: url('/images/gallery_1.jpg');" title="Smallie with 13 Fishing"></a>
 	<a href="/images/gallery_2.jpg" data-lightbox="Gallery" data-title="Smallie 2 with 13 fishing" class="thumb" style="background-image: url('/images/gallery_2.jpg');" title="Smallie 2 with 13 fishing"></a>
-	<a href="/images/gallery_3.jpg" data-lightbox="Gallery" data-title="Smallie of Z-man pop shadz" class="thumb" style="background-image: url('/images/gallery_1.jpg');" title="Smallie of Z-man pop shadz"></a>
-	<a href="/images/gallery_4.jpg" data-lightbox="Gallery" data-title="19 inch Smallie" class="thumb" style="background-image: url('/images/gallery_1.jpg');" title="19 inch Smallie"></a>
-	<a href="/images/gallery_5.jpg" data-lightbox="Gallery" data-title="Smallie from Voyagers National Park" class="thumb" style="background-image: url('/images/gallery_1.jpg');" title="Smallie from Voyagers National Park"></a>
-	<a href="/images/gallery_6.jpg" data-lightbox="Gallery" data-title="Beautiful Walleye" class="thumb" style="background-image: url('/images/gallery_1.jpg');" title="Beautiful Walleye"></a>
-	<a href="/images/gallery_7.jpg" data-lightbox="Gallery" data-title="Smallie" class="thumb" style="background-image: url('/images/gallery_1.jpg');" title="Smallie"></a>
-	<a href="/images/gallery_8.jpg" data-lightbox="Gallery" data-title="Smallie" class="thumb" style="background-image: url('/images/gallery_1.jpg');" title="Smallie"></a>
-	<a href="/images/Superior_Rainbow_Trout.jpg" data-lightbox="Gallery" data-title="Lake Superior Lake Trout" class="thumb" style="background-image: url('/images/Superior_Rainbow_Trout.jpg');" title="Lake Superior Lake Trout"></a>
-	<a href="/images/Superior_Rainbow_Trout_2.jpeg" data-lightbox="Gallery" data-title="Lake Superior Steelhead Rainbow Trout" class="thumb" style="background-image: url('/images/Superior_Rainbow_Trout_2.jpeg');" title="Lake Superior Steelhead Rainbow Trout"></a>
-	<a href="/images/Superior_Rainbow_Trout_9.jpg" data-lightbox="Gallery" data-title="Ben's Lake Superior Kamloop Rainbow Trout" class="thumb" style="background-image: url('/images/Superior_Rainbow_Trout_9.jpg');" title="Ben's Lake Superior Kamloop Rainbow Trout"></a>
+	<a href="/images/gallery_3.jpg" data-lightbox="Gallery" data-title="Smallie of Z-man pop shadz" class="thumb" style="background-image: url('/images/gallery_3.jpg');" title="Smallie of Z-man pop shadz"></a>
+	<a href="/images/gallery_4.jpg" data-lightbox="Gallery" data-title="19 inch Smallie" class="thumb" style="background-image: url('/images/gallery_4.jpg');" title="19 inch Smallie"></a>
+	<a href="/images/gallery_5.jpg" data-lightbox="Gallery" data-title="Smallie from Voyagers National Park" class="thumb" style="background-image: url('/images/gallery_5.jpg');" title="Smallie from Voyagers National Park"></a>
+	<a href="/images/gallery_6.jpg" data-lightbox="Gallery" data-title="Beautiful Walleye" class="thumb" style="background-image: url('/images/gallery_6.jpg');" title="Beautiful Walleye"></a>
+	<a href="/images/gallery_7.jpg" data-lightbox="Gallery" data-title="Smallie" class="thumb" style="background-image: url('/images/gallery_7.jpg');" title="Smallie"></a>
+	<a href="/images/gallery_8.jpg" data-lightbox="Gallery" data-title="Smallie" class="thumb" style="background-image: url('/images/gallery_8.jpg');" title="Smallie"></a>
+	<a href="/images/Superior_Rainbow_Trout.jpeg" data-lightbox="Gallery" data-title="Lake Superior Lake Trout" class="thumb" style="background-image: url('/images/Superior_Rainbow_Trout.jpeg');" title="Lake Superior Lake Trout"></a>
+	<a href="/images/Superior_Rainbow_Trout2.jpeg" data-lightbox="Gallery" data-title="Lake Superior Steelhead Rainbow Trout" class="thumb" style="background-image: url('/images/Superior_Rainbow_Trout2.jpeg');" title="Lake Superior Steelhead Rainbow Trout"></a>
+	<a href="/images/Superior_Rainbow_Trout9.jpg" data-lightbox="Gallery" data-title="Ben's Lake Superior Kamloop Rainbow Trout" class="thumb" style="background-image: url('/images/Superior_Rainbow_Trout9.jpg');" title="Ben's Lake Superior Kamloop Rainbow Trout"></a>
 	<a href="/images/2015_MT_Hunt_14.jpg" data-lightbox="Gallery" data-title="2015 Mark's Montana Elk" class="thumb" style="background-image: url('/images/2015_MT_Hunt_14.jpg');" title="2015 Mark's Montana Elk"></a>
-	<a href="/images/2015_MT_Hunt_19.jpg" data-lightbox="Gallery" data-title="2015 Montana Mule Deer" class="thumb" style="background-image: url('/images/2015_MT_Hunt_19.jpg');" title="2015 Montana Mule Deer"></a>
+	<a href="/images/2015_MT_Hunt_19.jpeg" data-lightbox="Gallery" data-title="2015 Montana Mule Deer" class="thumb" style="background-image: url('/images/2015_MT_Hunt_19.jpeg');" title="2015 Montana Mule Deer"></a>
 	<a href="/images/Largemouth-Bass4.jpg" data-lightbox="Gallery" data-title="Largemouth Bass" class="thumb" style="background-image: url('/images/Largemouth-Bass4.jpg');" title="Largemouth Bass"></a>
 	<a href="/images/Largemouth-Bass3.jpg" data-lightbox="Gallery" data-title="Largemouth Bass" class="thumb" style="background-image: url('/images/Largemouth-Bass3.jpg');" title="Largemouth Bass"></a>
 	<a href="/images/Largemouth-Bass2.jpg" data-lightbox="Gallery" data-title="Largemouth Bass" class="thumb" style="background-image: url('/images/Largemouth-Bass2.jpg');" title="Largemouth Bass"></a>
