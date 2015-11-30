@@ -22,7 +22,6 @@ permalink: /gallery/
 	<a href="/images/Largemouth-Bass3.jpg" data-lightbox="Gallery" data-title="Largemouth Bass" class="thumb" style="background-image: url('/images/Largemouth-Bass3.jpg');" title="Largemouth Bass"></a>
 	<a href="/images/Largemouth-Bass2.jpg" data-lightbox="Gallery" data-title="Largemouth Bass" class="thumb" style="background-image: url('/images/Largemouth-Bass2.jpg');" title="Largemouth Bass"></a>
 	<a href="/images/Largemouth-Bass.jpg" data-lightbox="Gallery" data-title="Largemouth Bass" class="thumb" style="background-image: url('/images/Largemouth-Bass.jpg');" title="Largemouth Bass"></a>
-	<a href="/images/Sebile_Walker.jpg" data-lightbox="Gallery" data-title="Big Pike on a Sebile Walker" class="thumb" style="background-image: url('/images/Sebile_Walker.jpg');" title="Big Pike on a Sebile Walker"></a>
 	<a href="/images/Shadow-Rap.jpg" data-lightbox="Gallery" data-title="Shadow-Rap" class="thumb" style="background-image: url('/images/Shadow-Rap.jpg');" title="Shadow-Rap"></a>
 	<a href="/images/Sebile-Walker.jpg" data-lightbox="Gallery" data-title="Sebile-Walker" class="thumb" style="background-image: url('/images/Sebile-Walker.jpg');" title="Sebile-Walker"></a>
 	<a href="/images/Jumbo-Bluegill.jpg" data-lightbox="Gallery" data-title="Jumbo Bluegill" class="thumb" style="background-image: url('/images/Jumbo-Bluegill.jpg');" title="Jumbo Bluegill"></a>
