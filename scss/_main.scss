@@ -265,7 +265,7 @@ img {
 .gallery {
   float: right;
   width: 80%;
-  padding: .5vw;
+  padding: 0vw;
   font-size: 0;
   @include clearfix;
   @include flexbox;
@@ -278,8 +278,13 @@ img {
       width: 31%;
     }
   }
-  @include tablet {
+  @include smdesktop {
     width: 100%;
+    a {
+      width: 31%;
+    }
+  }
+  @include tablet {
     a {
       width: 48%;
     }
@@ -296,20 +301,20 @@ img {
 
 .thumb {
   display: inline-block;
-  height: 250px;
+  height: 350px;
   margin: 0px;
   padding: 0px;
   background-position: center center;
   background-size: cover;
-  @include desktop {
-    height: 225px;
-  }
-  @include tablet {
-    height: 225px;
-  }
-  @include mobile {
-    height: 300px;
-  }
+  // @include desktop {
+  //   height: 225px;
+  // }
+  // @include tablet {
+  //   height: 225px;
+  // }
+  // @include mobile {
+  //   height: 300px;
+  // }
 }
 
 .breadcrumb {
