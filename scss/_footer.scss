@@ -14,11 +14,10 @@
   min-height: 200px;
   float: left;
   width: 100%;
-  @include desktop {
-    width: 80%;
-    float: right;
-    // min-height: 200px;
-  }
+  // @include desktop {
+  //   width: 80%;
+  //   float: right;
+  // }
 }
 
 footer {

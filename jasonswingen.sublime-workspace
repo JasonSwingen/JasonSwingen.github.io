@@ -280,50 +280,42 @@
 	"buffers":
 	[
 		{
-			"file": "_posts/2015-09-24-duluth-city-bowhunt.md",
-			"settings":
-			{
-				"buffer_size": 9469,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "scss/_main.scss",
 			"settings":
 			{
-				"buffer_size": 5071,
+				"buffer_size": 5571,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "gallery.md",
+			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 536,
+				"buffer_size": 1695,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "_data/gallery.yml",
+			"file": "hunting.html",
 			"settings":
 			{
-				"buffer_size": 226,
+				"buffer_size": 1034,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "scss/_breakpoints.scss",
+			"file": "fishing.html",
 			"settings":
 			{
-				"buffer_size": 362,
+				"buffer_size": 1050,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "---\nlayout: default\ntitle: Hunting and Fishing Gallery\ngalleryid: Gallery\npermalink: /gallery/\n---\n\n<div class=\"gallery\">\n	<a href=\"/images/gallery_1.jpg\" data-lightbox=\"Gallery\" data-title=\"Smallie with 13 Fishing\" class=\"thumb\" style=\"background-image: url('/images/gallery_1.jpg');\" title=\"Smallie with 13 Fishing\"></a>\n	<a href=\"/images/gallery_2.jpg\" data-lightbox=\"Gallery\" data-title=\"Smallie 2 with 13 fishing\" class=\"thumb\" style=\"background-image: url('/images/gallery_2.jpg');\" title=\"Smallie 2 with 13 fishing\"></a>\n	<a href=\"/images/gallery_3.jpg\" data-lightbox=\"Gallery\" data-title=\"Smallie of Z-man pop shadz\" class=\"thumb\" style=\"background-image: url('/images/gallery_3.jpg');\" title=\"Smallie of Z-man pop shadz\"></a>\n	<a href=\"/images/gallery_4.jpg\" data-lightbox=\"Gallery\" data-title=\"19 inch Smallie\" class=\"thumb\" style=\"background-image: url('/images/gallery_4.jpg');\" title=\"19 inch Smallie\"></a>\n	<a href=\"/images/gallery_5.jpg\" data-lightbox=\"Gallery\" data-title=\"Smallie from Voyagers National Park\" class=\"thumb\" style=\"background-image: url('/images/gallery_5.jpg');\" title=\"Smallie from Voyagers National Park\"></a>\n	<a href=\"/images/gallery_6.jpg\" data-lightbox=\"Gallery\" data-title=\"Beautiful Walleye\" class=\"thumb\" style=\"background-image: url('/images/gallery_6.jpg');\" title=\"Beautiful Walleye\"></a>\n	<a href=\"/images/gallery_7.jpg\" data-lightbox=\"Gallery\" data-title=\"Smallie\" class=\"thumb\" style=\"background-image: url('/images/gallery_7.jpg');\" title=\"Smallie\"></a>\n	<a href=\"/images/gallery_8.jpg\" data-lightbox=\"Gallery\" data-title=\"Smallie\" class=\"thumb\" style=\"background-image: url('/images/gallery_8.jpg');\" title=\"Smallie\"></a>\n	<a href=\"/images/Superior_Rainbow_Trout.jpeg\" data-lightbox=\"Gallery\" data-title=\"Lake Superior Lake Trout\" class=\"thumb\" style=\"background-image: url('/images/Superior_Rainbow_Trout.jpeg');\" title=\"Lake Superior Lake Trout\"></a>\n	<a href=\"/images/Superior_Rainbow_Trout2.jpeg\" data-lightbox=\"Gallery\" data-title=\"Lake Superior Steelhead Rainbow Trout\" class=\"thumb\" style=\"background-image: url('/images/Superior_Rainbow_Trout2.jpeg');\" title=\"Lake Superior Steelhead Rainbow Trout\"></a>\n	<a href=\"/images/Superior_Rainbow_Trout9.jpg\" data-lightbox=\"Gallery\" data-title=\"Ben's Lake Superior Kamloop Rainbow Trout\" class=\"thumb\" style=\"background-image: url('/images/Superior_Rainbow_Trout9.jpg');\" title=\"Ben's Lake Superior Kamloop Rainbow Trout\"></a>\n	<a href=\"/images/2015_MT_Hunt_14.jpg\" data-lightbox=\"Gallery\" data-title=\"2015 Mark's Montana Elk\" class=\"thumb\" style=\"background-image: url('/images/2015_MT_Hunt_14.jpg');\" title=\"2015 Mark's Montana Elk\"></a>\n	<a href=\"/images/2015_MT_Hunt_19.jpeg\" data-lightbox=\"Gallery\" data-title=\"2015 Montana Mule Deer\" class=\"thumb\" style=\"background-image: url('/images/2015_MT_Hunt_19.jpeg');\" title=\"2015 Montana Mule Deer\"></a>\n	<a href=\"/images/Largemouth-Bass4.jpg\" data-lightbox=\"Gallery\" data-title=\"Largemouth Bass\" class=\"thumb\" style=\"background-image: url('/images/Largemouth-Bass4.jpg');\" title=\"Largemouth Bass\"></a>\n	<a href=\"/images/Largemouth-Bass3.jpg\" data-lightbox=\"Gallery\" data-title=\"Largemouth Bass\" class=\"thumb\" style=\"background-image: url('/images/Largemouth-Bass3.jpg');\" title=\"Largemouth Bass\"></a>\n	<a href=\"/images/Largemouth-Bass2.jpg\" data-lightbox=\"Gallery\" data-title=\"Largemouth Bass\" class=\"thumb\" style=\"background-image: url('/images/Largemouth-Bass2.jpg');\" title=\"Largemouth Bass\"></a>\n	<a href=\"/images/Largemouth-Bass.jpg\" data-lightbox=\"Gallery\" data-title=\"Largemouth Bass\" class=\"thumb\" style=\"background-image: url('/images/Largemouth-Bass.jpg');\" title=\"Largemouth Bass\"></a>\n	<a href=\"/images/Shadow-Rap.jpg\" data-lightbox=\"Gallery\" data-title=\"Shadow-Rap\" class=\"thumb\" style=\"background-image: url('/images/Shadow-Rap.jpg');\" title=\"Shadow-Rap\"></a>\n	<a href=\"/images/Sebile-Walker.jpg\" data-lightbox=\"Gallery\" data-title=\"Sebile-Walker\" class=\"thumb\" style=\"background-image: url('/images/Sebile-Walker.jpg');\" title=\"Sebile-Walker\"></a>\n	<a href=\"/images/Jumbo-Bluegill.jpg\" data-lightbox=\"Gallery\" data-title=\"Jumbo Bluegill\" class=\"thumb\" style=\"background-image: url('/images/Jumbo-Bluegill.jpg');\" title=\"Jumbo Bluegill\"></a>\n	<a href=\"/images/Nine-Pound-Bowfin.jpg\" data-lightbox=\"Gallery\" data-title=\"Nine Pound Bowfin\" class=\"thumb\" style=\"background-image: url('/images/Nine-Pound-Bowfin.jpg');\" title=\"Nine Pound Bowfin\"></a>\n	<a href=\"/images/RSC-Bass.jpg\" data-lightbox=\"Gallery\" data-title=\"RSC-Bass\" class=\"thumb\" style=\"background-image: url('/images/RSC-Bass.jpg');\" title=\"RSC-Bass\"></a>\n	<a href=\"/images/2015-lake-trout.jpg\" data-lightbox=\"Gallery\" data-title=\"2015 lake trout\" class=\"thumb\" style=\"background-image: url('/images/2015-lake-trout.jpg');\" title=\"2015 lake trout\"></a>\n	<a href=\"/images/Kayak-smallie.jpg\" data-lightbox=\"Gallery\" data-title=\"Kayak smallie\" class=\"thumb\" style=\"background-image: url('/images/Kayak-smallie.jpg');\" title=\"Kayak smallie\"></a>\n	<a href=\"/images/Kayak-Pike.jpg\" data-lightbox=\"Gallery\" data-title=\"Kayak Pike\" class=\"thumb\" style=\"background-image: url('/images/Kayak-Pike.jpg');\" title=\"Kayak Pike\"></a>\n	<a href=\"/images/Kayak-Largemouth.jpg\" data-lightbox=\"Gallery\" data-title=\"Kayak Largemouth\" class=\"thumb\" style=\"background-image: url('/images/Kayak-Largemouth.jpg');\" title=\"Kayak Largemouth\"></a>\n	<a href=\"/images/Superior_Lake_Trout.jpg\" data-lightbox=\"Gallery\" data-title=\"Superior Lake Trout\" class=\"thumb\" style=\"background-image: url('/images/Superior_Lake_Trout.jpg');\" title=\"Superior Lake Trout\"></a>\n	<a href=\"/images/Crappies.jpg\" data-lightbox=\"Gallery\" data-title=\"Crappies\" class=\"thumb\" style=\"background-image: url('/images/Crappies.jpg');\" title=\"Crappies\"></a>\n	<a href=\"/images/Crappie_Walleye.jpg\" data-lightbox=\"Gallery\" data-title=\"Crappie Walleye\" class=\"thumb\" style=\"background-image: url('/images/Crappie_Walleye.jpg');\" title=\"Crappie Walleye\"></a>\n	<a href=\"/images/Devils_Lake_Walleye.jpg\" data-lightbox=\"Gallery\" data-title=\"Devils Lake Walleye\" class=\"thumb\" style=\"background-image: url('/images/Devils_Lake_Walleye.jpg');\" title=\"Devils Lake Walleye\"></a>\n	<a href=\"/images/Devils_Lake_Perch.jpg\" data-lightbox=\"Gallery\" data-title=\"Devils Lake Perch\" class=\"thumb\" style=\"background-image: url('/images/Devils_Lake_Perch.jpg');\" title=\"Devils Lake Perch\"></a>\n	<a href=\"/images/Devils_Lake_Ice.jpg\" data-lightbox=\"Gallery\" data-title=\"Devils Lake Ice\" class=\"thumb\" style=\"background-image: url('/images/Devils_Lake_Ice.jpg');\" title=\"Devils Lake Ice\"></a>\n	<a href=\"/images/Devils_Lake_Fish.jpg\" data-lightbox=\"Gallery\" data-title=\"Devils Lake Fish\" class=\"thumb\" style=\"background-image: url('/images/Devils_Lake_Fish.jpg');\" title=\"Devils Lake Fish\"></a>\n	<a href=\"/images/Devils_Lake_Crappie.jpg\" data-lightbox=\"Gallery\" data-title=\"Devils Lake Crappie\" class=\"thumb\" style=\"background-image: url('/images/Devils_Lake_Crappie.jpg');\" title=\"Devils Lake Crappie\"></a>\n	<a href=\"/images/2014-mule-deer.jpg\" data-lightbox=\"Gallery\" data-title=\"2014 mule deer\" class=\"thumb\" style=\"background-image: url('/images/2014-mule-deer.jpg');\" title=\"2014 mule deer\"></a>\n	<a href=\"/images/Wader-Crappies.jpg\" data-lightbox=\"Gallery\" data-title=\"Wader Crappies\" class=\"thumb\" style=\"background-image: url('/images/Wader-Crappies.jpg');\" title=\"Wader Crappies\"></a>\n	<a href=\"/images/Crappie-pile.jpg\" data-lightbox=\"Gallery\" data-title=\"Crappie pile\" class=\"thumb\" style=\"background-image: url('/images/Crappie-pile.jpg');\" title=\"Crappie pile\"></a>\n	<a href=\"/images/Mule-deer3.jpg\" data-lightbox=\"Gallery\" data-title=\"Mule deer\" class=\"thumb\" style=\"background-image: url('/images/Mule-deer3.jpg');\" title=\"Mule deer\"></a>\n	<a href=\"/images/Mule-deer2.1.jpg\" data-lightbox=\"Gallery\" data-title=\"Mule deer\" class=\"thumb\" style=\"background-image: url('/images/Mule-deer2.1.jpg');\" title=\"Mule deer\"></a>\n	<a href=\"/images/Pheasants.jpg\" data-lightbox=\"Gallery\" data-title=\"Pheasants\" class=\"thumb\" style=\"background-image: url('/images/Pheasants.jpg');\" title=\"Pheasants\"></a>\n	<a href=\"/images/Pheasants-with-Mark.jpg\" data-lightbox=\"Gallery\" data-title=\"Pheasants with Mark\" class=\"thumb\" style=\"background-image: url('/images/Pheasants-with-Mark.jpg');\" title=\"Pheasants with Mark\"></a>\n	<a href=\"/images/Perch-fishing.JPG\" data-lightbox=\"Gallery\" data-title=\"Perch fishing\" class=\"thumb\" style=\"background-image: url('/images/Perch-fishing.JPG');\" title=\"Perch fishing\"></a>\n	<a href=\"/images/Pheasants2.jpg\" data-lightbox=\"Gallery\" data-title=\"Pheasants\" class=\"thumb\" style=\"background-image: url('/images/Pheasants2.jpg');\" title=\"Pheasants\"></a>\n	<a href=\"/images/Mule-deer2.jpg\" data-lightbox=\"Gallery\" data-title=\"Mule-deer\" class=\"thumb\" style=\"background-image: url('/images/Mule-deer2.jpg');\" title=\"Mule deer\"></a>\n	<a href=\"/images/Sharptail-Grouse.jpg\" data-lightbox=\"Gallery\" data-title=\"Sharptail Grouse\" class=\"thumb\" style=\"background-image: url('/images/Sharptail-Grouse.jpg');\" title=\"Sharptail Grouse\"></a>\n	<a href=\"/images/Sage-Grouse.jpg\" data-lightbox=\"Gallery\" data-title=\"Sage Grouse\" class=\"thumb\" style=\"background-image: url('/images/Sage-Grouse.jpg');\" title=\"Sage Grouse\"></a>\n	<a href=\"/images/Winter-Mallards.jpg\" data-lightbox=\"Gallery\" data-title=\"Winter Mallards\" class=\"thumb\" style=\"background-image: url('/images/Winter-Mallards.jpg');\" title=\"Winter Mallards\"></a>\n	<a href=\"/images/Antelope3.1.jpg\" data-lightbox=\"Gallery\" data-title=\"Antelope\" class=\"thumb\" style=\"background-image: url('/images/Antelope3.1.jpg');\" title=\"Antelope\"></a>\n	<a href=\"/images/Antelope3.jpg\" data-lightbox=\"Gallery\" data-title=\"Antelope\" class=\"thumb\" style=\"background-image: url('/images/Antelope3.jpg');\" title=\"Antelope\"></a>\n	<a href=\"/images/Geese.jpg\" data-lightbox=\"Gallery\" data-title=\"Geese\" class=\"thumb\" style=\"background-image: url('/images/Geese.jpg');\" title=\"Geese\"></a>\n	<a href=\"/images/Antelope2.jpg\" data-lightbox=\"Gallery\" data-title=\"Antelope\" class=\"thumb\" style=\"background-image: url('/images/Antelope2.jpg');\" title=\"Antelope\"></a>\n	<a href=\"/images/Montana-pike.jpg\" data-lightbox=\"Gallery\" data-title=\"Montana pike\" class=\"thumb\" style=\"background-image: url('/images/Montana-pike.jpg');\" title=\"Montana pike\"></a>\n	<a href=\"/images/Montana-ice-fishing.jpg\" data-lightbox=\"Gallery\" data-title=\"Montana ice fishing\" class=\"thumb\" style=\"background-image: url('/images/Montana-ice-fishing.jpg');\" title=\"Montana ice fishing\"></a>\n	<a href=\"/images/Antelope3.2.JPG\" data-lightbox=\"Gallery\" data-title=\"Antelope\" class=\"thumb\" style=\"background-image: url('/images/Antelope3.2.JPG');\" title=\"Antelope\"></a>\n	<a href=\"/images/Pike-on.jpg\" data-lightbox=\"Gallery\" data-title=\"Pike on\" class=\"thumb\" style=\"background-image: url('/images/Pike-on.jpg');\" title=\"Pike-on\"></a>\n	<a href=\"/images/First-muley-with-Mark.jpg\" data-lightbox=\"Gallery\" data-title=\"First muley with Mark\" class=\"thumb\" style=\"background-image: url('/images/First-muley-with-Mark.jpg');\" title=\"First muley with Mark\"></a>\n</div>",
+			"file": "reviews.html",
 			"settings":
 			{
-				"buffer_size": 11020,
+				"buffer_size": 734,
 				"line_ending": "Windows"
 			}
 		}
@@ -336,16 +328,40 @@
 	"command_palette":
 	{
 		"height": 443.0,
-		"last_filter": "rename",
+		"last_filter": "boot",
 		"selected_items":
 		[
 			[
-				"rename",
-				"File: Rename"
+				"boot",
+				"Snippet: bootstrap_jumbotron"
+			],
+			[
+				"brackethigh sele",
+				"BracketHighlighter: Select Bracket Content"
 			],
 			[
 				"text",
 				"Set Syntax: Textile"
+			],
+			[
+				"select",
+				"BracketHighlighter: Select Bracket Content"
+			],
+			[
+				"bh to",
+				"BracketHighlighter: Toggle Global Enable"
+			],
+			[
+				"brackethi",
+				"BracketHighlighter: Select Bracket Content with Brackets"
+			],
+			[
+				"brack",
+				"BracketHighlighter: Select Bracket Content with Brackets"
+			],
+			[
+				"rename",
+				"File: Rename"
 			],
 			[
 				"title",
@@ -744,10 +760,26 @@
 	"expanded_folders":
 	[
 		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io",
-		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/_data"
+		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/_data",
+		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/_layouts",
+		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/scss"
 	],
 	"file_history":
 	[
+		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/_posts/2015-09-24-duluth-city-bowhunt.md",
+		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/scss/_post.scss",
+		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/scss/_background.scss",
+		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/scss/_parallax.scss",
+		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/hunting.html",
+		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/scss/_masthead.scss",
+		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/scss/_sideimg.scss",
+		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/scss/_device.scss",
+		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/style.scss",
+		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/_data/gallery.yml",
+		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/gallery.md",
+		"/C/Users/Jason/AppData/Roaming/Sublime Text 3/Packages/BracketHighlighter/bh_core.sublime-settings",
+		"/C/Users/Jason/AppData/Roaming/Sublime Text 3/Packages/User/bh_core.sublime-settings",
+		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/scss/_breakpoints.scss",
 		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/gallery2.md",
 		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/portfolio.md",
 		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/_posts/2014-12-19-mule-deer-hunting-in-montana.md",
@@ -756,12 +788,9 @@
 		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/package.json",
 		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/Gruntfile.js",
 		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/_posts/2015-11-06-rainbow-trout-fishing-on-lake-superior.md",
-		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/scss/_post.scss",
 		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/scss/_main.scss",
 		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/.gitignore",
 		"/C/Users/Jason/Documents/Jason Swingen/Job Applications/Swim_Creative_Web_Developer_Assistant_Email.txt",
-		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/scss/_breakpoints.scss",
-		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/scss/_parallax.scss",
 		"/C/Users/Jason/Documents/Backyard Leisure/2015_BL_Keywords.txt",
 		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/_posts/2015-09-11-best-knots-for-fishing.md",
 		"/C/Users/Jason/Google Drive/Development/Personal_Sublime_Project.sublime-project",
@@ -776,7 +805,6 @@
 		"/C/Program Files (x86)/MTTOPO/readme.txt",
 		"/C/Users/Jason/Downloads/Custom_Waypoint_Symbols/INSTRUCTIONS.txt",
 		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/_includes/masthead.html",
-		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/scss/_masthead.scss",
 		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/404.html",
 		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/_posts/2015-03-10-ice-fishing-for-lake-trout-video.md",
 		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/scss/_tip-up.scss",
@@ -784,7 +812,6 @@
 		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/reviews.html",
 		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/fishing.html",
 		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/archive.html",
-		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/hunting.html",
 		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/index.html",
 		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/scss/_flex.scss",
 		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/scss/_variables.scss",
@@ -800,12 +827,10 @@
 		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/_posts/2015-06-18-june-mystery-tackle-box-unboxing-video.md",
 		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/_posts/2015-06-17-may-mystery-tackle-box.md",
 		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/script.js",
-		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/scss/_background.scss",
 		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/_posts/2015-07-21-duluth-city-bowhunt.md",
 		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/_posts/2015-06-18-my-first-fishing-kayak.md",
 		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/_posts/2015-03-04-lake-trout-ice-fishing-lake-superior.md",
 		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/_posts/2015-01-07-devils-lake-ice-fishing.md",
-		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/style.scss",
 		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/_drafts/2015-07-14-jekyll-snippets.md",
 		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/_drafts/2015-07-25-2015-07-25-montana-mule-deer-hunt-2015.md",
 		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/_posts/2015-07-25-2015-07-25-montana-mule-deer-hunt-2015.md",
@@ -816,7 +841,6 @@
 		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/_includes/svg/rss-feed.svg",
 		"/C/Users/Jason/AppData/Roaming/Sublime Text 3/Packages/Cheat Sheets/cheat-sheets/Github Flavored Markdown.cheatsheet",
 		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/Gemfile",
-		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/gallery.md",
 		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/_layouts/default.html",
 		"/C/Users/Jason/AppData/Roaming/Sublime Text 3/Packages/Jekyll/Jekyll.sublime-settings",
 		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/_drafts/asdf.md",
@@ -851,10 +875,8 @@
 		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/_includes/svg/flickr.svg",
 		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/_includes/svg/facebook-square.svg",
 		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/_includes/footer2.html",
-		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/scss/_device.scss",
 		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/_includes/navigation.html",
 		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/_site/blog/2014/hunting/mule-deer-hunting-in-montana/index.html",
-		"/C/Users/Jason/AppData/Roaming/Sublime Text 3/Packages/BracketHighlighter/bh_core.sublime-settings",
 		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/resume2.md",
 		"/C/Users/Jason/Google Drive/Development/JasonSwingen_Sublime_Project.sublime-project",
 		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/build/js/script.min.js",
@@ -871,11 +893,7 @@
 		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/style.css",
 		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/plugins/bourbon/addons/_prefixer.scss",
 		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/built/scss/styles.scss",
-		"/C/Users/Jason/Documents/GitHub/skinny-bones-jekyll/package.json",
-		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/blog.html",
-		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/scss/_imghover.scss",
-		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/resume.md",
-		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io/scss/ihover.css"
+		"/C/Users/Jason/Documents/GitHub/skinny-bones-jekyll/package.json"
 	],
 	"find":
 	{
@@ -894,6 +912,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"button",
+			"a",
+			"/images/",
 			"href",
 			"fish",
 			"1",
@@ -1018,10 +1039,7 @@
 			"p",
 			"h1",
 			"h6",
-			"next",
-			"86",
-			" fill: rgb(65, 131, 196);",
-			" rgb(65, 131, 196);"
+			"next"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1041,116 +1059,24 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "_posts/2015-09-24-duluth-city-bowhunt.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 9469,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								111,
-								111
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Darker.tmTheme",
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Textile/Textile.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "scss/_main.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5071,
+						"buffer_size": 5571,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4058,
-								4058
+								433,
+								433
 							]
 						],
 						"settings":
@@ -1158,6 +1084,46 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
@@ -1168,51 +1134,11 @@
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
+								"bh_single_quote_content"
 							],
 							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Darker.tmTheme",
 							"incomplete_sync": null,
@@ -1223,119 +1149,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 6192.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "gallery.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 536,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								536,
-								536
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Darker.tmTheme",
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Jekyll/Syntaxes/Markdown (Jekyll).tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3744.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "_data/gallery.yml",
+					"buffer": 1,
+					"file": "index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 226,
+						"buffer_size": 1695,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								226,
-								226
+								1182,
+								1182
 							]
 						],
 						"settings":
@@ -1348,94 +1182,41 @@
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content"
-							],
-							"incomplete_sync": null,
-							"open_with_edit": true,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/YAML/YAML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "scss/_breakpoints.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 362,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
@@ -1446,59 +1227,109 @@
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
+								"bh_single_quote_content"
 							],
 							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Darker.tmTheme",
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "hunting.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1034,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								405,
+								405
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1508,19 +1339,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 3,
+					"file": "fishing.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 11020,
+						"buffer_size": 1050,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								121,
-								121
+								421,
+								421
 							]
 						],
 						"settings":
@@ -1533,69 +1365,161 @@
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
-								"bh_default_content"
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
 							],
 							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Darker.tmTheme",
-							"default_dir": "C:\\Users\\Jason\\Documents\\GitHub\\JasonSwingen.github.io",
 							"incomplete_sync": null,
-							"syntax": "Packages/Jekyll/Syntaxes/Markdown (Jekyll).tmLanguage",
-							"translate_tabs_to_spaces": false,
-							"word_wrap": false
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
-						"translation.x": -0.0,
-						"translation.y": 104.0,
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "reviews.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 734,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								105,
+								105
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Darker.tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -1692,7 +1616,7 @@
 		[
 			[
 				"",
-				"C:\\Users\\Jason\\Documents\\GitHub\\auctionMN\\auctionmn.sublime-project"
+				"C:\\Users\\Jason\\Documents\\GitHub\\SaveYourAsh\\saveyourash.sublime-project"
 			],
 			[
 				"full",

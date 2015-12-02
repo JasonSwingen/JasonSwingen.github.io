@@ -25,22 +25,23 @@ body {
 .postcontainer {
   margin-bottom: 1em;
   max-width: 900px;
-  @include desktop {
-    margin: 0 5%;
-    max-width: none;
-    width: 65%;
-    margin-bottom: 3em;
-    float: right;
-  }
+  // @include desktop {
+  //   margin: 0;
+  //   max-width: none;
+  //   width: 65%;
+  //   margin-bottom: 3em;
+  //   float: right;
+  // }
 }
 
 .big-container {
   @extend .container;
+  padding: 0;
   max-width: 1500px;
-  @include desktop {
-    width: 80%;
-    float: right;
-  }
+  // @include desktop {
+  //   width: 80%;
+  //   float: right;
+  // }
 }
 
 .section {
@@ -120,7 +121,7 @@ a {
 
 a {
   color: $color2;
-  @include transition(all, 0.8s, $ease-out-back);
+  // @include transition(all, 0.8s, $ease-out-back);
   &:hover {
     color: $color1;
   }
@@ -262,11 +263,41 @@ img {
   max-width: 23%;
 }
 
+.gallerypreview {
+  margin-top: 2em;
+  @include clearfix;
+  @include flexbox;
+  @include justify-content(center);
+  @include align-items(stretch);
+  @include flex-direction(row);
+  @include flex-wrap(wrap);
+  a {
+    width: 25%;
+  }
+  .thumb {
+    display: inline-block;
+    background-position: center center;
+    background-size: cover;
+    height: 20vw;
+  }
+  // @include desktop {
+  //   width: 80%;
+  //   float: right;
+  // }
+  @include mobile {
+    a {
+      width: 50%;
+    }
+    .thumb {
+      height: 40vw;
+    }
+  }
+}
 .gallery {
-  float: right;
-  width: 80%;
-  padding: 0vw;
+  padding: 0;
   font-size: 0;
+  margin: 0;
+  width: 100%;
   @include clearfix;
   @include flexbox;
   @include justify-content(center);
@@ -275,18 +306,17 @@ img {
   @include flex-wrap(wrap);
   @include desktop {
     a {
-      width: 31%;
+      width: 25%;
     }
   }
   @include smdesktop {
-    width: 100%;
     a {
-      width: 31%;
+      width: 33%;
     }
   }
   @include tablet {
     a {
-      width: 48%;
+      width: 50%;
     }
   }
   @include mobile {
@@ -294,27 +324,23 @@ img {
       width: 100%;
     }
   }
-  a {
-    margin: 0.5vw;
+  // a {
+  //   margin: 0.5vw;
+  // }
+  .thumb {
+    display: inline-block;
+    height: 25vw;
+    margin: 0px;
+    padding: 0px;
+    background-position: center center;
+    background-size: cover;
+    @include tablet {
+      height: 50vw;
+    }
+    @include mobile {
+      height: 90vw;
+    }
   }
-}
-
-.thumb {
-  display: inline-block;
-  height: 350px;
-  margin: 0px;
-  padding: 0px;
-  background-position: center center;
-  background-size: cover;
-  // @include desktop {
-  //   height: 225px;
-  // }
-  // @include tablet {
-  //   height: 225px;
-  // }
-  // @include mobile {
-  //   height: 300px;
-  // }
 }
 
 .breadcrumb {

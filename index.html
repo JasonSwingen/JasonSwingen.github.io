@@ -4,6 +4,7 @@ layout: default
 
 <!-- Posts -->
 <div class="big-container">
+	<!-- <h1 id="Posts">Recent Posts</h1> -->
 	<div class="posts">
 	{% for post in site.posts %}
 	  <article class="post articles postnohover">
@@ -16,9 +17,40 @@ layout: default
 <!-- 	      <div class="entry">
 	        {{ post.content | truncatewords:27}}
 	      </div> -->
-	      <a href="{{ site.baseurl }}{{ post.url }}"><button>Continue reading</button></a>
+	      <a href="{{ site.baseurl }}{{ post.url }}"><button>Read More</button></a>
 	    </div>
 	  </article>
 	{% endfor %}
 	</div>
+
+<!-- <div class="side-image">
+  <div class="images-wrapper"></div>
+    <div class="side-image-content">
+      <h4>Hunting</h4>
+      <h1>Recent Hunting Articles</h1>
+      <p>
+      	  {% for post in site.tags.hunting %}
+		    <ul class="padding">
+		      <li>
+		        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+		      </li>
+		    </ul>
+		  {% endfor %}
+      </p>
+  </div>
+</div> -->
+
 </div> <!-- End of Big Container -->
+
+
+<!-- Gallery -->
+	<!-- <h1>Gallery</h1> -->
+	<div class="gallerypreview">
+		{% for gallery in site.data.gallery %}
+		    {% for image in gallery.images limit:8 %}
+				<a href="{{ gallery.imagefolder }}/{{ image.name }}" data-lightbox="{{ gallery.id }}" data-title="{{ image.text }}" class="thumb" style="background-image: url('{{ gallery.imagefolder }}/{{ image.name }}');" title="{{ image.text }}"></a>
+		    {% endfor %}
+		{% endfor %}
+		<p><a href="{{ site.baseurl }}/gallery/"><button>View Gallery</button></a></p>
+	</div>
+<!-- End of Gallery -->

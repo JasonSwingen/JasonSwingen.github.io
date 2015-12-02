@@ -1,16 +1,15 @@
 .fixedbackground {
-  background: url("/images/ft-peck.jpg");
+  background: url("/images/2015_MT_Hunt_18.jpg");
   height: 400px;
   position: relative;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center center;
-  box-shadow: inset 0px -100px 50px -50px #eaeaea;
-  @include transition(all, 1s, $ease-out-back);
+  box-shadow: inset 0px -100px 50px -50px #eaeaea, inset 0px 80px 50px -50px #eaeaea;
   @include desktop {
-    width: 75%;
-    @include transition(all, 1s, $ease-out-back);
+    width: 80%;
+    float: right;
   }
 }
 

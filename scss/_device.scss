@@ -42,8 +42,10 @@
   $device-background-top: #162C4C; 
   $device-background-bottom: #0A120D;
   $gradient-angle: 10deg;
-  $device-image: 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png';
-  $device-screen-image: '/images/jasonswingen_mobile.jpg';
+  // $device-image: 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png';
+  $device-image: 'http://jasonswingen.com/images/2015_MT_Hunt_18.jpg';
+  // $device-screen-image: '/images/jasonswingen_mobile.jpg';
+  $device-screen-image: 'http://jasonswingen.com/images/2015_MT_Hunt_19.jpeg';
 
   @include background(url($device-image), linear-gradient($gradient-angle, $device-background-bottom, $device-background-top), no-repeat $device-background-top scroll);
   background-repeat: no-repeat;

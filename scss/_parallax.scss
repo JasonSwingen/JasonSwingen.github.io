@@ -8,10 +8,10 @@ $parallax-background-height: $parallax-window-height * 2;
   text-align: center;
   width: 100%;
   top: -1px;
-  @include desktop {
-    width: 80%;
-    float: right;
-  }
+  // @include desktop {
+  //   width: 80%;
+  //   float: right;
+  // }
   h1 {
     font-size: 3em;
     margin: 0em .5em 1em;
@@ -32,17 +32,9 @@ $parallax-background-height: $parallax-window-height * 2;
   color: #9A9A8A;
   position: relative;
   z-index: 9;
-  @include desktop {
-    padding: 23em 0em 0em;
-  }
-  @include smdesktop {
-    padding: 18em 0em 0em;
-  }
-  @include tablet {
-    padding: 10em 0em 0em;
-  }
+  padding: 36vw 0 0;
   @include mobile {
-    padding: 12em 0em 0em;
+    padding: 46vw 0em 0em;
   }
 }
 

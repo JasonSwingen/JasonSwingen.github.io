@@ -4,15 +4,16 @@
 .wrapper-masthead {
   background-color: $color3;
   color: $white;
-  @include desktop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    height: 100%;
-    width: 20%;
-    padding: 3em 0em;
-  }
+  border-bottom: 1px solid $color3;
+  // @include desktop {
+  //   position: fixed;
+  //   top: 0;
+  //   left: 0;
+  //   z-index: 999;
+  //   height: 100%;
+  //   width: 20%;
+  //   padding: 3em 0em;
+  // }
   .container  {
     background-color: $color3;
     position: relative;
@@ -24,8 +25,8 @@
   padding-top: 10px;
   @include mobile {
     // text-align: center;
-    padding-bottom: 10px;
-    border-bottom: 1px solid white;
+    padding-bottom: 44px;
+    // border-bottom: 1px solid white;
   }
 }
 
@@ -36,15 +37,30 @@
   text-align: center;
 }
 
+// .site-avatar {
+//   display: block;
+//   float: left;
+//   width: 100px;
+//   margin: 7px 15px 0px 10px;
+//   float: none;
+//   margin: 0 auto;
+//   &:hover {
+//     transform: rotateX(20deg);
+//   }
+//   img {
+//     border-radius: 100px;
+//   }
+//   @include mobile {
+//     width: 35px;
+//     margin: 0px 0px -6px 15px;
+//   }
+// }
+
 .site-avatar {
-  display: block;
-  float: left;
-  width: 100px;
-  margin: 7px 15px 0px 10px;
-  float: none;
-  margin: 0 auto;
-  // @include transition(all, 0.8s, $ease-out-back);
-  &:hover {
+  width: 57px;
+  position: fixed;
+  left: 1em;
+    &:hover {
     transform: rotateX(20deg);
   }
   img {
@@ -53,6 +69,7 @@
   @include mobile {
     width: 35px;
     margin: 0px 0px -6px 15px;
+    position: absolute;
   }
 }
 
@@ -142,18 +159,19 @@ a.menu-link {
 }
 
 nav[role=navigation] {
-  max-width: 900px;
+  // max-width: 900px;
   margin: 0 auto;
-  text-align: center;
+  text-align: right;
+  margin-right: 1em;
   @include transition(all, 0s, linear);
   @include mobile {
     border-top: none;
     // this can be increased as number of links increases
     top: -200px;
   }
-  @include desktop {
-    padding-top: 1em;
-  }
+  // @include desktop {
+  //   padding-top: 1em;
+  // }
 }
 .js nav[role=navigation] {
   @include mobile {
@@ -193,9 +211,9 @@ nav[role=navigation] li {
       color: $color2;
     }
   }
-  @include desktop {
-    display: block;
-  }
+  // @include desktop {
+  //   display: block;
+  // }
 }
 nav[role=navigation] li a {
   display: block;
@@ -220,13 +238,13 @@ nav[role=navigation] li a {
       border-bottom: 3px solid $color2;
     }
   }
-  @include desktop {
-    width: 100%;
-    &:hover {
-      border-left: 3px solid $color2;
-      border-right: 3px solid $color2;
-    }
-  }
+  // @include desktop {
+  //   width: 100%;
+  //   &:hover {
+  //     border-left: 3px solid $color2;
+  //     border-right: 3px solid $color2;
+  //   }
+  // }
 }
 
 .flexmom {
@@ -240,9 +258,6 @@ nav[role=navigation] li a {
     @include flex-wrap(no-wrap);
     height: 100%;
     flex-direction: column;
-  }
-  @include desktop {
-
   }
   .flexkid {
     flex-grow: 1;

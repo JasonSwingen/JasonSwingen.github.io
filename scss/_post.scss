@@ -43,6 +43,10 @@ $flex-box-color: transparentize($gray, .1);
   position: relative;
   top: 0em;
   margin-bottom: 0em;
+  margin: 0 5%;
+  @include mobile {
+    margin: 0;
+  }
   h1 {
     margin: 10px 0px;
     a {
@@ -60,7 +64,10 @@ $flex-box-color: transparentize($gray, .1);
 .posts > .post {
   background-color: $postbackground;
   border-top: 5px solid $color3;
-  margin: 1em 0.4em 0em;
+  margin: 1em;
+  @include mobile {
+    margin: 1em 0.4em 0em;
+  }
   // @include gradient($lightGray, $white);
   @include box-shadow(0px, -4px, 16px, -6px, $gray);
   padding: 0;
@@ -81,7 +88,7 @@ $flex-box-color: transparentize($gray, .1);
 
 .post {
   // @include transition (all, 0.1s, ease-in-out);
-  @include flex(2 2 14em);
+  @include flex(2 2 18em);
   @include align-self(stretch);
   background: $postbackground;
   @include border-radius(5px);
