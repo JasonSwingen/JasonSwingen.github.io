@@ -101,6 +101,16 @@ As I drove out to check my trail camera I was greeted with a three cement barrie
 
 I'm not done yet, I just need to figure out how to get back into the field.
 
-### More To Come...
+### November Bucks
 
-<b>Stay tuned, I will be updating this blog post throughout the season.</b>
+<div class="flexdad">
+	<a href="/images/STC_0039.jpg" data-lightbox="DHA2A Buck" data-title="DHA2A Buck" target="_self" class="flexkid"><img src="/images/STC_0039.jpg" alt="Whitetail Buck on Trail Camera"></a>
+	<a href="/images/STC_0040.jpg" data-lightbox="DHA2A Buck" data-title="DHA2A Buck" target="_self" class="flexkid"><img src="/images/STC_0040.jpg" alt="Whitetail Buck on Trail Camera"></a>
+	<a href="/images/STC_0041.jpg" data-lightbox="DHA2A Buck" data-title="DHA2A Buck" target="_self" class="flexkid"><img src="/images/STC_0041.jpg" alt="Whitetail Buck on Trail Camera"></a>
+	<a href="/images/STC_0049.jpg" data-lightbox="DHA2A Buck" data-title="DHA2A Buck" target="_self" class="flexkid"><img src="/images/STC_0049.jpg" alt="Whitetail Buck on Trail Camera"></a>
+	<a href="/images/STC_0043.jpg" data-lightbox="DHA2A Buck" data-title="DHA2A Buck" target="_self" class="flexkid"><img src="/images/STC_0043.jpg" alt="Whitetail Doe on Trail Camera"></a>
+</div>
+
+### No Deer
+
+Well I wasn't able to get it done this year. I moved to a few different spots and had deer of camera, but just wasn't getting anything to consistently come in.
