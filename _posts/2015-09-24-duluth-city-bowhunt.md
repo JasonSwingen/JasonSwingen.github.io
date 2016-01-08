@@ -104,11 +104,11 @@ I'm not done yet, I just need to figure out how to get back into the field.
 ### November Bucks
 
 <div class="flexdad">
-	<a href="/images/STC_0039.jpg" data-lightbox="DHA2A Buck" data-title="DHA2A Buck" target="_self" class="flexkid"><img src="/images/STC_0039.jpg" alt="Whitetail Buck on Trail Camera"></a>
-	<a href="/images/STC_0040.jpg" data-lightbox="DHA2A Buck" data-title="DHA2A Buck" target="_self" class="flexkid"><img src="/images/STC_0040.jpg" alt="Whitetail Buck on Trail Camera"></a>
-	<a href="/images/STC_0041.jpg" data-lightbox="DHA2A Buck" data-title="DHA2A Buck" target="_self" class="flexkid"><img src="/images/STC_0041.jpg" alt="Whitetail Buck on Trail Camera"></a>
-	<a href="/images/STC_0049.jpg" data-lightbox="DHA2A Buck" data-title="DHA2A Buck" target="_self" class="flexkid"><img src="/images/STC_0049.jpg" alt="Whitetail Buck on Trail Camera"></a>
-	<a href="/images/STC_0043.jpg" data-lightbox="DHA2A Buck" data-title="DHA2A Buck" target="_self" class="flexkid"><img src="/images/STC_0043.jpg" alt="Whitetail Doe on Trail Camera"></a>
+	<a href="/images/STC_0039.JPG" data-lightbox="DHA2A Buck" data-title="DHA2A Buck" target="_self" class="flexkid"><img src="/images/STC_0039.JPG" alt="Whitetail Buck on Trail Camera"></a>
+	<a href="/images/STC_0040.JPG" data-lightbox="DHA2A Buck" data-title="DHA2A Buck" target="_self" class="flexkid"><img src="/images/STC_0040.JPG" alt="Whitetail Buck on Trail Camera"></a>
+	<a href="/images/STC_0041.JPG" data-lightbox="DHA2A Buck" data-title="DHA2A Buck" target="_self" class="flexkid"><img src="/images/STC_0041.JPG" alt="Whitetail Buck on Trail Camera"></a>
+	<a href="/images/STC_0049.JPG" data-lightbox="DHA2A Buck" data-title="DHA2A Buck" target="_self" class="flexkid"><img src="/images/STC_0049.JPG" alt="Whitetail Buck on Trail Camera"></a>
+	<a href="/images/STC_0043.JPG" data-lightbox="DHA2A Buck" data-title="DHA2A Buck" target="_self" class="flexkid"><img src="/images/STC_0043.JPG" alt="Whitetail Buck on Trail Camera"></a>
 </div>
 
 ### No Deer
