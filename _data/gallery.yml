@@ -1,6 +1,12 @@
 - id: Gallery
   imagefolder: /images/
   images:
+  - name: Jumbo_Perch_1.jpg
+    text: North Dakota 14 inch Perch
+  - name: Jumbo_Perch.jpg
+    text: North Dakota 14 inch Perch
+  - name: 2015_MT_Hunt_19.jpeg
+    text: 2015 Montana Mule Deer
   - name: gallery_1.jpg
     text: Smallie with 13 Fishing
   - name: gallery_2.jpg
