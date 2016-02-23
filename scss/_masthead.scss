@@ -77,7 +77,7 @@
 .site-name {
   margin: 0;
   color: $white;
-  font-family: $helveticaNeue; 
+  font-family: $helveticaNeue;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -134,7 +134,7 @@ a.menu-link {
   content: '';
 }
 .menu-link span:before {
-  top: -10px; 
+  top: -10px;
 }
 .menu-link span:after {
   bottom: -10px;
@@ -226,17 +226,13 @@ nav[role=navigation] li a {
   @include transition(all, 0.6s, $ease-out-back);
   &:hover {
     color: $color2;
+    border-bottom: 3px solid $color2;
   }
   @include mobile {
     padding: 0.5em;
     width: 100%;
     &:hover {
       border-bottom: 3px solid transparent;
-    }
-  }
-  @include tablet {
-    &:hover {
-      border-bottom: 3px solid $color2;
     }
   }
   // @include desktop {
