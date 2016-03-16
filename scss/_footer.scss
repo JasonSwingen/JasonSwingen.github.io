@@ -42,12 +42,10 @@ footer {
   position: fixed;
   bottom: 0em;
   right: 0em;
-  opacity: 0.5;
   z-index: 9999;
   display: none;
-  color: white;
   &::after {
-    content: "BACK TO TOP";
+    content: "TOP";
   }
   &:hover {
     color: $color2 !important;
