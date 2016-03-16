@@ -65,9 +65,7 @@ $flex-box-color: transparentize($gray, .1);
   background-color: $postbackground;
   border-top: 5px solid $color3;
   margin: 1em;
-  @include mobile {
-    margin: 1em 0.4em 0em;
-  }
+  transition: 0.2s ease-in-out;
   // @include gradient($lightGray, $white);
   @include box-shadow(0px, -4px, 16px, -6px, $gray);
   padding: 0;
@@ -75,9 +73,21 @@ $flex-box-color: transparentize($gray, .1);
   &:hover {
     @include box-shadow(0px, 0px, 10px, 0px, $gray);
     border-top: 5px solid $color2;
+    -webkit-transform: scale(1.07);
+    transform: scale(1.07);
+    -webkit-transition: .2s ease-in-out;
+    transition: 0.2s ease-in-out;
+    z-index: 999;
   }
   .padding {
     padding: 1px 15px 40px 15px;
+  }
+  @include mobile {
+    margin: 1em 0.4em 0em;
+    &:hover {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
   }
   // This makes the first and last post larger than the rest
   // &.post:last-child, &.post:first-child {
