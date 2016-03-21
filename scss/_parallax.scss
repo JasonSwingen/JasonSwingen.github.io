@@ -13,7 +13,7 @@ $parallax-background-height: $parallax-window-height * 2;
   //   float: right;
   // }
   h1 {
-    font-size: 3em;
+    font-size: 3rem;
     margin: 0em .5em 1em;
     color: #FFF;
     text-shadow: 2px 2px 2px $color2, 4px 4px 2px black;
@@ -39,7 +39,7 @@ $parallax-background-height: $parallax-window-height * 2;
 }
 
 .parallax-background {
-  background-repeat: no-repeat !important; 
+  background-repeat: no-repeat !important;
   background-position: top !important;
   background-size: contain !important;
   background-color: #fff !important;
