@@ -9,7 +9,7 @@ layout: default
   <div id="js-parallax-background" class="parallax-background"></div>
 </div>
 
-<div id="main" role="main" class="container postcontainer">
+<div id="main" role="main" class="big-container postcontainer">
 
   <ol class="breadcrumb">
     <li><a href="/">Home</a></li>
@@ -53,7 +53,7 @@ layout: default
     {% endif %}
     {% if page.previous %}
       <a class="floatright" href="{{ page.previous.url }}" title="{{ page.previous.title }}"> {{ page.previous.title }} &#8594; </a>
-    {% endif %} 
+    {% endif %}
     </div>
   </article>
 
@@ -123,7 +123,7 @@ layout: default
                           {% if post.series %}
                               (Series: {{ post.series }})
                           {% endif %}
-                          
+
                           </a>
                         </li>
                         {% capture hasSimilar %}{{ hasSimilar }}*{% endcapture %}
@@ -155,10 +155,10 @@ layout: default
         </ul>
       </div>
 
-  <div class="post">
+  <!-- <div class="post">
   <h2>About The Auther</h2>
     <img class="auther-avatar" src="{{ site.profile }}" />
     <p class="about-auther">A Graduate of Marketing and Management, Jason combines his education with over 3 years of Internet marketing, and web development. With experience in CSS3, HTML5, Javascript, Wordpress, Jekyll, and more to create fantastic websites for a great user experience. If you need a website, an update to your current website or any internet marketing, please check out my <a href="{{ site.baseurl }}/portfolio/">portfolio</a>.</p>
-  </div>
+  </div> -->
 
 </div>

@@ -2,6 +2,24 @@
 layout: default
 ---
 
+<!-- Posts -->
+ <div class="big-container">
+	<!-- <h1>Recent Articles</h1> -->
+	<div class="posts">
+	{% for post in site.posts limit:6 %}
+	  <article class="post articles postnohover">
+	    <div class="postimg">
+	      <a href="{{ site.baseurl }}{{ post.url }}"><img src="{{ post.image }}" /></a>
+	    </div>
+	    <div class="padding">
+	      <h1>{{ post.title }}</h1>
+	      <div class="postdate">{{ post.date | date: "%B %e, %Y" }}</div>
+	      <a href="{{ site.baseurl }}{{ post.url }}"><button>Read More</button></a>
+	    </div>
+	  </article>
+	{% endfor %}
+</div>
+
 <div class="grid-items-lines">
 	<!-- {% for post in site.posts limit:6 %}
 	<a href="{{ site.baseurl }}{{ post.url }}" class="grid-item">
@@ -56,26 +74,6 @@ layout: default
 	</div>
 </div>
 
-<!-- Posts -->
- <div class="big-container">
-	<h1>Recent Articles</h1>
-	<div class="posts">
-	{% for post in site.posts limit:6 %}
-	  <article class="post articles postnohover">
-	    <div class="postimg">
-	      <a href="{{ site.baseurl }}{{ post.url }}"><img src="{{ post.image }}" /></a>
-	    </div>
-	    <div class="padding">
-	      <h1>{{ post.title }}</h1>
-	      <div class="postdate">{{ post.date | date: "%B %e, %Y" }}</div>
-	      <a href="{{ site.baseurl }}{{ post.url }}"><button>Read More</button></a>
-	    </div>
-	  </article>
-	{% endfor %}
-</div>
-
-<h1>Gallery</h1>
-</div> <!-- End of Big Container -->
 <!-- Gallery -->
 	<div class="gallerypreview">
 		{% for gallery in site.data.gallery %}
@@ -86,3 +84,5 @@ layout: default
 		<p><a href="{{ site.baseurl }}/gallery/"><button>View Gallery</button></a></p>
 	</div>
 <!-- End of Gallery -->
+
+</div> <!-- End of Big Container -->
