@@ -4,7 +4,7 @@ layout: default
 
 <!-- Posts -->
 <div class="big-container">
-	<!-- <h1 id="Posts">Reviews</h1> -->
+	<h1 id="Posts">Reviews</h1>
 	<div class="posts">
 	{% for post in site.tags.reviews %}
 	  <article class="post articles postnohover">
@@ -17,7 +17,7 @@ layout: default
 <!-- 	      <div class="entry">
 	        {{ post.content | truncatewords:27}}
 	      </div> -->
-	      <a href="{{ site.baseurl }}{{ post.url }}"><button>Continue reading</button></a>
+	      <a href="{{ site.baseurl }}{{ post.url }}"><button>Read More</button></a>
 	    </div>
 	  </article>
 	{% endfor %}

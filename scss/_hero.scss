@@ -2,7 +2,7 @@
 // @import 'neat';
 // @import 'variables';
 
-.hero {  
+.hero {
   ///////////////////////////////////////////////////////////////////////////////////
   $base-border-radius: 3px !default;
   $base-accent-color: #477DCA !default;
@@ -14,19 +14,20 @@
   }
   //////////////////////////////////////////////////////////////////////////////////
 
-  $hero-background-top: #7F99BE; 
+  $hero-background-top: #7F99BE;
   $hero-background-bottom: #20392B;
   $hero-color: $darkGray;
   $gradient-angle: 10deg;
-  $hero-image: 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png';
+  $hero-image: 'http://jasonswingen.com/images/2015_MT_Hunt_9.jpg';
 
-  // @include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
+  @include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
   background-color: $color2;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 3em;
   margin-top: -1px;
+  background-blend-mode: luminosity;
 
   .hero-logo img {
     height: 4em;
@@ -38,12 +39,12 @@
     @include clearfix;
     color: $hero-color;
     margin: auto;
-    padding: 3.5em;
+    padding: 5.5em 1em;
     text-align: center;
 
     .hero-copy {
       text-align: center;
-      
+
       h1 {
         font-size: 1.6em;
         margin-bottom: .5em;
@@ -56,10 +57,12 @@
       p {
         font-weight: 200;
         line-height: 1.4em;
-        margin: 0 auto 0em auto; 
+        margin: 0 auto 0em auto;
+        color: white;
+        text-shadow: 1px 1px 1px #000;
 
         @include media($large-screen) {
-          font-size: 1.1em;
+          font-size: 1.3em;
           max-width: 75%;
         }
       }

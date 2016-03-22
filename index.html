@@ -2,8 +2,19 @@
 layout: default
 ---
 
+<div class="hero">
+	<div class="hero-inner">
+    <!-- <a href="{{ site.baseurl }}/"><img src="{{ site.avatar }}" /></a> -->
+		<div class="hero-copy">
+			<p>My name is Jason Swingen and I am a Multi-species angler, big-game hunter, and avid outdoorsman living in Minnesota. Check out my recent fishing and hunting adventures below!</p>
+		</div>
+	</div>
+</div>
+
+
+<div class="big-container">
+
 <!-- Posts -->
- <div class="big-container">
 	<!-- <h1>Recent Articles</h1> -->
 	<div class="posts">
 	{% for post in site.posts limit:6 %}
@@ -18,6 +29,10 @@ layout: default
 	    </div>
 	  </article>
 	{% endfor %}
+	</div>
+
+<p class="center"><a href="{{ site.baseurl }}/blog/"><button>View More</button></a></p>
+
 </div>
 
 <div class="grid-items-lines">
@@ -74,6 +89,8 @@ layout: default
 	</div>
 </div>
 
+<div class="big-container">
+
 <!-- Gallery -->
 	<div class="gallerypreview">
 		{% for gallery in site.data.gallery %}
@@ -81,8 +98,10 @@ layout: default
 				<a href="{{ gallery.imagefolder }}/{{ image.name }}" data-lightbox="{{ gallery.id }}" data-title="{{ image.text }}" class="thumb" style="background-image: url('{{ gallery.imagefolder }}/{{ image.name }}');" title="{{ image.text }}"></a>
 		    {% endfor %}
 		{% endfor %}
-		<p><a href="{{ site.baseurl }}/gallery/"><button>View Gallery</button></a></p>
+		<!-- <p><a href="{{ site.baseurl }}/gallery/"><button>View More</button></a></p> -->
 	</div>
 <!-- End of Gallery -->
+
+<p class="center"><a href="{{ site.baseurl }}/gallery/"><button>View More</button></a></p>
 
 </div> <!-- End of Big Container -->
