@@ -8,10 +8,6 @@
   $base-accent-color: #477DCA !default;
   $large-screen: em(860) !default;
   -webkit-font-smoothing: antialiased;
-
-  button {
-    -webkit-font-smoothing: antialiased;
-  }
   //////////////////////////////////////////////////////////////////////////////////
 
   $hero-background-top: #7F99BE;
@@ -25,7 +21,8 @@
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 3em;
+  padding-bottom: 10em;
+  margin-bottom: -8em;
   margin-top: -1px;
   background-blend-mode: luminosity;
 
