@@ -73,7 +73,7 @@ $(document).ready(function($) { // Start of Document Ready Javascript
   );
 
   // Elements appear after scroll down
-  // $(window).scroll(function() {
+  // $(window).scroll(function() {    
   //   var scroll = $(window).scrollTop();
   //     if (scroll >= 1600) {
   //       $(".totop").addClass("appear");
@@ -95,30 +95,17 @@ $(document).ready(function($) { // Start of Document Ready Javascript
   });
 
   // Menu Toggle
-  // $('body').addClass('js');
-  // var $menu = $('#menu'),
-  //   $menulink = $('.menu-link');
-  // $menulink.click(function() {
-  //   $menulink.toggleClass('active');
-  //   $menu.toggleClass('active');
-  //   return false;
-  // });
-  // addEventListener( "click", function() {
-  //   this.classList.toggle( "active" );
-  // });
-
-  var menuToggle = $('#js-mobile-menu').unbind();
-  $('#js-navigation-menu').removeClass("show");
-
-  menuToggle.on('click', function(e) {
-    e.preventDefault();
-    $('#js-navigation-menu').slideToggle(function(){
-      if($('#js-navigation-menu').is(':hidden')) {
-        $('#js-navigation-menu').removeAttr('style');
-      }
-    });
+  $('body').addClass('js');
+  var $menu = $('#menu'),
+    $menulink = $('.menu-link');
+  $menulink.click(function() {
+    $menulink.toggleClass('active');
+    $menu.toggleClass('active');
+    return false;
   });
-
+  addEventListener( "click", function() {
+    this.classList.toggle( "active" );
+  });
 
   // Parallax
   $(function() {
@@ -151,3 +138,4 @@ $(document).ready(function($) { // Start of Document Ready Javascript
   }
 
 }); // End of Document Ready Javascript
+
