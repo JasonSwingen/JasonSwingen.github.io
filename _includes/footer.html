@@ -1,13 +1,47 @@
-<footer class="wrapper-footer clearfix">
-  <div class="container">
-	<div class="flexdad">
-		<div class="flexkid"><a target="_blank" id="social-instagram" href="http://instagram.com/{{ site.footer-links.instagram }}" title="follow Jason Swingen Instagram">{% include svg/instagram.svg %}</a></div>
-		<div class="flexkid"><a target="_blank" id="social-twitter" href="http://twitter.com/{{ site.footer-links.twitter }}" title="follow Jason Swingen on Twitter">{% include svg/twitter.svg %}</a></div>
-		<div class="flexkid"><a target="_blank" id="social-google" href="http://plus.google.com/u/0/+JasonSwingen" title="follow Jason Swingen on Google+">{% include svg/googleplus-square.svg %}</a></div>
-		<div class="flexkid"><a target="_blank" id="social-linkedin" href="http://linkedin.com/in/{{ site.footer-links.linkedin }}" title="follow Jason Swingen on Linkedin">{% include svg/linkedin.svg %}</a></div>
-		<div class="flexkid"><a target="_blank" id="social-feed" href="http://jasonswingen.com/feed.xml" title="follow Jason Swingen">{% include svg/rss-feed.svg %}</a></div>
-	</div>
-	<div class="container align-center">Need a website? <a href="{{ site.baseurl }}/portfolio/">Hire Me</a></div>
-    <div class="footerinfo">© 2015 Custom Built by Jason Swingen</div>
-  </div>
-</footer>
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>{{ site.footer.location }}</h3>
+                        <p>
+                            {% for adress in site.address %}
+                                {{ adress.line }} <br>
+		                    {% endfor %}
+                        </p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>{{ site.footer.social }}</h3>
+                        <ul class="list-inline">
+                            {% for network in site.social %}
+                            <li>
+                                <a href="{{ network.url }}" class="btn-social btn-outline"><i class="fa fa-fw fa-{{ network.title }}"></i></a>
+                            </li>
+		                    {% endfor %}
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>{{ site.footer.credits }}</h3>
+                        <p>{{ site.credits }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; {{ site.footer.copyright }} 20{{ site.time | date: '%y' }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll visible-xs visible-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
