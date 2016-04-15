@@ -8,6 +8,5 @@ project-date: 2016
 client: JS-Outdoors
 siteurl: http://www.js-outdoors.com/
 category: Web Development
-description: JS-Outdoors is a site I built work on new web technologies while writing stories, review, tips, and reports on hunting and fishing. The site is built off of Jekyll, using Grunt, and Bourbon and Neat for styling and a mobile-ready design
-
+description: JS-Outdoors is a site I built to work on new web technologies while writing stories, review, tips, and reports on hunting and fishing. The site is built off of Jekyll, using Grunt, and Bourbon and Neat for styling and a mobile-ready design.
 ---

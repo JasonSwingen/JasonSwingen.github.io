@@ -1,7 +1,7 @@
 ---
 layout: default
-modal-id: 1
-date: 2014-11-14
+modal-id: 6
+date: 2014-7-15
 img: BackyardLeisure.jpg
 alt: image-alt
 project-date: 2012 - Present
