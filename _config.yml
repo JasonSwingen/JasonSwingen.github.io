@@ -33,25 +33,28 @@ color:
 footer:
   copyright: Jason Swingen
   location: Location
-  social: Around the Web
+  social: Stay in Touch
   credits: Thank You
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
     url: http://twitter.com/jasonswingen
+  - title: linkedin
+    url: http://www.linkedin.com/in/jasonswingen
   - title: facebook
     url: http://www.facebook.com/jason.swingen
   - title: github
     url: http://github.com/jasonswingen
+  - title: google-plus
+    url: http://plus.google.com/+JasonSwingen
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: 4216 Martin Rd
-  - line: Duluth, MN 55803
+  - line: Duluth, Minnesota
 
 # Credits content
-credits: 'It was great you could stop by to learn more about me. Please <a href="#contact">contact me</a> if you are looking for any design, development, or marketing.'
+credits: 'It was great you could take the time to learn more about me. Please <a href="#contact">contact me</a> if you are looking for any design, development, or marketing.'
 
 # Build settings
 markdown: kramdown
