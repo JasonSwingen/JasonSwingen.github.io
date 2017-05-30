@@ -454,3 +454,18 @@ footer .footer-below {
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
 }
+
+.duluthbackground {
+    height: 400px;
+    background: url("https://c1.staticflickr.com/1/132/320488280_01250df9b1_z.jpg?zz=1")no-repeat right top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.locationtxt {
+    color: white;
+    font-size: 6vw;
+    margin-top: 150px;
+}

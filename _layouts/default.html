@@ -5,7 +5,10 @@
     {% include nav.html %}
     {% include header.html %}
     {% include portfolio_grid.html %}
+    {% include location.html %}
     {% include about.html %}
+    {% include skills.html %}
+
 
     {% if site.contact == "static" %}
     {% include contact_static.html %}
@@ -14,6 +17,7 @@
     {% else %}
     {% include contact.html %}
     {% endif %}
+
 
     {% include footer.html %}
     {% include modals.html %}
