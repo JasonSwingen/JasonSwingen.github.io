@@ -469,3 +469,11 @@ footer .footer-below {
     font-size: 6vw;
     margin-top: 150px;
 }
+
+.oldprice {
+    text-decoration: line-through;
+}
+
+.sale {
+    color: #b12704;
+}
