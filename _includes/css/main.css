@@ -176,7 +176,7 @@ section {
 
 section h2 {
     margin: 0;
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 section.success {
@@ -319,6 +319,10 @@ section.success {
 
 .floating-label-form-group-with-focus label {
     color: #{{ site.color.primary }};
+}
+
+.form-control {
+    color: #808080;
 }
 
 form .row:first-child .floating-label-form-group {
