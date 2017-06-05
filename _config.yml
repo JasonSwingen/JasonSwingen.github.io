@@ -1,8 +1,8 @@
 # Site settings
-title: Web Development and SEO in Duluth, Minnesota
+title: Web Design, Development and Internet Marketing | Duluth, Minnesota
 email: jason.swingen@gmail.com
 url: https://jasonswingen.com
-description: "Custom Website Builder in Duluth Minnesota. Jason Swingen focuses on fast, responsive, and SEO friendly websites. Cheap website packages available"
+description: "Custom Website Design and Development in Duluth Minnesota. Jason Swingen focuses on fast, responsive, and SEO friendly websites. Cheap website packages available"
 skills: "Web Developer - Internet Marketer"
 meta_author: Swingen Jason
 
@@ -54,7 +54,7 @@ address:
   - line: Duluth, Minnesota
 
 # Credits content
-credits: 'It was great you could take the time to learn more about me. Please <a href="#contact">contact me</a> if you are looking for any design, development, or marketing.'
+credits: 'You can <a href="#contact">Contact me</a>, or send me an email at <a href="mailto:jason.swingen@gmail.com">jason.swingen@gmail.com</a>   if you are looking for any design, development, or marketing.'
 
 # Build settings
 markdown: kramdown

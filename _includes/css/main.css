@@ -481,3 +481,19 @@ footer .footer-below {
 .sale {
     color: #b12704;
 }
+
+.slidertitle {
+    color: #{{ site.color.secondary }};
+}
+
+.carousel-control.right {
+    background-image: none;
+}
+
+.carousel-control.left {
+    background-image: none;
+}
+
+.thumbnail {
+    min-height: 550px;
+}
