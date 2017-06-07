@@ -38,23 +38,19 @@ footer:
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  - title: twitter
-    url: http://twitter.com/jasonswingen
   - title: linkedin
     url: http://www.linkedin.com/in/jasonswingen
   - title: facebook
     url: http://www.facebook.com/jason.swingen
   - title: github
     url: http://github.com/jasonswingen
-  - title: google-plus
-    url: http://plus.google.com/+JasonSwingen
 
 # Postal address (add as many lines as necessary)
 address:
   - line: Duluth, Minnesota
 
 # Credits content
-credits: 'You can <a href="#contact">Contact me</a>, or send me an email at <a href="mailto:jason.swingen@gmail.com">jason.swingen@gmail.com</a>   if you are looking for any design, development, or marketing.'
+credits: 'You can <span class="page-scroll"><a href="#contact">contact me</a></span> by <span data-toggle="tooltip" data-placement="top" title="(406) 390-4150"><a href="tel:406-390-4150">phone</a></span> or <span data-toggle="tooltip" data-placement="top" title="jason.swingen@gmail.com"><a href="mailto:jason.swingen@gmail.com">email</a></span> if you are looking for any design, development, or marketing.'
 
 # Build settings
 markdown: kramdown
