@@ -1,0 +1,12 @@
+---
+layout: default
+modal-id: 12
+date: 2017-12-18
+img: GitcheGumeeTroutUnlimited.jpg
+alt: image-alt
+project-date: 2017
+client: Gitche Gumee Trout Unlimited
+siteurl: http://mntu.org/gitche-gumee/
+category: Email Marketing
+description: Serving Northeast Minnesota, the Gitche Gumee Chapter is active along Minnesota’s North Shore and works to protect, preserve and enhance our local trout, steelhead and salmon resources.  There are lots of opportunities to get involved in our upcoming habitat work, and some great meetings open to the public yet this season. <a target="_blank" href="http://eepurl.com/cV3iQ1">Subscribe here</a> to receive emails about upcoming events. Hope to see you at the meetings and on the water!
+---
