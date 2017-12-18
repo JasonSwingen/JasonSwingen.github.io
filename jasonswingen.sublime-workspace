@@ -1,0 +1,915 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"border",
+				"border-color"
+			],
+			[
+				"border-ra",
+				"border-radius"
+			],
+			[
+				"re",
+				"relative"
+			],
+			[
+				"th",
+				"th\tTag"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"tex",
+				"text-transform"
+			],
+			[
+				"upcom",
+				"upcoming"
+			],
+			[
+				"current",
+				"current"
+			],
+			[
+				"black",
+				"blackish"
+			],
+			[
+				"hover",
+				"hovercolor"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"border-ri",
+				"border-right-width"
+			],
+			[
+				"in",
+				"inherit"
+			],
+			[
+				"anim",
+				"animdur\tanimation-duration: ${1:0}s;"
+			],
+			[
+				"t",
+				"trfs\ttransform-style: ${1:preserve-3d};"
+			],
+			[
+				"bord",
+				"border-radius"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"marin-",
+				"margin-bottom"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"border-",
+				"border-top"
+			],
+			[
+				"mi",
+				"min-width"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"backgrou",
+				"background-color"
+			],
+			[
+				"border-s",
+				"border-style"
+			],
+			[
+				"margin-",
+				"margin-top"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "title",
+		"selected_items":
+		[
+			[
+				"title",
+				"Convert Case: Title Case"
+			],
+			[
+				"package",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"snippet old ",
+				"Snippet: location-old-viking-blvd"
+			],
+			[
+				"ol",
+				"Snippet: location-old-viking-blvd"
+			],
+			[
+				"loca",
+				"Snippet: location-old-viking-blvd"
+			],
+			[
+				"location",
+				"Snippet: location-old-viking-blvd"
+			],
+			[
+				"beau",
+				"HTMLBeautify"
+			],
+			[
+				"high",
+				"Snippet: auction-highlights"
+			],
+			[
+				"up",
+				"Snippet: upcoming-auction"
+			],
+			[
+				"new",
+				"Snippet: new-auction"
+			],
+			[
+				"maus",
+				"Snippet: location-maus"
+			],
+			[
+				"packager",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"snippet: new",
+				"Snippet: new-auction"
+			],
+			[
+				"resou",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"packageresou",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"nowthen",
+				"Snippet: location-nowthen"
+			],
+			[
+				"packagere",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"Snippet: ",
+				"Snippet: bs3-alert"
+			],
+			[
+				"nowh",
+				"Snippet: location-nowthen"
+			],
+			[
+				"new auc",
+				"Snippet: new-auction"
+			],
+			[
+				"no",
+				"Snippet: location-nowthen"
+			],
+			[
+				"new ",
+				"Snippet: new-auction"
+			],
+			[
+				"new au",
+				"Snippet: new-auction"
+			],
+			[
+				"auction",
+				"Snippet: new-auction"
+			],
+			[
+				"upcom",
+				"Snippet: upcoming-auction"
+			],
+			[
+				"highli",
+				"Snippet: auction-highlights"
+			],
+			[
+				"emmet",
+				"Emmet: Expand Abbreviation"
+			],
+			[
+				"ex",
+				"Emmet: Expand Abbreviation"
+			],
+			[
+				"Title",
+				"Convert Case: Title Case"
+			],
+			[
+				"snippet auction",
+				"Snippet: new-auction"
+			],
+			[
+				"nowth",
+				"Snippet: location-nowthen"
+			],
+			[
+				"new auction",
+				"Snippet: new-auction"
+			],
+			[
+				"snippet location",
+				"Snippet: location-nowthen"
+			],
+			[
+				"snippet up",
+				"Snippet: upcoming-auction"
+			],
+			[
+				"title ",
+				"Convert Case: Title Case"
+			],
+			[
+				"sort",
+				"Sort Lines"
+			],
+			[
+				"per",
+				"Permute Lines: Unique"
+			],
+			[
+				"dupli",
+				"File: Duplicate"
+			],
+			[
+				"new file",
+				"File: New File Relative to Current View"
+			],
+			[
+				"newauction",
+				"Snippet: new-auction"
+			],
+			[
+				"upper",
+				"Convert Case: Upper Case"
+			],
+			[
+				"convert",
+				"Convert Case: Title Case"
+			],
+			[
+				"snippet hi",
+				"Snippet: auction-highlights"
+			],
+			[
+				"snippet: location",
+				"Snippet: location-nowthen"
+			],
+			[
+				"packagev",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"snippet auc",
+				"Snippet: auction-highlights"
+			],
+			[
+				"package res",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"lo",
+				"Convert Case: Lower Case"
+			],
+			[
+				"ti",
+				"Convert Case: Title Case"
+			],
+			[
+				"snippet high",
+				"Snippet: auction-highlights"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"rename",
+				"File: Rename"
+			],
+			[
+				"conver",
+				"Convert Case: Title Case"
+			],
+			[
+				"xml",
+				"Set Syntax: XML"
+			],
+			[
+				"word",
+				"Word Wrap: Toggle"
+			],
+			[
+				"git status",
+				"Git: Status"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"scsslint",
+				"CSSLint: Run CSSLint"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"lower",
+				"Convert Case: Lower Case"
+			],
+			[
+				"c",
+				"Convert Case: Lower Case"
+			],
+			[
+				"waka",
+				"WakaTime: Open Dashboard"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"unique",
+				"Permute Lines: Unique"
+			],
+			[
+				"",
+				"Permute Lines: Unique"
+			],
+			[
+				"colors",
+				"ColorSchemeSelector: Previous Color Scheme"
+			],
+			[
+				"colorscheme",
+				"ColorSchemeSelector: Next Color Scheme"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"convert title",
+				"Convert Case: Title Case"
+			],
+			[
+				"set s html",
+				"Set Syntax: HTML"
+			],
+			[
+				"con ver",
+				"Convert Case: Lower Case"
+			],
+			[
+				"con",
+				"Convert Case: Title Case"
+			],
+			[
+				"cont",
+				"Convert Case: Title Case"
+			],
+			[
+				"csslint",
+				"Preferences: CSSLint Settings – Default"
+			],
+			[
+				"csslin",
+				"Preferences: CSSLint Settings – Default"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"pa",
+				"Package Control: Disable Package"
+			],
+			[
+				"git push ",
+				"Git: Push Current Branch"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git qui",
+				"Git: Quick Status"
+			],
+			[
+				"git quic",
+				"Git: Quick Status"
+			],
+			[
+				"git stat",
+				"Git: Status"
+			],
+			[
+				"git commit",
+				"Git: Quick Commit"
+			],
+			[
+				"git add",
+				"Git: Quick Add"
+			],
+			[
+				"git ",
+				"Git: Status"
+			],
+			[
+				"gitgutt",
+				"GitGutter: Compare Against Commit"
+			],
+			[
+				"gitg",
+				"GitGutter: Compare Against Branch"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"com",
+				"Git: Quick Commit"
+			],
+			[
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"sftp",
+				"SFTP: Browse Server…"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"colo",
+				"Color Picker"
+			],
+			[
+				"bs3",
+				"Snippet: bs3-col"
+			],
+			[
+				"bs3-foot",
+				"Snippet: bs3-panel-footer"
+			],
+			[
+				"bs3-nav",
+				"Snippet: bs3-navbar-inverse"
+			],
+			[
+				"bs3-na",
+				"Snippet: bs3-navbar-static-top"
+			],
+			[
+				"bs3-n",
+				"Snippet: bs3-navbar-responsive"
+			],
+			[
+				"col",
+				"Color Picker"
+			],
+			[
+				"boiler",
+				"Snippet: htmlboiler"
+			],
+			[
+				"snippet",
+				"Snippet: bs3-navbar-responsive"
+			],
+			[
+				"snipp",
+				"Snippet: bs3-alert"
+			],
+			[
+				"snippet b",
+				"Snippet: bs3-form"
+			],
+			[
+				"boi",
+				"Snippet: htmlboiler"
+			],
+			[
+				"css",
+				"CSSLint: Run CSSLint"
+			],
+			[
+				"spell check",
+				"Google Spell Check"
+			],
+			[
+				"google",
+				"Google Spell Check"
+			],
+			[
+				"spell",
+				"Google Spell Check"
+			],
+			[
+				"wo",
+				"WordPress Generate Salt Keys"
+			],
+			[
+				"wor",
+				"WordPress Generate Salt Keys"
+			],
+			[
+				"brow",
+				"View In Browser"
+			],
+			[
+				"sublime",
+				"SublimeGit: Documentation"
+			],
+			[
+				"git",
+				"Package Control: Install Package"
+			],
+			[
+				"sni",
+				"Snippet: bs3-navbar-inverse"
+			]
+		],
+		"width": 476.0
+	},
+	"console":
+	{
+		"height": 162.0,
+		"history":
+		[
+			"git",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Jason/Documents/GitHub/JasonSwingen.github.io"
+	],
+	"file_history":
+	[
+		"/C/Users/Jason/AppData/Roaming/Sublime Text 3/Packages/User/new-auction.sublime-snippet",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-12-19/2017-12-19_Inventory_TEXT.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Templates/AAA_Template_Email_14.6",
+		"/C/Users/Jason/Documents/AAA Auction/Templates/scratchpad.html",
+		"/C/Users/Jason/Documents/AAA Auction/Templates/AAA_List_of_Emails_2017-12-06.txt",
+		"/C/Users/Jason/Documents/GitHub/auctionMN/.gitignore",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-11-28/2017-11-28_maxanet_bidders.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-11-28/2017-11-28_maxanet_results.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-11-28/2017-11-28_Inventory_TEXT_v2.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Templates/AAA_Template_Invoices_Wavebid_v22",
+		"/C/Users/Jason/Documents/GitHub/auctionMN/general-terms-and-conditions.shtml",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-11-14/2017-11-14_maxanet_bidders.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-11-14/2017-11-14_maxanet_results.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-11-07/2017-11-07_maxanet_bidders.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-11-07/2017-11-07_maxanet_results.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-11-14/2017-11-14_Inventory_TEXT.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-11-07/2017-11-07_Inventory_TEXT_v2.txt",
+		"/C/Users/Jason/Documents/GitHub/auctionMN/team.shtml",
+		"/C/Users/Jason/Documents/AAA Auction/Templates/AAA_Template_Email_14.4",
+		"/C/Users/Jason/Documents/AAA Auction/Templates/AAA_Template_Email_14.5",
+		"/C/Users/Jason/Documents/GitHub/auctionMN/items-that-sell.shtml",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-10-24/2017-10-24_maxanet_bidders.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-10-24/2017-10-24_maxanet_results.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-10-17/2017-10-17_maxanet_bidders.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-10-17/2017-10-17_maxanet_results.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-10-24/2017-10-24_Inventory_TEXT_v2.txt",
+		"/C/Users/Jason/Documents/GitHub/auctionMN/online_bidding_information.shtml",
+		"/C/Users/Jason/Documents/GitHub/auctionMN/directions.shtml",
+		"/C/Users/Jason/Documents/GitHub/auctionMN/selling-methods.shtml",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-10-10/2017-10-10_maxanet_results.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-10-10/2017-10-10_maxanet_bidders.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-10-10/2017-10-10_Inventory_TEXT.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-10-17/2017-10-17_Inventory_TEXT.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Templates/AAA_Template_Email_14.2",
+		"/C/Users/Jason/Documents/AAA Auction/Templates/AAA_Template_Email_14.3",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-09-26/2017-09-26_maxanet_bidders.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-09-26/2017-09-26_maxanet_results.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Templates/AAA_Template_Invoices_Wavebid_v21",
+		"/C/Users/Jason/Documents/GitHub/auctionMN/footer.ssi",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-09-26/2017-09-26_Inventory_v3.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-09-12/2017-09-12_maxanet_bidders.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-09-12/2017-09-12_maxanet_results.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-09-26/2017-09-26_Inventory_v2.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Templates/AAA_Template_Invoices_Wavebid_v20",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-09-12/2017-09-12_Inventory_TEXT_v2.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Templates/AAA_Bulk_Emails_2017-08-30.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Templates/AAA_Template_Email_14.1",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-08-29/2017-08-29_Maxanet_Results.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-08-29/2017-08-29_Maxanet_Bidders.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Templates/AAA_Template_Invoices_Wavebid_v16",
+		"/C/Users/Jason/Documents/AAA Auction/Templates/AAA_Emails_From_Contact_2017-08-29.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Templates/AAA_Bulk_Emails_2017-08-29.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-08-29/2017-08-29_Inventory_TEXT_v2.txt",
+		"/C/Users/Jason/Documents/GitHub/auctionMN/body_sitemap.inc",
+		"/C/Users/Jason/Documents/AAA Auction/Templates/AAA_Auction_Page_Footer.html",
+		"/C/Users/Jason/Documents/AAA Auction/Templates/AAA_Auction_Page_Settings",
+		"/C/Users/Jason/Documents/AAA Auction/Templates/Old_Footer",
+		"/C/Users/Jason/Documents/AAA Auction/Templates/AAA_Template_Email_14.0",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-08-01/2017-08-01_maxanet_bidders.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-08-01/2017-08-01_maxanet_results.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Templates/AAA_Template_Email_13.9",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-08-01/2017-08-01_Inventory_TEXT_v2.txt",
+		"/C/Users/Jason/Documents/GitHub/auctionMN/maus-corner-bidding-information.shtml",
+		"/C/Users/Jason/Documents/GitHub/auctionMN/maus-corner-selling-information.shtml",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-07-18/2017-07-18_maxanet_results.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-07-18/2017-07-18_maxanet_bidders.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Templates/AAA_Template_Email_13.8",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-07-18/2017-07-18_Inventory_TEXT.txt",
+		"/C/Users/Jason/Documents/GitHub/auctionMN/contact.shtml",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-06-26/2017-06-26_maxanet_bidders.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-06-26/2017-06-27_maxanet_results.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Templates/AAA_Template_Invoices_Wavebid_v19",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-06-26/2017-06-26_Inventory_TEXT.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Templates/AAA_Template_Email_13.6",
+		"/C/Users/Jason/Documents/AAA Auction/Templates/AAA_Template_Email_13.7",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-06-13/2016-06-13_maxanet_bidders.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-06-13/2017-06-13_maxanet_results.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-06-13/2017-06-13_Inventory_TEXT_v2.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-06-13",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-05-30/2017-05-30_maxanet_bidders.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-05-30/2017-05-30_maxanet_results.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Templates/gun_descriptions.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-05-30/2017-05-30_Inventory_TEXT.txt",
+		"/C/Users/Jason/Documents/GitHub/auctionMN/auctionmn.scss",
+		"/C/Users/Jason/Documents/AAA Auction/Templates/AAA_Template_Email_13.5",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-05-16/2017-05-16_Winning_Bidders.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-05-16/2017-05-16_Maxanet_Results.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-05-16/2017-05-16_Inventory_TEXT.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Templates/AAA_Template_Email_13.4",
+		"/C/Users/Jason/Documents/AAA Auction/Templates/AAA_Template_Email_13.3",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-04-29_Canoe-and-Kayak/2017-04-29_Canoe-and-Kayak-Realized-Prices_TEXT.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-04-29_Canoe-and-Kayak/2017-04-29_Canoe-and-Kayak-Inventory_TEXT.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-04-25/2017-04-25_Maxanet_Bidders.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-04-25/2017-04-25_Maxanet_Results.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Templates/AAA_Template_Email_13.2",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-04-25/2017-04-25_Inventory.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Templates/AAA_Template_Email_10.9",
+		"/C/Users/Jason/Documents/AAA Auction/Templates/AAA_Template_Email_12.9",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-05-02/2017-05-02_Inventory.txt",
+		"/C/Users/Jason/AppData/Roaming/Sublime Text 3/Packages/User/location-maus.sublime-snippet",
+		"/C/Users/Jason/AppData/Roaming/Sublime Text 3/Packages/User/upcoming-auction.sublime-snippet",
+		"/C/Users/Jason/Documents/GitHub/auctionMN/testimonials.shtml",
+		"/C/Users/Jason/Documents/GitHub/auctionMN/benefittest.shtml",
+		"/C/Users/Jason/Documents/GitHub/auctionMN/index_preview.shtml",
+		"/C/Users/Jason/Documents/AAA Auction/Templates/AAA_Template_Email_13.1",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-04-11/2017-04-11_Results.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-04-11/2017-04-11_Bidders.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Templates/AAA_Template_Invoices_Wavebid_v18",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-04-11/2017-04-11_Inventory.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Templates/AAA_Template_Email_11.9",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-03-25/2017-03-25_maxanet_results.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-03-25/2017-03-25_Winning_Bidders.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Templates/AAA_Template_Invoices_Wavebid_v17",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-03-20/2017-03-20_Winning_Bidder_Emails.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-03-20/2017-03-20_Winning_Bidders_v2.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-03-20/2017-03-20_Maxanet_Results_v2.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-03-20/2017-03-20_Maxanet_Results.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-03-20/2017-03-20_Winning_Bidders.txt",
+		"/C/Users/Jason/Documents/GitHub/auctionMN/jquery.js",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-03-25/2017-03-25_Inventory_v2.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-03-20/2017-03-20_Inventory.txt",
+		"/C/Users/Jason/AppData/Roaming/Sublime Text 3/Packages/User/location-old-viking-blvd.sublime-snippet",
+		"/C/Users/Jason/Documents/GitHub/auctionMN/consignment_info.shtml",
+		"/C/Users/Jason/Documents/GitHub/auctionMN/benefitqa.shtml",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-03-01/2017-03-01_maxanet_results.txt",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-03-01/2017-03-01_winning_bidders.txt",
+		"/C/Users/Jason/Documents/GitHub/auctionMN/mauscorner.shtml",
+		"/C/Users/Jason/Documents/AAA Auction/Auctions_and_Backups/2017-03-01/2017-03-01_Inventory_TEXT.txt"
+	],
+	"find":
+	{
+		"height": 31.0
+	},
+	"find_in_files":
+	{
+		"height": 117.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 80.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.csslint_result_view":
+	{
+		"height": 378.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git-commit":
+	{
+		"height": 154.0
+	},
+	"output.git-push":
+	{
+		"height": 154.0
+	},
+	"output.sftp":
+	{
+		"height": 242.0
+	},
+	"pinned_build_system": "",
+	"project": "jasonswingen.sublime-project",
+	"replace":
+	{
+		"height": 57.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"high",
+				"AAA Auction\\Templates\\AAA_Picture_Highlights.html"
+			],
+			[
+				"scra",
+				"AAA Auction\\AAA_Templates\\scratchpad.html"
+			],
+			[
+				"scrat",
+				"AAA Auction\\AAA_Templates\\scratchpad.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 625.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\Jason\\Documents\\GitHub\\JasonSwingen.github.io\\jasonswingen.sublime-project"
+			]
+		],
+		"width": 475.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 438.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 1
+	}
+}
