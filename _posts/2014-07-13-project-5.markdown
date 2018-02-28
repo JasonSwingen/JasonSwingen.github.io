@@ -8,5 +8,5 @@ project-date: 2012
 client: Whitten Laser Eye
 siteurl: http://www.whittenlasereye.com/
 category: Internet Marketing
-description: Whitten Laser Eye uses the latest in Laser Vision Correction. Including LASIK, Cataract, and Implantable Contact Lenses. I increased their internet traffic through a combination of content marketing, and search engine opmimization.
+description: Whitten Laser Eye uses the latest in Laser Vision Correction. Including LASIK, Cataract, and Implantable Contact Lenses. I increased their internet traffic through a combination of content marketing, and search engine optimization.
 ---
