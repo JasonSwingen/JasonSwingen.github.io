@@ -36,6 +36,12 @@ h6 {
     font-weight: 700;
 }
 
+blockquote {
+    margin: 40px 0px;
+    border-left: 5px solid #{{ site.color.primary }};
+
+}
+
 hr.star-light,
 hr.star-primary {
     margin: 25px auto 30px;
