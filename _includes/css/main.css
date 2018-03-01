@@ -39,7 +39,6 @@ h6 {
 blockquote {
     margin: 40px 0px;
     border-left: 5px solid #{{ site.color.primary }};
-
 }
 
 hr.star-light,
@@ -488,6 +487,22 @@ footer .footer-below {
     color: #b12704;
 }
 
+.smtxt {
+    font-size: 16px;
+}
+
+form .row:first-child .floating-label-form-group {
+    border-top: 1px dotted #{{ site.color.primary }};
+}
+.floating-label-form-group {
+    border-bottom: 1px dotted #{{ site.color.primary }};
+}
+.form-control {
+    color: #{{ site.color.secondary}};
+}
+.form-control::-webkit-input-placeholder {
+    color: #{{ site.color.secondary}};
+}
 .slidertitle {
     color: #{{ site.color.secondary }};
 }
@@ -498,6 +513,10 @@ footer .footer-below {
 
 .carousel-control.left {
     background-image: none;
+}
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+    margin: 0 auto;
 }
 
 .thumbnail {
