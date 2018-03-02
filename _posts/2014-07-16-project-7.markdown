@@ -3,7 +3,7 @@ layout: default
 modal-id: 7
 date: 2014-07-16
 img: AAA_Auction.jpg
-alt: image-alt
+alt: AAA Auction
 project-date: 2014
 client: AAA Auction
 siteurl: http://auctionmn.com

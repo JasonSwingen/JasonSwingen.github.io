@@ -3,7 +3,7 @@ layout: default
 modal-id: 10
 date: 2017-05-30
 img: damgoodsandgear.jpg
-alt: image-alt
+alt: Dam Goods and Gear
 project-date: 2017
 client: Dam Goods and Gear
 siteurl: https://www.damgoodsandgear.com/

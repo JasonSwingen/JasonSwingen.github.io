@@ -3,7 +3,7 @@ layout: default
 modal-id: 4
 date: 2014-07-15
 img: zerorez.jpg
-alt: image-alt
+alt: Zerorez
 project-date: 2012
 client: Zerorez
 siteurl: http://www.zeroreznc.com/

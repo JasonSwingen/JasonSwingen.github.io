@@ -3,7 +3,7 @@ layout: default
 modal-id: 12
 date: 2017-12-18
 img: GitcheGumeeTroutUnlimited.jpg
-alt: image-alt
+alt: Gitche Gumee Trout Unlimited
 project-date: 2017
 client: Gitche Gumee Trout Unlimited
 siteurl: http://mntu.org/gitche-gumee/

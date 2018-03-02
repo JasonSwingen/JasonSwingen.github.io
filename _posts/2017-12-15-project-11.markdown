@@ -3,7 +3,7 @@ layout: default
 modal-id: 11
 date: 2017-12-15
 img: NorwegianFlyfishersClub.jpg
-alt: image-alt
+alt: Norwegian Flyfishers Club
 project-date: 2017
 client: Norwegian Flyfishers Club
 siteurl: http://nfc-online.com

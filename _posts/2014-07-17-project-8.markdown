@@ -3,7 +3,7 @@ layout: default
 modal-id: 8
 date: 2014-07-17
 img: SaveYourAshMN.JPG
-alt: image-alt
+alt: Save Your Ash of MN
 project-date: 2015
 client: Save Your Ash of MN
 siteurl: http://www.saveyourashmn.com

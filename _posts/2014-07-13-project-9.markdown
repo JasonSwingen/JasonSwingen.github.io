@@ -3,7 +3,7 @@ layout: default
 modal-id: 9
 date: 2016-02-15
 img: JS-Outdoors.jpg
-alt: image-alt
+alt: JS-Outdoors
 project-date: 2016
 client: JS-Outdoors
 siteurl: http://www.js-outdoors.com/

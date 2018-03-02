@@ -3,7 +3,7 @@ layout: default
 modal-id: 5
 date: 2014-07-15
 img: WhittenLaserEye.jpg
-alt: image-alt
+alt: Whitten Laser Eye
 project-date: 2012
 client: Whitten Laser Eye
 siteurl: http://www.whittenlasereye.com/

@@ -3,7 +3,7 @@ layout: default
 modal-id: 6
 date: 2014-7-15
 img: BackyardLeisure.jpg
-alt: image-alt
+alt: Backyard Leisure
 project-date: 2012 - Present
 client: Backyard Leisure
 siteurl: http://www.spapoolbilliards.com
