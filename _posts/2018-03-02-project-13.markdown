@@ -9,4 +9,5 @@ client: LakeLife Homes
 siteurl: https://www.lakeliferestoration.com/
 category: Search Engine Optimization
 description: LakeLife Homes is your go to business for all log home restoration needs. They focus on log home and deck staining, painting, refinishing, cleaning and more. They offer custom decks and interior finishing work to customers in Central Minnesota.
+task: Optimized on-page ranking factors target specific industry specific keywords for improved search engine visibility.
 ---

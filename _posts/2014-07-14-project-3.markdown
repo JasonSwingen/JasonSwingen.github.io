@@ -8,6 +8,6 @@ project-date: 2012
 client: Sunrise Dental
 siteurl: http://sunriseschoolofdentalassisting.com/
 category: Internet Marketing
-description: Sunrise Dental is dedicated to treating all our Triangle-area dental patients with the utmost care, respect and attention as we work with them to maintain, enhance and restore the health and beauty of their smiles. I added content and maintained Sunrise Dental's website, while increasing their ranking on search results.
-
+description: Sunrise Dental is dedicated to treating all our Triangle-area dental patients with the utmost care, respect and attention as we work with them to maintain, enhance and restore the health and beauty of their smiles.
+task: I created content and provided maintenance for Sunrise Dental's website, while increasing their ranking on local search results.
 ---

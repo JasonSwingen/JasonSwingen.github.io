@@ -15,7 +15,6 @@
                             <h2>{{ post.title }}</h2>
                             <hr class="star-primary">
                             <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
-                            <p>{{ post.description }}</p>
                             <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong>
@@ -31,6 +30,26 @@
                                     </strong>
                                 </li>
                             </ul>
+                            
+                            {% if post.description %}
+                                <h3>Company Description</h3>
+                                    <p>{{ post.description }}</p>
+                            {% endif %}
+
+                            {% if post.task %}
+                                <h3>Work Performed</h3>
+                                    <p>{{ post.task }}</p>
+                            {% endif %}
+                            
+                            {% if post.old-site-img %}
+                                <h3>Website Redesign</h3>
+                                    <h4>Old Design</h4>
+                                    &nbsp;
+                                        <div class="webdesign-img">{{ post.old-site-img }}</div>
+                                    <h4>New Design</h4>
+                                    &nbsp;
+                                        <div class="webdesign-img">{{ post.new-site-img }}</div>
+                            {% endif %}
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>

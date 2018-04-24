@@ -1,0 +1,13 @@
+---
+layout: default
+modal-id: 15
+date: 2018-04-18
+img: MinnesotaTroutUnlimited.jpg
+alt: Minnesota Trout Unlimited
+project-date: 2018
+client: Minnesota Trout Unlimited
+siteurl: http://mntu.org
+category: Email Marketing
+description: Minnesota Trout Unlimited represents several thousand members and six chapters in Minnesota. Its mission is to conserve, protect, restore, and sustain Minnesota’s cold water fisheries and their watersheds.
+task: I am running the Minnesota Trout Unlimited's email marketing campaign. The emails are focused on getting the word out about policies that effect our local watersheds as well as updating members on local events.
+---

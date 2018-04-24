@@ -8,6 +8,7 @@ project-date: 2012
 client: Zerorez
 siteurl: http://www.zeroreznc.com/
 category: Internet Marketing
-description: ZEROREZ Raleigh specializes in carpet, tile, upholstery, area rug, hard surface, pet treatment, and mattress cleaning for homes and businesses in the Raleigh, Durham, and Cary area. I was in charge of their Pay-Per-Click campaign to target local customers.
+description: ZEROREZ Raleigh specializes in carpet, tile, upholstery, area rug, hard surface, pet treatment, and mattress cleaning for homes and businesses in the Raleigh, Durham, and Cary area.
+task: I was the lead internet marketer in charge of their Pay-Per-Click campaign to target local customers in North Carolina.
 
 ---
