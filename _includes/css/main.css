@@ -467,6 +467,20 @@ footer .footer-below {
     height: auto;
 }
 
+.oldsite {
+    width: 45%;
+    float: left;
+}
+
+.newsite {
+    width: 45%;
+    float: right;
+}
+
+.clearfix {
+    clear: both;
+}
+
 .navbar-nav>.active>a {
     background-color: #{{ site.color.secondary-dark }} !important;
 }

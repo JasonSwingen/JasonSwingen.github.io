@@ -43,14 +43,24 @@
                             
                             {% if post.old-site-img %}
                                 <h3>Website Redesign</h3>
-                                    <h4>Old Design</h4>
-                                    &nbsp;
-                                        <div class="webdesign-img">{{ post.old-site-img }}</div>
-                                    <h4>New Design</h4>
-                                    &nbsp;
-                                        <div class="webdesign-img">{{ post.new-site-img }}</div>
+                                    <div class="oldsite">
+                                        <h4>Old Design</h4>
+                                        &nbsp;
+                                            <div class="webdesign-img">{{ post.old-site-img }}</div>
+                                    </div>
+                                    <div class="newsite">
+                                        <h4>New Design</h4>
+                                        &nbsp;
+                                            <div class="webdesign-img">{{ post.new-site-img }}</div>
+                                    </div>
                             {% endif %}
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+
+                            {% if post.current-site-img %}
+                                <h3>Current Design</h3>
+                                &nbsp;
+                                    <div class="webdesign-img">{{ post.current-site-img }}</div>
+                            {% endif %}
+                            <div class="clearfix"><button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button></div>
                         </div>
                     </div>
                 </div>

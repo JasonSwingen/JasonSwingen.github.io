@@ -11,6 +11,6 @@ siteurl: http://nfc-online.com
 category: Web Development
 description: Norwegian Flyfishers Club is a full accommodation guiding service located on the Gaula River in Norway.
 task: This project was put together with the partnership of <a target="_blank" href="http://www.instagram.com/theflyfishingnation">The Fly Fishing Nation</a> to create a completely new redesigned website for the Norwegian Flyfishers Club. The goal of the new website was to have a simple, and earthy feel, while modern features such as a fully responsive design with social media integration will showcase the power and the beauty of the Gaula.
-<!-- old-site-img: <img src="img/portfolio/old-site.JPG" class="img-responsive" alt=""> <img src="img/portfolio/old-site_2.JPG" class="img-responsive" alt=""> <img src="img/portfolio/old-site_4.JPG" class="img-responsive" alt=""> <img src="img/portfolio/old-site_7.JPG" class="img-responsive" alt="">
-new-site-img: <img src="img/portfolio/new-site.JPG" class="img-responsive" alt=""> <img src="img/portfolio/new-site_16.JPG" class="img-responsive" alt=""> <img src="img/portfolio/new-site_4.JPG" class="img-responsive" alt=""> <img src="img/portfolio/new-site_10.JPG" class="img-responsive" alt=""> <img src="img/portfolio/new-site_13.JPG" class="img-responsive" alt=""> <img src="img/portfolio/new-site_15.JPG" class="img-responsive" alt="">  -->
+<!-- old-site-img: <img src="img/portfolio/nfc-old.jpg" class="img-responsive" alt="">
+new-site-img: <img src="img/portfolio/nfc-new.jpg" class="img-responsive" alt=""> -->
 ---
