@@ -23,6 +23,13 @@
       gtag('config', 'UA-56654401-1');
     </script>
 
+    <!-- Redirect to https -->
+    <script>
+    var loc = window.location.href+'';
+      if (loc.indexOf('http://')==0){
+        window.location.href = loc.replace('http://','https://');
+      }
+    </script>
 
     <!-- Bing Verification -->
     {% if site.bing_verify %}<meta name="msvalidate.01" content="{{ site.bing_verify }}">{% endif %}
