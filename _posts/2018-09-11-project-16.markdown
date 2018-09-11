@@ -1,0 +1,15 @@
+---
+layout: default
+modal-id: 16
+date: 2018-09-11
+img: BLG-photo.jpg
+alt: BLG Photo
+project-date: 2018
+client: BLG Photo
+siteurl: https://www.blgphoto.com/index
+category: Search Engine Optimization
+description: Brett Groehler of BLG Photo is Duluth's most experienced wedding photographer with over 30 years of experience.
+task: Increase search engine rankings for blgphoto.com to the first page of search results for "Duluth Wedding Photographers". After editing and adding new content to Brett's website the site ranked on the first page of Google within 5 days!
+old-site-img: <img src="img/portfolio/blg-old.jpg" class="img-responsive" alt="">
+new-site-img: <img src="img/portfolio/blg-new.jpg" class="img-responsive" alt="">
+---
