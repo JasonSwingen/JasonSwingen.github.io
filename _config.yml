@@ -10,7 +10,7 @@ meta_author: Swingen Jason
 google_verify:
 
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:
+bing_verify: AC92C578DD8459A0ECE543DE43E3F695
 
 # Contact form:
 # - static : pass through formspree.io to validate email sending

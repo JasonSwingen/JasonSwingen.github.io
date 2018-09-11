@@ -12,6 +12,14 @@
     <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link rel="stylesheet" href="{{ "/style.css" }}">
 
+    <!-- Redirect to https -->
+    <script>
+    var loc = window.location.href+'';
+      if (loc.indexOf('http://')==0){
+        window.location.href = loc.replace('http://','https://');
+      }
+    </script>
+
     <!-- Google verification -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-56654401-1"></script>
@@ -21,14 +29,6 @@
       gtag('js', new Date());
 
       gtag('config', 'UA-56654401-1');
-    </script>
-
-    <!-- Redirect to https -->
-    <script>
-    var loc = window.location.href+'';
-      if (loc.indexOf('http://')==0){
-        window.location.href = loc.replace('http://','https://');
-      }
     </script>
 
     <!-- Bing Verification -->
