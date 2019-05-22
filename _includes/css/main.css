@@ -602,9 +602,9 @@ form .row:first-child .floating-label-form-group {
   transition: all .2s ease-in-out;
 }
 .services .caption {
-  font-size: 50px;
+  font-size: 51px;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 31px;
 }
 
 .user {
