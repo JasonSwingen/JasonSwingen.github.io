@@ -717,11 +717,13 @@ figure .profile span {
   0%{transform:translate(0px, 100px); opacity: 0;}
   100%{transform:translate(0px, 0); opacity: 1;}
 }
+
 .delay1 {
   -webkit-animation-delay: 0.2s;
   -moz-animation-delay: 0.2s;
   animation-delay: 0.2s;
 }
+
 .delay2 {
   -webkit-animation-delay: 0.4s;
   -moz-animation-delay: 0.4s;
