@@ -16,6 +16,15 @@ p.small {
     font-size: 16px;
 }
 
+.paragraphs p {
+  margin-top: 15px;
+    margin-bottom: 35px;
+}
+
+.focus {
+  color: #{{ site.color.secondary }};
+}
+
 a,
 a:hover,
 a:focus,
@@ -261,6 +270,10 @@ section.secondary {
     }
 }
 
+.btn-primary {
+    margin-top: 15px;
+}
+
 .btn-outline {
     margin-top: 15px;
     border: solid 2px #fff;
@@ -359,6 +372,11 @@ footer .footer-col {
 footer .footer-below {
     padding: 25px 0;
     background-color: #{{ site.color.secondary-dark }};
+}
+
+.float-right {
+  float: right;
+  max-width: 400px;
 }
 
 .btn-social {
@@ -571,6 +589,24 @@ form .row:first-child .floating-label-form-group {
     min-height: 550px;
 }
 
+.services {
+  display: block;
+  padding: 2px 24px;
+  margin-bottom: 21px;
+  line-height: 1.42857143;
+  background-color: #ffffff;
+  /* border: 1px solid gray; */
+  border-radius: 4px;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+.services .caption {
+  font-size: 50px;
+  text-align: center;
+  padding-top: 30px;
+}
+
 .user {
   display: inline-block;
   width: 400px;
@@ -605,6 +641,21 @@ figure .profile span {
     /* text-align: center; */
     /* -webkit-transition: .3s ease-in-out; */
     /* transition: .3s ease-in-out; */
+}
+
+.testimonial-pic {
+  float: left;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+.testimonial-pic img {
+  border-radius: 50%;
+}
+
+@media(max-width:990px) {
+  .testimonial-pic {
+    padding-bottom: 0px;
+  }
 }
 
 .hover03 figure div {
@@ -659,4 +710,25 @@ figure .profile span {
     100% {
         left: 125%;
     }
+}
+
+.fadeInUp{animation:fadeInUp 1s ease backwards;}
+@keyframes fadeInUp{
+  0%{transform:translate(0px, 100px); opacity: 0;}
+  100%{transform:translate(0px, 0); opacity: 1;}
+}
+.delay1 {
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.delay2 {
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.hideme
+{
+    opacity:0;
 }
