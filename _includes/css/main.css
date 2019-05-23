@@ -193,6 +193,12 @@ section h2 {
     font-size: 2.5em;
 }
 
+@media(max-width:600px) {
+  section h2 {
+    font-size: 6vw;
+  }
+}
+
 section.success {
     color: #fff;
     background: #{{ site.color.primary }};
@@ -733,4 +739,9 @@ figure .profile span {
 .hideme
 {
     opacity:0;
+}
+
+.fa-chevron-right:before, .fa-chevron-left:before {
+  position: absolute;
+  margin-top: 100%;
 }
