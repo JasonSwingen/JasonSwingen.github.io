@@ -10,6 +10,7 @@ body {
 
 p {
     font-size: 20px;
+    font-family: roboto,Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 p.small {
@@ -48,6 +49,13 @@ h6 {
 blockquote {
     margin: 40px 0px;
     border-left: 5px solid #{{ site.color.primary }};
+    border-left: none;
+    clear: both;
+}
+@media(min-width:1200px) {
+  blockquote {
+    margin-bottom: 40px;
+  }
 }
 
 hr.star-light,
@@ -417,6 +425,8 @@ footer .footer-below {
     border-radius: 100%;
     font-size: 20px;
     line-height: 28px;
+    margin-top: 0px;
+    box-shadow: 2px 2px 11px -4px #333;
 }
 
 .scroll-top .btn:focus {
@@ -649,6 +659,7 @@ figure .profile span {
     /* transition: .3s ease-in-out; */
 }
 
+
 .testimonial-pic {
   float: left;
   padding-right: 20px;
@@ -656,13 +667,53 @@ figure .profile span {
 }
 .testimonial-pic img {
   border-radius: 50%;
+  border: 5px solid #{{ site.color.secondary }};
+  border-radius: 100%;
+  box-shadow: 2px 2px 11px -4px #333;
+  width: 170px;
+}
+
+blockquote p {
+  /* font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif; */
+}
+
+@media(min-width:1200px) {
+  blockquote .intro {
+    padding-top: 20px;
+  }
+}
+
+@media(max-width:600px) {
+  blockquote {
+    margin: 10px 0px;
+  }
+  blockquote p {
+
+  }
 }
 
 @media(max-width:990px) {
   .testimonial-pic {
+    padding-right: 20px;
     padding-bottom: 0px;
   }
 }
+
+.rating {
+  color: #{{ site.color.primary }};
+  font-size: 22px;
+}
+
+/* Page Styles */
+
+.space {
+  margin-top:40px;
+  padding:0px
+  margin-left:0px;
+  margin-right:0px;
+}
+
+/* Hover Transitions */
 
 .hover03 figure div {
     -webkit-transform: scale(1.2);
