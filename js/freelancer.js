@@ -45,6 +45,12 @@ $(document).ready(function() {
     });
 });
 
+// changes dropdown in contact form based on package link clicked
+var $select = $('#select');
+$('a[href="#contact"]').click(function () {
+    $select.val( $(this).data('select') );
+});
+
 // Highlight the top nav as scrolling occurs
 $('body').scrollspy({
     target: '.navbar-fixed-top'
