@@ -694,7 +694,8 @@ blockquote p {
 
 @media(max-width:990px) {
   .testimonial-pic {
-    padding-right: 20px;
+    shape-outside: circle();
+    padding-right: 35px;
     padding-bottom: 0px;
   }
 }
