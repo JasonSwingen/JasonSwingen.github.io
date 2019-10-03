@@ -536,7 +536,7 @@ footer .footer-below {
 
 .duluthbackground {
     height: 500px;
-    background: url("https://c1.staticflickr.com/1/132/320488280_01250df9b1_z.jpg?zz=1")no-repeat right top fixed;
+    background: url("/img/duluth_mn.jpg")no-repeat right top fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
