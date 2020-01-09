@@ -2,7 +2,7 @@
 layout: default
 modal-id: 13
 date: 2018-12-18
-img: LakeLife_Living.jpg
+img: LakeLife-Living.jpg
 alt: LakeLife Homes
 project-date: 2018
 client: LakeLife Living
