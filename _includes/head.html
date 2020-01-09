@@ -3,15 +3,296 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="viewport" content="width=device-width">
-  <style media="screen">
-    body{overflow-x:hidden}p{font-size:20px;font-family:roboto,Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;font-display:swap}a{outline:0;color:#{{ site.color.primary }}}h2,h3,h4{text-transform:uppercase;font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:700}blockquote{margin:40px 0px;border-left:5px solid #{{ site.color.primary }};border-left:none;clear:both}@media (min-width:1200px){blockquote{margin-bottom:40px}}hr.star-primary{margin:25px auto 30px;padding:0;max-width:250px;border:0;border-top:solid 5px;text-align:center}hr.star-primary:after{content:"\f005";display:inline-block;position:relative;top:-.8em;padding:0 .25em;font-family:FontAwesome;font-size:2em}hr.star-primary{border-color:#{{ site.color.secondary }}}hr.star-primary:after{color:#{{ site.color.secondary }};background-color:#fff}.img-centered{margin:0 auto}header{text-align:center;color:#fff;background:#{{ site.color.primary }}}header .container{padding-top:100px;padding-bottom:50px}header img{display:block;margin:0 auto 20px}header .intro-text .name{display:block;text-transform:uppercase;font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:2em;font-weight:700}header .intro-text .skills{font-size:1.25em;font-weight:300}@media (min-width:990px){header .container{padding-top:200px;padding-bottom:100px}header .intro-text .name{font-size:4.75em}header .intro-text .skills{font-size:1.75em}}@media (min-width:1200px){.navbar-fixed-top{padding:25px 0}.navbar-fixed-top .navbar-brand{font-size:2em}}.navbar{text-transform:uppercase;font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:700}.navbar .navbar-nav{letter-spacing:1px}.navbar-default{border:0}section{padding:100px 0}section h2{margin:0;font-size:2.5em}@media (max-width:600px){section h2{font-size:6vw}}@media (max-width:767px){section{padding:75px 0}}.btn-primary{margin-top:15px}.scroll-top{z-index:1049;position:fixed;right:2%;bottom:2%;width:50px;height:50px}.scroll-top .btn{width:50px;height:50px;border-radius:100%;font-size:20px;line-height:28px;margin-top:0px;box-shadow:2px 2px 11px -4px #333}.portfolio-modal .modal-content{padding:100px 0;min-height:100%;border:0;border-radius:0;text-align:center;background-clip:border-box;-webkit-box-shadow:none;box-shadow:none}.portfolio-modal .modal-content h2{margin:0;font-size:3em}.portfolio-modal .modal-content img{margin-bottom:30px}.portfolio-modal .modal-content .item-details{margin:30px 0}.portfolio-modal .close-modal{position:sticky;top:10px;right:10px;width:75px;float:right;background-color:white;z-index:999}.portfolio-modal .close-modal .lr{z-index:1051;width:1px;height:75px;margin-left:35px;background-color:#{{ site.color.secondary }};-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg)}.portfolio-modal .close-modal .lr .rl{z-index:1052;width:1px;height:75px;background-color:#{{ site.color.secondary }};-webkit-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg)}.webdesign-img>img{margin:0 auto;max-width:800px;box-shadow:0px 0px 31px -6px gray;display:block;max-width:100%;height:auto}.oldsite{width:45%;float:left}.newsite{width:45%;float:right}.clearfix{clear:both}.carousel-inner>.item>img{margin:0 auto}@media (max-width:600px){blockquote{margin:10px 0px}}
-  </style>
   <meta name="description" content="{{ site.description }}">
   {% if site.meta_author %}
   <meta name="author" content="{{ site.meta_author }}">{% endif %}
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
   <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+  <style media="screen">
+    body {
+      overflow-x: hidden
+    }
+
+    p {
+      font-size: 20px;
+      font-family: roboto, Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-display: swap
+    }
+
+    a {
+      outline: 0;
+      color:#{{ site.color.primary }
+    }
+    }
+
+    h2,
+    h3,
+    h4 {
+      text-transform: uppercase;
+      font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: 700
+    }
+
+    blockquote {
+      margin: 40px 0px;
+      border-left:5px solid #{{ site.color.primary }
+    }
+
+    ;
+    border-left:none;
+    clear:both
+    }
+
+    @media (min-width:1200px) {
+      blockquote {
+        margin-bottom: 40px
+      }
+    }
+
+    hr.star-primary {
+      margin: 25px auto 30px;
+      padding: 0;
+      max-width: 250px;
+      border: 0;
+      border-top: solid 5px;
+      text-align: center
+    }
+
+    hr.star-primary:after {
+      content: "\f005";
+      display: inline-block;
+      position: relative;
+      top: -.8em;
+      padding: 0 .25em;
+      font-family: FontAwesome;
+      font-size: 2em
+    }
+
+    hr.star-primary {
+      border-color:#{{ site.color.secondary }
+    }
+    }
+
+    hr.star-primary:after {
+      color:#{{ site.color.secondary }
+    }
+
+    ;
+    background-color:#fff
+    }
+
+    .img-centered {
+      margin: 0 auto
+    }
+
+    header {
+      text-align: center;
+      color: #fff;
+      background:#{{ site.color.primary }
+    }
+    }
+
+    header .container {
+      padding-top: 100px;
+      padding-bottom: 50px
+    }
+
+    header img {
+      display: block;
+      margin: 0 auto 20px
+    }
+
+    header .intro-text .name {
+      display: block;
+      text-transform: uppercase;
+      font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 2em;
+      font-weight: 700
+    }
+
+    header .intro-text .skills {
+      font-size: 1.25em;
+      font-weight: 300
+    }
+
+    @media (min-width:990px) {
+      header .container {
+        padding-top: 200px;
+        padding-bottom: 100px
+      }
+
+      header .intro-text .name {
+        font-size: 4.75em
+      }
+
+      header .intro-text .skills {
+        font-size: 1.75em
+      }
+    }
+
+    @media (min-width:1200px) {
+      .navbar-fixed-top {
+        padding: 25px 0
+      }
+
+      .navbar-fixed-top .navbar-brand {
+        font-size: 2em
+      }
+    }
+
+    .navbar {
+      text-transform: uppercase;
+      font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: 700
+    }
+
+    .navbar .navbar-nav {
+      letter-spacing: 1px
+    }
+
+    .navbar-default {
+      border: 0
+    }
+
+    section {
+      padding: 100px 0
+    }
+
+    section h2 {
+      margin: 0;
+      font-size: 2.5em
+    }
+
+    @media (max-width:600px) {
+      section h2 {
+        font-size: 6vw
+      }
+    }
+
+    @media (max-width:767px) {
+      section {
+        padding: 75px 0
+      }
+    }
+
+    .btn-primary {
+      margin-top: 15px
+    }
+
+    .scroll-top {
+      z-index: 1049;
+      position: fixed;
+      right: 2%;
+      bottom: 2%;
+      width: 50px;
+      height: 50px
+    }
+
+    .scroll-top .btn {
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      font-size: 20px;
+      line-height: 28px;
+      margin-top: 0px;
+      box-shadow: 2px 2px 11px -4px #333
+    }
+
+    .portfolio-modal .modal-content {
+      padding: 100px 0;
+      min-height: 100%;
+      border: 0;
+      border-radius: 0;
+      text-align: center;
+      background-clip: border-box;
+      -webkit-box-shadow: none;
+      box-shadow: none
+    }
+
+    .portfolio-modal .modal-content h2 {
+      margin: 0;
+      font-size: 3em
+    }
+
+    .portfolio-modal .modal-content img {
+      margin-bottom: 30px
+    }
+
+    .portfolio-modal .modal-content .item-details {
+      margin: 30px 0
+    }
+
+    .portfolio-modal .close-modal {
+      position: sticky;
+      top: 10px;
+      right: 10px;
+      width: 75px;
+      float: right;
+      background-color: white;
+      z-index: 999
+    }
+
+    .portfolio-modal .close-modal .lr {
+      z-index: 1051;
+      width: 1px;
+      height: 75px;
+      margin-left: 35px;
+      background-color:#{{ site.color.secondary }
+    }
+
+    ;
+    -webkit-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+    transform:rotate(45deg)
+    }
+
+    .portfolio-modal .close-modal .lr .rl {
+      z-index: 1052;
+      width: 1px;
+      height: 75px;
+      background-color:#{{ site.color.secondary }
+    }
+
+    ;
+    -webkit-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90deg)
+    }
+
+    .webdesign-img>img {
+      margin: 0 auto;
+      max-width: 800px;
+      box-shadow: 0px 0px 31px -6px gray;
+      display: block;
+      max-width: 100%;
+      height: auto
+    }
+
+    .oldsite {
+      width: 45%;
+      float: left
+    }
+
+    .newsite {
+      width: 45%;
+      float: right
+    }
+
+    .clearfix {
+      clear: both
+    }
+
+    .carousel-inner>.item>img {
+      margin: 0 auto
+    }
+
+    @media (max-width:600px) {
+      blockquote {
+        margin: 10px 0px
+      }
+    }
+  </style>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
   <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
@@ -43,8 +324,8 @@
 
   <!-- Custom Fonts -->
   <link rel="stylesheet" href="{{ "/css/font-awesome/css/font-awesome.min.css" }}">
-  <link href="//fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet" type="text/css">
-  <link href="//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&display=swap" rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
