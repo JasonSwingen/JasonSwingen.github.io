@@ -11,6 +11,7 @@ body {
 p {
     font-size: 20px;
     font-family: roboto,Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-display: swap;
 }
 
 p.small {
