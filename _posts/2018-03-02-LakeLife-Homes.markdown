@@ -2,10 +2,10 @@
 layout: default
 modal-id: 13
 date: 2018-12-18
-img: LakeLife_Living.jpg
+img: LakeLife_Homes.jpg
 alt: LakeLife Homes
 project-date: 2018
-client: LakeLife Living
+client: LakeLife Homes
 siteurl: https://lakeliferestoration.com
 category: Web Development & Search Engine Optimization
 description: The lakes area premier Painting & Remodeling Company. Specializing in, Deck & Porch Design/Build, Log Home Staining, Interior & Exterior Finishing. For more than 30 years they’ve brought a passion for woodwork and craftsmanship to projects of every scope, enriching the lives of our customer along the way.
