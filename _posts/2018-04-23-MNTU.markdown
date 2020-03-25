@@ -1,7 +1,7 @@
 ---
 layout: default
 modal-id: 15
-date: 2018-04-18
+date: 2018-04-23
 img: MinnesotaTroutUnlimited.jpg
 alt: Minnesota Trout Unlimited
 project-date: 2018

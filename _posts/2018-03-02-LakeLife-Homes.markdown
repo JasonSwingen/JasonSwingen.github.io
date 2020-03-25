@@ -1,7 +1,7 @@
 ---
 layout: default
 modal-id: 13
-date: 2018-12-18
+date: 2020-01-18
 img: LakeLife_Homes.jpg
 alt: LakeLife Homes
 project-date: 2018
