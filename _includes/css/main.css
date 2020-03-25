@@ -131,11 +131,15 @@ header .intro-text .skills {
     font-weight: 300;
 }
 
+.masthead-avatar {
+  width: 28rem;
+}
+
 .lean {
-  -webkit-transition: .4s ease-in-out;
-  -moz-transition: .4s ease-in-out;
-  -ms-transition: .4s ease-in-out;
-  transition: .4s ease-in-out;
+  -webkit-transition: .2s ease-in-out;
+  -moz-transition: .2s ease-in-out;
+  -ms-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
 }
 .lean:hover {
   transform: rotate(10deg);
@@ -803,6 +807,7 @@ blockquote p {
 .hideme
 {
     opacity:0;
+    transition: opacity 90ms ease-in;
 }
 
 .fa-chevron-right:before, .fa-chevron-left:before {
