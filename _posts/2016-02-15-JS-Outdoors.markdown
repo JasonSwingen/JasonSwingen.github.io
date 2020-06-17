@@ -5,7 +5,7 @@ date: 2016-02-15
 location: Minnesota
 img: JS-Outdoors.jpg
 alt: JS-Outdoors
-project-date: 2016
+project-date: 2016 - Present
 client: JS-Outdoors
 siteurl: http://www.js-outdoors.com/
 category: Web Development

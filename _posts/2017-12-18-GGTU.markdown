@@ -5,7 +5,7 @@ date: 2017-12-18
 location: Minnesota
 img: GitcheGumeeTroutUnlimited.jpg
 alt: Gitche Gumee Trout Unlimited
-project-date: 2017
+project-date: 2017 - Present
 client: Gitche Gumee Trout Unlimited
 siteurl: http://mntu.org/gitche-gumee/
 category: Email Marketing

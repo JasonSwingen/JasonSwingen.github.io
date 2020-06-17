@@ -5,7 +5,7 @@ date: 2020-01-18
 location: Longville, Minnesota
 img: LakeLife_Homes.jpg
 alt: LakeLife Homes
-project-date: 2018
+project-date: 2018 - Present
 client: LakeLife Homes
 siteurl: https://lakeliferestoration.com
 category: Web Development & Search Engine Optimization
