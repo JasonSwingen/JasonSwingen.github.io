@@ -2,6 +2,7 @@
 layout: default
 modal-id: 16
 date: 2018-09-11
+location: Duluth, Minnesota
 img: BLG-Photo.jpg
 alt: BLG Photo
 project-date: 2018

@@ -2,12 +2,13 @@
 layout: default
 modal-id: 19
 date: 2020-03-24
+location: Duluth, Minnesota
 img: Dr-Juice.jpg
 alt: Dr. Juice
 project-date: 2020
 client: Dr Juice
 siteurl: https://drjuiceusa.com/
-category: Search Engine Optimization
+category: Search Engine Optimization & Search Engine Marketing
 description: Dr. Juice® was started over 30 years ago in Duluth, Minnesota by anthropologist and psychiatrist Dr. Gregory Bambenek.  His research from the tropical jungles of South America to the bamboo forests of China have brought to you ancient fishing formulas from around the world.  These formulas have been perfected by science at the Osmic Research Co. Lab, bringing you the only fish attractant on the market that has powerful magic backed by real science.
 task:
 ---

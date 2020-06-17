@@ -2,6 +2,7 @@
 layout: default
 modal-id: 1
 date: 2014-07-14
+location: Michigan
 img: KeilLasik.jpg
 alt: image-alt
 project-date: 2012

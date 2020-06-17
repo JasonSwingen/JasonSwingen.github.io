@@ -2,6 +2,7 @@
 layout: default
 modal-id: 10
 date: 2017-05-30
+location: Minnesota
 img: damgoodsandgear.jpg
 alt: Dam Goods and Gear
 project-date: 2017

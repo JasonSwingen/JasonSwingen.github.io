@@ -1,7 +1,8 @@
 ---
 layout: default
 modal-id: 11
-date: 2018-04-24
+date: 2018-05-24
+location: Rogstadmoen, Norway
 img: NorwegianFlyfishersClub.jpg
 alt: Norwegian Flyfishers Club
 project-date: 2018

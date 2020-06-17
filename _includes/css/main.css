@@ -47,6 +47,11 @@ h6 {
     font-weight: 700;
 }
 
+.modal-body > h3 {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
 blockquote {
     margin: 40px 0px;
     border-left: 5px solid #{{ site.color.primary }};
@@ -202,6 +207,12 @@ header .intro-text .skills {
 
 .navbar a:focus {
     outline: 0;
+}
+
+@media(max-width:1200px) {
+  .navbar-nav {
+    font-size: 13px;
+  }
 }
 
 .navbar .navbar-nav {

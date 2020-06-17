@@ -2,6 +2,7 @@
 layout: default
 modal-id: 17
 date: 2019-11-25
+location: Água Boa, Brazil
 img: Agua_Boa_Logo.jpg
 alt: Agua Boa Amazon Lodge
 project-date: 2019

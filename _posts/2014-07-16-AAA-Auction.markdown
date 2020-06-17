@@ -2,6 +2,7 @@
 layout: default
 modal-id: 7
 date: 2014-07-16
+location: Nowthen, Minnesota
 img: AAA_Auction.jpg
 alt: AAA Auction
 project-date: 2014

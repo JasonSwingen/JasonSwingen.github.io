@@ -2,6 +2,7 @@
 layout: default
 modal-id: 14
 date: 2018-04-22
+location: Minnesota
 img: walleye1charters.jpg
 alt: Walleye #1 Charters
 project-date: 2018

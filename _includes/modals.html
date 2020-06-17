@@ -21,14 +21,24 @@
                   <a target="_blank" rel="noreferrer" href="{{post.siteurl}}">{{ post.client }}</a>
                 </strong>
               </li>
+              {% if post.project-date %}
               <li>Date:
                 <strong>{{ post.project-date }}
                 </strong>
               </li>
+              {% endif %}
+              {% if post.location %}
+              <li>Location:
+                <strong>{{ post.location }}
+                </strong>
+              </li>
+              {% endif %}
+              {% if post.category %}
               <li>Service:
                 <strong>{{ post.category }}
                 </strong>
               </li>
+              {% endif %}
             </ul>
 
             {% if post.description %}
@@ -39,6 +49,12 @@
             {% if post.task %}
             <h3>Work Performed</h3>
             <p>{{ post.task }}</p>
+            {% endif %}
+
+            {% if post.results %}
+            <h3>SEO Results</h3>
+            &nbsp;
+            <div class="webdesign-img">{{ post.results }}</div>
             {% endif %}
 
             {% if post.old-site-img %}

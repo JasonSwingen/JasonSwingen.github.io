@@ -2,6 +2,7 @@
 layout: default
 modal-id: 3
 date: 2014-07-14
+location: North Carolina
 img: SunriseDental.jpg
 alt: image-alt
 project-date: 2012

@@ -2,6 +2,7 @@
 layout: default
 modal-id: 13
 date: 2020-01-18
+location: Longville, Minnesota
 img: LakeLife_Homes.jpg
 alt: LakeLife Homes
 project-date: 2018

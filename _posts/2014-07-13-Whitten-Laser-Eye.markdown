@@ -2,6 +2,7 @@
 layout: default
 modal-id: 5
 date: 2014-07-15
+location: Maryland
 img: WhittenLaserEye.jpg
 alt: Whitten Laser Eye
 project-date: 2012
