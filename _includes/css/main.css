@@ -777,7 +777,7 @@ blockquote p {
 
 .rating {
   color: #{{ site.color.primary }};
-  font-size: 28px;
+  font-size: 27px;
 }
 
 /* Page Styles */
