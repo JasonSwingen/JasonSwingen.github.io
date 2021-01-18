@@ -133,7 +133,7 @@ header .intro-text .name {
 
 header .intro-text .skills {
     font-size: 1em;
-    font-weight: 300;
+    font-weight: 600;
     color: #{{ site.color.secondary }};
     font-family: monospace;
 }
@@ -747,6 +747,7 @@ figure .profile span {
   box-shadow: 2px 2px 11px -4px #333;
   width: 170px;
 }
+
 
 blockquote p {
   /* font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif; */
