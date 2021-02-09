@@ -69,3 +69,26 @@ $(function () {
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+// Keeps visitors from accidently backing out when trying to close modal
+//Modal Closer With Back Button Support (Uses EventDelegation, so it works for ajax loaded content too.)
+(function() {
+    var activeOpenedModalId     = null;
+    var isHidingModalByPopState = false;
+    $(document).on('show.bs.modal', '.modal', function() {
+        activeOpenedModalId  = $(this).attr('id');
+        window.location.hash = activeOpenedModalId;
+    }).on('hide.bs.modal', '.modal', function() {
+        if(!isHidingModalByPopState) {
+            window.history.back();
+        }
+        isHidingModalByPopState = false;
+        activeOpenedModalId     = null;
+    });
+    $(window).on('popstate', function() {
+        if(activeOpenedModalId && window.location.hash !== '#'+activeOpenedModalId) {
+            isHidingModalByPopState = true;
+            $("#" + activeOpenedModalId).modal('hide');
+        }
+    });
+})();
