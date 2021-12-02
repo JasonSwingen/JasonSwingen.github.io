@@ -1,0 +1,15 @@
+---
+layout: default
+modal-id: 25
+date: 2021-11-30
+location: Duluth, Minnesota
+img: on-the-hem.jpg
+alt: On The Hem
+project-date: 2021
+client: On The Hem
+siteurl: https://onthehem.com/
+category: Search Engine Optimization
+description: ​On the Hem​ is a sewing studio that offers sewing and alterations for apparel and accessories. Susan, made the decision to do what she enjoys full time and no longer as a side gig.
+task: On The Hem needed on-page optimizations to show up on the first page of search engine results
+current-site-img: 
+---
