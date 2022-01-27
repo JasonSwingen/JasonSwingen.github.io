@@ -1,11 +1,11 @@
 ---
 layout: default
-modal-id: 23
+modal-id: 28
 date: 2018-05-22
 location: Germany
 img: ffn-logo.jpg
 alt: The Fly Fishing Nation
-project-date: 2018
+project-date: 2018 - Present
 client: The Fly Fishing Nation
 siteurl: https://www.instagram.com/theflyfishingnation/
 category: Web Development & Search Engine Optimization

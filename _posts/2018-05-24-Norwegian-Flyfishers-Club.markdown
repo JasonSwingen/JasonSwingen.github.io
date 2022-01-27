@@ -5,7 +5,7 @@ date: 2018-05-24
 location: Rogstadmoen, Norway
 img: NorwegianFlyfishersClub.jpg
 alt: Norwegian Flyfishers Club
-project-date: 2018
+project-date: 2018 - Present
 client: Norwegian Flyfishers Club
 published: true
 siteurl: http://nfc-online.com

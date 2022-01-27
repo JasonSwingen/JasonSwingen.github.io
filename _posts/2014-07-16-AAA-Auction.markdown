@@ -5,7 +5,7 @@ date: 2014-07-16
 location: Nowthen, Minnesota
 img: AAA_Auction.jpg
 alt: AAA Auction
-project-date: 2014 - Present
+project-date: 2014 - 2021
 client: AAA Auction
 siteurl: http://auctionmn.com
 category: Web Development
