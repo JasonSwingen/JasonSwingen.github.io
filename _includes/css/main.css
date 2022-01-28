@@ -389,6 +389,9 @@ section.secondary {
     color: #{{ site.color.primary }};
 }
 
+.form-group {
+  margin-bottom: 0px;
+}
 .form-control {
     color: #808080;
 }
@@ -465,14 +468,14 @@ footer .footer-below {
 }
 
 .portfolio-modal .modal-content {
-    padding: 100px 0;
+    padding: 100px 0px 10px 0px;
     min-height: 100%;
     border: 0;
     border-radius: 0;
     text-align: center;
     background-clip: border-box;
     box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.5);
-    margin: 34px;
+    margin: 150px 10px;
     transition: .5s;
     border-radius: 10px;
 }
@@ -483,7 +486,7 @@ footer .footer-below {
 
 @media(min-width:1200px) {
   .portfolio-modal .modal-content {
-    margin: 62px 300px;
+    margin: 62px 250px;
   }
 }
 
@@ -671,7 +674,7 @@ form .row:first-child .floating-label-form-group {
 .services {
   display: block;
   padding: 2px 24px;
-  margin-bottom: 21px;
+  margin: 1em 1.5em 2em 0em;
   line-height: 1.42857143;
   background-color: #ffffff;
   /* border: 1px solid gray; */
@@ -680,10 +683,23 @@ form .row:first-child .floating-label-form-group {
   -o-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
   border-radius: 10px;
-  box-shadow: 0px 9px 25px -11px grey;
-  min-height: 336px;
+  min-height: 395px;
+  /* box-shadow: 0px 9px 25px -11px grey; */
+  /* -webkit-transform: scale(.96);
+  transform: scale(.96); */
+  filter: drop-shadow(4px 4px 0px #{{ site.color.primary }}) drop-shadow(6px 6px 0px #{{ site.color.secondary }});
   border: 5px solid #{{ site.color.secondary }};
 }
+
+@media(max-width:990px) {
+  .services {
+    min-height: 260px;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+  }
+}
+
 .services .caption {
   font-size: 51px;
   text-align: center;
@@ -902,7 +918,7 @@ blockquote p {
     border-radius: 10px;
 }
 
-.focus:hover, .focus:active {
+.focus:hover {
   box-shadow: 0px 9px 25px -11px grey;
   z-index: 9;
   /* border-bottom: none; */
@@ -911,6 +927,50 @@ blockquote p {
   -moz-transition: .2s ease-in-out;
   -ms-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
+}
+.focus:active {
+  transform: scale(0.92);
+  -webkit-transition: .2s ease-in-out;
+  -moz-transition: .2s ease-in-out;
+  -ms-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.contact .focus {
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: .5em;
+    /* border-bottom: 1px solid #eee; */
+    transform: scale(0.98);
+    -webkit-transition: .4s ease-out;
+    -moz-transition: .4s ease-out;
+    -ms-transition: .4s ease-out;
+    transition: .4s ease-out;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+.contact .focus:hover, .contact .focus:active {
+  /* box-shadow: 0px 9px 25px -11px grey; */
+  z-index: 9;
+  /* border-bottom: none; */
+  transform: scale(1);
+  -webkit-transition: .2s ease-in-out;
+  -moz-transition: .2s ease-in-out;
+  -ms-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.form-control, input {
+  border-width: 0;
+}
+
+.select {
+  font-size: 1.5em;
+  padding: 1px;
+  min-height: 75px;
 }
 
 details {
