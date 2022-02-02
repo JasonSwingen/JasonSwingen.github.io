@@ -768,7 +768,7 @@ figure .profile span {
 }
 .testimonial-pic img {
   border-radius: 50%;
-  border: 5px solid #{{ site.color.secondary }};
+  /* border: 5px solid #{{ site.color.secondary }}; */
   border-radius: 100%;
   box-shadow: 2px 2px 11px -4px #333;
   width: 170px;
@@ -928,19 +928,12 @@ blockquote p {
   -ms-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
 }
-.focus:active {
-  transform: scale(0.92);
-  -webkit-transition: .2s ease-in-out;
-  -moz-transition: .2s ease-in-out;
-  -ms-transition: .2s ease-in-out;
-  transition: .2s ease-in-out;
-}
+
 
 .contact .focus {
     position: relative;
     margin-bottom: 10px;
     padding-bottom: .5em;
-    /* border-bottom: 1px solid #eee; */
     transform: scale(0.98);
     -webkit-transition: .4s ease-out;
     -moz-transition: .4s ease-out;
@@ -949,6 +942,13 @@ blockquote p {
     border-radius: 10px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     background: white;
+}
+.focus:active {
+  transform: scale(0.98);
+  -webkit-transition: .2s ease-in-out;
+  -moz-transition: .2s ease-in-out;
+  -ms-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
 }
 
 .contact .focus:hover, .contact .focus:active {
@@ -961,6 +961,13 @@ blockquote p {
   -ms-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media(max-width:767px) {
+  .control-group {
+    width: 95%;
+    margin: 0 auto;
+  }
 }
 
 .form-control, input {
