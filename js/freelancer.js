@@ -57,9 +57,26 @@ $('body').scrollspy({
 })
 
 // Carousel
-$('.carousel').carousel({
-  pause: null
-})
+// $('.carousel').carousel({
+//   pause: null
+// })
+
+// Owl Carousel Initializer
+$('.owl-carousel').owlCarousel({
+    stagePadding: 0,
+    nav:false,
+    loop:true,
+    margin:20,
+    smartSpeed:700,
+    autoplay:true,
+    autoplayTimeout:5000,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1
+        }
+    }
+});
 
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
