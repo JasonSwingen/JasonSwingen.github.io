@@ -637,6 +637,10 @@ form .row:first-child .floating-label-form-group {
 .slidertitle {
     color: #{{ site.color.secondary }};
 }
+.slider {
+  max-width: 1000px;
+  margin: 0 auto;
+}
 
 .carousel-control.right {
     background-image: none;
@@ -671,9 +675,20 @@ form .row:first-child .floating-label-form-group {
 }
 
 .thumbnail {
-    min-height: 550px;
+    min-height: 677px;
     margin: 25px 0px;
     border-radius: 10px;
+    padding: 0px;
+}
+
+.thumbnail img {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.thumbnail p {
+  font-size: 16px;
+  padding: 10px;
+  text-align: center;
 }
 
 .services {
