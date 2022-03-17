@@ -132,7 +132,7 @@ header .intro-text .name {
 }
 
 header .intro-text .skills {
-    font-size: 1em;
+    font-size: 1.4em;
     font-weight: 600;
     color: #{{ site.color.secondary }};
     font-family: monospace;
@@ -171,7 +171,7 @@ header .intro-text .skills {
     }
 
     header .intro-text .skills {
-        font-size: 1.25em;
+        font-size: 2em;
     }
 }
 
@@ -693,22 +693,27 @@ form .row:first-child .floating-label-form-group {
 
 .services {
   display: block;
-  padding: 2px 24px;
   margin: 1em 1.5em 2em 0em;
   line-height: 1.42857143;
   background-color: #ffffff;
   /* border: 1px solid gray; */
-  border-radius: 10px;
   -webkit-transition: all .2s ease-in-out;
   -o-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
   border-radius: 10px;
-  min-height: 395px;
+  min-height: 580px;
   /* box-shadow: 0px 9px 25px -11px grey; */
   /* -webkit-transform: scale(.96);
   transform: scale(.96); */
   filter: drop-shadow(4px 4px 0px #{{ site.color.primary }}) drop-shadow(6px 6px 0px #{{ site.color.secondary }});
   border: 5px solid #{{ site.color.secondary }};
+}
+
+.services img {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 2px;
+  border-radius: 6px 6px 0px 0px;
 }
 
 @media(max-width:990px) {
@@ -724,6 +729,7 @@ form .row:first-child .floating-label-form-group {
   font-size: 51px;
   text-align: center;
   padding-top: 31px;
+  padding: 2px 24px;
 }
 
 .user {
@@ -771,24 +777,24 @@ figure .profile span {
 .testimonial .rating {
   color: #{{ site.color.primary }};
 }
-@media(min-width:768px) {
-  .testimonial {
-    min-height: 200px;
-    border-radius: 10px;
-    margin-bottom: 50px;
-    padding: 50px;
-    box-shadow: 0px 9px 25px -11px black;
-  }
+
+.testimonial {
+  min-height: 200px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  padding: 50px;
+  /* box-shadow: 0px 9px 25px -11px black; */
 }
 
 .testimonial-pic {
   float: left;
   padding-right: 20px;
   padding-bottom: 20px;
+  shape-outside: circle();
 }
 .testimonial-pic img {
   border-radius: 50%;
-  /* border: 5px solid #{{ site.color.secondary }}; */
+  border: 5px solid #{{ site.color.secondary }};
   border-radius: 100%;
   box-shadow: 2px 2px 11px -4px #333;
   width: 170px !important;
@@ -808,7 +814,7 @@ blockquote p {
   }
 }
 
-@media(max-width:600px) {
+/* @media(max-width:600px) {
   blockquote {
     margin: 38px 0px;
     padding: 14px;
@@ -816,15 +822,15 @@ blockquote p {
   blockquote p {
 
   }
-}
+} */
 
-@media(max-width:990px) {
+/* @media(max-width:990px) {
   .testimonial-pic {
     shape-outside: circle();
     padding-right: 35px;
     padding-bottom: 0px;
   }
-}
+} */
 
 .rating {
   color: #{{ site.color.primary }};

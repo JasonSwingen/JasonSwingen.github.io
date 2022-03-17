@@ -61,13 +61,29 @@ $('body').scrollspy({
 //   pause: null
 // })
 
-// Owl Carousel Initializer
-$('.owl-carousel').owlCarousel({
+// Owl Carousel Testimonials
+$('.testimonials-active').owlCarousel({
     stagePadding: 0,
     nav:false,
     loop:true,
     margin:20,
     smartSpeed:700,
+    autoplay:true,
+    autoplayTimeout:5000,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1
+        }
+    }
+});
+
+// Owl Carousel Testimonials
+$('.title-active').owlCarousel({
+    stagePadding: 0,
+    nav:false,
+    loop:true,
+    smartSpeed:300,
     autoplay:true,
     autoplayTimeout:5000,
     autoplayHoverPause:true,

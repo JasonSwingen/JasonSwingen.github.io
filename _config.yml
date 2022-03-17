@@ -4,6 +4,10 @@ email: jason.swingen@gmail.com
 url: https://jasonswingen.com
 description: "Website Design, Development, and SEO in Duluth Minnesota. Jason Swingen focuses on fast, responsive, and SEO friendly sites. Affordable plans available!"
 skills: "Web Developer - Search Engine Optimizer - Internet Marketer"
+titles:
+  one: Web Developer
+  two: Search Engine Optimizer
+  three: Internet Marketer
 meta_author: Swingen Jason
 
 # Google webmaster tools
