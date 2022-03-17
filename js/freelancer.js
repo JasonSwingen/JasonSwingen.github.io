@@ -94,6 +94,29 @@ $('.title-active').owlCarousel({
     }
 });
 
+// Owl Carousel Testimonials
+$('.software-active').owlCarousel({
+    stagePadding: 0,
+    margin:30,
+    nav:false,
+    loop:true,
+    smartSpeed:300,
+    autoplay:true,
+    autoplayTimeout:5000,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:3
+        },
+        800:{
+            items:4
+        },
+        1200:{
+            items:5
+        }
+    }
+});
+
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })

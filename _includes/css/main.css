@@ -768,6 +768,20 @@ figure .profile span {
     /* transition: .3s ease-in-out; */
 }
 
+.software-active {
+  padding: 30px;
+}
+
+.software-active img {
+  filter: grayscale(40%);
+  transition: all 400ms;
+}
+
+.software-active img:hover {
+  filter: grayscale(0%);
+  transition: all 400ms;
+}
+
 .testimonial {
   background: white;
 }
