@@ -67,7 +67,7 @@ $('.testimonials-active').owlCarousel({
     nav:false,
     loop:true,
     margin:20,
-    smartSpeed:700,
+    smartSpeed:900,
     autoplay:true,
     autoplayTimeout:5000,
     autoplayHoverPause:true,
@@ -83,10 +83,9 @@ $('.title-active').owlCarousel({
     stagePadding: 0,
     nav:false,
     loop:true,
-    smartSpeed:300,
+    smartSpeed:700,
     autoplay:true,
-    autoplayTimeout:5000,
-    autoplayHoverPause:true,
+    autoplayTimeout:2600,
     responsive:{
         0:{
             items:1
@@ -100,9 +99,9 @@ $('.software-active').owlCarousel({
     margin:30,
     nav:false,
     loop:true,
-    smartSpeed:300,
+    smartSpeed:700,
     autoplay:true,
-    autoplayTimeout:5000,
+    autoplayTimeout:4000,
     autoplayHoverPause:true,
     responsive:{
         0:{
@@ -115,6 +114,23 @@ $('.software-active').owlCarousel({
             items:5
         }
     }
+});
+
+// Owl Carousel Testimonials
+$('.feature-active').owlCarousel({
+  stagePadding: 0,
+  nav:false,
+  loop:true,
+  margin:0,
+  smartSpeed:900,
+  autoplay:true,
+  autoplayTimeout:3000,
+  autoplayHoverPause:true,
+  responsive:{
+      0:{
+          items:1
+      }
+  }
 });
 
 $(function () {

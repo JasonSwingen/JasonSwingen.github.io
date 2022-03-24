@@ -675,7 +675,7 @@ form .row:first-child .floating-label-form-group {
 }
 
 .thumbnail {
-    min-height: 677px;
+    min-height: 760px;
     margin: 25px 0px;
     border-radius: 10px;
     padding: 0px;
@@ -683,6 +683,8 @@ form .row:first-child .floating-label-form-group {
 
 .thumbnail img {
     border-radius: 10px 10px 0px 0px;
+    padding: 2em 1em;
+    min-height: 350px;
 }
 
 .thumbnail p {
@@ -712,7 +714,7 @@ form .row:first-child .floating-label-form-group {
 .services img {
   width: 100%;
   margin-bottom: 20px;
-  padding: 2px;
+  padding: 30px;
   border-radius: 6px 6px 0px 0px;
 }
 
@@ -817,6 +819,18 @@ figure .profile span {
   border: 5px solid #{{ site.color.primary }};
 } */
 
+
+.feature-image img {
+  max-width: 100%;
+}
+
+.feature-text {
+  padding: 2em;
+}
+
+.feature-text p {
+  max-width: 100%;
+}
 
 blockquote p {
   /* font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif; */
