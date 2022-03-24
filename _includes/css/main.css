@@ -134,7 +134,7 @@ header .intro-text .name {
 }
 
 header .intro-text .skills {
-    font-size: 1.4em;
+    font-size: 1.2em;
     font-weight: 600;
     color: #{{ site.color.secondary }};
     font-family: monospace;
@@ -173,7 +173,7 @@ header .intro-text .skills {
     }
 
     header .intro-text .skills {
-        font-size: 2em;
+        font-size: 1.6em;
     }
 }
 
