@@ -121,6 +121,8 @@ header .container {
 header img {
     display: block;
     margin: 0 auto 20px;
+    width: 100%;
+    max-width: 623px;
 }
 
 header .intro-text .name {
@@ -828,9 +830,20 @@ figure .profile span {
   padding: 2em;
 }
 
+.feature-text h3{
+  padding-bottom: 1em;
+  border-bottom: 2px solid #{{ site.color.secondary }};
+}
+
 .feature-text p {
+  padding-top: 1em;
   max-width: 100%;
 }
+
+/* .feature-text p b {
+  background: #{{ site.color.secondary }};
+  color: #ffffff;
+} */
 
 blockquote p {
   /* font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif; */
