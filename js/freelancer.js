@@ -120,12 +120,14 @@ $('.software-active').owlCarousel({
 $('.feature-active').owlCarousel({
   stagePadding: 0,
   nav:false,
+  dots:false,
   loop:true,
   margin:0,
   smartSpeed:900,
   autoplay:true,
-  autoplayTimeout:3000,
-  autoplayHoverPause:true,
+  autoplayTimeout:6000,
+  autoplayHoverPause:false,
+  URLhashListener:true,
   responsive:{
       0:{
           items:1
