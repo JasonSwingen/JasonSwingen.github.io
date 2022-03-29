@@ -804,7 +804,7 @@ figure .profile span {
   min-height: 200px;
   border-radius: 10px;
   margin-bottom: 50px;
-  padding: 50px;
+  padding: 50px !important;
   padding: 14px;
   box-shadow: 0px 9px 25px -11px black;
 }
@@ -820,7 +820,7 @@ figure .profile span {
   border: 5px solid #{{ site.color.secondary }};
   border-radius: 100%;
   box-shadow: 2px 2px 11px -4px #333;
-  width: 170px !important;
+  width: 140px !important;
 }
 /* .testimonial-pic img:hover {
   border: 5px solid #{{ site.color.primary }};
@@ -833,6 +833,7 @@ figure .profile span {
 
 .feature-text {
   padding: 2em;
+  margin-top: 2em;
 }
 
 .feature-text h3{
@@ -860,7 +861,7 @@ blockquote p {
   }
 }
 
-/* @media(max-width:600px) {
+@media(max-width:600px) {
   blockquote {
     margin: 38px 0px;
     padding: 14px;
@@ -868,13 +869,14 @@ blockquote p {
   blockquote p {
 
   }
-} */
+}
 
 /* @media(max-width:990px) {
   .testimonial-pic {
     shape-outside: circle();
-    padding-right: 35px;
+    padding-right: 55px;
     padding-bottom: 0px;
+    width: 120px !important;
   }
 } */
 
