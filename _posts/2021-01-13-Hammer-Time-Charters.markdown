@@ -7,7 +7,7 @@ img: Hammer-Time-Charters.jpg
 alt: Hammer Time Charters
 project-date: 2021
 client: Hammer Time Charters
-siteurl:
+siteurl: http://hammer-time-charters.com.s3-website-us-west-2.amazonaws.com/
 category: Web Development & Search Engine Optimization
 description: 
 task: Hammer Time Charters need a new top of the line website that would show up in search results. The site was built with a fully-responsive one-page design that offered an intuitive user-experience on any device.

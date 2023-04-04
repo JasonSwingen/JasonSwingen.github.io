@@ -14,5 +14,5 @@ task: I built to work on new web technologies. The site is built off of Jekyll, 
 results: <img src="img/results/JSO_results.jpg" class="img-responsive" alt="online traffic">
 current-site-img:
 old-site-img: <img src="img/portfolio/js-outdoors-new.jpg" class="img-responsive" alt="">
-new-site-img: <img src="img/portfolio/JSO_NEW.jpg" class="img-responsive" alt="">
+new-site-img: <img src="img/portfolio/jso-site-new.jpg" class="img-responsive" alt="">
 ---
