@@ -3,7 +3,7 @@ layout: default
 modal-id: 35
 date: 2024-10-16
 location: Hermantown, MN
-img: BoulderTrailDental.jpg
+img: Boulder-Trail-Dental-logo.jpg
 alt: Boulder Trail Dental
 project-date: 2024
 client: Boulder Trail Dental
