@@ -7,7 +7,7 @@ img: PaytonCustoms.jpg
 alt: Payton Customs
 project-date: 2020
 client: Payton Customs
-siteurl: http://www.paytoncustoms.com/
+siteurl:
 category: Web Development & Search Engine Optimization
 description: Payton Customs is a family-owned construction company operating in Wisconsin and Minnesota. They offer new home construction, interior/exterior renovation and additions, bath/kitchen remodels, and more. They have built a strong reputation for quality work by focusing on every detail and conducting positive and productive customer service.
 task:
