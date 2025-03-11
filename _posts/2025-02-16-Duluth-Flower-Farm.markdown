@@ -1,7 +1,7 @@
 ---
 layout: default
 modal-id: 40
-date: 2025-02-14
+date: 2025-02-16
 location: MN
 img: DFF_logo.jpg
 alt: Duluth Flower Farm
