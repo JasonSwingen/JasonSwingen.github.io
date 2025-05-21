@@ -624,12 +624,12 @@ footer .footer-below {
     font-size: 16px;
 }
 
-form .row:first-child .floating-label-form-group {
-    /* border-top: 1px dotted #{{ site.color.primary }}; */
+/* form .row:first-child .floating-label-form-group {
+    border-top: 1px dotted #{{ site.color.primary }};
 }
 .floating-label-form-group {
-    /* border-bottom: 1px dotted #{{ site.color.primary }}; */
-}
+    border-bottom: 1px dotted #{{ site.color.primary }};
+} */
 .form-control {
     color: #{{ site.color.secondary}};
 }
@@ -677,7 +677,7 @@ form .row:first-child .floating-label-form-group {
 }
 
 .thumbnail {
-    min-height: 760px;
+    min-height: 660px;
     margin: 25px 0px;
     border-radius: 10px;
     padding: 0px;
@@ -686,7 +686,8 @@ form .row:first-child .floating-label-form-group {
 .thumbnail img {
     border-radius: 10px 10px 0px 0px;
     padding: 2em 1em;
-    min-height: 350px;
+    /* min-height: 300px; */
+    width: 75%;
 }
 
 .thumbnail p {
