@@ -55,3 +55,17 @@ credits: 'You can <span class="page-scroll"><a href="#contact" data-toggle="tool
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+# Make pages placed in `_pages/` render as published pages
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+
+# Default layout for collection items in `_pages`
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="240" viewBox="0 0 900 240">
+  <style>
+    .bg{fill:#fff}
+    .text{font-family:Arial,Helvetica,sans-serif;font-size:14px;fill:#333}
+    .box{fill:#f6f8f9;stroke:#e1e7ea}
+    .metric{font-size:28px;fill:#18bc9c;font-weight:700}
+    .metric-old{fill:#e74c3c}
+  </style>
+  <rect class="bg" width="100%" height="100%" rx="6"/>
+  <text x="30" y="28" class="text" font-size="18" font-weight="700">Site speed snapshot</text>
+
+  <rect x="80" y="64" width="320" height="120" class="box" rx="8"/>
+  <text x="120" y="110" class="text">Before — Page Load (Lighthouse)</text>
+  <text x="120" y="150" class="metric metric-old">4.2s</text>
+
+  <rect x="480" y="64" width="320" height="120" class="box" rx="8"/>
+  <text x="520" y="110" class="text">After — Page Load (Lighthouse)</text>
+  <text x="520" y="150" class="metric">1.8s</text>
+
+</svg>

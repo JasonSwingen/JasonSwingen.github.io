@@ -398,6 +398,68 @@ section.secondary {
 .form-group {
   margin-bottom: 0px;
 }
+
+/* SEO page specific styles */
+.seo-hero {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.seo-hero img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+.seo-hero .lead {
+  margin: 0;
+  font-size: 1.15rem;
+  color: #333;
+}
+.seo-cta {
+  margin-top: 20px;
+}
+.seo-results {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+.seo-results .col-sm-6 {
+  flex: 1 1 45%;
+}
+.seo-results img {
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.case-study {
+  margin-top: 30px;
+  padding: 20px 0;
+}
+.case-study h4 {
+  margin-top: 0;
+}
+.case-study .small {
+  margin-top: 12px;
+  color: #666;
+}
+
+@media(max-width:767px) {
+  .seo-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .seo-hero img {
+    max-width: 260px;
+  }
+  .seo-results .col-sm-6 {
+    flex: 1 1 100%;
+  }
+}
+
 .form-control {
     color: #808080;
 }
