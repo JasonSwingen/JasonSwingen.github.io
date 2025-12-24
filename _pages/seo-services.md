@@ -1,6 +1,6 @@
 ---
 layout: service
-title: "SEO Services"
+title: "SEO Services - Duluth MN"
 permalink: /seo-services/
 description: "Search engine optimization services to help your site rank."
 ---

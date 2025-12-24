@@ -1,6 +1,6 @@
 ---
 layout: service
-title: "Web Design — Duluth"
+title: "Web Design - Duluth MN"
 permalink: /web-design-duluth/
 description: "Professional web design services in Duluth."
 ---

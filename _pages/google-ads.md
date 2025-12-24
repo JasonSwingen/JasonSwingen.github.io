@@ -1,6 +1,6 @@
 ---
 layout: service
-title: "Google Ads Management"
+title: "Google Ads Management - Duluth MN"
 permalink: /google-ads/
 description: "Google Ads (AdWords) management and PPC services for Duluth businesses."
 
