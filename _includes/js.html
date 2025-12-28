@@ -24,6 +24,35 @@
     <!-- Custom Theme JavaScript -->
     <script src="{{ "/js/freelancer.js" }}"></script>
 
+    <!-- Enable Services dropdown on hover (desktop) and allow clicking Services to scroll to #packages -->
+    <script>
+      (function($){
+        function servicesBehavior(){
+          var $dropdown = $('.navbar .dropdown');
+          // Desktop: show dropdown on hover and allow click on main link to scroll
+          if($(window).width() >= 768){
+            $dropdown.off('mouseenter.services mouseleave.services').on('mouseenter.services', function(){
+              $(this).addClass('open');
+            }).on('mouseleave.services', function(){
+              $(this).removeClass('open');
+            });
+
+            // Allow click to proceed to anchor (stop Bootstrap's dropdown toggle handler)
+            $dropdown.find('> a').off('click.services').on('click.services', function(e){
+              e.stopImmediatePropagation(); // prevent bootstrap toggling
+              // let browser handle the anchor (smooth scroll handled by existing page-scroll scripts)
+            });
+          } else {
+            // Mobile: remove hover handlers and allow default bootstrap click behavior
+            $dropdown.off('mouseenter.services mouseleave.services');
+            $dropdown.find('> a').off('click.services');
+          }
+        }
+
+        $(document).ready(function(){ servicesBehavior(); $(window).on('resize', servicesBehavior); });
+      })(jQuery);
+    </script>
+
     {% if site.contact == "disqus" %}
     <!-- Disqus Stuff -->
     {% include js_disqus.html %}
