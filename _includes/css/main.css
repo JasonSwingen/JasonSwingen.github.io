@@ -118,6 +118,10 @@ header .container {
     padding-bottom: 50px;
 }
 
+header p {
+  margin-bottom: 22px;
+}
+
 header img {
     display: block;
     margin: 0 auto 20px;
@@ -213,7 +217,7 @@ header .intro-text .skills {
 
 @media(max-width:1200px) {
   .navbar-nav {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 
@@ -231,7 +235,7 @@ header .intro-text .skills {
 }
 
 section {
-    padding: 100px 0;
+    padding: 100px 0 130px 0;
 }
 
 section h2 {
@@ -654,8 +658,8 @@ footer .footer-below {
 }
 
 .duluthbackground {
-    height: 500px;
-    background: url("/img/duluth_mn.jpg")no-repeat right top fixed;
+    height: 600px;
+    background: url("/img/duluth-mn.jpg")no-repeat right top fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -664,8 +668,8 @@ footer .footer-below {
 
 .locationtxt {
     color: white;
-    font-size: 6vw;
-    margin-top: 200px;
+    font-size: 7vw;
+    margin-top: 250px;
 }
 
 @media(min-width:900px) {
@@ -889,9 +893,12 @@ figure .profile span {
   border: 5px solid #{{ site.color.primary }};
 } */
 
-
+.feature-image {
+  text-align: center;
+}
 .feature-image img {
-  max-width: 100%;
+  max-width: 80%;
+  margin-top: 90px;
 }
 
 .feature-text {
@@ -1187,4 +1194,10 @@ details[open] summary {
 }
 .owl-item:active {
   cursor: grabbing;
+}
+
+.expertise-item img {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 40px;
 }
