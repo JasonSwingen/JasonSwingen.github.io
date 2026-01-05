@@ -10,9 +10,11 @@
 
   {% include page-nav.html %}
   <br>
-  {% include page-title.html %}
-
-  <section>{{ content }}</section>
+  
+  <section class="page">
+    <div class="page-title">{% include page-title.html %}</div>
+    <div class="page">{{ content }}</div>
+  </section>
 
   {% include footer.html %}
   {% include js.html %}

@@ -235,7 +235,38 @@ header .intro-text .skills {
 }
 
 section {
-    padding: 100px 0 130px 0;
+    padding: 50px 0 100px 0;
+}
+
+section .page-title {
+    text-align: center;
+    background: #{{ site.color.primary }};
+    padding: 40px 0 40px 0;
+    margin-bottom: 100px;
+    margin-top: -50px;
+    color: white;
+  }
+
+section .page {
+    max-width: 900px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+section .page h2 {
+    font-size: 3rem;
+    margin-top: 2.5rem;
+}
+section .page p {
+    text-align: left; /* keep paragraphs left-aligned on wide screens */
+}
+
+section .page img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1rem auto;
 }
 
 section h2 {
@@ -743,7 +774,7 @@ footer .footer-below {
 }
 
 .thumbnail {
-    min-height: 660px;
+    min-height: 710px;
     margin: 25px 0px;
     border-radius: 10px;
     padding: 0px;
@@ -754,12 +785,41 @@ footer .footer-below {
     padding: 2em 1em;
     /* min-height: 300px; */
     width: 75%;
+    min-height: 250px;
+    display: block;
 }
 
 .thumbnail p {
   font-size: 16px;
   padding: 10px;
   text-align: center;
+}
+
+.thumbnail .caption .btn{
+    display: inline-block;
+    position: static;
+    /* margin: 15px auto 30px; */
+    padding: 2rem 3rem;
+    font-weight: 700;
+    letter-spacing: .02em;
+    border-radius: 6px;
+    color: #fff !important;
+    background-color: {{ site.color.primary }};
+    box-shadow: 0 4px 12px #2C3E50;
+    transition: transform .15s ease, box-shadow .15s ease, filter .15s ease;
+    text-decoration: none;
+}
+
+.thumbnail .caption .btn:focus {
+    outline: none;
+    /* box-shadow: 0 0 0 4px rgba(40,167,69,0.12); */
+}
+
+.thumbnail .caption .btn:hover,
+.thumbnail .caption .btn:active {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 22px rgba(40,167,69,0.28);
+    filter: brightness(1.04);
 }
 
 .services {
@@ -1071,6 +1131,7 @@ blockquote p {
   z-index: 9;
   /* border-bottom: none; */
   transform: scale(1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   -webkit-transition: .2s ease-in-out;
   -moz-transition: .2s ease-in-out;
   -ms-transition: .2s ease-in-out;
@@ -1200,6 +1261,7 @@ details[open] summary {
   width: 100%;
   max-width: 300px;
   margin-bottom: 30px;
+  margin-top: 20px;
 }
 
 .privacy {
