@@ -482,6 +482,47 @@ section.secondary {
   color: #666;
 }
 
+/* Service page visual refresh */
+.service-intro .lead { font-size: 1.15rem; color: #333; margin-bottom: 0.8rem; }
+.service-intro .seo-cta { margin-top: 0.75rem; }
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin: 20px 0 0 0;
+}
+.feature-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+}
+.feature-card h4 { margin-top: 10px; font-size: 1.5rem; }
+
+.offer-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+  list-style: none; padding: 0; margin: 0;
+  font-size: 1.8rem;
+}
+.offer-list li { background: #fff; border: 1px solid #f0f0f0; padding: 20px 22px; border-radius: 8px; box-shadow: 0 6px 14px rgba(0,0,0,0.03); }
+
+/* FAQ styles using native details/summary */
+.faq-list { margin: 0 0 1.5rem 0; }
+.faq-item { margin: 0 0 0.75rem 0; border-radius: 8px; border: 1px solid #eee; overflow: hidden; background: #fff; }
+.faq-question { display: block; background: #fafafa; padding: 2rem; cursor: pointer; font-weight: 700; }
+.faq-answer { padding: 0.75rem 1rem; background: #fff; margin: 0; color: #444; line-height: 1.5; }
+.faq-question:focus { outline: 3px solid rgba(24,188,156,0.2); }
+
+@media (max-width: 767px) {
+  .service-intro { padding: 0 12px; }
+  .seo-hero { gap: 16px; }
+}
+
+
 @media(max-width:767px) {
   .seo-hero {
     flex-direction: column;
@@ -952,6 +993,48 @@ figure .profile span {
 /* .testimonial-pic img:hover {
   border: 5px solid #{{ site.color.primary }};
 } */
+
+/* ---- Owl: Limit testimonial item width and center them ---- */
+.testimonials-active .item {
+  width: auto !important;
+  max-width: 900px; /* change as needed */
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.testimonials-active .testimonial {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 24px;
+}
+
+/* Responsive: full width on small screens */
+@media (max-width: 767px) {
+  .testimonials-active .item {
+    max-width: 100%;
+    margin: 0;
+  }
+  .testimonial-pic img {
+    max-width: 200px;
+  }
+}
+
+/* Center owl stage so items appear centered on larger screens */
+.testimonials-active .owl-stage {
+  display: flex;
+  justify-content: center;
+}
+.testimonials-active .owl-item {
+  display: flex;
+  justify-content: center;
+}
+.owl-item .testimonial {
+  width: 80%;
+}
+.owl-item .testimonial img {
+  max-width: 150px;
+}
 
 .feature-image {
   text-align: center;
