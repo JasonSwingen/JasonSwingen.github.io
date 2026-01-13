@@ -5,12 +5,83 @@ permalink: /seo-services/
 description: "Local SEO & marketing for Duluth, MN businesses - Google Business Profile optimization, local citations, content strategy, and conversion-focused campaigns."
 ---
 
-<div class="service-intro">
-<p class="lead">Local SEO & digital marketing focused on Duluth, MN businesses - designed to get you found in Google, appear in the Local Pack, and turn local searches into phone calls and customers.</p>
-<p class="page-scroll"><a href="#contact" class="btn btn-primary seo-cta" data-select="seo">Get a free Duluth SEO audit</a></p>
-</div>
+<section class="service-masthead">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-7">
+        <p class="lead">Rank your website higher in local search results and <strong>attract more customers</strong> with our expert SEO services. Local SEO & digital marketing focused on Duluth, MN businesses - designed to get you found online, and turn local searches into phone calls and customers.</p>
+        <p></p>
+        <div class="masthead-image">
+        <img src="/img/unDraw/design_components.svg" alt="">
+        </div>
+        <!-- <p class="page-scroll"><a href="#contact" class="btn btn-primary seo-cta" data-select="seo">Get a free Duluth SEO audit</a></p> -->
+      </div>
+      <div class="col-md-5">
+        <div class="masthead-form contact">
+<form action="//formspree.io/jason.swingen@gmail.com" method="POST" name="sentMessage" id="contactForm" novalidate>
+  <div class="row control-group focus">
+    <div class="form-group col-xs-12 floating-label-form-group controls">
+      <label>Full Name</label>
+      <input type="text" name="name" class="form-control" placeholder="Full Name" id="name" required
+        data-validation-required-message="Please enter your name.">
+      <p class="help-block text-danger"></p>
+    </div>
+  </div>
+  <div class="row control-group focus">
+    <div class="form-group col-xs-12 floating-label-form-group controls">
+      <label>Email Address</label>
+      <input type="email" name="_replyto" class="form-control" placeholder="Email Address" id="email" required
+        data-validation-required-message="Please enter your email address.">
+      <p class="help-block text-danger"></p>
+    </div>
+  </div>
+  <div class="row control-group focus">
+    <div class="form-group col-xs-12 floating-label-form-group controls">
+      <label>Phone Number</label>
+      <input type="text" name="phone" class="form-control" placeholder="Phone Number" id="phone" required
+        data-validation-required-message="Please enter your phone number.">
+      <p class="help-block text-danger"></p>
+    </div>
+  </div>
+  <!-- <div class="row control-group focus">
+						<div class="form-group col-xs-12 floating-label-form-group controls">
+							<label>Website</label>
+							<input type="text" name="website" class="form-control" placeholder="Website" id="website">
+							<p class="help-block text-danger"></p>
+						</div>
+					</div> -->
 
-<section>
+  <div class="row control-group focus">
+    <div class="form-group col-xs-12 floating-label-form-group controls">
+      <label>Message</label>
+      <textarea rows="4" name="message" class="form-control" placeholder="Message" id="message" required
+        data-validation-required-message="Please enter a message."></textarea>
+      <p class="help-block text-danger"></p>
+    </div>
+  </div>
+  <div>
+    <input type="hidden" name="_subject" value="New submission from jasonswingen.com!">
+    <input type="text" name="_gotcha" style="display:none" />
+  </div>
+  <br>
+  <div id="success"></div>
+  <div class="row">
+    <div class="form-group col-xs-12 text-center">
+      <button type="submit" class="btn btn-primary btn-lg" data-toggle="tooltip" data-placement="right"
+        title="Great! I'll get back to you soon!">Send It!</button>
+    </div>
+  </div>
+</form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section>
+<div class="container">
+<div class="row">
+  <div class="col-lg-12 mx-auto">
 <h2>Local SEO for Duluth, MN</h2>
 
 <div class="features-grid">
@@ -47,13 +118,15 @@ description: "Local SEO & marketing for Duluth, MN businesses - Google Business 
     <p>Local keyword tracking, analytics, and call-tracking to measure leads and ROI.</p>
   </div>
 </div>
-</section>
+</div>
+</div>
+</div>
+</section> -->
 
 
 
-<section>
-<h3>What I offer</h3>
-
+<!-- <section>
+<h3>SEO Services</h3>
 <ul class="offer-list">
   <li><strong>Comprehensive technical audits</strong> (crawlability, site speed, mobile UX)</li>
   <li><strong>On-page optimization</strong> (title tags, meta descriptions, structured data)</li>
@@ -64,27 +137,46 @@ description: "Local SEO & marketing for Duluth, MN businesses - Google Business 
   <li><strong>Link building</strong> with local relevance and authority</li>
   <li>Ongoing <strong>analytics monitoring</strong>, reporting, and conversion optimization</li>
 </ul>
+</section> -->
 
-</section>
 <section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 mx-auto">
+<h2>Why choose a Duluth-focused SEO provider?</h2>
 
-<h3>Why choose a Duluth-focused SEO provider?</h3>
-<div class="row">
-<ul class="offer-list">
-	<li>Specialized knowledge of <strong>Duluth's local search </strong> landscape and customer behavior</li>
-	<li>Experience optimizing for <strong>Google Business Profile</strong> and local pack rankings</li>
-	<li><strong>Connections with local directories</strong>, chambers, and community organizations</li>
-	<li><strong>Focus on driving phone calls, form submissions, and in-person visits</strong></li>
-</ul>
-&nbsp;
+
+<div class="features-grid">
+  <div class="feature-card">
+    <h3>Google Business Profile</h3>
+    <p>Specialized knowledge of <strong>Duluth's local search </strong> landscape and customer behavior</p>
+  </div>
+  <div class="feature-card">
+    <h3>Local citations</h3>
+    <p>Experience optimizing for <strong>Google Business Profile</strong> and local pack rankings</p>
+  </div>
+  <div class="feature-card">
+    <h3>Reviews & reputation</h3>
+    <p><strong>Connections with local directories</strong>, chambers, and community organizations</p>
+  </div>
+  <div class="feature-card">
+    <h3>Local schema</h3>
+    <p><strong>Focus on driving phone calls, form submissions, and in-person visits</strong></p>
+  </div>
 </div>
+</div>
+</div>
+</div>
+</section>
+
 <div class="row">
 {% include location.html %}
 </div>
-</section>
 
 
 <section>
+  <div class="container">
+    <div class="row">
 <h3>Increased Website Traffic</h3>
 <p>Organic traffic growth after targeted local SEO efforts.</p>
 <div class="row seo-results">
@@ -97,15 +189,21 @@ description: "Local SEO & marketing for Duluth, MN businesses - Google Business 
 		<img src="/img/results/JSO_results.jpg" alt="After traffic" class="img-responsive" />
 	</div>
 </div>
+</div>
+</div>
 </section>
 
 <section>
+  <div class="container">
+    <div class="row">
 <h3>Increased Website Speed</h3>
 <p>Increased page speed improves user experience and search engine rankings. Faster websites reduce bounce rates and increase conversions.</p>
 <div class="row">
 	<div class="col-sm-12">
 		<img src="/img/results/site_speed_snapshot.svg" alt="Site speed before and after" class="img-responsive" />
 	</div>
+</div>
+</div>
 </div>
 </section>
 
@@ -135,6 +233,8 @@ description: "Local SEO & marketing for Duluth, MN businesses - Google Business 
 </section> -->
 
 <section>
+  <div class="container">
+    <div class="row">
 
 <h3>Frequently asked questions (Local SEO - Duluth)</h3>
 
@@ -174,7 +274,8 @@ description: "Local SEO & marketing for Duluth, MN businesses - Google Business 
 	  <summary class="faq-question">Do you provide ongoing SEO maintenance?</summary>
   <div class="faq-answer">Yes - I offer ongoing SEO maintenance packages that include regular audits, content updates, link building, and performance monitoring to ensure sustained growth and adaptation to search engine algorithm changes.</div>
 </details>
-
+</div>
+</div>
 </div>
 
 </section>
