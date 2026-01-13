@@ -7,46 +7,18 @@
         </div>
     </div>
 
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="success carousel-inner container-fluid" role="listbox">
-    <div class="row item active">
-		<blockquote>
-			<p>Thank you so much for all the work you have done. Are website was unlisted and now we are on the front page! It's been great working with you and will let you know when we are ready for our next project.</p>
-			<!-- <small>Google User</small> -->
-		</blockquote>
-    </div>
-    <div class="row item">
-		<blockquote>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt laboriosam cupiditate officia quo optio, similique sequi odit consequatur dolor, iusto temporibus, ducimus veritatis suscipit rem aliquam. Modi quis blanditiis repellat.</p>
-			<!-- <small>Google User</small> -->
-		</blockquote>
-    </div>
-	<div class="row item">
-		<blockquote>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae iusto incidunt odio enim quod atque pariatur asperiores eligendi placeat provident laudantium fugit odit eveniet libero, accusantium vero neque error dolorum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptatem iste labore temporibus necessitatibus quis, deleniti, eveniet distinctio quisquam quibusdam adipisci vel. Commodi enim possimus rem architecto praesentium tempore optio.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam laudantium error, tenetur sit, excepturi molestiae odit dicta corrupti, quos nisi repudiandae voluptatem. Natus vero at rem, recusandae obcaecati similique perferendis.</p>
-			<!-- <small>Google User</small> -->
-		</blockquote>
-    </div>
+<div class="testimonials-active owl-carousel">
+    {% for t in site.data.testimonials %}
+      <div class="item">
+        <blockquote class="testimonial fade-in">
+          <span class="testimonial-pic"><img src="/img/testimonials/{{ t.Image }}" alt=""></span>
+          <p class="rating">{{ t.rating }}</p>
+          <p>{{ t.Description }}</p>
+          <small><b>{{ t.Name }}</b>{% if t.Title %} ({{ t.Title }}){% endif %}</small>
+        </blockquote>
+      </div>
+    {% endfor %}
   </div>
-</div>
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <!-- <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> -->
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <!-- <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> -->
-    <span class="sr-only">Next</span>
-  </a>
-</div>
     <div class="text-center">
     	<span class="smtxt">Have you enjoyed my work? </span><a target="_blank" rel="noopener noreferrer" href="https://goo.gl/8Z6KJe"><b> WRITE A REVIEW <span class="fa fa-thumbs-up"></span></b></a>
     </div>

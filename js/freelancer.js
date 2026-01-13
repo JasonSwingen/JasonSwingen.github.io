@@ -65,6 +65,7 @@ $('body').scrollspy({
 $('.testimonials-active').owlCarousel({
     stagePadding: 0,
     nav:false,
+    center:true,
     loop:true,
     margin:20,
     smartSpeed:900,
