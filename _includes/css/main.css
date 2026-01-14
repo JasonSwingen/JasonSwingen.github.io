@@ -175,6 +175,8 @@ header .intro-text .skills {
 .service-masthead {
   padding: 60px 0;
   background-color: #{{ site.color.primary }};
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 .service-masthead .lead {
   font-size: 2.25rem;
@@ -545,13 +547,25 @@ section.secondary {
   padding-bottom: 30px;
 }
 .feature-card {
-  background: #fff;
+  background: #ebebeb;
   border: 1px solid #eee;
   border-radius: 8px;
-  padding: 16px;
+  padding: 26px 36px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+  margin: 30px 0px;
 }
 .feature-card h4 { margin-top: 10px; font-size: 2rem; }
+
+.featured-image {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.featured-image img {
+  max-width: 100%;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  border-radius: 8px;
+}
 
 .offer-list {
   display: grid;
@@ -563,10 +577,10 @@ section.secondary {
 .offer-list li { background: #fff; border: 1px solid #f0f0f0; padding: 20px 22px; border-radius: 8px; box-shadow: 0 6px 14px rgba(0,0,0,0.03); }
 
 /* FAQ styles using native details/summary */
-.faq-list { margin: 0 0 1.5rem 0; }
-.faq-item { margin: 0 0 0.75rem 0; border-radius: 8px; border: 1px solid #eee; overflow: hidden; background: #fff; }
-.faq-question { display: block; background: #fafafa; padding: 2rem; cursor: pointer; font-weight: 700; }
-.faq-answer { padding: 0.75rem 1rem; background: #fff; margin: 0; color: #444; line-height: 1.5; }
+.faq-list { margin: 0 0 2.5rem 0; }
+.faq-item { margin: 0 0 1.75rem 0; border-radius: 8px; border: 1px solid #eee; overflow: hidden; background: #fff; }
+.faq-question { display: block; background: #fafafa; padding: 2rem; cursor: pointer; font-weight: 700;}
+.faq-answer { padding: 0.75rem 1rem; background: #fff; margin: 20px 5px; color: #444; line-height: 1.5; }
 .faq-question:focus { outline: 3px solid rgba(24,188,156,0.2); }
 
 @media (max-width: 767px) {
@@ -1018,6 +1032,7 @@ figure .profile span {
 }
 .testimonial .rating {
   color: #{{ site.color.primary }};
+  font-size: 30px;
 }
 
 .testimonial {
@@ -1329,7 +1344,8 @@ details {
     border-radius: 4px;
     padding: .5em .5em 0;
 		text-align: left;
-		transition: all 200ms;
+		transition: all 300ms;
+    font-size: 17px;
 }
 
 summary {
@@ -1397,8 +1413,22 @@ details[open] summary {
   max-width: 300px;
   margin-bottom: 30px;
   margin-top: 20px;
+  transition: all 300ms;
+}
+
+.expertise-item img:hover {
+  transform: rotate(1.1deg);
+  transition: all 300ms;
+  box-shadow: 2px 8px 20px rgba(0,0,0,0.08);
 }
 
 .privacy {
   margin-top:50px;
+}
+
+.highlight {
+  color: #{{ site.color.secondary }};
+  font-weight: 700;
+  /* background: #{{ site.color.secondary }}20; */
+  /* padding: 2px 6px; */
 }

@@ -9,7 +9,7 @@ description: "Local SEO & marketing for Duluth, MN businesses - Google Business 
   <div class="container">
     <div class="row align-items-center">
       <div class="col-md-7">
-        <p class="lead">Rank your website higher in local search results and <strong>attract more customers</strong> with our expert SEO services. Local SEO & digital marketing focused on Duluth, MN businesses - designed to get you found online, and turn local searches into phone calls and customers.</p>
+        <p class="lead">Rank your website higher in local search results and <strong class="highlight">attract more customers</strong> with our expert SEO services. Local SEO & digital marketing focused on Duluth, MN businesses - designed to get you found online, and turn local searches into phone calls and customers.</p>
         <p></p>
         <div class="masthead-image">
         <img src="/img/unDraw/design_components.svg" alt="">
@@ -139,45 +139,41 @@ description: "Local SEO & marketing for Duluth, MN businesses - Google Business 
 </ul>
 </section> -->
 
-<section>
-  <div class="container">
+<section class="bg-light">
+  <div class="feature-grid container">
     <div class="row">
-      <div class="col-lg-12 mx-auto">
-<h2>Why choose a Duluth-focused SEO provider?</h2>
-
-
-<div class="features-grid">
-  <div class="feature-card">
+      <h2 class="text-center">Why choose a Duluth-focused SEO provider?</h2>
+      <hr class="star-primary">
+  <div class="feature-card fade-in">
     <h3>Google Business Profile</h3>
-    <p>Specialized knowledge of <strong>Duluth's local search </strong> landscape and customer behavior</p>
+    <p>Specialized knowledge of <strong>Duluth's local search</strong>, and customer behavior.</p>
   </div>
-  <div class="feature-card">
+  <div class="feature-card fade-in">
     <h3>Local citations</h3>
-    <p>Experience optimizing for <strong>Google Business Profile</strong> and local pack rankings</p>
+    <p>Experience optimizing for <strong>Google Business Profile</strong> and local pack rankings.</p>
   </div>
-  <div class="feature-card">
+  <div class="feature-card fade-in">
     <h3>Reviews & reputation</h3>
-    <p><strong>Connections with local directories</strong>, chambers, and community organizations</p>
+    <p><strong>Connections with local directories</strong>, chambers, and community organizations.</p>
   </div>
-  <div class="feature-card">
+  <div class="feature-card fade-in">
     <h3>Local schema</h3>
-    <p><strong>Focus on driving phone calls, form submissions, and in-person visits</strong></p>
+    <p><strong>Focus on driving phone calls, form submissions, and in-person visits.</strong></p>
   </div>
-</div>
-</div>
 </div>
 </div>
 </section>
+
 
 <div class="row">
 {% include location.html %}
 </div>
 
 
-<section>
+<!-- <section>
   <div class="container">
     <div class="row">
-<h3>Increased Website Traffic</h3>
+<h2>Increased Website Traffic</h2>
 <p>Organic traffic growth after targeted local SEO efforts.</p>
 <div class="row seo-results">
 	<div class="col-sm-6">
@@ -191,21 +187,9 @@ description: "Local SEO & marketing for Duluth, MN businesses - Google Business 
 </div>
 </div>
 </div>
-</section>
+</section> -->
 
-<section>
-  <div class="container">
-    <div class="row">
-<h3>Increased Website Speed</h3>
-<p>Increased page speed improves user experience and search engine rankings. Faster websites reduce bounce rates and increase conversions.</p>
-<div class="row">
-	<div class="col-sm-12">
-		<img src="/img/results/site_speed_snapshot.svg" alt="Site speed before and after" class="img-responsive" />
-	</div>
-</div>
-</div>
-</div>
-</section>
+
 
 
 <!-- <section>
@@ -236,8 +220,8 @@ description: "Local SEO & marketing for Duluth, MN businesses - Google Business 
   <div class="container">
     <div class="row">
 
-<h3>Frequently asked questions (Local SEO - Duluth)</h3>
-
+<h2>Frequently asked questions (Local SEO - Duluth)</h2>
+<hr class="star-primary">
 <div class="faq-list">
 
 <details class="faq-item">
@@ -262,7 +246,7 @@ description: "Local SEO & marketing for Duluth, MN businesses - Google Business 
 
 <details class="faq-item">
 	  <summary class="faq-question">What industries do you specialize in for Duluth SEO?</summary>
-  <div class="faq-answer">I work with a variety of industries including retail, hospitality, professional services, healthcare, and home services. My focus is on delivering results tailored to each business's unique needs.</div>
+  <div class="faq-answer">I work with a variety of industries including outdoor industries, retail, hospitality, professional services, healthcare, and home services. My focus is on delivering results tailored to each business's unique needs.</div>
 </details>
 
 <details class="faq-item">
@@ -274,6 +258,22 @@ description: "Local SEO & marketing for Duluth, MN businesses - Google Business 
 	  <summary class="faq-question">Do you provide ongoing SEO maintenance?</summary>
   <div class="faq-answer">Yes - I offer ongoing SEO maintenance packages that include regular audits, content updates, link building, and performance monitoring to ensure sustained growth and adaptation to search engine algorithm changes.</div>
 </details>
+
+<details class="faq-item">
+    <summary class="faq-question">Can you help with content creation for local SEO?</summary>
+  <div class="faq-answer">Definitely - I can assist with creating geo-targeted content, blog posts, and landing pages that resonate with the Duluth audience and improve local search visibility.</div>
+</details>
+
+<details class="faq-item">
+    <summary class="faq-question">What sets your SEO services apart from others?</summary>
+  <div class="faq-answer">My deep understanding of the Duluth market, combined with a results-driven approach and transparent communication, sets my services apart. I focus on delivering measurable outcomes that align with your business goals.</div>
+</details>
+
+<details class="faq-item">
+    <summary class="faq-question">How do I get started with your SEO services?</summary>
+  <div class="faq-answer">Getting started is easy! Simply reach out via the <a href="#contact" data-select="none">contact form on this page</a> or email me directly. We can discuss your business needs, goals, and how I can help you achieve better local search visibility.</div>
+</details>
+
 </div>
 </div>
 </div>

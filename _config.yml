@@ -50,7 +50,7 @@ address:
   - line: Duluth, Minnesota
 
 # Credits content
-credits: 'You can <span class="page-scroll"><a href="#contact" data-toggle="tooltip" data-placement="top" title="It only takes a minute.">contact me</a></span> by <span data-toggle="tooltip" data-placement="top" title="(218) 409-6555"><a href="tel:218-409-6555">phone</a></span> or <span data-toggle="tooltip" data-placement="top" title="jason.swingen@gmail.com"><a href="mailto:jason.swingen@gmail.com">email</a></span> if you are looking for any design, development, or marketing.'
+credits: 'You can <span class="page-scroll"><a href="#contact" data-toggle="tooltip" data-placement="top" title="It only takes a minute." data-select="none">contact me</a></span> by <span data-toggle="tooltip" data-placement="top" title="(218) 409-6555"><a href="tel:218-409-6555">phone</a></span> or <span data-toggle="tooltip" data-placement="top" title="jason.swingen@gmail.com"><a href="mailto:jason.swingen@gmail.com">email</a></span> if you are looking for any design, development, or marketing.'
 
 # Build settings
 markdown: kramdown
