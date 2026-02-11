@@ -1,0 +1,14 @@
+---
+layout: default
+modal-id: 15
+date: 2026-02-11
+location: Minnesota
+img: MinnesotaTroutUnlimited.jpg
+alt: Minnesota Trout Unlimited
+project-date: 2018 - Present
+client: Minnesota Trout Unlimited
+siteurl: http://mntu.org
+category: Email Marketing, Social Media, Web Development, SEO
+description: Minnesota Trout Unlimited represents several thousand members and five chapters in Minnesota. Its mission is to conserve, protect, restore, and sustain Minnesota’s cold water fisheries and their watersheds.
+task: I provide comprehensive digital management for Minnesota Trout Unlimited, integrating email marketing, social media management, and web development. I focus on creating a cohesive brand voice across all platforms while implementing SEO best practices to increase visibility. My objective is to keep the community informed on critical policy changes and local events through optimized, mobile-first digital experiences.
+---

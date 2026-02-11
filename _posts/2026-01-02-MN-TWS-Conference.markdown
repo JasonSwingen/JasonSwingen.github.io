@@ -5,7 +5,7 @@ date: 2026-01-02
 location: MN
 img: MNTWS.jpg
 alt: The Wildlife Society (MN Chapter)
-project-date: 2025
+project-date: 2026
 client: The Wildlife Society (MN Chapter)
 siteurl: https://www.mntws.com/
 category: Web Design
